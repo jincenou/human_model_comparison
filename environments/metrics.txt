@@ -1,0 +1,10 @@
+# Exact CPU/GPU metric package versions observed in the experiment environment.
+# Install the appropriate PyTorch build for your driver separately.
+numpy==2.2.6
+scipy==1.15.3
+Pillow==12.3.0
+torch==2.10.0
+torchvision==0.25.0
+lpips==0.1.4
+scikit-image==0.25.2
+

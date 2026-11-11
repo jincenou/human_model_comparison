@@ -1,0 +1,992 @@
+{
+  "scope": "Source snapshot; source hashes bind original files before publication path changes",
+  "files": [
+    {
+      "source": "human_model_comparison/scripts/apply_reference_component_corrections_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/apply_reference_component_corrections_v1.py",
+      "source_sha256": "54c60d75c9491063eaadfdd5d3f0fd501b7d2ff7d5cc6f0889f0ab9945012f5e",
+      "release_sha256": "54c60d75c9491063eaadfdd5d3f0fd501b7d2ff7d5cc6f0889f0ab9945012f5e",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/apply_reference_local_edits_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/apply_reference_local_edits_v1.py",
+      "source_sha256": "ceec9d9d8fdfebf56f50cebb56a42188c4ce7a7227aa64a5f56098a8dc7bb8bc",
+      "release_sha256": "ceec9d9d8fdfebf56f50cebb56a42188c4ce7a7227aa64a5f56098a8dc7bb8bc",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/assemble_reference_review_status_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/assemble_reference_review_status_v1.py",
+      "source_sha256": "0c26bcccafab96884561831c0aed4a350e70bd35236b8e915d7af7f9fe79e20a",
+      "release_sha256": "0c26bcccafab96884561831c0aed4a350e70bd35236b8e915d7af7f9fe79e20a",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/audit_candidate_runtime_decode_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/audit_candidate_runtime_decode_v2.py",
+      "source_sha256": "517124869677305ec47e272a70845419465996ba5550a5fe633470dbe37b47f7",
+      "release_sha256": "517124869677305ec47e272a70845419465996ba5550a5fe633470dbe37b47f7",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/audit_native_queue_pause_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/audit_native_queue_pause_v1.py",
+      "source_sha256": "eeb4d9e367871e997fb2393f96e28c1f21ce126a7fe5ada0ccafbdcb3a4128fc",
+      "release_sha256": "1d0c9c7d2dfad23aba4d83730c7e42a94c9f51e1ec8d531515c14fc7d34b8b28",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/audit_nuscenes_cohort_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/audit_nuscenes_cohort_v2.py",
+      "source_sha256": "f2c3c5b30730dc2d8d995233ffc19cbeb29f58f39f5b3636ba41c28a6b4e10bd",
+      "release_sha256": "f2c3c5b30730dc2d8d995233ffc19cbeb29f58f39f5b3636ba41c28a6b4e10bd",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/audit_omnire_human_time_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/audit_omnire_human_time_v1.py",
+      "source_sha256": "034eefa952c2e3890386413c3bb905008e46f78c378caeccab8e496a6c8b35ea",
+      "release_sha256": "034eefa952c2e3890386413c3bb905008e46f78c378caeccab8e496a6c8b35ea",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/audit_scene_human_reuse_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/audit_scene_human_reuse_v2.py",
+      "source_sha256": "e3e010ea31bcb6f2b5f3232cbed8e1a324d61dc5bc04b7ce2c019928c8a6e084",
+      "release_sha256": "e3e010ea31bcb6f2b5f3232cbed8e1a324d61dc5bc04b7ce2c019928c8a6e084",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/audit_splatad_missing_original9_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/audit_splatad_missing_original9_v1.py",
+      "source_sha256": "7f92ac7fdb58134aea74943dff0b8fc41caa58c7554c118e0406557d88ee639b",
+      "release_sha256": "7f92ac7fdb58134aea74943dff0b8fc41caa58c7554c118e0406557d88ee639b",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/build_candidate_review_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/build_candidate_review_v2.py",
+      "source_sha256": "344d69f336bf02977005944d57fb6b38e5b780d951f80375c5eebb86f93eb5ea",
+      "release_sha256": "40dd89cae9494d5f41c8af968c13e6ebf70c01d6dee2072765d462a78161cee3",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/build_frozen_human100_review_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/build_frozen_human100_review_v2.py",
+      "source_sha256": "087ba1aa4ab4ee459095ececd91ad04e600cb2e7c2fef8bdf517f8fc22fb202c",
+      "release_sha256": "087ba1aa4ab4ee459095ececd91ad04e600cb2e7c2fef8bdf517f8fc22fb202c",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/build_native_comparison_review_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/build_native_comparison_review_v1.py",
+      "source_sha256": "7078c832e8d0de5e8be5fc323a27e07d714eb4e55ee124eb3032605b6b41a1f2",
+      "release_sha256": "7078c832e8d0de5e8be5fc323a27e07d714eb4e55ee124eb3032605b6b41a1f2",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/build_reference_qualification_sheets_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/build_reference_qualification_sheets_v1.py",
+      "source_sha256": "338b090f4a7413765bb2c7bff8a05c948b63b89ce3c95acaf181dc6a98b2e468",
+      "release_sha256": "338b090f4a7413765bb2c7bff8a05c948b63b89ce3c95acaf181dc6a98b2e468",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/build_review.py",
+      "destination": "workspace/human_model_comparison/scripts/build_review.py",
+      "source_sha256": "92cbaba10a066ca5e5e04e6ce1ceab7ff7a86c5c763808dc1ebf487a61f01fc0",
+      "release_sha256": "92cbaba10a066ca5e5e04e6ce1ceab7ff7a86c5c763808dc1ebf487a61f01fc0",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/build_source_comparison_contracts_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/build_source_comparison_contracts_v2.py",
+      "source_sha256": "a595a5566c083e6c1117ca2518fe45dde98ba518b556957de3a22324f59050a0",
+      "release_sha256": "a595a5566c083e6c1117ca2518fe45dde98ba518b556957de3a22324f59050a0",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/continue_omnire_original75_time_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/continue_omnire_original75_time_v1.py",
+      "source_sha256": "5a9c7504c8c980cd2a5acd1d6a40c20991285d9988aad0c72093155a59bf97db",
+      "release_sha256": "5a9c7504c8c980cd2a5acd1d6a40c20991285d9988aad0c72093155a59bf97db",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/continue_ours_reload_v3.py",
+      "destination": "workspace/human_model_comparison/scripts/continue_ours_reload_v3.py",
+      "source_sha256": "feb0269a553d2ac77b5acdc88a117a9a796ce451da89b6ebd053554ae0c65337",
+      "release_sha256": "814f08140b8b63261f78aeffa234b9782e434a5245f89af1505b0a687941f12d",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/continue_splatad_original75_time_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/continue_splatad_original75_time_v1.py",
+      "source_sha256": "02a5844fa38fd43e07c1dff96cb923fbb894b01bb929125eee659a3913cf730c",
+      "release_sha256": "7932c8fa2785464ac31c079c853aaec60bcac9547c995b5742278ec440b7f86f",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/diagnose_ours_coordinate_invariance_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/diagnose_ours_coordinate_invariance_v1.py",
+      "source_sha256": "acfc6d3cc0575fa2fe470c568d096dae605ffb6b527493a81bc1fabcc6835a58",
+      "release_sha256": "acfc6d3cc0575fa2fe470c568d096dae605ffb6b527493a81bc1fabcc6835a58",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/export_ours_frozen_time_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/export_ours_frozen_time_v1.py",
+      "source_sha256": "3c5073430579c343dfdf51436fc60f7284ab5cff4888cc8180a5e22511364c45",
+      "release_sha256": "3c5073430579c343dfdf51436fc60f7284ab5cff4888cc8180a5e22511364c45",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/extract_omnire_human100_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/extract_omnire_human100_v2.py",
+      "source_sha256": "14e0366c9d3012d228893bb4a78237dbaf56845581395aa7f5f84f604960ce61",
+      "release_sha256": "acaee4e20910389d783cd118f32a612c43d53fc851ed124f4ffa51fa5dce08ec",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/extract_splatad_human100_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/extract_splatad_human100_v2.py",
+      "source_sha256": "8f596b660809bb8edafc9534b229ea3969de7ad665994fb4aa9c6e38b4f2d5b9",
+      "release_sha256": "8f596b660809bb8edafc9534b229ea3969de7ad665994fb4aa9c6e38b4f2d5b9",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/freeze_human100_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/freeze_human100_v2.py",
+      "source_sha256": "df08c5b974e494da84a3e3d979110ea7e32ee224797a54fe8d11be6e8c4c4649",
+      "release_sha256": "df08c5b974e494da84a3e3d979110ea7e32ee224797a54fe8d11be6e8c4c4649",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/human_native_queue_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/human_native_queue_v1.py",
+      "source_sha256": "7ba4e93e7f6da6547048c93b5fa99027c6aeefc6ec47436d1e6d2966fa4f4e48",
+      "release_sha256": "2f3bc4e94c511eb67bfcc52f53c575e0cf8ab08f918c948e64d80530e2f9cf52",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/human_source_metrics_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/human_source_metrics_v1.py",
+      "source_sha256": "1650c142d165c4e97c1f24ef5ded6a1452e9d661ddae5846000518c6f3a74f91",
+      "release_sha256": "1650c142d165c4e97c1f24ef5ded6a1452e9d661ddae5846000518c6f3a74f91",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/launch_ah_human_pilot_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/launch_ah_human_pilot_v1.py",
+      "source_sha256": "736686823bab1cf04fb94419fa31257ba1f806741dd8c7f5c9d39ff6da3404f5",
+      "release_sha256": "355b33260ceaa102b1a25046b5316981240d1218f4a3bab215c5b6f3f668a1b3",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/launch_omnire_human_common_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/launch_omnire_human_common_v1.py",
+      "source_sha256": "794eb7361a3432db17bb586fbecf4ac581b0b7d43c328eb97a346bbcf6e6938e",
+      "release_sha256": "794eb7361a3432db17bb586fbecf4ac581b0b7d43c328eb97a346bbcf6e6938e",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/launch_omnire_human_pilot_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/launch_omnire_human_pilot_v2.py",
+      "source_sha256": "db83b60c508f9708a57dda7317c180350000b10377722d9808eb379bad7b5c30",
+      "release_sha256": "db83b60c508f9708a57dda7317c180350000b10377722d9808eb379bad7b5c30",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/launch_omnire_human_time_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/launch_omnire_human_time_v2.py",
+      "source_sha256": "f04d99f7dba7a5a33c066f91a570ae417b5c4bc8db9161ce72fe3e5bcf532a90",
+      "release_sha256": "f04d99f7dba7a5a33c066f91a570ae417b5c4bc8db9161ce72fe3e5bcf532a90",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/launch_ours_frozen_time_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/launch_ours_frozen_time_v1.py",
+      "source_sha256": "673289b5921e6beda389dec83daf1531eb8c8ee8bf2add138ff73ecc6a5314ea",
+      "release_sha256": "ae0ec0cefc60329998dd197b516536992b30c1a520e2161717ce62343584e08e",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/launch_ours_frozen_time_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/launch_ours_frozen_time_v2.py",
+      "source_sha256": "950be0d50d5d3fc9fc773c2982abb65f8c7f042976815af616e720d667eaaaff",
+      "release_sha256": "f582cf82e98dc8e7d391c38ffde0792ae0fe14c74856a22c336c6facf73eaa56",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/launch_ours_source_pilot_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/launch_ours_source_pilot_v1.py",
+      "source_sha256": "6792497e68dec6e10f09763efe56601403777b65ba1b3b8586e311e9f27cb4db",
+      "release_sha256": "6792497e68dec6e10f09763efe56601403777b65ba1b3b8586e311e9f27cb4db",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/launch_splatad_human_common_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/launch_splatad_human_common_v1.py",
+      "source_sha256": "ae0abea2b4686fcc87b1674ae2c6f3a85749f7dfd7cbbc015a2b3920064c25fe",
+      "release_sha256": "ae0abea2b4686fcc87b1674ae2c6f3a85749f7dfd7cbbc015a2b3920064c25fe",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/launch_splatad_human_pilot_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/launch_splatad_human_pilot_v2.py",
+      "source_sha256": "0d8bc2732392064ed6b61e4d56418f4833e2ca0d1224624d5f94d7c81268b7fc",
+      "release_sha256": "0d8bc2732392064ed6b61e4d56418f4833e2ca0d1224624d5f94d7c81268b7fc",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/omnire_time_query_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/omnire_time_query_v1.py",
+      "source_sha256": "9a548840863ad2317e43f07d44f5283358c7cf9b3f2af23da54f1f7ecbaaec18",
+      "release_sha256": "9a548840863ad2317e43f07d44f5283358c7cf9b3f2af23da54f1f7ecbaaec18",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/ours_coordinate_contract_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/ours_coordinate_contract_v1.py",
+      "source_sha256": "e3c1686bf5321a218e301645d28147b448e07fd55208099eafd8cb5b31643c01",
+      "release_sha256": "e3c1686bf5321a218e301645d28147b448e07fd55208099eafd8cb5b31643c01",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/prepare_ah_human_pilot_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/prepare_ah_human_pilot_v1.py",
+      "source_sha256": "3463ec7879c4317829074e6e0315375f7a4c2d161d196efe01de237fd1bb0927",
+      "release_sha256": "3463ec7879c4317829074e6e0315375f7a4c2d161d196efe01de237fd1bb0927",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/prepare_exact_reference_masks_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/prepare_exact_reference_masks_v2.py",
+      "source_sha256": "c09bb455c92d265c963cc613f18fe41b81800020c50c6d17a291cc3a3ce46649",
+      "release_sha256": "9feee8852325f13decb02ea3101186ea7aff98c3c7a04f77f0204ba7ca3bbd65",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/prepare_human_source_cameras_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/prepare_human_source_cameras_v1.py",
+      "source_sha256": "10d47340f5ddf17a9d585b4b03fc4ba7f9716114740870f836319deac785ca7b",
+      "release_sha256": "f276d20dcaa390bf23021d5a621b3e90cf9b1519b049efa77694acf518633c6b",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/prepare_human_static_inputs_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/prepare_human_static_inputs_v1.py",
+      "source_sha256": "1fde5bd7f224de95bb4bbc6ee870ce29f055ab0239e7af29987319b9eefcbc44",
+      "release_sha256": "1fde5bd7f224de95bb4bbc6ee870ce29f055ab0239e7af29987319b9eefcbc44",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/prepare_omnire_human100_plan_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/prepare_omnire_human100_plan_v2.py",
+      "source_sha256": "c6380e636da96262b9366e582c5e11ea4bebb9a96c588d63dea0c24739343c35",
+      "release_sha256": "c6380e636da96262b9366e582c5e11ea4bebb9a96c588d63dea0c24739343c35",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/prepare_omnire_original75_time_plan_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/prepare_omnire_original75_time_plan_v1.py",
+      "source_sha256": "b314a8a206853673079de33d3e8f37846e4d9b559380b1ee7a91fb2e23874e70",
+      "release_sha256": "b314a8a206853673079de33d3e8f37846e4d9b559380b1ee7a91fb2e23874e70",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/prepare_ours_source_registration_pilot_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/prepare_ours_source_registration_pilot_v1.py",
+      "source_sha256": "cb6836a58af56ecf8df52935d7d2ca1c8b89ff8b0e244995903a1eae396da4a9",
+      "release_sha256": "cb6836a58af56ecf8df52935d7d2ca1c8b89ff8b0e244995903a1eae396da4a9",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/prepare_selection.py",
+      "destination": "workspace/human_model_comparison/scripts/prepare_selection.py",
+      "source_sha256": "a617ff8674ea1a648a1689827be6847dd9ac422ffb71801cd54ade2a50c44a34",
+      "release_sha256": "5a16a85c33e3f34953011d4b974952543f08a8bb8044cff98d3f35184673bb07",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/prepare_splatad_original75_plan_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/prepare_splatad_original75_plan_v1.py",
+      "source_sha256": "b178df17da63bc3054cc85b61f97cde6cd943bf7ebf4801c7f6fccf61b674911",
+      "release_sha256": "b178df17da63bc3054cc85b61f97cde6cd943bf7ebf4801c7f6fccf61b674911",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/refine_reference_masks_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/refine_reference_masks_v2.py",
+      "source_sha256": "9e4c7e485a9adcce70cb5c027aa822b980e30b101f80a1f4bcbcb96668411972",
+      "release_sha256": "9e4c7e485a9adcce70cb5c027aa822b980e30b101f80a1f4bcbcb96668411972",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/refine_reference_review_points_cpu_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/refine_reference_review_points_cpu_v1.py",
+      "source_sha256": "861ab977e9691614739614fa24ee5e33463657f433babdd757fabe1e6183ba05",
+      "release_sha256": "861ab977e9691614739614fa24ee5e33463657f433babdd757fabe1e6183ba05",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/reload_ah_human_pilot_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/reload_ah_human_pilot_v1.py",
+      "source_sha256": "e039ceb763867eacbe9be844b3c4f8cc08138603c59121d2596ca0bf505de4dc",
+      "release_sha256": "ae852bc63dfc90e90dcf41d938370260130913a47c993cfe0594f85462fb52c0",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/render_ah_human_opposite_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/render_ah_human_opposite_v1.py",
+      "source_sha256": "e34201880b957765d5aac86075e0a55f7a4bc93eb5edbb0bfac77665f3c01b46",
+      "release_sha256": "e34201880b957765d5aac86075e0a55f7a4bc93eb5edbb0bfac77665f3c01b46",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/render_omnire_human_common_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/render_omnire_human_common_v1.py",
+      "source_sha256": "efa4a011797b47d91116dc34fc59a4c80146b2c40bbf6497799d6be065ac1050",
+      "release_sha256": "895d222f51aece4b0d0acde82b0651b1f819ca1c4681a92f8ac9022dfaa05ee3",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/render_omnire_human_time_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/render_omnire_human_time_v2.py",
+      "source_sha256": "9d48d5d091edc3139527733e7283dc6474f932fa91ea3856016ab2ddace7e4f0",
+      "release_sha256": "b221f7a44a5bf2fd03058d7079992ff5744801f7f746425397917deb30030a10",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/render_omnire_original75_time_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/render_omnire_original75_time_v1.py",
+      "source_sha256": "2767731cbba98a5d8ba88e40ba8885f2a32f9bd9adde747540cfb7282872f5a6",
+      "release_sha256": "81b3ae26f2362e6590407e0ad956c9c9797b334c6d711ed57f078bea9851bcd7",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/render_ours_frozen_time_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/render_ours_frozen_time_v1.py",
+      "source_sha256": "91003d44d2323cb1fccc20de3e7fb2555feecd54ded13b284d495116bc8c093e",
+      "release_sha256": "91003d44d2323cb1fccc20de3e7fb2555feecd54ded13b284d495116bc8c093e",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/render_ours_frozen_time_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/render_ours_frozen_time_v2.py",
+      "source_sha256": "38a4f7f1389338354770ba0096feac6c013a820fe45917793cdc3d7128ad0a1f",
+      "release_sha256": "38a4f7f1389338354770ba0096feac6c013a820fe45917793cdc3d7128ad0a1f",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/render_ours_frozen_time_v3.py",
+      "destination": "workspace/human_model_comparison/scripts/render_ours_frozen_time_v3.py",
+      "source_sha256": "fc48fcb36b3f259d25e32ced31a451ff2d9a338ea4518c2fa6c601f4ee09c01c",
+      "release_sha256": "fc48fcb36b3f259d25e32ced31a451ff2d9a338ea4518c2fa6c601f4ee09c01c",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/render_ours_source_pilot_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/render_ours_source_pilot_v1.py",
+      "source_sha256": "eb711144d392d4cef362c27b10478bb8085c6ce803310d3fbf6464d97d7e76ed",
+      "release_sha256": "eb711144d392d4cef362c27b10478bb8085c6ce803310d3fbf6464d97d7e76ed",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/render_splatad_human_common_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/render_splatad_human_common_v1.py",
+      "source_sha256": "febcf5fb87003ec6b0e6a3315e82e1de3a4b0794d9a0ec6754a39bdf2a7cdced",
+      "release_sha256": "febcf5fb87003ec6b0e6a3315e82e1de3a4b0794d9a0ec6754a39bdf2a7cdced",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/render_splatad_original75_time_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/render_splatad_original75_time_v1.py",
+      "source_sha256": "34bbd9aa34811bf9feb64c0a4b9bc5ea653beadec13df610d428c6b88583e49e",
+      "release_sha256": "34bbd9aa34811bf9feb64c0a4b9bc5ea653beadec13df610d428c6b88583e49e",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/run_ah_human_pilot_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/run_ah_human_pilot_v1.py",
+      "source_sha256": "1e7c340421a35eb6597f496c472d72e8042a850cb35a77b41089f05feb6e8d26",
+      "release_sha256": "75edd3a46344fe2edec4f5785bc638d7bd134bea3fc2758f0104d9e86f649712",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/run_trellis2_human_native_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/run_trellis2_human_native_v1.py",
+      "source_sha256": "74586b3dc388aa56bf32d67a5d07be7cae184352b870104d1ff5cb850f1b0a14",
+      "release_sha256": "1bb9c5399e9c6c0e208db5d3a9a851b8f73b5e90ece1862175fc2c791afba34e",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/run_trellis_original_human_native_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/run_trellis_original_human_native_v1.py",
+      "source_sha256": "58a6f3f61fc7ea33c5aafdc3341686268c2c9a756ad5e49dda03f40730841265",
+      "release_sha256": "948ec59dcf9e147ecd23a73b8dfbb6beb36cdb88a04ff7d05515f63e6ab10359",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/score_source_camera_pilot_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/score_source_camera_pilot_v1.py",
+      "source_sha256": "e83a69b38a0a0f66e38f51a6782c77aba830a9a4808e9f17c1ca4033f90bc431",
+      "release_sha256": "e83a69b38a0a0f66e38f51a6782c77aba830a9a4808e9f17c1ca4033f90bc431",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/test_human_source_metrics_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/test_human_source_metrics_v1.py",
+      "source_sha256": "162f7e614c1cdbc28e898f5ec6d9b7ac643de528634040006bf54738aef8f3f9",
+      "release_sha256": "162f7e614c1cdbc28e898f5ec6d9b7ac643de528634040006bf54738aef8f3f9",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/test_ours_coordinate_contract_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/test_ours_coordinate_contract_v1.py",
+      "source_sha256": "c5022ed9fdd4a04ae577555c2ed02f06798abffe3c92bc8ee10057595ccff772",
+      "release_sha256": "c5022ed9fdd4a04ae577555c2ed02f06798abffe3c92bc8ee10057595ccff772",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/build_exavatar_mmcv_v1.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/build_exavatar_mmcv_v1.py",
+      "source_sha256": "57864590f3d571db7055cf0f113378397e39ac64380e5810c87a87fec1da5ec3",
+      "release_sha256": "c242baf9dc2a839ae0de3c506c1f02589446e7bf54eee220af0e456f742278ee",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/build_exavatar_mmcv_v2.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/build_exavatar_mmcv_v2.py",
+      "source_sha256": "36efcf5593d8636d30220f821d93c10e7227c4bf898ec6c3cf7d69e5f6abc709",
+      "release_sha256": "44dde1c573ac423f1b1ade31dec04e1124728d69180c8df18ef51ccacd08318e",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/build_exavatar_pytorch3d_v1.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/build_exavatar_pytorch3d_v1.py",
+      "source_sha256": "f8028003b238f775a99104766c4cc2549f1af6a3264dd0d439a44ae79e1b74dc",
+      "release_sha256": "d1616361f179ef09f17480d43e668a125a650025331cc36864926eeb3da9a9b6",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/build_exavatar_raster_depth_v1.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/build_exavatar_raster_depth_v1.py",
+      "source_sha256": "c93dbf972ffd86ecab0b399cb3dd1b23a2a929ff1c3b412bf46c318bfb175a21",
+      "release_sha256": "e9c67e4231b06178a427d25af52a12587ed4c3c7ba6c96046dc182f3661a127d",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/download_exavatar_drive_v1.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/download_exavatar_drive_v1.py",
+      "source_sha256": "eabf2a49558631568ce6422b80efda510667ef4274905559fb3a2bf764fd72c1",
+      "release_sha256": "6962f6d5c34a358704abd4272955216040c6ed4226ddc2cd27e62df8f55409aa",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/download_jacobian_drive_v1.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/download_jacobian_drive_v1.py",
+      "source_sha256": "57135a80a36daf7176aa2dc8377ab8d66618019d251bb8a188112ee086a5dbdb",
+      "release_sha256": "1ea9a3d9ab8d1d66df361a29e8480a8eef659d6f39b08769aacf46d71e84c688",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/download_jacobian_transfer_drive_v1.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/download_jacobian_transfer_drive_v1.py",
+      "source_sha256": "f912a3d7c7f91ee74ef7fcbc67af4dd9007125e981987ed401f1c5d31135d443",
+      "release_sha256": "dddef0e1faff7ea12dc753bdf2cc63b893e7d3c576411b507b7b6dcd0c8c42ee",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/download_mhr_release_v2.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/download_mhr_release_v2.py",
+      "source_sha256": "4aa6ca80d5be7e2029302932245b56223c82e296738cee3bcff1c1166c7e3d5d",
+      "release_sha256": "a09d5f1edc73baf860a7a106145d06cd815810a12fe2219ab19cafc7011c8c64",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/download_modelscope_body_assets_v1.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/download_modelscope_body_assets_v1.py",
+      "source_sha256": "7adf96d232ef6605e04f06d948e95e89768280c629439b2c729cc1577d297e25",
+      "release_sha256": "a73dabe0df6ce2a586a81fb7996fc931b8a5aef35aaf4dbb7a76ead9faef976c",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/download_modelscope_weights.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/download_modelscope_weights.py",
+      "source_sha256": "c658f06b00b272cdbdad66e7991b882cf72a371db5c128b7c080a8023d9e3a77",
+      "release_sha256": "c658f06b00b272cdbdad66e7991b882cf72a371db5c128b7c080a8023d9e3a77",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/download_public_weights.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/download_public_weights.py",
+      "source_sha256": "f9e565604589c791f6fe53b28a046506a1f9a37ca3dc996a9239131f9c55d789",
+      "release_sha256": "f9e565604589c791f6fe53b28a046506a1f9a37ca3dc996a9239131f9c55d789",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/fetch_exavatar_fitting_sources_v1.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/fetch_exavatar_fitting_sources_v1.py",
+      "source_sha256": "2f57a5e437d063fc89b95eda9a071d914b9364f15dbf02bc854912fcff5a6724",
+      "release_sha256": "2f57a5e437d063fc89b95eda9a071d914b9364f15dbf02bc854912fcff5a6724",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/fetch_jacobian_archives_v1.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/fetch_jacobian_archives_v1.py",
+      "source_sha256": "a0867464089a561dea6cc825bf2bc920d20dff3f80c55d62f988bfc43ac9a904",
+      "release_sha256": "a0867464089a561dea6cc825bf2bc920d20dff3f80c55d62f988bfc43ac9a904",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/fetch_jacobian_archives_v2.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/fetch_jacobian_archives_v2.py",
+      "source_sha256": "20650445dad19aadeebf2b04212017096754e46c5441b27727e0818f54c01d34",
+      "release_sha256": "20650445dad19aadeebf2b04212017096754e46c5441b27727e0818f54c01d34",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/fetch_jacobian_sources_v1.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/fetch_jacobian_sources_v1.py",
+      "source_sha256": "bd0c114dd122d83157fd3e9fae01f9ef815c23dcfa1f9813952a4502c8608073",
+      "release_sha256": "bd0c114dd122d83157fd3e9fae01f9ef815c23dcfa1f9813952a4502c8608073",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/install_exavatar_core_system.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/install_exavatar_core_system.py",
+      "source_sha256": "ec5dc35e73dfcbba8adfe2667e6273f91d3fef2f7b6f089e9a5e9bde14b0662d",
+      "release_sha256": "e5e2ece8f9d04f340030229e378e6f8a8f95ba6b618b396066ea26c4a17391fa",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/install_exavatar_pose_v1.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/install_exavatar_pose_v1.py",
+      "source_sha256": "c80559158b23ee16ee450d379e50ea20904463eb6600077e2b3e19c14a6ec889",
+      "release_sha256": "a8a97c1806e202a3e5b1a0d34479f43973d34a9218921a8e971892cfa5b3e809",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/install_jacobian_train_core_system.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/install_jacobian_train_core_system.py",
+      "source_sha256": "cd9ef51e83390076d154b634ed37f5dff99b8869e48f590840c8e5a38b32b99b",
+      "release_sha256": "f202251575dc04a6e2d10f7d2bfa7f3850155a6dd2631201feb87e90b5fffb90",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/install_jacobian_train_core_system_v2.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/install_jacobian_train_core_system_v2.py",
+      "source_sha256": "48575927475279eb38c4137c72a2f7f834f659e4b2eff768ef27a4514e59f80c",
+      "release_sha256": "6ddbd5369be14501dfe90cff0509b34bcd85e2aaa5a2688c7131d3b02282b34a",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/prepare_jacobian_smplx_v1.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/prepare_jacobian_smplx_v1.py",
+      "source_sha256": "330e4c21793aec66b7446521b75056bbb359981289a8ad6537a59e351923d39f",
+      "release_sha256": "b467007e82e0c70558dce6987c3ccd7f4d4922ce9522dee938d1d46a3e239ecd",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/verify_exavatar_cuda_v1.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/verify_exavatar_cuda_v1.py",
+      "source_sha256": "d86677aee1fc30c55face22e59bb1d9e046cf90ae0dbac8017c4c57241bad989",
+      "release_sha256": "bc9fc2f6ac7c6d7e486676ec21002a149cbc42282653709dfb32093b101700fe",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/verify_exavatar_cuda_v2.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/verify_exavatar_cuda_v2.py",
+      "source_sha256": "e1cf817e339a255c5bba2f580d74f0ad305a455ae3c407a3f11cf25d92ebd0e2",
+      "release_sha256": "fe011314b52668161d0c000ca46a213d6954a76199521eeefc7ca529a81cf113",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/verify_exavatar_mmcv_cuda_v1.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/verify_exavatar_mmcv_cuda_v1.py",
+      "source_sha256": "596e5181f905c7171aa27efd0f42b34dee021c54e547762bc844105fedf497de",
+      "release_sha256": "f27ccacde8290fca6af7cc4de235708b5f0ba4b207f940e1342fe27934475c9e",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/verify_exavatar_pose_inference_v1.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/verify_exavatar_pose_inference_v1.py",
+      "source_sha256": "0db568126c3949ffb7002fac3eb98bd2dd9f61afa06eaecb9629f89ca2671537",
+      "release_sha256": "082cdd9343a41f506b8c638fd25beae05528bc91882c2305ae9def8968123f2d",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "vehicle_model_comparison/scripts/common_camera_contract.py",
+      "destination": "workspace/vehicle_model_comparison/scripts/common_camera_contract.py",
+      "source_sha256": "47d79a72e57b3482b8739ac8e6e8e6a46471c826015ec8715944e4c5278f85f4",
+      "release_sha256": "47d79a72e57b3482b8739ac8e6e8e6a46471c826015ec8715944e4c5278f85f4",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "vehicle_model_comparison/scripts/run_omnire_human_legacy_no_smpl_queue.py",
+      "destination": "workspace/vehicle_model_comparison/scripts/run_omnire_human_legacy_no_smpl_queue.py",
+      "source_sha256": "0c428a587eb47ca13fc907285105094ff9ca883aa3fe036a8f7746eff9bc26f8",
+      "release_sha256": "0db991447da7bf17ad0827c8c8373b62e321b38cb13163c41693b8786af18e0a",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "vehicle_model_comparison/scripts/run_splatad_human_train_only_queue.py",
+      "destination": "workspace/vehicle_model_comparison/scripts/run_splatad_human_train_only_queue.py",
+      "source_sha256": "9944c8e302050cb25f3051227ab0fdaf560f0b656907226a6b5659d7b262634c",
+      "release_sha256": "ff67bed21ac89e8f13084043046e8c015de38e5c531a2e2ad537bb080bbb5739",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "vehicle_model_comparison/scripts/train_splatad_reviewed_scene.py",
+      "destination": "workspace/vehicle_model_comparison/scripts/train_splatad_reviewed_scene.py",
+      "source_sha256": "615985d0280d80af198cb39e8159878ad14b9e00083067daedf1bd4407453faf",
+      "release_sha256": "615985d0280d80af198cb39e8159878ad14b9e00083067daedf1bd4407453faf",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "vehicle_model_comparison/scripts/train_splatad_human_train_only_scene.py",
+      "destination": "workspace/vehicle_model_comparison/scripts/train_splatad_human_train_only_scene.py",
+      "source_sha256": "c577729aaf95314d65b67121c026dd7747aa302bef3d9b259180e1150fae690a",
+      "release_sha256": "c577729aaf95314d65b67121c026dd7747aa302bef3d9b259180e1150fae690a",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "vehicle_model_comparison/model_preparation/20261109_2100_CST/scripts/dispatch_rigid111_direct.py",
+      "destination": "workspace/vehicle_model_comparison/model_preparation/20261109_2100_CST/scripts/dispatch_rigid111_direct.py",
+      "source_sha256": "b3cf7a310084cd402c96ea38be6235e6f9e3ecbfc31fb7da79b614827d464401",
+      "release_sha256": "bc6f88f302cf22eac05030f7fa4f68a8b21ade11d1d373150bcd9b52a68d5741",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "vehicle_model_comparison/model_preparation/20261109_2100_CST/scripts/recon02_serialization.py",
+      "destination": "workspace/vehicle_model_comparison/model_preparation/20261109_2100_CST/scripts/recon02_serialization.py",
+      "source_sha256": "e3fec3fadd341d7b255f12625c1e3bfa666f357d4c49f5ddd88d0c20f8afff15",
+      "release_sha256": "e3fec3fadd341d7b255f12625c1e3bfa666f357d4c49f5ddd88d0c20f8afff15",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human/assets.py",
+      "destination": "workspace/human/assets.py",
+      "source_sha256": "11a345f21b77d407a87f300888d2d608112f84ce64ba21cb0ca75158cd0d8ee9",
+      "release_sha256": "11a345f21b77d407a87f300888d2d608112f84ce64ba21cb0ca75158cd0d8ee9",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human/audit.py",
+      "destination": "workspace/human/audit.py",
+      "source_sha256": "71c0063825942c0dc66a69b038ed9265c87a57827b962e18907d73bb7704b1f7",
+      "release_sha256": "7d1192d1bf110255d42e01291d281530fdfd1fda107a151f313282385caf9ce9",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human/batch.py",
+      "destination": "workspace/human/batch.py",
+      "source_sha256": "8397412a80de87646397d1683e2a87d45c3402abfbc4f800db6ee07a7e413c03",
+      "release_sha256": "ca6e57b5b3c3b6b3317fbc99fb2940c56f481f70e98b86a071991acb5bce3911",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human/common.py",
+      "destination": "workspace/human/common.py",
+      "source_sha256": "809216e24ad65f65069e74219a9e1e45695aeedc760a5f3cb9f7615ba2e0d225",
+      "release_sha256": "c01707413dcd95d1fbaf8079951c0f42af0fe863e3f2b775f84a925997c2a333",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human/data.py",
+      "destination": "workspace/human/data.py",
+      "source_sha256": "0f880ea1c6c3295753d0a932118078dad8a9abef7d8e3f33644666acb4582cbf",
+      "release_sha256": "0f880ea1c6c3295753d0a932118078dad8a9abef7d8e3f33644666acb4582cbf",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human/dataset.py",
+      "destination": "workspace/human/dataset.py",
+      "source_sha256": "778c5bdd4db8ef2f0d36d25221de86e6c56db7d5985b3cf577e53084c6b31e3f",
+      "release_sha256": "778c5bdd4db8ef2f0d36d25221de86e6c56db7d5985b3cf577e53084c6b31e3f",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human/evaluation.py",
+      "destination": "workspace/human/evaluation.py",
+      "source_sha256": "3b1aae572cdb953a4a9cb21debd791966ffcdbf541921104f9a6707705495ceb",
+      "release_sha256": "3b1aae572cdb953a4a9cb21debd791966ffcdbf541921104f9a6707705495ceb",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human/frontend.py",
+      "destination": "workspace/human/frontend.py",
+      "source_sha256": "b110dbb23c4910615f948cc53e910fc2622f22942ac6d24a4c5eeeb51221fb61",
+      "release_sha256": "b110dbb23c4910615f948cc53e910fc2622f22942ac6d24a4c5eeeb51221fb61",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human/intake.py",
+      "destination": "workspace/human/intake.py",
+      "source_sha256": "ac931ffd035fcbb9a847a861f0b8bbaaee0260e22747e6400c2e99d6ce07dec5",
+      "release_sha256": "d92f35d8049f41ac5c4055c576de5718784b4bd492ad8e569931cd470ea0406b",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human/intake_motion.py",
+      "destination": "workspace/human/intake_motion.py",
+      "source_sha256": "29916fd167b4535c908ff77a935199ea4819b85255d0e45e29d17b04574bded2",
+      "release_sha256": "29916fd167b4535c908ff77a935199ea4819b85255d0e45e29d17b04574bded2",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human/motion_review.py",
+      "destination": "workspace/human/motion_review.py",
+      "source_sha256": "dd888882c333b12f6da9d8991145aba9c3cc1e1b2f65a23899cd2dda82b36108",
+      "release_sha256": "0604f1866392854a614dd3dbbe5894550c10c5677c94e7cec5427e1cc9bf17fd",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human/placement.py",
+      "destination": "workspace/human/placement.py",
+      "source_sha256": "c8865f56bbfc7c8cac4e164b445ee0a3ab12c15b2508972cc8e7555d21d4bfbb",
+      "release_sha256": "c8865f56bbfc7c8cac4e164b445ee0a3ab12c15b2508972cc8e7555d21d4bfbb",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human/playback.py",
+      "destination": "workspace/human/playback.py",
+      "source_sha256": "1a0b5bbce22a9cdaec73bfc8d276d5d596bbd2ee5f40211988deda9cbe2f9291",
+      "release_sha256": "1a0b5bbce22a9cdaec73bfc8d276d5d596bbd2ee5f40211988deda9cbe2f9291",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human/prepare.py",
+      "destination": "workspace/human/prepare.py",
+      "source_sha256": "9bd99c60e5a87947d1b0b4361dda568fa907109641e13bf9a93ce0bf843cd464",
+      "release_sha256": "9bd99c60e5a87947d1b0b4361dda568fa907109641e13bf9a93ce0bf843cd464",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human/reconstruction.py",
+      "destination": "workspace/human/reconstruction.py",
+      "source_sha256": "9e96ce98b539745aeb9590301ac484e09aa1302cb2d100a4ca65e39fe474292b",
+      "release_sha256": "9e96ce98b539745aeb9590301ac484e09aa1302cb2d100a4ca65e39fe474292b",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human/run.py",
+      "destination": "workspace/human/run.py",
+      "source_sha256": "d8187be56f09964029412b4624f713f6181fe3713504f10b5abfc0144b21e6f7",
+      "release_sha256": "e3a613d5102d0f2d32bf0b2f9ccc83485c0ea026390179adf3b68e1da9f4a77b",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human/config/N04.json",
+      "destination": "workspace/human/config/N04.json",
+      "source_sha256": "d6b03845fe0a544901a4ff2a908bbc7ace774f7e2e2e52b26f67bf6a23546b4d",
+      "release_sha256": "ad5b2677bd1c062a026440cd968aa540c82a1b49908474ca073e37085224384f",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human/config/N06.json",
+      "destination": "workspace/human/config/N06.json",
+      "source_sha256": "a15f9b0ec229b35cb136ccf5864f0a105d0559c66b0dd5c2dffc883443caeb4b",
+      "release_sha256": "18b217645558c36f47e055824219eaa3e7b15a0927c541b8194245a2b0097cc6",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human/config/N11.json",
+      "destination": "workspace/human/config/N11.json",
+      "source_sha256": "bad61edd9baf6b60d37fd48dfa2c447a7d36002e09a5deeaeb845cc01401c030",
+      "release_sha256": "da93f41343b83ea0c31ef810bc21bc2d77ee4b8e99dab599bcb86ea6a307251b",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human/config/cases.json",
+      "destination": "workspace/human/config/cases.json",
+      "source_sha256": "7f2bce490eab053b16644890de2e84e46d5a0effdf3412a9a78afc9feb6ce4dc",
+      "release_sha256": "fe46afb3fcd29e706ddbfe7bfc02e9f8bb69a0424dd061c148e32276b7292bc4",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human/config/export.json",
+      "destination": "workspace/human/config/export.json",
+      "source_sha256": "59b42d7ac5b61a15976e1ee52cfe7ff2037fb0f8d920119740394d224b1a0342",
+      "release_sha256": "ed08b40b26fce6d36f29b1235c4e48f64ce86cd9d61661ad04d7698896ce2481",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human/config/input_priority.json",
+      "destination": "workspace/human/config/input_priority.json",
+      "source_sha256": "5f219a5f598cac3abdfb9fffa521187b6364efe233f2bf216fd7bbee6a71ccd5",
+      "release_sha256": "5f219a5f598cac3abdfb9fffa521187b6364efe233f2bf216fd7bbee6a71ccd5",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human/config/placement.json",
+      "destination": "workspace/human/config/placement.json",
+      "source_sha256": "49b7021fa17523be68e7f0a82892644795d7a28621d58608104f7c05aaba8b84",
+      "release_sha256": "49b7021fa17523be68e7f0a82892644795d7a28621d58608104f7c05aaba8b84",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human/config/placement_trial.json",
+      "destination": "workspace/human/config/placement_trial.json",
+      "source_sha256": "bc22862171b0aa424694b7d5c18953d47e104ed0159199804f2f9dbe6083d190",
+      "release_sha256": "bc22862171b0aa424694b7d5c18953d47e104ed0159199804f2f9dbe6083d190",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human/config/recipe.json",
+      "destination": "workspace/human/config/recipe.json",
+      "source_sha256": "644ce91be4cd7a3fdd3f612fe8da8099733432c723df6b8a77760cfeb5e0d4fb",
+      "release_sha256": "644ce91be4cd7a3fdd3f612fe8da8099733432c723df6b8a77760cfeb5e0d4fb",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human/config/resources.json",
+      "destination": "workspace/human/config/resources.json",
+      "source_sha256": "f454bc9dbc1275243b1411cc54fa0f9ffabef6b09d2dd3d5b0b1860902eee52a",
+      "release_sha256": "5fd2a6e0c0145edace278b7f115eec7e7df3e00fd3657967f94cd7b4385ce3ef",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human/config/temporal_policy.json",
+      "destination": "workspace/human/config/temporal_policy.json",
+      "source_sha256": "578b4a588ca5a3ec0476847eb1cf9cacffb9d52d5713ee87c5a83dcffcd1918e",
+      "release_sha256": "578b4a588ca5a3ec0476847eb1cf9cacffb9d52d5713ee87c5a83dcffcd1918e",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "Hasim_trajectory_assets/src/__init__.py",
+      "destination": "workspace/Hasim_trajectory_assets/src/__init__.py",
+      "source_sha256": "b72e5607815b8c94467e3526aa9c1e063e051f6395550ab8822a746345608f8c",
+      "release_sha256": "b72e5607815b8c94467e3526aa9c1e063e051f6395550ab8822a746345608f8c",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "Hasim_trajectory_assets/src/shared/__init__.py",
+      "destination": "workspace/Hasim_trajectory_assets/src/shared/__init__.py",
+      "source_sha256": "246676f75b73607dbe8c594b2687ab4f602efbbdcff0ce55dd6f0c9a5711b1ed",
+      "release_sha256": "246676f75b73607dbe8c594b2687ab4f602efbbdcff0ce55dd6f0c9a5711b1ed",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "Hasim_trajectory_assets/src/shared/assets/__init__.py",
+      "destination": "workspace/Hasim_trajectory_assets/src/shared/assets/__init__.py",
+      "source_sha256": "03fd02a934613b150b03e8018390c2a0ae1a0b0f59d5a3b4ded55f0a7cb2906d",
+      "release_sha256": "03fd02a934613b150b03e8018390c2a0ae1a0b0f59d5a3b4ded55f0a7cb2906d",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "Hasim_trajectory_assets/src/shared/assets/library_cloud.py",
+      "destination": "workspace/Hasim_trajectory_assets/src/shared/assets/library_cloud.py",
+      "source_sha256": "a2b40ff1cc75b9711ede2d9b8c298bcf8b073f2dd5b28ca992e03c57f0d12a76",
+      "release_sha256": "a2b40ff1cc75b9711ede2d9b8c298bcf8b073f2dd5b28ca992e03c57f0d12a76",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "Hasim_trajectory_assets/src/shared/assets/library_v2.py",
+      "destination": "workspace/Hasim_trajectory_assets/src/shared/assets/library_v2.py",
+      "source_sha256": "914fff97b6c3afc9ae961503164a7802d247f60e89c504bd29a8673985008f7e",
+      "release_sha256": "914fff97b6c3afc9ae961503164a7802d247f60e89c504bd29a8673985008f7e",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "Hasim_trajectory_assets/src/shared/assets/human_cycle.py",
+      "destination": "workspace/Hasim_trajectory_assets/src/shared/assets/human_cycle.py",
+      "source_sha256": "4bf538df9600256729a97a1f0aceb1b1b12eb4a53b8c6fab5e17760772351a34",
+      "release_sha256": "4bf538df9600256729a97a1f0aceb1b1b12eb4a53b8c6fab5e17760772351a34",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "Hasim_trajectory_assets/src/shared/contracts/__init__.py",
+      "destination": "workspace/Hasim_trajectory_assets/src/shared/contracts/__init__.py",
+      "source_sha256": "5d8f01670aa4f17e706acec6f4bd69a55230f9c8e427d44c6cbd5168d4505f12",
+      "release_sha256": "5d8f01670aa4f17e706acec6f4bd69a55230f9c8e427d44c6cbd5168d4505f12",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "Hasim_trajectory_assets/src/shared/contracts/errors.py",
+      "destination": "workspace/Hasim_trajectory_assets/src/shared/contracts/errors.py",
+      "source_sha256": "0a6c3cb28bae128b6eaffe6bd1dbeed8e40fd03edfdb0c717e754814b5729940",
+      "release_sha256": "0a6c3cb28bae128b6eaffe6bd1dbeed8e40fd03edfdb0c717e754814b5729940",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/inputs/benchmark_human100_v2/selection.json",
+      "destination": "metadata/templates/human_model_comparison/inputs/benchmark_human100_v2/selection.json",
+      "source_sha256": "f6917e99f3e82d57b7ac2d141c50d8377aa953ec4ddb3e27192720d53af49f79",
+      "release_sha256": "7a6c739dfcdc7daf608bc2a22c31ed63598f81b6d8513192eac097394c81a533",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
+      "destination": "metadata/templates/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
+      "source_sha256": "91bb4765dae5a468d340be64511b39784cc5e803862709301078a0e88f761d35",
+      "release_sha256": "dd1508db12f57d2742122b2db1a7c6b70e66db7cd67ac778eddebafaadaf1811",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human_model_comparison/inputs/scene_extract_v2/splatad_plan.json",
+      "destination": "metadata/templates/human_model_comparison/inputs/scene_extract_v2/splatad_plan.json",
+      "source_sha256": "121571e171a21633afddc43cd7bd538c8974b16b9dfed0d3c0680eee3a5a73f5",
+      "release_sha256": "1f30414d569eaf05ac212223417612f83dbc4b2e0bf7bec2bd7ba0ece3812001",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
+      "destination": "metadata/templates/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
+      "source_sha256": "7cb566051ec87ff4c6c0383984e1d68a9c75d69372b2ccef5d3efaf68815f12e",
+      "release_sha256": "300ebba5007d677facae12bfbbeb719c208c2584088e34141f71099def3edc72",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human_model_comparison/inputs/scene_extract_original75_v1/splatad_plan.json",
+      "destination": "metadata/templates/human_model_comparison/inputs/scene_extract_original75_v1/splatad_plan.json",
+      "source_sha256": "50c4227a13c71ed179871a6abfc421b4fbb5babb5d2504596f980933a82f1821",
+      "release_sha256": "93de2d5eceb5de184d89ad1a6e033f112db83b1505bc3924112f4089895291b8",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human_model_comparison/inputs/human_static_native_v1/manifest.json",
+      "destination": "metadata/templates/human_model_comparison/inputs/human_static_native_v1/manifest.json",
+      "source_sha256": "8b280e2a242b8f0307191db9df209b8465920be39b76478806ea69fefa35df9b",
+      "release_sha256": "d37ceb627d7a694140d9e6d950cc71aad58c195c61cc7183f7cd67c464bb9917",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human_model_comparison/reports/reference_qualification_v1/current_candidates_v1.json",
+      "destination": "metadata/templates/human_model_comparison/reports/reference_qualification_v1/current_candidates_v1.json",
+      "source_sha256": "b86ecc9a4e7c569f5377f65a190b7611e0426318b8c637293aa22d1d0d7294c8",
+      "release_sha256": "aa61bb5dbc84f03de1dea0bdb44ea929b94375541a9ef70243dd15866e9b8216",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human_model_comparison/configs/human_source_common_v1/metric_protocol_candidate_v1.json",
+      "destination": "metadata/templates/human_model_comparison/configs/human_source_common_v1/metric_protocol_candidate_v1.json",
+      "source_sha256": "a0ef8912ee58cb7cb8c4144b330bb59d059fd252e284eb4907b6c7f22dd71d69",
+      "release_sha256": "7bfd17121d7fad1ca12d69c0f81271f0a3fe636733a64373f8a1d96ea0d25ed7",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human_model_comparison/scripts/human_native_queue_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/human_native_queue_v2.py",
+      "source_sha256": "7704b237e1bb811dbe12bcd373db53a69b3495044cfc2efc7b6e97eb4a80bebd",
+      "release_sha256": "3b30a536979a1b6d54c0a7dbfc6bdc6e4bea547e30d63b4d2e5d72daf5f7c1a8",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/test_human_queue_resume_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/test_human_queue_resume_v2.py",
+      "source_sha256": "fce914daacb11cda25a92e91fe6235526c4381ce44137dbcce66afba1cd85e8d",
+      "release_sha256": "fce914daacb11cda25a92e91fe6235526c4381ce44137dbcce66afba1cd85e8d",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/model_preparation/20261110/scripts/prepare_jacobian_smpl_neutral_v1.py",
+      "destination": "workspace/human_model_comparison/model_preparation/20261110/scripts/prepare_jacobian_smpl_neutral_v1.py",
+      "source_sha256": "bbcdcfc0ebbdced52466bfc3d76bfafdbc69aa6ecc86b0910d103d9f6d5fcaa1",
+      "release_sha256": "ace3eeb57181ec4c7b4be33e199f579294951b26cd2f42728f5de18bf0a7436e",
+      "changes": "configurable path substitutions"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+# Core versions validated in the isolated Python 3.9 training environment.
+# The independent MHR runtime has separate requirements.
+numpy==2.0.2
+torch==2.5.1
+torchvision==0.20.1

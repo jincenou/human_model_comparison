@@ -1,0 +1,4 @@
+{
+  "rife_weights": "${HMC_WORKSPACE}/4danyone/waymo/rife_model/train_log/flownet.pkl",
+  "sam2_weights": "${HMC_WORKSPACE}/4danyone/waymo/segmentation/sam2.1_hiera_large.pt"
+}

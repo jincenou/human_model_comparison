@@ -1,0 +1,15 @@
+name: Core metric contracts
+on: [push, pull_request]
+jobs:
+  cpu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - run: python -m pip install -e '.[test]'
+      - run: python -m pytest -q
+      - run: python workspace/human_model_comparison/scripts/test_human_queue_resume_v2.py -v
+      - run: python tools/check_release.py
+

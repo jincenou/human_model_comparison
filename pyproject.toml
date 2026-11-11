@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "human-asset-benchmark"
+version = "0.1.0"
+description = "Traceable source-view evaluation of human assets reconstructed from nuScenes"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "scipy>=1.10,<2", "Pillow>=10,<13"]
+
+[project.optional-dependencies]
+metrics = ["torch>=2.5", "torchvision>=0.20", "lpips==0.1.4"]
+test = ["pytest>=8", "scikit-image>=0.24,<0.26"]
+
+[project.scripts]
+hmc-score = "human_asset_benchmark.evaluate:main"
+hmc-materialize = "human_asset_benchmark.paths:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

@@ -1,0 +1,10 @@
+# Core versions validated in the isolated Python 3.10 environment.
+# CUDA extensions require the upstream installation steps; this is not a complete lockfile.
+numpy==1.26.4
+torch==2.6.0
+torchvision==0.21.0
+mmengine
+mmdet==3.3.0
+mmpose==1.3.2
+# mmcv==2.1.0 and PyTorch3D==0.7.9 are built from source.
+

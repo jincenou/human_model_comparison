@@ -1,0 +1,708 @@
+{
+  "selection": "${HMC_WORKSPACE}/human_model_comparison/inputs/benchmark_human100_v2/selection.json",
+  "selection_sha256": "f6917e99f3e82d57b7ac2d141c50d8377aa953ec4ddb3e27192720d53af49f79",
+  "reuse_audit_sha256": "401b73b6e0680c337e5ad643986ff2091a3d1044ac005c770b00d9c8abdbeff7",
+  "no_scene_training": true,
+  "objects": [
+    {
+      "id": "HN0004",
+      "scene": "scene-0917",
+      "native_id": "nuscenes:33c5b1d0f97d4da7a603a570033bb0fb",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1538984309404844,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984309404844.jpg",
+      "source_sha256": "8288039bea7df0474aeab6709b94f029f59e3d176c18938845c726161b206913",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0917_legacy_no_smpl/checkpoint_final.pth",
+      "checkpoint_bytes": 545847542,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0917_legacy_no_smpl/config.yaml",
+      "config_sha256": "00236c5a2be1f350356ed60df1acf0d39b54eca7c51af60a0469475b931381d3",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_human_legacy_no_smpl_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0917/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "f40d7e857e5cfa3b943197ab8ef839293c25d0b905f5331a2c20678ae1a205b7",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0917/processed/trainval/000",
+      "native_true_ids": [
+        9
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0917/processed/trainval/000/images/018_1.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0046",
+      "scene": "scene-0017",
+      "native_id": "nuscenes:ed5cfe238c0b4d2ebe32c15c8b5c8a4d",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1531885782854844,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n015-2018-07-18-11-41-49+0800__CAM_FRONT_LEFT__1531885782854844.jpg",
+      "source_sha256": "e49bd5a9121ceb3a033e3f6fb86ec7c3fc15b2b12ceaeada34aeb313dbf82812",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_nuscenes100_expansion/formal/nuScenes/scene-0017/checkpoint_final.pth",
+      "checkpoint_bytes": 392285686,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_nuscenes100_expansion/formal/nuScenes/scene-0017/config.yaml",
+      "config_sha256": "9fd2ad077f03697b1d7e38d2be54d723d92bc41d31020a35eea8ae3e22a4b6a1",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/nuscenes100_expansion_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/drivestudio_nuscenes100_expansion/scene-0017/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "b7f4599336e6c01715ac49493536eaa7cb0654ff3df077945225dc2d92773248",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/drivestudio_nuscenes100_expansion/scene-0017/processed/trainval/000",
+      "native_true_ids": [
+        66
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/drivestudio_nuscenes100_expansion/scene-0017/processed/trainval/000/images/036_1.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0051",
+      "scene": "scene-0554",
+      "native_id": "nuscenes:10791c1773114d04b4e69a84d4ac9188",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1535489317420482,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n008-2018-08-28-16-43-51-0400__CAM_FRONT_RIGHT__1535489317420482.jpg",
+      "source_sha256": "c90b4cb5b5a516b716ff77d513ca96d4fbab3340fcdf85458e61062990b9d827",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0554_legacy_no_smpl/checkpoint_final.pth",
+      "checkpoint_bytes": 341605238,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0554_legacy_no_smpl/config.yaml",
+      "config_sha256": "70ce994bc61e6522db0528ec6dee9d45ae573d8c6d599e45cffe32382de1bb1e",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_human_legacy_no_smpl_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0554/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "18a68f7746b28fdfa989d9dab8bc938512565e3abe7265857cd46a376bda6b15",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0554/processed/trainval/000",
+      "native_true_ids": [
+        13
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0554/processed/trainval/000/images/003_2.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0057",
+      "scene": "scene-0345",
+      "native_id": "nuscenes:801dff077a3d4c57b87c0245e70557d4",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1533201591527893,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n015-2018-08-02-17-16-37+0800__CAM_BACK_RIGHT__1533201591527893.jpg",
+      "source_sha256": "bc135fdd25c9577592f4f977e8bd7f0b38aa4a984de80a42d239c40bfa9d65eb",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0345_legacy_no_smpl/checkpoint_final.pth",
+      "checkpoint_bytes": 489122806,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0345_legacy_no_smpl/config.yaml",
+      "config_sha256": "5c6c80499aceea35a267d9c3ceb83ac2e6808e8b878c56fa28549309f19bba2e",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_human_legacy_no_smpl_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0345/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "40077fa0cb1bebe87b75f00362abdd05c8a066d668f7039a1a942ce37c6d1914",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0345/processed/trainval/000",
+      "native_true_ids": [
+        25
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0345/processed/trainval/000/images/012_4.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0099",
+      "scene": "scene-0018",
+      "native_id": "nuscenes:aed473121c084c7fbe3e4d7cd7d09565",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1531885798037525,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_BACK/n015-2018-07-18-11-41-49+0800__CAM_BACK__1531885798037525.jpg",
+      "source_sha256": "eac697747155a1ee8d4c3f5146c9e8bb7588cb2ee0c85bd939d011c20774fe94",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_nuscenes100_expansion/formal/nuScenes/scene-0018/checkpoint_final.pth",
+      "checkpoint_bytes": 382668918,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_nuscenes100_expansion/formal/nuScenes/scene-0018/config.yaml",
+      "config_sha256": "e7c0eaab795e1d45193368cbc89a58e14d97b65315bd6bbde1ea0dfd0c643e22",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/nuscenes100_expansion_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/drivestudio_nuscenes100_expansion/scene-0018/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "32fd106bf209ae34eb2662872d7e9e1c496e9985a1c2963b95bd669c09bd1f22",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/drivestudio_nuscenes100_expansion/scene-0018/processed/trainval/000",
+      "native_true_ids": [
+        22
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/drivestudio_nuscenes100_expansion/scene-0018/processed/trainval/000/images/012_5.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0114",
+      "scene": "scene-0716",
+      "native_id": "nuscenes:8bb5895db21f4cf3be3a50e710bcab92",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1535573572928113,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n008-2018-08-29-16-04-13-0400__CAM_BACK_RIGHT__1535573572928113.jpg",
+      "source_sha256": "3a24603f2f5cfa2afa9622a38fb20b28f4e8d90c7e4d8530cac8c1d8a8bbca73",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0716_legacy_no_smpl/checkpoint_final.pth",
+      "checkpoint_bytes": 457594102,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0716_legacy_no_smpl/config.yaml",
+      "config_sha256": "5a766a00f9d374d61ac3e0b0498cdfa2dc586d854f576ff1f91dc315125d89cd",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_human_legacy_no_smpl_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0716/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "cf0fd02f192e8cfc46edf05a1f2fbdd074069d3a479df9bc24735636a89caaac",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0716/processed/trainval/000",
+      "native_true_ids": [
+        8
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0716/processed/trainval/000/images/003_4.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0345",
+      "scene": "scene-0716",
+      "native_id": "nuscenes:6f3bd76df14a44b6a98976193a86e446",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1535573571862404,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_FRONT/n008-2018-08-29-16-04-13-0400__CAM_FRONT__1535573571862404.jpg",
+      "source_sha256": "e569b06b935d9ea4fb5b395289326528398e19f3530a63b6d4afba542b2c40e2",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0716_legacy_no_smpl/checkpoint_final.pth",
+      "checkpoint_bytes": 457594102,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0716_legacy_no_smpl/config.yaml",
+      "config_sha256": "5a766a00f9d374d61ac3e0b0498cdfa2dc586d854f576ff1f91dc315125d89cd",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_human_legacy_no_smpl_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0716/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "cf0fd02f192e8cfc46edf05a1f2fbdd074069d3a479df9bc24735636a89caaac",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0716/processed/trainval/000",
+      "native_true_ids": [
+        30
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0716/processed/trainval/000/images/002_0.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0382",
+      "scene": "scene-0029",
+      "native_id": "nuscenes:47495448ebca42c6af341a8868fd5461",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1531886173162460,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886173162460.jpg",
+      "source_sha256": "dbef699bab5793778ad8139f15e1d32b8603224bd53b67a65e12feb69c017d4b",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0029_legacy_no_smpl/checkpoint_final.pth",
+      "checkpoint_bytes": 441947894,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0029_legacy_no_smpl/config.yaml",
+      "config_sha256": "716ddd25d9636c18aa241796cdaa76ade3b379538d945026f3d624ff1ce18fd3",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_human_legacy_no_smpl_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0029/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "8ef44df94aaff62c00a055a38196322d67e36eebce20f808afcefb44ef0bf6b4",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0029/processed/trainval/000",
+      "native_true_ids": [
+        34
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0029/processed/trainval/000/images/018_0.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0387",
+      "scene": "scene-0715",
+      "native_id": "nuscenes:f2930be939b145e786d907e33869c362",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1535573550854799,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n008-2018-08-29-16-04-13-0400__CAM_FRONT_LEFT__1535573550854799.jpg",
+      "source_sha256": "e540c5861b55805d54fe6009c9a261afafb819aaf0bd8835f70a25441026a9ed",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0715_legacy_no_smpl/checkpoint_final.pth",
+      "checkpoint_bytes": 398939638,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0715_legacy_no_smpl/config.yaml",
+      "config_sha256": "7b0ce48249371eca72f8f7cd0df06f37f8e3bcbdc76a98bea562207110042a49",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_human_legacy_no_smpl_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0715/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "0172aeaae1b6043da4f06f3ddb2b72fd00732bf3c3736eaedd193cbfbc08a0cc",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0715/processed/trainval/000",
+      "native_true_ids": [
+        22
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0715/processed/trainval/000/images/001_1.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0397",
+      "scene": "scene-0240",
+      "native_id": "nuscenes:c26fd3effcc8476ca686528b83265c76",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1532708687028113,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n008-2018-07-27-12-07-38-0400__CAM_BACK_RIGHT__1532708687028113.jpg",
+      "source_sha256": "458784d47052ec9790edf192eb4219c7ceec580eb094cc4d002d2133ee74648c",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0240_legacy_no_smpl/checkpoint_final.pth",
+      "checkpoint_bytes": 464930422,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0240_legacy_no_smpl/config.yaml",
+      "config_sha256": "9d4d9e303932cce3a4012055ba99fe7c104788be94546f2b78f938bd7b559c1a",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_human_legacy_no_smpl_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0240/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "a7d2fabc7c414b78f6febaafb91bd2ae8d45ad0f623580c68f7ea6ce850311a5",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0240/processed/trainval/000",
+      "native_true_ids": [
+        2
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0240/processed/trainval/000/images/001_4.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0497",
+      "scene": "scene-0727",
+      "native_id": "nuscenes:69a518b013b8484e901cfb3fe650afc5",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1535573843947405,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_BACK_LEFT/n008-2018-08-29-16-04-13-0400__CAM_BACK_LEFT__1535573843947405.jpg",
+      "source_sha256": "86505c4915dfa8f4c1a4831881e56aa839cc4eec2fae679855fa6fe27e5fb7b4",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0727_legacy_no_smpl/checkpoint_final.pth",
+      "checkpoint_bytes": 373634294,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0727_legacy_no_smpl/config.yaml",
+      "config_sha256": "097a9c6f719d9d9735a7c1dee244a80b7f09516ac96435c49b0ca49868b48182",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_human_legacy_no_smpl_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0727/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "8bb493c3701c67484c19f4e05ded397c57a766f7a1061b1aeff2cc2a35ddb6ae",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0727/processed/trainval/000",
+      "native_true_ids": [
+        37
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0727/processed/trainval/000/images/001_3.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0517",
+      "scene": "scene-0159",
+      "native_id": "nuscenes:10c8817ef80e493985e827904e728c9d",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1533115182037525,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_BACK/n015-2018-08-01-17-13-57+0800__CAM_BACK__1533115182037525.jpg",
+      "source_sha256": "710b65126fd609e458b318fcc934bba65b40c79f8d99a62403ba8500737598b3",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0159_legacy_no_smpl/checkpoint_final.pth",
+      "checkpoint_bytes": 478309174,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0159_legacy_no_smpl/config.yaml",
+      "config_sha256": "15efdd49eb0a0a5e780743f67a773389130de2df027465d889c75224aa3c1813",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_human_legacy_no_smpl_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0159/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "3cb47412a3244078f9212ddd077c8c7541fcdb74fee3d68dc7160e62554080a1",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0159/processed/trainval/000",
+      "native_true_ids": [
+        4
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0159/processed/trainval/000/images/004_5.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0581",
+      "scene": "scene-0989",
+      "native_id": "nuscenes:fffa0283a8c74760a7a2cf2e01dcc9f1",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1537845539162460,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845539162460.jpg",
+      "source_sha256": "275db0a5936912bc16b813121f87b1b27df09f17dc3fbf7d8bd50f8673285324",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0989_legacy_no_smpl/checkpoint_final.pth",
+      "checkpoint_bytes": 551445366,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0989_legacy_no_smpl/config.yaml",
+      "config_sha256": "3909475bc802547a0cf4e251c7943666c47d522d3018c9bf2d6a78f879af533e",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_human_legacy_no_smpl_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0989/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "15c2154312e2fb49764972077243c4331787cb7e820a75973fce1ae7999149e0",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0989/processed/trainval/000",
+      "native_true_ids": [
+        9
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0989/processed/trainval/000/images/007_0.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0592",
+      "scene": "scene-0045",
+      "native_id": "nuscenes:2240376fa15d41e5a1dad15b7018d21b",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1532402009154844,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n015-2018-07-24-11-13-19+0800__CAM_FRONT_LEFT__1532402009154844.jpg",
+      "source_sha256": "a82a75192dd27d83987c1aa3cea252e7bf81de2c15ecde079586b121c576a430",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_nuscenes100_expansion/formal/nuScenes/scene-0045/checkpoint_final.pth",
+      "checkpoint_bytes": 413630774,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_nuscenes100_expansion/formal/nuScenes/scene-0045/config.yaml",
+      "config_sha256": "2623887864f94545496ff24e1f77423db80307d30474f46b70f76308cdd4ecca",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/nuscenes100_expansion_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/drivestudio_nuscenes100_expansion/scene-0045/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "cc435b753c324b00fe9714d8534a5e7aef17720e35120610e7a8e8b4e3739779",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/drivestudio_nuscenes100_expansion/scene-0045/processed/trainval/000",
+      "native_true_ids": [
+        22
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/drivestudio_nuscenes100_expansion/scene-0045/processed/trainval/000/images/014_1.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0685",
+      "scene": "scene-0019",
+      "native_id": "nuscenes:e5d5e07287724eacb4103b9e94d3b828",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1531885876862460,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531885876862460.jpg",
+      "source_sha256": "78b994865b7ee08a499d2f0d2b7fa13427a311aaae467eed49564b58faed57fe",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_nuscenes100_expansion/formal/nuScenes/scene-0019/checkpoint_final.pth",
+      "checkpoint_bytes": 394022454,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_nuscenes100_expansion/formal/nuScenes/scene-0019/config.yaml",
+      "config_sha256": "fb037496673466e705ddd787f3de4a33335b4a6de5cf16b361f4fa6c36b31070",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/nuscenes100_expansion_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/drivestudio_nuscenes100_expansion/scene-0019/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "c79cc3617f0881ea8d124cf21cdf1d0112c4c140c83ce2bd645e9837fd507607",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/drivestudio_nuscenes100_expansion/scene-0019/processed/trainval/000",
+      "native_true_ids": [
+        27
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/drivestudio_nuscenes100_expansion/scene-0019/processed/trainval/000/images/029_0.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0728",
+      "scene": "scene-0067",
+      "native_id": "nuscenes:f69448592eb04b498c87ad273999fa81",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1533153434112404,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_FRONT/n008-2018-08-01-15-52-19-0400__CAM_FRONT__1533153434112404.jpg",
+      "source_sha256": "2c0c5cbbb060e4cfd290b1f584486dfc6623633cfe76157654e905b44f1ca96b",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_reconstruction_only/formal/nuScenes/scene-0067_legacy_no_smpl_reconstruction_only/checkpoint_final.pth",
+      "checkpoint_bytes": 453118902,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_reconstruction_only/formal/nuScenes/scene-0067_legacy_no_smpl_reconstruction_only/config.yaml",
+      "config_sha256": "9de60b1b37a18907d7aff08c08e2fa2e5978160d51cc222c930b2d7767521c66",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_reconstruction_only_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_reconstruction_only/scene-0067/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "aa0e8270ca96c517ed15c65cf3921c419360e9a8b9cda1d0cd40a40ae0489c84",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_reconstruction_only/scene-0067/processed/trainval/000",
+      "native_true_ids": [
+        3
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_reconstruction_only/scene-0067/processed/trainval/000/images/008_0.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0810",
+      "scene": "scene-0323",
+      "native_id": "nuscenes:c3314ce2d56b44baa1e97bd38f94c714",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1535488247178113,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n008-2018-08-28-16-16-48-0400__CAM_BACK_RIGHT__1535488247178113.jpg",
+      "source_sha256": "d281078faa25a782ab04c9b6ae639a1092598c6042a83480cf2f85f156c01146",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0323_legacy_no_smpl/checkpoint_final.pth",
+      "checkpoint_bytes": 426901110,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0323_legacy_no_smpl/config.yaml",
+      "config_sha256": "d0cd37dd2acb1364fa8c4b503d6949d1c2655e894d8abbf054e176cedc68ef15",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_human_legacy_no_smpl_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0323/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "ba98395761486286c37a4a361d944c8b33d4fd301716116b0224fbbb4df2a9e9",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0323/processed/trainval/000",
+      "native_true_ids": [
+        25
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0323/processed/trainval/000/images/004_4.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0812",
+      "scene": "scene-0686",
+      "native_id": "nuscenes:b4a57f8ec2f84526b6aa32a2056528fb",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1535488237628113,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n008-2018-08-28-16-16-48-0400__CAM_BACK_RIGHT__1535488237628113.jpg",
+      "source_sha256": "e42f51fca6ee530a562334c2e66cb354711877fe9bbbc515cd657708c5465495",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0686_legacy_no_smpl/checkpoint_final.pth",
+      "checkpoint_bytes": 499784310,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0686_legacy_no_smpl/config.yaml",
+      "config_sha256": "f4bd2f0d9fe978d70dc4e09f5054eaa4ab61ab9a1ebc899b452ec754d81469b5",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_human_legacy_no_smpl_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0686/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "f1d97fafce4d0f8123cb6662b79ca5a90a52843878280bc41e0e5012ebb45b2b",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0686/processed/trainval/000",
+      "native_true_ids": [
+        23
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0686/processed/trainval/000/images/025_4.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0821",
+      "scene": "scene-0716",
+      "native_id": "nuscenes:32f969e3b12d42a882743cd7c18d0509",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1535573570854799,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n008-2018-08-29-16-04-13-0400__CAM_FRONT_LEFT__1535573570854799.jpg",
+      "source_sha256": "275fb9998b44d28b6d724fb2516f354d029046a0df6041e7948eff39dbd378b2",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0716_legacy_no_smpl/checkpoint_final.pth",
+      "checkpoint_bytes": 457594102,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0716_legacy_no_smpl/config.yaml",
+      "config_sha256": "5a766a00f9d374d61ac3e0b0498cdfa2dc586d854f576ff1f91dc315125d89cd",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_human_legacy_no_smpl_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0716/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "cf0fd02f192e8cfc46edf05a1f2fbdd074069d3a479df9bc24735636a89caaac",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0716/processed/trainval/000",
+      "native_true_ids": [
+        21
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0716/processed/trainval/000/images/001_1.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0825",
+      "scene": "scene-0423",
+      "native_id": "nuscenes:d965cace06fd45fa82d651c83f6145e8",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1538985212270339,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-52-24+0800__CAM_FRONT_RIGHT__1538985212270339.jpg",
+      "source_sha256": "7a65c90f849b6ee6c672a0e8589e87d42881cadfb6c4c8a7ae0071e174611588",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0423_legacy_no_smpl/checkpoint_final.pth",
+      "checkpoint_bytes": 480863798,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0423_legacy_no_smpl/config.yaml",
+      "config_sha256": "41173503f89eb12d1d8cd71fdf592cdb99b1dfb15c92966d432cc873815f6c77",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_human_legacy_no_smpl_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0423/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "f71f3f6f0af80e3a5f74443bcf9c7ab52c47cede9063646f18e10be07fba8c46",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0423/processed/trainval/000",
+      "native_true_ids": [
+        11
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0423/processed/trainval/000/images/002_2.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0834",
+      "scene": "scene-0686",
+      "native_id": "nuscenes:19dd00e2d6b34474a401fb8da8a4325e",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1535488233620482,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n008-2018-08-28-16-16-48-0400__CAM_FRONT_RIGHT__1535488233620482.jpg",
+      "source_sha256": "7a4792e5864a9ec02603f044040999d5eb1097b1fa38c8fe4cc3060c2d9424a2",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0686_legacy_no_smpl/checkpoint_final.pth",
+      "checkpoint_bytes": 499784310,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0686_legacy_no_smpl/config.yaml",
+      "config_sha256": "f4bd2f0d9fe978d70dc4e09f5054eaa4ab61ab9a1ebc899b452ec754d81469b5",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_human_legacy_no_smpl_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0686/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "f1d97fafce4d0f8123cb6662b79ca5a90a52843878280bc41e0e5012ebb45b2b",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0686/processed/trainval/000",
+      "native_true_ids": [
+        39
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0686/processed/trainval/000/images/017_2.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0838",
+      "scene": "scene-0239",
+      "native_id": "nuscenes:f4533e3f07204ed09d2fa9cc46ce447b",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1532708682912404,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532708682912404.jpg",
+      "source_sha256": "1dc64f1a9fa4f0cfff19f2426d0e2692edd6060a0843bf6519827c742258bd32",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0239_legacy_no_smpl/checkpoint_final.pth",
+      "checkpoint_bytes": 384930550,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0239_legacy_no_smpl/config.yaml",
+      "config_sha256": "21860fad8af54aa50c5c6c30f0809f3a38f1fc1236cbda1b5398f5707f6c2dc0",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_human_legacy_no_smpl_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0239/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "21064f2e6f700ea987ed98b458faecb17c80fba4877656557fc1401d3220e7df",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0239/processed/trainval/000",
+      "native_true_ids": [
+        72
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0239/processed/trainval/000/images/023_0.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0850",
+      "scene": "scene-0240",
+      "native_id": "nuscenes:94f05e2b34bc4e43a8083c025ade318e",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1532708699147405,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_BACK_LEFT/n008-2018-07-27-12-07-38-0400__CAM_BACK_LEFT__1532708699147405.jpg",
+      "source_sha256": "d35f0713ef4b4485dd4e69d2ca87e6ddb95a66ef8131b946ee02bbdd738bdd7d",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0240_legacy_no_smpl/checkpoint_final.pth",
+      "checkpoint_bytes": 464930422,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0240_legacy_no_smpl/config.yaml",
+      "config_sha256": "9d4d9e303932cce3a4012055ba99fe7c104788be94546f2b78f938bd7b559c1a",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_human_legacy_no_smpl_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0240/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "a7d2fabc7c414b78f6febaafb91bd2ae8d45ad0f623580c68f7ea6ce850311a5",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0240/processed/trainval/000",
+      "native_true_ids": [
+        5
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0240/processed/trainval/000/images/016_3.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0861",
+      "scene": "scene-0686",
+      "native_id": "nuscenes:a7edcbc3ea044b44a33de0e1d2c4b4f3",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1535488230620485,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n008-2018-08-28-16-16-48-0400__CAM_FRONT_RIGHT__1535488230620485.jpg",
+      "source_sha256": "1c29ccc3fc2164f3a032c92be18f2206d7235a1b98c5b897ebed455aa61d1fc8",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0686_legacy_no_smpl/checkpoint_final.pth",
+      "checkpoint_bytes": 499784310,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0686_legacy_no_smpl/config.yaml",
+      "config_sha256": "f4bd2f0d9fe978d70dc4e09f5054eaa4ab61ab9a1ebc899b452ec754d81469b5",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_human_legacy_no_smpl_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0686/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "f1d97fafce4d0f8123cb6662b79ca5a90a52843878280bc41e0e5012ebb45b2b",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0686/processed/trainval/000",
+      "native_true_ids": [
+        45
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0686/processed/trainval/000/images/011_2.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    },
+    {
+      "id": "HN0866",
+      "scene": "scene-0715",
+      "native_id": "nuscenes:a3a78667dcda47218e41c1e137d70e67",
+      "dataset": "nuscenes",
+      "raw_timestamp_us": 1535573567937558,
+      "source_image": "${NUSCENES_ROOT}/samples/CAM_BACK/n008-2018-08-29-16-04-13-0400__CAM_BACK__1535573567937558.jpg",
+      "source_sha256": "cc69c7d6dcc799c2f7e2480e9e304aec25ac7af009ebd3d8fe589fa0412bf447",
+      "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0715_legacy_no_smpl/checkpoint_final.pth",
+      "checkpoint_bytes": 398939638,
+      "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0715_legacy_no_smpl/config.yaml",
+      "config_sha256": "7b0ce48249371eca72f8f7cd0df06f37f8e3bcbdc76a98bea562207110042a49",
+      "queue_source": "${HMC_WORKSPACE}/vehicle_model_comparison/state/omnire_human_legacy_no_smpl_queue.json",
+      "instances_info": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0715/processed/trainval/000/instances/instances_info.json",
+      "instances_info_sha256": "0172aeaae1b6043da4f06f3ddb2b72fd00732bf3c3736eaedd193cbfbc08a0cc",
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0715/processed/trainval/000",
+      "native_true_ids": [
+        10
+      ],
+      "source_matches": [
+        "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0715/processed/trainval/000/images/019_5.jpg"
+      ],
+      "selected_checkpoint_policy": "First existing human non-SMPL checkpoint in audit order; no result quality selection",
+      "status": "ready_for_native_decode",
+      "reason": null,
+      "common_camera_valid": false,
+      "scored": false
+    }
+  ]
+}
