@@ -1,0 +1,3626 @@
+{
+  "schema": "source_reference_qualification_frozen_v1",
+  "status": "source_only_reference_eligibility_frozen",
+  "frozen_at_utc": "2026-11-11T08:24:26.279616+00:00",
+  "selection": "${HMC_WORKSPACE}/human_model_comparison/inputs/benchmark_human100_v2/selection.json",
+  "selection_sha256": "f6917e99f3e82d57b7ac2d141c50d8377aa953ec4ddb3e27192720d53af49f79",
+  "denominator": 100,
+  "eligible": 91,
+  "na_count": 9,
+  "policy": {
+    "scope": "isolated full-person visible appearance including clothes, worn bags and carried items",
+    "external_occlusion": "exclude externally occluded body or included accessory, without severity exceptions",
+    "truncation": "exclude raw-image truncation or foreground on the raw image boundary",
+    "self_occlusion": "retain natural self-occlusion; do not synthesize hidden anatomy",
+    "pixel_size": "record true raw pixel height; no score-dependent size threshold",
+    "selection": "all 100 remain fixed; no replacements for unavailable reference or method",
+    "evidence": "source-only review before batch scoring; predictions never choose mask, ROI or qualification"
+  },
+  "original_review_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/current_candidates_v1.json",
+  "original_review_manifest_sha256": "b86ecc9a4e7c569f5377f65a190b7611e0426318b8c637293aa22d1d0d7294c8",
+  "review_evidence_sha256": {
+    "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch01.json": "f513ba2d60ea7d76087d989e974ddaa134d454cfc9f654e2ba0d81d81dc60e70",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch02.json": "3d7b69d75e7ddacf989ea9078515f31ff016f4d47b15bd9b41a1f98b921a73ec",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch03.json": "b009b9c3e0f2eb4ca4127d530126b15fe9316442761a8afaadfd72997a9bd6a1",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch04.json": "a666b56fce7c0fd93c9f22b073c7e0820ac6ad585142d509f7ac4696526d949b",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch05.json": "1abb8dd34e5570418f58d931c09f884a4cde2cb5e7dbb5fb0f03bf57ca735df3",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch06.json": "ae8e617561ba9db32a14ae68a6554e93570cae8d22b435a32e30a5d1c4054f6a",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch07.json": "7aa010f8838b5344cc0f1a836ffabf6ab819b0a810d9b5a2ff4e91dce4943cc8",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch08.json": "373258bdf413ca50e4591e343485c5dbb05e31eb7a4bd91d242c664d9bcc518d",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch09.json": "99466df89c743c8a056a31acce11a17fda769708ce0457a98d3b5e1af04b4e5a",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch10.json": "46dcefb9106228727ae3bbb65cd2a533f606452e94be86fa7f43be645f9e3b4b",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json": "17a5d32994e57be01bef7c6ffb716b4092919b094483ef4e11863c1f08e37667",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/component_corrections_v1/visual_review.json": "3594cf40b765f78e0eec38fba1fa918216766e4454c1e8d974e01cb93961dd89",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/HN0214_correction_review.json": "15d2eb27dc74c3c0c9f884cfee078de4c18a53827329848aed709eea22489c90",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/points_cpu_v2_review/visual_review.json": "c6b32669982365a6d277e6ec1425e7288e864be2aa82caeee9a4408436ecc342",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/local_edits_v1_review/visual_review.json": "3aa8c985e0ebc911d242ba0be9822bf1b5e8d49012ca60f0633f920ad4f5c118",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/HN0861_accessory_union_v2_review.json": "6a9353ae6b9a191357618aad288e32a42743603c2e214aab221e152f4252e252",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/accessory_final_v3_visual_review.json": "9780ea87a39379e3021cac9b8000cab3108a5a994de6cdde7ce7485002a77ca5",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/temporal_context_visual_review_v1.json": "018c343a3592447e14ec24575ea3b44557a0d31e66f59a52be32cab9745b80f4",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/remaining_four_visual_review_v1.json": "02ab0d14370ea67b4082753b531699a5b0d808166a91eee482a76e078a3fda25"
+  },
+  "camera_index": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/manifest.json",
+  "camera_index_sha256": "0cef53ee84d1fcd51c645ce511e8defb65685d532ceabb7daacdb29e2434ec74",
+  "metadata_table_sha256": {
+    "sample_data": "6dcad49f0b9bd7b1cef04e2a0ff2ac2879b46b938e8d48153f00693cebb4de21",
+    "ego_pose": "be12bd501f694b344628ba0680a37d6e1ec83e62b37f310c205c1dbe41cd09ff",
+    "calibrated_sensor": "67781a5dd7b2504b046ef89d6dcb267b12d1cc91af21f1ec5758624588e99865"
+  },
+  "model_outputs_used": false,
+  "historical_inputs_unchanged": true,
+  "core_protocol": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/core_metric_protocol_frozen_v1.json",
+  "objects": [
+    {
+      "id": "HN0004",
+      "identity_key": "nuscenes:33c5b1d0f97d4da7a603a570033bb0fb",
+      "timestamp_us": 1538984309404844,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0004/camera.json",
+      "camera_contract_sha256": "75979770f09d0077cb6f68ece44aa7e0952763a25a3dc8aebe7920597136f2fb",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984309404844.jpg",
+      "reference_rgb_sha256": "8288039bea7df0474aeab6709b94f029f59e3d176c18938845c726161b206913",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0004/mask.png",
+      "reference_mask_sha256": "aa519dc8669a9e1ba1bc6d089ffa55427f51419d20291912b44e80396d2b3cbb",
+      "roi_xyxy": [
+        469,
+        398,
+        830,
+        759
+      ],
+      "reference_pixel_height": 328,
+      "visual_note": "Full walking target with red backpack; pedestrian ahead is behind target and does not obscure target body.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch08.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0035",
+      "identity_key": "nuscenes:24666ac5c59b47e899cb34c50cc9bfdb",
+      "timestamp_us": 1538984305404844,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0035/camera.json",
+      "camera_contract_sha256": "d9fe4edf6dda8dab5ee636f3772b1df5df89a98febdf4b0e176953ff6d9bf998",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984305404844.jpg",
+      "reference_rgb_sha256": "7900f23b0e30119705bb8844ef34266ba4158b302dec4124d8f8ad3b0c97689b",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0035/mask.png",
+      "reference_mask_sha256": "2eca0f900a8644f6f84fa89453d038c59caa347ccdb39110361f7da9c3561ec5",
+      "roi_xyxy": [
+        696,
+        392,
+        969,
+        665
+      ],
+      "reference_pixel_height": 248,
+      "visual_note": "Target silhouette isolated and whole; self-overlap of crossing legs; no evident external occluder or frame truncation.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch01.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0038",
+      "identity_key": "nuscenes:423397e6745b45e599fde48dd07777cd",
+      "timestamp_us": 1538984504004853,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0038/camera.json",
+      "camera_contract_sha256": "4e4822179da48a82fd8014ca877f9817ada8816ef125dc3c31d60545b2518c15",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984504004853.jpg",
+      "reference_rgb_sha256": "0c6b554d57df1189845a5afcf6d807efed019b6dd355b4caf3e601c1d02216ff",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0038/mask.png",
+      "reference_mask_sha256": "39b721c3dc138d4325cec00a596bd7dc785c8628b1c61e7c1a58e3fb9b3af502",
+      "roi_xyxy": [
+        774,
+        432,
+        1058,
+        716
+      ],
+      "reference_pixel_height": 258,
+      "visual_note": "Full standing target isolated; vehicles lie behind it; feet and head retained.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch01.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0039",
+      "identity_key": "nuscenes:2397a588f42e4195bf7fb0148aa7a3d6",
+      "timestamp_us": 1535489304404799,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0039/camera.json",
+      "camera_contract_sha256": "f6c0c93a897bab8b3dd8b735d9576452f4a1781fca6c6a960b45cfe033b52da4",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n008-2018-08-28-16-43-51-0400__CAM_FRONT_LEFT__1535489304404799.jpg",
+      "reference_rgb_sha256": "fa299018fe5f9eeb36d78b1ff389556756284978b8c8d2af1ac5af03d366acff",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0039/revisions/components_v1/mask.png",
+      "reference_mask_sha256": "7600d9845f66c151ef12cb3328c9323837e7e48454e9c0385d671e82543ba03d",
+      "roi_xyxy": [
+        1122,
+        409,
+        1390,
+        677
+      ],
+      "reference_pixel_height": 243,
+      "visual_note": "Raw context and corrected silhouette reviewed; listed background fragments removed without changing main target or carried objects.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch01.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/component_corrections_v1/visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0040",
+      "identity_key": "nuscenes:37b94a97b8e149a78b99743f5f362ea3",
+      "timestamp_us": 1535489317420482,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0040/camera.json",
+      "camera_contract_sha256": "b54593ff8139faaa55378f08f60f0a2fee4f45ac5f04a4be2a64d26f2470dd51",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n008-2018-08-28-16-43-51-0400__CAM_FRONT_RIGHT__1535489317420482.jpg",
+      "reference_rgb_sha256": "c90b4cb5b5a516b716ff77d513ca96d4fbab3340fcdf85458e61062990b9d827",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0040/mask.png",
+      "reference_mask_sha256": "e6fa39c9218cad2e8826c38024a00ea8857bf27b913957810bd81630fcfa3a06",
+      "roi_xyxy": [
+        565,
+        361,
+        824,
+        620
+      ],
+      "reference_pixel_height": 235,
+      "visual_note": "Walking target fully visible; nearby pedestrian does not overlap target; mask follows head, limbs and clothing.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch01.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0046",
+      "identity_key": "nuscenes:ed5cfe238c0b4d2ebe32c15c8b5c8a4d",
+      "timestamp_us": 1531885782854844,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0046/camera.json",
+      "camera_contract_sha256": "8311fab976a457b53431cd419ddf6a8f52f0ae562ea692eda0a9794043905a59",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n015-2018-07-18-11-41-49+0800__CAM_FRONT_LEFT__1531885782854844.jpg",
+      "reference_rgb_sha256": "e49bd5a9121ceb3a033e3f6fb86ec7c3fc15b2b12ceaeada34aeb313dbf82812",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0046/mask.png",
+      "reference_mask_sha256": "c49ea049a2746a719298c1d012bf7372c44ffe36a445b5bb311436dd4faed12b",
+      "roi_xyxy": [
+        975,
+        363,
+        1225,
+        613
+      ],
+      "reference_pixel_height": 227,
+      "visual_note": "Full walking target; foreground pole is separate, no visible body truncation.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch08.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0051",
+      "identity_key": "nuscenes:10791c1773114d04b4e69a84d4ac9188",
+      "timestamp_us": 1535489317420482,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0051/camera.json",
+      "camera_contract_sha256": "e05b2b935a21b0ad21cfb2c5de1f145e4baafbc0ca1f50ed1e348ae889104906",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n008-2018-08-28-16-43-51-0400__CAM_FRONT_RIGHT__1535489317420482.jpg",
+      "reference_rgb_sha256": "c90b4cb5b5a516b716ff77d513ca96d4fbab3340fcdf85458e61062990b9d827",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0051/mask.png",
+      "reference_mask_sha256": "f2aca1f4fff0a80b71890152689349e7243d6b3093b9efc48629d52964997083",
+      "roi_xyxy": [
+        271,
+        386,
+        503,
+        618
+      ],
+      "reference_pixel_height": 210,
+      "visual_note": "Full walking target; foreground pedestrian at right does not obscure selected target.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch08.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0057",
+      "identity_key": "nuscenes:801dff077a3d4c57b87c0245e70557d4",
+      "timestamp_us": 1533201591527893,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0057/camera.json",
+      "camera_contract_sha256": "9d2ec5e7ae395a283cee127228217ebcf2e69d393c2c6e23a4c5b6b03b48a022",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n015-2018-08-02-17-16-37+0800__CAM_BACK_RIGHT__1533201591527893.jpg",
+      "reference_rgb_sha256": "bc135fdd25c9577592f4f977e8bd7f0b38aa4a984de80a42d239c40bfa9d65eb",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0057/mask.png",
+      "reference_mask_sha256": "b85a475a824337300444d875b624b9087b6f602b060b77e3234de80382104e9c",
+      "roi_xyxy": [
+        462,
+        446,
+        669,
+        653
+      ],
+      "reference_pixel_height": 188,
+      "visual_note": "Target silhouette separates from person behind, including leg gap; no visible target occlusion.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch08.json",
+          "status": "detail_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0090",
+      "identity_key": "nuscenes:34b35e1eac3141ef87b15856cefbff63",
+      "timestamp_us": 1533201583904844,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0090/camera.json",
+      "camera_contract_sha256": "654b09eadb611aade2e6d4bc57169020c22406bc961462071c81318da471b6a7",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n015-2018-08-02-17-16-37+0800__CAM_FRONT_LEFT__1533201583904844.jpg",
+      "reference_rgb_sha256": "b803f3902257e727d9905ce5a3123a3161de2102f5b3e8bce7fb0b4f1ba8f2c2",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0090/mask.png",
+      "reference_mask_sha256": "18e41a0de530933519ed671a8ff963ad649afd2f41a1da119edde73718a5230a",
+      "roi_xyxy": [
+        1058,
+        438,
+        1218,
+        598
+      ],
+      "reference_pixel_height": 145,
+      "visual_note": "Whole standing target, shoulder bag included; construction barrier is behind body.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch08.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0099",
+      "identity_key": "nuscenes:aed473121c084c7fbe3e4d7cd7d09565",
+      "timestamp_us": 1531885798037525,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": false,
+      "reference_eligible": false,
+      "na_reasons": [
+        "ineligible_external_occlusion"
+      ],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0099/camera.json",
+      "camera_contract_sha256": "909282fc60c2c90c11022199e572ced4f09535087181e722e5f11ad3c78eb06f",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK/n015-2018-07-18-11-41-49+0800__CAM_BACK__1531885798037525.jpg",
+      "reference_rgb_sha256": "eac697747155a1ee8d4c3f5146c9e8bb7588cb2ee0c85bd939d011c20774fe94",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0099/mask.png",
+      "reference_mask_sha256": "c96d039f347ec6648d96b3ebb271ff5998965239c4f90433394b8d97a2819630",
+      "roi_xyxy": [
+        479,
+        470,
+        652,
+        643
+      ],
+      "reference_pixel_height": 157,
+      "visual_note": "Frozen gray-shirt target has left forearm/hand overlapping and partly hidden by the nearer black-shirt person on the left. Neighboring real exposures confirm two different people; do not fill hidden anatomy or replace frozen frame.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch08.json",
+          "status": "detail_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "detail_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/remaining_four_visual_review_v1.json",
+          "status": "ineligible_external_occlusion"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0108",
+      "identity_key": "nuscenes:17036e29359644a0818c5a2891d1d26b",
+      "timestamp_us": 1532621940178113,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0108/camera.json",
+      "camera_contract_sha256": "3af59c4772368c97cb205bfc304de4349c7b44cbf00b3eaa183a27b045210f15",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n008-2018-07-26-12-13-50-0400__CAM_BACK_RIGHT__1532621940178113.jpg",
+      "reference_rgb_sha256": "ff3564fab5127d1dddc28963c43fbe243909b1ff278077c89b2568e6b72e4f11",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0108/revisions/local_edits_v1/mask.png",
+      "reference_mask_sha256": "4c439a50a2718c92f4ea4701962e5a8de9fccb803e5ca9a142670bdc1dc11496",
+      "roi_xyxy": [
+        584,
+        326,
+        1075,
+        817
+      ],
+      "reference_pixel_height": 446,
+      "visual_note": "Explicit edits verified against raw source; target and personal accessories retained.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch01.json",
+          "status": "mask_detail_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/local_edits_v1_review/visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0114",
+      "identity_key": "nuscenes:8bb5895db21f4cf3be3a50e710bcab92",
+      "timestamp_us": 1535573572928113,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0114/camera.json",
+      "camera_contract_sha256": "1a896abbbee465db0b6d46be19030c9239215d86a538cb7ab9999d569ad899d7",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n008-2018-08-29-16-04-13-0400__CAM_BACK_RIGHT__1535573572928113.jpg",
+      "reference_rgb_sha256": "3a24603f2f5cfa2afa9622a38fb20b28f4e8d90c7e4d8530cac8c1d8a8bbca73",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0114/mask.png",
+      "reference_mask_sha256": "aac3d8915534b016f6185468eba8ed64ef898a557f6a59587affba693cf4b644",
+      "roi_xyxy": [
+        694,
+        342,
+        1111,
+        759
+      ],
+      "reference_pixel_height": 379,
+      "visual_note": "Full walking target including backpack, railing behind person.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch09.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0115",
+      "identity_key": "nuscenes:860035b0bf30444a906b43609dff846c",
+      "timestamp_us": 1535573576428113,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0115/camera.json",
+      "camera_contract_sha256": "64871551ec5df030ca8509237c167d702247240da1d3a5a24aaeeed218873637",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n008-2018-08-29-16-04-13-0400__CAM_BACK_RIGHT__1535573576428113.jpg",
+      "reference_rgb_sha256": "a9bfb2abdb7c2a84a6d907a6a525e76f242fd3a9669ad0aeb5e9c25a2f223562",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0115/revisions/components_v1/mask.png",
+      "reference_mask_sha256": "0af5f52200074dcc1d2c7b4fbe1eb9c6dd2dd528ac5a74217a55dd319ba68d40",
+      "roi_xyxy": [
+        562,
+        333,
+        1014,
+        785
+      ],
+      "reference_pixel_height": 410,
+      "visual_note": "Raw context and corrected silhouette reviewed; listed background fragments removed without changing main target or carried objects.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch01.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/component_corrections_v1/visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0116",
+      "identity_key": "nuscenes:64370754a3444d1dba44e667cf9ffee5",
+      "timestamp_us": 1535487889770482,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0116/camera.json",
+      "camera_contract_sha256": "a83232f21f38b1f7ea3821a41c14dd64e07960e04907ec6c38de37fa9d2a6cda",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n008-2018-08-28-16-16-48-0400__CAM_FRONT_RIGHT__1535487889770482.jpg",
+      "reference_rgb_sha256": "c84143800991b6a73ed62956be0ab11dd5cc61aca73402c9c47f1bfca5f5cf8a",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0116/mask.png",
+      "reference_mask_sha256": "e8e6c9363df205c08428261a0e0d0cb43445cd59fadc28d0b77c64bbc4cb0d86",
+      "roi_xyxy": [
+        289,
+        357,
+        742,
+        810
+      ],
+      "reference_pixel_height": 411,
+      "visual_note": "Full body isolated including extended arm; nearby pole and foreground cylinder do not cover the visible body.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch01.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0126",
+      "identity_key": "nuscenes:febab1ab81d0467fab677c32606eca68",
+      "timestamp_us": 1537292996628113,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0126/camera.json",
+      "camera_contract_sha256": "3eaffec6fd2bf876b5ff82a3ef03f9c0ab87017c6fd601ff7f226ae74582ff82",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-41-50-0400__CAM_BACK_RIGHT__1537292996628113.jpg",
+      "reference_rgb_sha256": "c50b20b5fe4dc50d83ef738c4bb0ecce1e5f146d01a412d069345063d647a6cf",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0126/revisions/review_points_cpu_v2/mask.png",
+      "reference_mask_sha256": "f91a5269b6c9f99bd8138e6d3e488307387c95d5cbfc7f2d4900e5354597e2aa",
+      "roi_xyxy": [
+        658,
+        381,
+        1079,
+        802
+      ],
+      "reference_pixel_height": 382,
+      "visual_note": "Held bag restored; body and accessories visible.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch01.json",
+          "status": "accessory_scope_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/points_cpu_v2_review/visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0127",
+      "identity_key": "nuscenes:2d18ed0e920a4e839a244385733e5072",
+      "timestamp_us": 1533112764104844,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0127/camera.json",
+      "camera_contract_sha256": "df4fbb22f6dde4c4308b26cef421ce9e01dedeb9fdd6d201440cba319f481062",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n015-2018-08-01-16-32-59+0800__CAM_FRONT_LEFT__1533112764104844.jpg",
+      "reference_rgb_sha256": "d362199222f9af86ad3c3eab5e476e5676d80458e67f3dd7aaa84292e1823fad",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0127/revisions/accessory_union_v3/mask.png",
+      "reference_mask_sha256": "dc3bfd113f6b07a59421fab3b83c065fd9a8d5e1a9488a4d3a9c5903e3bed33f",
+      "roi_xyxy": [
+        839,
+        383,
+        1249,
+        793
+      ],
+      "reference_pixel_height": 372,
+      "visual_note": "Shopping bag and shoulder bag restored; two source-verified background fragments removed. Body and real gaps retained.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch01.json",
+          "status": "mask_repair_and_accessory_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/points_cpu_v2_review/visual_review.json",
+          "status": "further_correction_required"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/accessory_final_v3_visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0131",
+      "identity_key": "nuscenes:ffdf9c8faa0142d4832575c1462dc6be",
+      "timestamp_us": 1533202218162460,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0131/camera.json",
+      "camera_contract_sha256": "21afeca5c05658571df7f9ff020c331ec062acbc962d2fb3d00bb0d81b9bedbc",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202218162460.jpg",
+      "reference_rgb_sha256": "1d74883efe6855a2674d3fdcb00c1aaaabcbd96398b2107a69fd3a3ee00aa253",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0131/revisions/local_edits_v1/mask.png",
+      "reference_mask_sha256": "9daeeed1289fd86f59cf6b3ccda2ad9c51238c714eb9134f79a78bae603b6c04",
+      "roi_xyxy": [
+        -49,
+        401,
+        365,
+        815
+      ],
+      "reference_pixel_height": 376,
+      "visual_note": "Explicit edits verified against raw source; target and personal accessories retained.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch01.json",
+          "status": "mask_detail_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/points_cpu_v2_review/visual_review.json",
+          "status": "further_correction_required"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/local_edits_v1_review/visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0136",
+      "identity_key": "nuscenes:d3d55ed007174bb79c8a555adbda0ee4",
+      "timestamp_us": 1534867369370482,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0136/camera.json",
+      "camera_contract_sha256": "a08f0fbcccf7f2f66c341c2c789e1603178d3fd42112686163330d067d4e8ac4",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n008-2018-08-21-11-53-44-0400__CAM_FRONT_RIGHT__1534867369370482.jpg",
+      "reference_rgb_sha256": "a64e4ab4451b87a45205fbd5db88eb0dd50ff05543157ba4cc0fbf14a6534518",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0136/mask.png",
+      "reference_mask_sha256": "aac214fb5c5b82421910ee4ff8b0a6858d8532a6163ab6e0f5db9f2bc46fa0c5",
+      "roi_xyxy": [
+        588,
+        385,
+        1008,
+        805
+      ],
+      "reference_pixel_height": 381,
+      "visual_note": "Whole standing body isolated; no visible external occlusion or truncation.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch02.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0137",
+      "identity_key": "nuscenes:421dcd8e200c441cabd434c90a420a25",
+      "timestamp_us": 1532708667412404,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0137/camera.json",
+      "camera_contract_sha256": "1b305c1e7bac21986413c505a7aa39c994d282e0e99565d54a5c34b9c317f55e",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532708667412404.jpg",
+      "reference_rgb_sha256": "ba0e2431a4debaa533b94605f11e17b30cffb7ac20d264aeafcb8b2a5be072df",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0137/revisions/local_edits_v1/mask.png",
+      "reference_mask_sha256": "9d9a62c30878e5f4400e20bc37c0430ec2f137e0f62101cd550f8017e60f9577",
+      "roi_xyxy": [
+        831,
+        370,
+        1244,
+        783
+      ],
+      "reference_pixel_height": 375,
+      "visual_note": "Explicit edits verified against raw source; target and personal accessories retained.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch02.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/points_cpu_v2_review/visual_review.json",
+          "status": "further_correction_required"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/local_edits_v1_review/visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0140",
+      "identity_key": "nuscenes:c4b1214213714ac68591b3fa70baadf5",
+      "timestamp_us": 1535573972154799,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0140/camera.json",
+      "camera_contract_sha256": "5708cb47daaa4e8ba17dbc4d6eafd4567f45a26a11b8e0aa7f156285764675fe",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n008-2018-08-29-16-04-13-0400__CAM_FRONT_LEFT__1535573972154799.jpg",
+      "reference_rgb_sha256": "6d16f13204c7de1604028d658e6c25a57cb01e0e80428a427b1b612f4567503d",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0140/mask.png",
+      "reference_mask_sha256": "a9d98866cdd6cea1cac8130ea41a72e53dd4bbea99785fd5a398a5e98d8c4d92",
+      "roi_xyxy": [
+        841,
+        376,
+        1260,
+        795
+      ],
+      "reference_pixel_height": 380,
+      "visual_note": "Full rear walking body; crossed legs are self-occlusion; nearby car does not overlap target.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch02.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0141",
+      "identity_key": "nuscenes:e8241e443942477394ae1cd746127bb1",
+      "timestamp_us": 1535488236120482,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0141/camera.json",
+      "camera_contract_sha256": "1f484087b80121d8dd0aa769cab6a53b5978bfa1c01b6f1fe50f5345268e7e7f",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n008-2018-08-28-16-16-48-0400__CAM_FRONT_RIGHT__1535488236120482.jpg",
+      "reference_rgb_sha256": "e9c7345f3e311bc4f47af925d67c1f4858bbcd66bd3decbd46493fb58b826ee0",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0141/mask.png",
+      "reference_mask_sha256": "56757fc745d642eef731fb71341d78c2ac11223c68e38f57aebb4eb92e4ac708",
+      "roi_xyxy": [
+        507,
+        376,
+        908,
+        777
+      ],
+      "reference_pixel_height": 364,
+      "visual_note": "Target isolated within crowd; visible limbs and head not externally occluded at this exposure.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch02.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0142",
+      "identity_key": "nuscenes:2b485df5801f453eb346ac792d078928",
+      "timestamp_us": 1538986135862460,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0142/camera.json",
+      "camera_contract_sha256": "ad37f1a72080ab5d263de2f6abdeb5db18a42cc7553a6a6b514e9dfc0df92e2b",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538986135862460.jpg",
+      "reference_rgb_sha256": "80840c3d90fc169a2c3f61d5d9765529dcb75c71781b575d3eb3a1f90b4cacbe",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0142/mask.png",
+      "reference_mask_sha256": "9f697b5b9898cd9c2b6485649009cfe3987b75eeb32becc799337a73fc2522a4",
+      "roi_xyxy": [
+        88,
+        356,
+        491,
+        759
+      ],
+      "reference_pixel_height": 366,
+      "visual_note": "Worn backpack and full limbs retained; nearby pedestrian does not overlap target.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch02.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0144",
+      "identity_key": "nuscenes:3899921619fc48dd9ddc673a3c2475d4",
+      "timestamp_us": 1537290910920482,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0144/camera.json",
+      "camera_contract_sha256": "2b03399edcb5f53274a803ffa19a2f103864577686ffd14908c6347bddb5d325",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537290910920482.jpg",
+      "reference_rgb_sha256": "bbf1bb0ea0ff9b517bb22243edce19554a6754d3ecfe1b168fa74c611d544b5e",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0144/mask.png",
+      "reference_mask_sha256": "1c07e8c86331b994839b38d384418237ad2317850ecb4a1d57feab513ece5331",
+      "roi_xyxy": [
+        579,
+        431,
+        960,
+        812
+      ],
+      "reference_pixel_height": 346,
+      "visual_note": "Full hooded target; fence lies behind rather than covering body.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch02.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0145",
+      "identity_key": "nuscenes:f3949c60a7054d70aa30ec001582e92b",
+      "timestamp_us": 1535573538370482,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": false,
+      "reference_eligible": false,
+      "na_reasons": [
+        "ineligible_external_occlusion"
+      ],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0145/camera.json",
+      "camera_contract_sha256": "02ab4987b28214f1bb715c0f8aace62d73397e2c28175df2790dbdfdee10985c",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n008-2018-08-29-16-04-13-0400__CAM_FRONT_RIGHT__1535573538370482.jpg",
+      "reference_rgb_sha256": "9f8b8430dde03b9cdee3b12cbeec291c5680e6087d1b5e70c2d99742251f99ff",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0145/mask.png",
+      "reference_mask_sha256": "cb484632fd4e7cd560bba88e050f2cc48e353fb71830ed88e347a9ac42124ad4",
+      "roi_xyxy": [
+        321,
+        356,
+        745,
+        780
+      ],
+      "reference_pixel_height": 385,
+      "visual_note": "Foreground horizontal guardrail covers lower legs; visible-mask silhouette cannot be treated as full isolated-human reference. Identity remains in frozen100 denominator.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch02.json",
+          "status": "ineligible_external_occlusion"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0150",
+      "identity_key": "nuscenes:f77c3991f9144054af85f940303c51e6",
+      "timestamp_us": 1537845547262460,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0150/camera.json",
+      "camera_contract_sha256": "2d649ff4818738986f0a263f2d3795b7527e7466a79f0b50f8be55f5375f6e00",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845547262460.jpg",
+      "reference_rgb_sha256": "9d4ab57c8f4ae83ef6b920dbd79dd96d91dcc94c7f8f99b02d8241df8efe023f",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0150/mask.png",
+      "reference_mask_sha256": "6e8599f81a50519c3e70ba815b9fd677b83b036e824a24aa73abbee08df603c9",
+      "roi_xyxy": [
+        677,
+        453,
+        1071,
+        847
+      ],
+      "reference_pixel_height": 358,
+      "visual_note": "Full target in shadow; bottom black review padding is outside the source image and does not truncate the body.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch02.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0156",
+      "identity_key": "nuscenes:a5131e81dd9a475ea88f51d8d73d0c37",
+      "timestamp_us": 1537289895412408,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0156/camera.json",
+      "camera_contract_sha256": "00cd163b58b244f36ce2903f808f06f6cbd29fd760b0151eafe4384e15641827",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n008-2018-09-18-12-53-31-0400__CAM_FRONT__1537289895412408.jpg",
+      "reference_rgb_sha256": "c0923ea84b83956ae224966b93c74b35d4e2b6c1178d60f240945f7c5cb4bf93",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0156/mask.png",
+      "reference_mask_sha256": "55c812f42b7d6057dbf900f248fb7e445469a7a2ff3fc505f3695863548c3f60",
+      "roi_xyxy": [
+        660,
+        418,
+        1009,
+        767
+      ],
+      "reference_pixel_height": 317,
+      "visual_note": "Entire walking body isolated; pavement shadow excluded from mask.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch02.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0158",
+      "identity_key": "nuscenes:28214e841b734bb68b2bad3dba53f065",
+      "timestamp_us": 1535573857412404,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0158/camera.json",
+      "camera_contract_sha256": "4fccc572b62632da61399f6ec91a68dd8d638c179df556651f57df2417165278",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n008-2018-08-29-16-04-13-0400__CAM_FRONT__1535573857412404.jpg",
+      "reference_rgb_sha256": "f596f4a3854ab18674664f2bfa58b008ca87127bf0b62cef8c4b2586a9d2324d",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0158/mask.png",
+      "reference_mask_sha256": "ccf21fc8e6cbd83f8919866865756dc2540ace818a1fbcd905969bf3b01d109a",
+      "roi_xyxy": [
+        658,
+        404,
+        1039,
+        785
+      ],
+      "reference_pixel_height": 346,
+      "visual_note": "Full target; second pedestrian on right does not overlap.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch02.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0161",
+      "identity_key": "nuscenes:f578a111565841bfa4ed459abc0ef0d1",
+      "timestamp_us": 1535488257004799,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0161/camera.json",
+      "camera_contract_sha256": "eb2f403fef55a8d3b19262109b891c9401277feb2daaaf6d59e8f239533984e3",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n008-2018-08-28-16-16-48-0400__CAM_FRONT_LEFT__1535488257004799.jpg",
+      "reference_rgb_sha256": "fed22441659d205eba216f505f632f4dc7c4aaff245cc50ce58e58342f4b170e",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0161/mask.png",
+      "reference_mask_sha256": "c37b2e10cc5e45bd7cb5ad449b3e349d90a66365d628b826c0b6b9ebc3499e74",
+      "roi_xyxy": [
+        538,
+        440,
+        925,
+        827
+      ],
+      "reference_pixel_height": 351,
+      "visual_note": "Full walking body with worn backpack; extended front leg and foot visible, no external occluder.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch03.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0163",
+      "identity_key": "nuscenes:aa3d0013cc3e42ae87bbee447a4a6bf7",
+      "timestamp_us": 1531886162404844,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0163/camera.json",
+      "camera_contract_sha256": "271d260c634ce9da2131823b6de1b30dd51ae0fa6f2f3a542bc687b9783c82b8",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n015-2018-07-18-11-50-34+0800__CAM_FRONT_LEFT__1531886162404844.jpg",
+      "reference_rgb_sha256": "a96e6b7c025fc0f3345e1dd470de96f9716536437eeb61b5f357c7165676f32a",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0163/mask.png",
+      "reference_mask_sha256": "ce33e947b6c993cc279f462eb2939b22e8a634109903e3f724d26161e9b3faf3",
+      "roi_xyxy": [
+        733,
+        304,
+        1116,
+        687
+      ],
+      "reference_pixel_height": 348,
+      "visual_note": "Target full and isolated; second pedestrian partly visible at right but does not overlap.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch03.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0164",
+      "identity_key": "nuscenes:e2a57b6b30ad4318b4d6279a6e5280e6",
+      "timestamp_us": 1535573579928113,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0164/camera.json",
+      "camera_contract_sha256": "26abbaa4d3cba83e9e5d524fdd92a3d639fab605fdc9f641683859114e64d500",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n008-2018-08-29-16-04-13-0400__CAM_BACK_RIGHT__1535573579928113.jpg",
+      "reference_rgb_sha256": "2e34dae1ded0670ab163ae97e72882f6011bce4636124db915a6083852f680b2",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0164/mask.png",
+      "reference_mask_sha256": "97d893872bfad4a2a14232556802169dd0b5026c4f7a9575a43ba7ea51b217ef",
+      "roi_xyxy": [
+        972,
+        341,
+        1366,
+        735
+      ],
+      "reference_pixel_height": 358,
+      "visual_note": "Full walking silhouette; railing behind body and foreground barrier below target feet.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch03.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0165",
+      "identity_key": "nuscenes:291bccb4941a435f864e3a7233da1709",
+      "timestamp_us": 1533107765447423,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": false,
+      "reference_eligible": false,
+      "na_reasons": [
+        "ineligible_external_occlusion"
+      ],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0165/camera.json",
+      "camera_contract_sha256": "3fd4cbb0f35ce606fd489ba084743fd03790cd64ef4389ed014ad32e30f6ba72",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_LEFT/n015-2018-08-01-15-10-21+0800__CAM_BACK_LEFT__1533107765447423.jpg",
+      "reference_rgb_sha256": "06d639112e6aa78aceda3bbc3a3802f4bf7db6b8008956de3de1de63a5ab64e0",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0165/mask.png",
+      "reference_mask_sha256": "100829db89afc7c2239f1f02ae099d7b6523fccdead1a7e11dc69e3ff662d232",
+      "roi_xyxy": [
+        871,
+        313,
+        1241,
+        683
+      ],
+      "reference_pixel_height": 336,
+      "visual_note": "Foreground vegetation covers feet/lower leg region; visible mask cuts off the body. Also minor detached background speckles beside torso.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch03.json",
+          "status": "ineligible_external_occlusion"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0166",
+      "identity_key": "nuscenes:2bfe700d9fa74443923c61a4b55d5aaa",
+      "timestamp_us": 1535573567928113,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0166/camera.json",
+      "camera_contract_sha256": "73afce90968bca3090880c00cfe725b60fe4f63533875a07ac0f40f2bfb2c32f",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n008-2018-08-29-16-04-13-0400__CAM_BACK_RIGHT__1535573567928113.jpg",
+      "reference_rgb_sha256": "58769ee35757389fb8d3527795c3ab1ccac6dc4712429eef17348374ecb6e84f",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0166/mask.png",
+      "reference_mask_sha256": "4e1fdb2cddf869f4843af72ba0a4307257a1f465eccd595c6a454d610fadb3bb",
+      "roi_xyxy": [
+        774,
+        379,
+        1154,
+        759
+      ],
+      "reference_pixel_height": 345,
+      "visual_note": "Walking target including worn backpack; limbs visible without external obstruction.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch03.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0172",
+      "identity_key": "nuscenes:e210ae468d8444e8bcb62e981989e842",
+      "timestamp_us": 1531884270104844,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0172/camera.json",
+      "camera_contract_sha256": "51a23185084805396be2d066f7137df5a05deb528be3a935f730cdde08009548",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n015-2018-07-18-11-18-34+0800__CAM_FRONT_LEFT__1531884270104844.jpg",
+      "reference_rgb_sha256": "73b7d5b91b87656a906140c5d0045c28bb8b0f3cc5e3b4412767e6d58dce7160",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0172/mask.png",
+      "reference_mask_sha256": "e46b51b6b134f45bc5774d9b70187dd3353b8a0b47be7183068559e2f0466527",
+      "roi_xyxy": [
+        714,
+        350,
+        1091,
+        727
+      ],
+      "reference_pixel_height": 342,
+      "visual_note": "Rear target isolated; left pedestrian separate; small object in hand needs accessory-scope consistency but does not obscure the body.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch03.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0175",
+      "identity_key": "nuscenes:83d93f71b58f4c338fafaf8f2db6757d",
+      "timestamp_us": 1535488232120482,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0175/camera.json",
+      "camera_contract_sha256": "48d31e954618aef15a07a2f24fa7f7720af70506f0d5470fffa9294c01992c4e",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n008-2018-08-28-16-16-48-0400__CAM_FRONT_RIGHT__1535488232120482.jpg",
+      "reference_rgb_sha256": "da11bf998f7fd7ea94ea4f7bfe8e0e80fe9e2b2df5a1b68243afa926727635a3",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0175/revisions/local_edits_v1/mask.png",
+      "reference_mask_sha256": "a486761de892211034c64e86a091a6ad18697fa4982abd48730c25ca7aa5d688",
+      "roi_xyxy": [
+        345,
+        407,
+        709,
+        771
+      ],
+      "reference_pixel_height": 330,
+      "visual_note": "Explicit edits verified against raw source; target and personal accessories retained.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch03.json",
+          "status": "mask_detail_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/local_edits_v1_review/visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0179",
+      "identity_key": "nuscenes:7e82710a8da74c279ee15dd37010cef4",
+      "timestamp_us": 1535656818262404,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0179/camera.json",
+      "camera_contract_sha256": "7b0a4a6d3b3370ee27b78147a6e77ba6d5250f7b690efceb789a1962734c7d27",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n008-2018-08-30-15-16-55-0400__CAM_FRONT__1535656818262404.jpg",
+      "reference_rgb_sha256": "f63ffc47ec294fd46d3f9cf9334562619830afb057f6b545d89202c58d536aab",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0179/mask.png",
+      "reference_mask_sha256": "4c3366aa51950c7538bf8ee433883c865adbb41cb6024b719d417405ee8c026d",
+      "roi_xyxy": [
+        769,
+        397,
+        1125,
+        753
+      ],
+      "reference_pixel_height": 323,
+      "visual_note": "Hanging backpack strap is part of worn appearance and already retained; policy resolves scope question.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch03.json",
+          "status": "accessory_scope_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0181",
+      "identity_key": "nuscenes:e06e39eb52644cce859e2728a8cf5e62",
+      "timestamp_us": 1535729244912404,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0181/camera.json",
+      "camera_contract_sha256": "c5bf491f0f405dced41c26d999a925d96d8e9065f1dfce0de550209c42f479f3",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n008-2018-08-31-11-19-57-0400__CAM_FRONT__1535729244912404.jpg",
+      "reference_rgb_sha256": "b8d3179aeec1839c0806c6fd28470ba7619a13c3249a02ef52ffacc47f49b1ce",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0181/mask.png",
+      "reference_mask_sha256": "952c0c6e68332a9ca666b7f2dd1c40276da2ce76e72ada49520230f075e1135c",
+      "roi_xyxy": [
+        515,
+        400,
+        880,
+        765
+      ],
+      "reference_pixel_height": 331,
+      "visual_note": "Full target in crossing, nearby pedestrian and car do not overlap body.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch03.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0189",
+      "identity_key": "nuscenes:6d0c8b8be0a54c3ca870de5073293a2d",
+      "timestamp_us": 1532708689512404,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0189/camera.json",
+      "camera_contract_sha256": "0f97433fdb63c878db6d8b5016519211246c3032bcc6aeca0537c89f7faccc6b",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532708689512404.jpg",
+      "reference_rgb_sha256": "86ecedf36703169a0ab3033a3419b6f6d473162036c8b5d2f189d0085f20c628",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0189/mask.png",
+      "reference_mask_sha256": "a577748ba4023dad22c2d73415145cd8b728e19d95df44f5757de76ec42f99ef",
+      "roi_xyxy": [
+        715,
+        432,
+        1033,
+        750
+      ],
+      "reference_pixel_height": 289,
+      "visual_note": "Complete target with hair and limbs; no external occlusion visible.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch03.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0190",
+      "identity_key": "nuscenes:f6c74078c2d743b7b4b56a3e75bc01d8",
+      "timestamp_us": 1537297732912404,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": false,
+      "reference_eligible": false,
+      "na_reasons": [
+        "ineligible_external_occlusion"
+      ],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0190/camera.json",
+      "camera_contract_sha256": "7b9f8601711d90625284441fe608e1f3e1d791ade1072c2a2f472e6b776f0cb1",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n008-2018-09-18-14-54-39-0400__CAM_FRONT__1537297732912404.jpg",
+      "reference_rgb_sha256": "a7b5e820ad90a36646da38999306579e02c14b7fd281587635d43e64fb88048c",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0190/mask.png",
+      "reference_mask_sha256": "d1384e4a6c9da12f0a22d9b696806a605857fd13a11d0eaa33fbfe9135455121",
+      "roi_xyxy": [
+        774,
+        419,
+        1099,
+        744
+      ],
+      "reference_pixel_height": 295,
+      "visual_note": "Umbrella hides head/upper body and is included in foreground mask; cannot score as fully visible isolated human. Keep identity in denominator.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch04.json",
+          "status": "ineligible_external_occlusion"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0199",
+      "identity_key": "nuscenes:1d2e4b98217d40f991c859e6d1e544d6",
+      "timestamp_us": 1533280190904844,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0199/camera.json",
+      "camera_contract_sha256": "2c1db2c58f31da7b3416c4d8f40eaf782868d728e970d3fb91a7c26d984d7edf",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280190904844.jpg",
+      "reference_rgb_sha256": "0c04ef9d8797963cb7c4d71d144c5e44f64c0fc4e59671a39dbb4862c5fc9ae3",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0199/mask.png",
+      "reference_mask_sha256": "d1868d33dc96ece2ac6d30b1e9da7d683592dbea81adf774f8f6a837da2d858d",
+      "roi_xyxy": [
+        546,
+        412,
+        874,
+        740
+      ],
+      "reference_pixel_height": 298,
+      "visual_note": "Worn bags/items at waist and shoulder already retained; policy resolves scope question.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch04.json",
+          "status": "accessory_scope_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0207",
+      "identity_key": "nuscenes:a0d319ef7fad40cab2d2e63633eaf03f",
+      "timestamp_us": 1535573858412404,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0207/camera.json",
+      "camera_contract_sha256": "63332144d30b4371764452e37d537d9740cac84ef208f7062b44f73f4c52fe2d",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n008-2018-08-29-16-04-13-0400__CAM_FRONT__1535573858412404.jpg",
+      "reference_rgb_sha256": "3c9cd7ef5172270a5b360e04e95b53c9382d02ece6a98dbec940d9ffffa2f8aa",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0207/mask.png",
+      "reference_mask_sha256": "b53952c414d3b38a40b157a68d11892c0cf9e0171993f223579272b64bbc050f",
+      "roi_xyxy": [
+        616,
+        427,
+        949,
+        760
+      ],
+      "reference_pixel_height": 302,
+      "visual_note": "Full walking silhouette; road shadow excluded and truck lies behind.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch04.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0211",
+      "identity_key": "nuscenes:8afa4d1aaa844141a23834fab58bb32b",
+      "timestamp_us": 1531884269604844,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0211/camera.json",
+      "camera_contract_sha256": "e0e0dbb4b81b9627ac4cbfbcec32cf3e57a82a6ba7157c9c41ab1c982c1bda50",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n015-2018-07-18-11-18-34+0800__CAM_FRONT_LEFT__1531884269604844.jpg",
+      "reference_rgb_sha256": "3333b948e1fe2353f03c2f870cf411fc7cb4f55a8b926757aa38ce78cc933c4d",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0211/mask.png",
+      "reference_mask_sha256": "44002e9a24d81270b9ebc5d0ad091d0e741f2dc722b12a639a364373fd99da13",
+      "roi_xyxy": [
+        470,
+        381,
+        796,
+        707
+      ],
+      "reference_pixel_height": 296,
+      "visual_note": "Rear red-shirt target isolated; adjacent white-shirt person is separate.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch04.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0212",
+      "identity_key": "nuscenes:fc2e34c93e0145dca142c2eb6e9cf77a",
+      "timestamp_us": 1537845630612460,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0212/camera.json",
+      "camera_contract_sha256": "94f7959ee0ba44009f7da4843b9376c6df58755b13c1be76232436b4dd4e8226",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845630612460.jpg",
+      "reference_rgb_sha256": "091c1afca7a71d31c3231b97f9bcbf0f0275e69e67d617745662b7f9fca6984e",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0212/mask.png",
+      "reference_mask_sha256": "04272b21834af52f0f4855dbcd61b000b8f72df7feef7255fb2b965616c96b28",
+      "roi_xyxy": [
+        497,
+        420,
+        854,
+        777
+      ],
+      "reference_pixel_height": 324,
+      "visual_note": "Pedestrian behind remains outside target visible silhouette; own arms/legs are visible.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch04.json",
+          "status": "mask_detail_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0214",
+      "identity_key": "nuscenes:5534e05bafcc4e76b3717e70be6565cb",
+      "timestamp_us": 1537932019870339,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0214/camera.json",
+      "camera_contract_sha256": "990a48928f80f978e8d083ebed95459ab91202e512e47abb7bd8f0bb15d219a0",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n015-2018-09-26-11-17-24+0800__CAM_FRONT_RIGHT__1537932019870339.jpg",
+      "reference_rgb_sha256": "7f61d5455d5756d14d50252954664a945f8fee8b66bc5ddc0a84d66d547963b9",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0214/revisions/review_points_cpu_v1/mask.png",
+      "reference_mask_sha256": "265ef1571fae2b9373cdf4401e54f28d4ef94531c2c6c83dcc3a7ffdbc40d4c2",
+      "roi_xyxy": [
+        839,
+        452,
+        1165,
+        778
+      ],
+      "reference_pixel_height": 296,
+      "visual_note": "Construction barriers removed, whole target including arms/legs retained; reviewed at exact frozen source exposure.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch04.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/HN0214_correction_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0215",
+      "identity_key": "nuscenes:f726cc58ae044b009041ec2fd69f67a4",
+      "timestamp_us": 1538986201912460,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": false,
+      "reference_eligible": false,
+      "na_reasons": [
+        "ineligible_external_occlusion"
+      ],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0215/camera.json",
+      "camera_contract_sha256": "f47fc18f3975b19a9d61de1b0011e38b17aa6295c6f2815a3a2faf03a280cb82",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538986201912460.jpg",
+      "reference_rgb_sha256": "6eb681626b35ee7eef6f450219fb8dea56e29ea880cf88cbcfbb6176263580cc",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0215/mask.png",
+      "reference_mask_sha256": "2f5c6b161464c29702ae0688756a7cf6c5650ba108a6adb6a2e33c11fc223eea",
+      "roi_xyxy": [
+        475,
+        408,
+        796,
+        729
+      ],
+      "reference_pixel_height": 291,
+      "visual_note": "Umbrella covers head/upper body and is included in mask; reference cannot represent an unoccluded full-human silhouette.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch04.json",
+          "status": "ineligible_external_occlusion"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0216",
+      "identity_key": "nuscenes:5dc6ecf5f0574f5e93238862e11e1a8b",
+      "timestamp_us": 1532621820870482,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0216/camera.json",
+      "camera_contract_sha256": "0c8118dcaa0a7a3c0bf5cb539f199edb911c9e0b26bb707f1994312ebe091bc6",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n008-2018-07-26-12-13-50-0400__CAM_FRONT_RIGHT__1532621820870482.jpg",
+      "reference_rgb_sha256": "99cada09fadb19cbe3a4e5660116e4126efd40ec6aaf00a23236801ec14850df",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0216/mask.png",
+      "reference_mask_sha256": "2c768fc8d27f51e9cea4ac2e458fd157bc5476337b5f4406ee15b785a56294d9",
+      "roi_xyxy": [
+        337,
+        390,
+        666,
+        719
+      ],
+      "reference_pixel_height": 299,
+      "visual_note": "Full rear target and worn backpack; small held item at right hand noted for accessory policy, no evident body occlusion.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch04.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0217",
+      "identity_key": "nuscenes:46b082f0cc3e481eb22060715c341b7e",
+      "timestamp_us": 1532707737412404,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0217/camera.json",
+      "camera_contract_sha256": "f47a40544fa3f983f1966cfe3b687074b71dd152552c006c0255747a71f2bf76",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532707737412404.jpg",
+      "reference_rgb_sha256": "841f78e382e32c02d8ed05e72c8838c04e28452685d92e7c42945e607595f394",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0217/mask.png",
+      "reference_mask_sha256": "da54524d52cd8ccc7be38db236f3da1e4eba1c6f38aaa85615ce44ec45fa083b",
+      "roi_xyxy": [
+        979,
+        408,
+        1318,
+        747
+      ],
+      "reference_pixel_height": 308,
+      "visual_note": "Rear target complete; adjacent pedestrian and parked cars do not cover body.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch04.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0219",
+      "identity_key": "nuscenes:f923c1fcd9cb42b9953c690fcc496531",
+      "timestamp_us": 1535478731912404,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0219/camera.json",
+      "camera_contract_sha256": "203c8558ec93c8778ee23badc3f5a0d93458210467a340dfeb6d2ef7b3a17b76",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n008-2018-08-28-13-40-50-0400__CAM_FRONT__1535478731912404.jpg",
+      "reference_rgb_sha256": "ab359f9c86a25e4cdba3f43f436b17fc6827458ef86340d8edb17760d1113548",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0219/mask.png",
+      "reference_mask_sha256": "c5cd5fac0169beca161440678e2b1eba32295b4d9274a525c0436db1c15b1899",
+      "roi_xyxy": [
+        1120,
+        435,
+        1443,
+        758
+      ],
+      "reference_pixel_height": 293,
+      "visual_note": "Whole walking target isolated from neighboring pedestrian; leg crossing is self-occlusion.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch04.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0221",
+      "identity_key": "nuscenes:1ca66a6c492443da9e8f326f9b237800",
+      "timestamp_us": 1531886176154844,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0221/camera.json",
+      "camera_contract_sha256": "e456ecaafd9c485a4ccfbeb968803be59575238f1e9deaff959257df20706af3",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n015-2018-07-18-11-50-34+0800__CAM_FRONT_LEFT__1531886176154844.jpg",
+      "reference_rgb_sha256": "deb386623e3d65589fc505295ef2cb5901f756bd5d4bfcb4d0cc9edbaa6db2e5",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0221/revisions/components_v1/mask.png",
+      "reference_mask_sha256": "07b8c9e0e2bb5c9bd03f71ecddc7808323a5b473e775311f46ad4f992d9eb626",
+      "roi_xyxy": [
+        1118,
+        372,
+        1440,
+        694
+      ],
+      "reference_pixel_height": 292,
+      "visual_note": "Raw context and corrected silhouette reviewed; listed background fragments removed without changing main target or carried objects.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch05.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/component_corrections_v1/visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0223",
+      "identity_key": "nuscenes:b65f144491c2486780696c02942356b7",
+      "timestamp_us": 1532708680854799,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0223/camera.json",
+      "camera_contract_sha256": "e76600e89f0be3f2c70ea46e6b72b44dec5131b90634b43c4c35a20a4c200b44",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n008-2018-07-27-12-07-38-0400__CAM_FRONT_LEFT__1532708680854799.jpg",
+      "reference_rgb_sha256": "2ca48acac0fa4c08f25f3dfd8ae93de8dc38da79c621a42b4bca379277879bd2",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0223/mask.png",
+      "reference_mask_sha256": "2465f96b8659a484df70025ae8b013cd4393cb072a2596858040fae538bb5b10",
+      "roi_xyxy": [
+        156,
+        496,
+        453,
+        793
+      ],
+      "reference_pixel_height": 270,
+      "visual_note": "Full walking target, held bottle included consistently with user-confirmed carried-object scope.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch05.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0228",
+      "identity_key": "nuscenes:679d353a2b884886be27eb6cc5bfbe48",
+      "timestamp_us": 1538985215127893,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0228/camera.json",
+      "camera_contract_sha256": "82e21c670c30eb03ca67623c71c39a427edbf813092a2222ee2259c80d769b0e",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-52-24+0800__CAM_BACK_RIGHT__1538985215127893.jpg",
+      "reference_rgb_sha256": "7baa3349e6dcb4cd3a73125e0613673a71c04a25fac65397fae2406e0c2a2591",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0228/mask.png",
+      "reference_mask_sha256": "d5dd74f5c54a67a82ecbfba03086f9752d430ed32fd98395610233335fad550a",
+      "roi_xyxy": [
+        759,
+        434,
+        1064,
+        739
+      ],
+      "reference_pixel_height": 277,
+      "visual_note": "Full target with backpack and carried jacket; neighboring pedestrians do not visibly overlap body.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch05.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0229",
+      "identity_key": "nuscenes:b53048d0956e487aa186261eefc1012b",
+      "timestamp_us": 1535731304697422,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0229/camera.json",
+      "camera_contract_sha256": "4509a431333d3e8202c3a81a17a49c39ade15d2303c03271df5d11d17e790ff0",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_LEFT/n008-2018-08-31-11-56-46-0400__CAM_BACK_LEFT__1535731304697422.jpg",
+      "reference_rgb_sha256": "78435fd2dba19f1a15ffb937e70d560a3b8751e2819e1533018764dc526f6b20",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0229/mask.png",
+      "reference_mask_sha256": "e2d6efa125080d05b85e8375e3b052c6ac605585d55629a1667c7db5a2d3d003",
+      "roi_xyxy": [
+        500,
+        428,
+        812,
+        740
+      ],
+      "reference_pixel_height": 283,
+      "visual_note": "Full walking body and carried item; parked cars behind, no visible body truncation.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch05.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0231",
+      "identity_key": "nuscenes:c8a600916cae40d69dc39046b85286e1",
+      "timestamp_us": 1533115181512460,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0231/camera.json",
+      "camera_contract_sha256": "e91f54f9111302cf4ae47f206774834494fa466bfc04561930f3715d86743cf5",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115181512460.jpg",
+      "reference_rgb_sha256": "2666b640ef74f478d27d5ebcc557077f6294540952f2dd1a94bcb274704746d6",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0231/mask.png",
+      "reference_mask_sha256": "6249b6cf9580c62177f5661b8ce561f27b7dc5002bb7858d2796a9f7bf96e25e",
+      "roi_xyxy": [
+        492,
+        433,
+        800,
+        741
+      ],
+      "reference_pixel_height": 280,
+      "visual_note": "Complete helmeted worker and boots; leg overlap is self-occlusion.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch05.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0233",
+      "identity_key": "nuscenes:baae5f7bd0b8432eac525991a9cc9b69",
+      "timestamp_us": 1535656813104799,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0233/camera.json",
+      "camera_contract_sha256": "957b2de815ce0df3ecf44aa07f8192678d29514050a980dab4059e7015e0f744",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n008-2018-08-30-15-16-55-0400__CAM_FRONT_LEFT__1535656813104799.jpg",
+      "reference_rgb_sha256": "b60a020739fbfb811f3381dc70ee80651f4d52852892ca9e8b42d16a1cf341c4",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0233/mask.png",
+      "reference_mask_sha256": "4980ce13f341ef3964b97eb70ddaec01389fcaeacf72ecf7b10e48a4049e5f57",
+      "roi_xyxy": [
+        391,
+        406,
+        706,
+        721
+      ],
+      "reference_pixel_height": 286,
+      "visual_note": "Full target, handheld phone included at extended hand; no external occluder.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch05.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0249",
+      "identity_key": "nuscenes:e5e7512444644a9685079da297e5cfcf",
+      "timestamp_us": 1532663028877893,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": false,
+      "reference_eligible": false,
+      "na_reasons": [
+        "ineligible_external_occlusion"
+      ],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0249/camera.json",
+      "camera_contract_sha256": "e0e531d321088ebfab76053b100b25086a30cd414df5a01984c204a2b488f3fd",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n015-2018-07-27-11-36-48+0800__CAM_BACK_RIGHT__1532663028877893.jpg",
+      "reference_rgb_sha256": "89005be8cf88ec876d20caf450fc81012fca3738d726fa967e391a84cbae8fd1",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0249/mask.png",
+      "reference_mask_sha256": "247df60eff1b62382823661f70a61ab4c7208dae0dedf46f3c59076d98db71f1",
+      "roi_xyxy": [
+        368,
+        452,
+        618,
+        702
+      ],
+      "reference_pixel_height": 227,
+      "visual_note": "Foreground hedge covers lower legs/feet; visible-mask reference is incomplete body silhouette.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch05.json",
+          "status": "ineligible_external_occlusion"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0252",
+      "identity_key": "nuscenes:8f2a0c571c164f9db769ea9374c3b3df",
+      "timestamp_us": 1535488256520482,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0252/camera.json",
+      "camera_contract_sha256": "7f1f228210ed68894f0da3b1a942779f850015ba1e265979cf01fb427e534323",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n008-2018-08-28-16-16-48-0400__CAM_FRONT_RIGHT__1535488256520482.jpg",
+      "reference_rgb_sha256": "3937852a0653207a6431554d11c6cf75b33f154d9c729147f8536208ebd59f2c",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0252/revisions/components_v1/mask.png",
+      "reference_mask_sha256": "2928ef64c5f62753c483b37821136df679ffe7407db3a2b417f303b2ef6f4e64",
+      "roi_xyxy": [
+        417,
+        372,
+        752,
+        707
+      ],
+      "reference_pixel_height": 304,
+      "visual_note": "Raw context and corrected silhouette reviewed; listed background fragments removed without changing main target or carried objects.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch05.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/component_corrections_v1/visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0258",
+      "identity_key": "nuscenes:c220d7baf162473a83e8e0c651a7b0d6",
+      "timestamp_us": 1537845252254844,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0258/camera.json",
+      "camera_contract_sha256": "8ce32d017a23365459f84a2c83b60bd7b4a61d61d0a9a99898d86bebbfa518fc",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n015-2018-09-25-11-10-38+0800__CAM_FRONT_LEFT__1537845252254844.jpg",
+      "reference_rgb_sha256": "bee058334c315460ca6dae5cf96e902f0e39d474dbb354fb19cbbd31e1694683",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0258/mask.png",
+      "reference_mask_sha256": "a7c6487c3cb90e9bf48e22347e6273939f89055ede63f0de491ec16dcb3d62c2",
+      "roi_xyxy": [
+        976,
+        411,
+        1249,
+        684
+      ],
+      "reference_pixel_height": 248,
+      "visual_note": "Full target in crossing; clothing and both feet retained, no external obstruction.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch05.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0262",
+      "identity_key": "nuscenes:9126c0f70c064d1783d4e82c650782f0",
+      "timestamp_us": 1535573292420482,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0262/camera.json",
+      "camera_contract_sha256": "e0df74dd3d20b063c97ff9db5c09edc88f4926985f6ff94453c22d49750e8781",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n008-2018-08-29-16-04-13-0400__CAM_FRONT_RIGHT__1535573292420482.jpg",
+      "reference_rgb_sha256": "f6643ccc635124427a327bde7ae959287080890398c1d01236a7dad920afb62a",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0262/mask.png",
+      "reference_mask_sha256": "b109d0116289d9a88a5b5f11c4dae3af430798760dae8baf496e46856ffb587f",
+      "roi_xyxy": [
+        318,
+        375,
+        623,
+        680
+      ],
+      "reference_pixel_height": 277,
+      "visual_note": "Whole walking target; pavement shadow excluded from foreground.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch05.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0263",
+      "identity_key": "nuscenes:1227c4b440ee47c381d0bd0eac934c0b",
+      "timestamp_us": 1537299018128113,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0263/camera.json",
+      "camera_contract_sha256": "9d87a3db319eb85a8510bee2e953ba37d99420db12ba4e471f00c01e6856b097",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n008-2018-09-18-15-26-58-0400__CAM_BACK_RIGHT__1537299018128113.jpg",
+      "reference_rgb_sha256": "b8f16099251b0e06e20ca29783e2616efef532708891f27065bcc38a3df098fa",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0263/mask.png",
+      "reference_mask_sha256": "935a68f26912f0d4a684893cf28b7686a2c7b8325e75ddd21db95869b65b0b73",
+      "roi_xyxy": [
+        372,
+        351,
+        641,
+        620
+      ],
+      "reference_pixel_height": 244,
+      "visual_note": "Full standing target including phone; no visible external occlusion.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch06.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0266",
+      "identity_key": "nuscenes:f7638c6318d54b0fbfebb65fc04a63b4",
+      "timestamp_us": 1538985215627893,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0266/camera.json",
+      "camera_contract_sha256": "495d63607ccad2ae7d9fd18bedaf2cb452e7fba537fd93a4b6bf3764e6c29e92",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-52-24+0800__CAM_BACK_RIGHT__1538985215627893.jpg",
+      "reference_rgb_sha256": "c25bdd099c0ebb1b27eb9d289003dac51e7271dfda79affff2217caf6dde858e",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0266/revisions/local_edits_v1/mask.png",
+      "reference_mask_sha256": "030045b51f84c035f1874c7eaa4a42bfde91224f5efcaaf09c1ef23213422798",
+      "roi_xyxy": [
+        596,
+        444,
+        892,
+        740
+      ],
+      "reference_pixel_height": 269,
+      "visual_note": "Explicit edits verified against raw source; target and personal accessories retained.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch06.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/points_cpu_v2_review/visual_review.json",
+          "status": "further_correction_required"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/local_edits_v1_review/visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0267",
+      "identity_key": "nuscenes:c99e5034fc2d47afa13db318b837f61a",
+      "timestamp_us": 1532707927162404,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0267/camera.json",
+      "camera_contract_sha256": "df4b93779ce54f57cc343f250b6c3e7c3803b823b61b825f060cb6f7ed6e7685",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532707927162404.jpg",
+      "reference_rgb_sha256": "6f202ec3c657dc7ee18d2d0479937e7756dcea102e38b2724a2d399aca08c040",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0267/mask.png",
+      "reference_mask_sha256": "0b6d0809fb83564ea01d55ea516eee0fa390e1941a48672a6a910f317a010ce2",
+      "roi_xyxy": [
+        262,
+        449,
+        553,
+        740
+      ],
+      "reference_pixel_height": 264,
+      "visual_note": "Whole walking target with backpack and handheld object; dark exposure does not itself exclude reference.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch06.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0268",
+      "identity_key": "nuscenes:ee16235e82c74bcb8a79638c640f8f43",
+      "timestamp_us": 1537297623854799,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0268/camera.json",
+      "camera_contract_sha256": "52330150bff6cfb934c6f2eac6561fd30ac194e3856f1bcfafa1f2c0f7cbe1f6",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n008-2018-09-18-14-54-39-0400__CAM_FRONT_LEFT__1537297623854799.jpg",
+      "reference_rgb_sha256": "5aad0e8c444856f1ebcc5ceda7f64955f31f4477e1ff089fff8bfc6d4d1f9ef3",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0268/revisions/local_edits_v1/mask.png",
+      "reference_mask_sha256": "88f58592bdbc225a316dc020fc8eb1119fbad747285a0976a36d84ba64b5199d",
+      "roi_xyxy": [
+        626,
+        394,
+        911,
+        679
+      ],
+      "reference_pixel_height": 259,
+      "visual_note": "Explicit edits verified against raw source; target and personal accessories retained.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch06.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/points_cpu_v2_review/visual_review.json",
+          "status": "further_correction_required"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/local_edits_v1_review/visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0272",
+      "identity_key": "nuscenes:85a4ba2df80a4eacb8dbd962160b3f80",
+      "timestamp_us": 1535488235120482,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0272/camera.json",
+      "camera_contract_sha256": "868e7911376bbb34287cac8dbcc05879f8de55d30b239f22c31e9ec61bdd9f63",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n008-2018-08-28-16-16-48-0400__CAM_FRONT_RIGHT__1535488235120482.jpg",
+      "reference_rgb_sha256": "ac47e96a72c77254fe6ab0689ad80376af993d9f069b2adf93b96c5354ed0143",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0272/mask.png",
+      "reference_mask_sha256": "4f6153491675b7443d9ca211bb6ed5f0be373f5f9f19464051ee6401b3333ee5",
+      "roi_xyxy": [
+        161,
+        432,
+        442,
+        713
+      ],
+      "reference_pixel_height": 255,
+      "visual_note": "Full target, shoulder bag retained; no visible external obstruction.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch06.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0273",
+      "identity_key": "nuscenes:d17f7baf61294b2aabcc4c2aa39981ed",
+      "timestamp_us": 1535478829928113,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0273/camera.json",
+      "camera_contract_sha256": "62c5c77422eb2cf92d8805f333a36a02784ace1caba15014956e97afb832ecee",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n008-2018-08-28-13-40-50-0400__CAM_BACK_RIGHT__1535478829928113.jpg",
+      "reference_rgb_sha256": "39556bfe8007766e3653f3627766368f049e501856609254d71b5e1c3b3a6295",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0273/mask.png",
+      "reference_mask_sha256": "b686551b5756a3c696ec4c73d2c9345733b9d4ca186b4e834a919a9e83d698cb",
+      "roi_xyxy": [
+        415,
+        401,
+        706,
+        692
+      ],
+      "reference_pixel_height": 264,
+      "visual_note": "Full walking target using phone; fence is behind person.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch06.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0274",
+      "identity_key": "nuscenes:2e13626044674cbba5366cf20594b876",
+      "timestamp_us": 1535656662654799,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0274/camera.json",
+      "camera_contract_sha256": "fe03e27b3a8c6d2e02b4e2760eb512579013575871d203a4c15af8449e71435a",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n008-2018-08-30-15-16-55-0400__CAM_FRONT_LEFT__1535656662654799.jpg",
+      "reference_rgb_sha256": "32074f2644bbb05b7f65df8a9f651028753c9c80f573de4fe630b9437446ae76",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0274/mask.png",
+      "reference_mask_sha256": "bcfc9d8d2b5a5f4ae131ee955e74e00b56efc43d9ca200253c7269240b8b8d63",
+      "roi_xyxy": [
+        537,
+        423,
+        814,
+        700
+      ],
+      "reference_pixel_height": 251,
+      "visual_note": "Full target in dark scene, fence behind; body and both shoes visible.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch06.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0280",
+      "identity_key": "nuscenes:2a2f4ef7d460448bbfbd690fb377a444",
+      "timestamp_us": 1542800985937525,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0280/camera.json",
+      "camera_contract_sha256": "b1ccf6c696688aaa300ced8332c76e4fba2ed16d5b72700d18c0ae5ab766db20",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK/n015-2018-11-21-19-38-26+0800__CAM_BACK__1542800985937525.jpg",
+      "reference_rgb_sha256": "00d5b0778cc1af94b5306fca2af29d2ec2e16901fecffdc9c1d7014d4cde023b",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0280/revisions/review_points_cpu_v2/mask.png",
+      "reference_mask_sha256": "fccfc7ef50d0d7958e3b7243b685a6706139bdd2d603337f78bbf34ca4d67c1b",
+      "roi_xyxy": [
+        1326,
+        458,
+        1576,
+        708
+      ],
+      "reference_pixel_height": 227,
+      "visual_note": "Both background gaps under bent arms recovered.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch06.json",
+          "status": "detail_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/points_cpu_v2_review/visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0281",
+      "identity_key": "nuscenes:4a1ae5effe2e4c20b80d5c638c0ea568",
+      "timestamp_us": 1535729246004799,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0281/camera.json",
+      "camera_contract_sha256": "896b8a04dd141868752db190af38aed4922b9bfb9ae5c342b023c740c003ad99",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n008-2018-08-31-11-19-57-0400__CAM_FRONT_LEFT__1535729246004799.jpg",
+      "reference_rgb_sha256": "83bee8b05a781f4a6fc791ee32ecdc629c51a99ce2a3da1899b0d2fe0d7dc9f5",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0281/revisions/local_edits_v1/mask.png",
+      "reference_mask_sha256": "227c9e08b9c78daa4468ca6cfc0bbcf5ace868842864a5cffbd9cfc21b83daf6",
+      "roi_xyxy": [
+        1095,
+        412,
+        1390,
+        707
+      ],
+      "reference_pixel_height": 268,
+      "visual_note": "Explicit edits verified against raw source; target and personal accessories retained.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch06.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/local_edits_v1_review/visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0290",
+      "identity_key": "nuscenes:f40c17385f694323be291e9f0674f669",
+      "timestamp_us": 1537299096428113,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0290/camera.json",
+      "camera_contract_sha256": "4a9e6325d96b60d1ad073b4115f069b9b9778911aa081b55697441c8ad15bf73",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n008-2018-09-18-15-26-58-0400__CAM_BACK_RIGHT__1537299096428113.jpg",
+      "reference_rgb_sha256": "ab71bf327fa273e66daf945249f543d55363f96f6ec7f2f89ba4569440f90d20",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0290/mask.png",
+      "reference_mask_sha256": "7501171ba7c82eb659b0d75677d8e70cd6be9882fdec666d69017153dc053cd5",
+      "roi_xyxy": [
+        371,
+        348,
+        642,
+        619
+      ],
+      "reference_pixel_height": 246,
+      "visual_note": "Whole standing target, hands in front of torso; no external obstruction.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch06.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0291",
+      "identity_key": "nuscenes:64cbfe3e6138470fad11876ef9c84174",
+      "timestamp_us": 1537289754947405,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0291/camera.json",
+      "camera_contract_sha256": "25b66ffe0093213924b6dbdd92ac81024a4bdf39289036288d362a254a586d4e",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_LEFT/n008-2018-09-18-12-53-31-0400__CAM_BACK_LEFT__1537289754947405.jpg",
+      "reference_rgb_sha256": "a69b27e1ae69c11263f73ac3e93e6b185977977bbdbc6265169a4ea8810d14fa",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0291/revisions/accessory_union_v3/mask.png",
+      "reference_mask_sha256": "039d5dda5d67ef71dbc6e1b5a717e6a8431a14fbcd7ecc872423982211a0d652",
+      "roi_xyxy": [
+        1002,
+        452,
+        1291,
+        741
+      ],
+      "reference_pixel_height": 262,
+      "visual_note": "Backpack extent restored; parked vehicle and wheel behind remain excluded.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch07.json",
+          "status": "detail_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/accessory_final_v3_visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0292",
+      "identity_key": "nuscenes:9fff49bd2ddb4719ad65a60d9ae6df63",
+      "timestamp_us": 1535656813120482,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0292/camera.json",
+      "camera_contract_sha256": "05a6f14700e4b3e7d6620aea89aa52b04cb3149784de2fc5319bd3febc5f1a3c",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n008-2018-08-30-15-16-55-0400__CAM_FRONT_RIGHT__1535656813120482.jpg",
+      "reference_rgb_sha256": "4e84a8924bf975f8d8a1741627c347d342a78c3158eef27195eadf243eda2dc0",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0292/mask.png",
+      "reference_mask_sha256": "58470880bcbdfd94bf8e2fab18aba91445cabbb9edd6e62a3318f2ef80816f4f",
+      "roi_xyxy": [
+        522,
+        431,
+        774,
+        683
+      ],
+      "reference_pixel_height": 229,
+      "visual_note": "Full standing target with backpack; road vehicles behind.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch07.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0293",
+      "identity_key": "nuscenes:6b5df20cd321418da6309d88f7f96ed9",
+      "timestamp_us": 1538985258104844,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0293/camera.json",
+      "camera_contract_sha256": "93822b645d92fcf3223a99e15a453008d31e41b55dd5f13769469eb84f84a89f",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-52-24+0800__CAM_FRONT_LEFT__1538985258104844.jpg",
+      "reference_rgb_sha256": "f1508ac7f20bbe841a40c9570540ad4de738d4801753b5ca89ae832eba0dab49",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0293/mask.png",
+      "reference_mask_sha256": "b2aed8a618816140b4e586d6eee2a01168691bd9c9317f9b20a82b6743589833",
+      "roi_xyxy": [
+        722,
+        336,
+        992,
+        606
+      ],
+      "reference_pixel_height": 245,
+      "visual_note": "Full walking target with backpack; nearby people separate from target silhouette.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch07.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0309",
+      "identity_key": "nuscenes:c9e61b539cb7476db7039bd4ca01dd64",
+      "timestamp_us": 1535731261628113,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0309/camera.json",
+      "camera_contract_sha256": "eb3d87b25cc82db751a8fb6630d1aaadb44a7601f72b9a4172b8929d1efea662",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n008-2018-08-31-11-56-46-0400__CAM_BACK_RIGHT__1535731261628113.jpg",
+      "reference_rgb_sha256": "8e1760011dd0b8e27a79b4616c3c78a12aa62177b8536a0e5a5fafe1098066e9",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0309/mask.png",
+      "reference_mask_sha256": "2ae04718062cc5ca703717439332a1b098d4e43b242ac4238c7b5d48919e91be",
+      "roi_xyxy": [
+        363,
+        421,
+        635,
+        693
+      ],
+      "reference_pixel_height": 247,
+      "visual_note": "Whole walking target, phone in hands; planter and railing behind.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch07.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0310",
+      "identity_key": "nuscenes:f3be212fd74c4256a186476153c80bf3",
+      "timestamp_us": 1533153444112404,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0310/camera.json",
+      "camera_contract_sha256": "df863b16322e4fca6ff6b1cbcc806ee5be9d47f9387b9efaebfd4faa034d9a66",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n008-2018-08-01-15-52-19-0400__CAM_FRONT__1533153444112404.jpg",
+      "reference_rgb_sha256": "b71fae0adbdce65d77cc6c55b14682aa93816dfd85ac581a660f2715dc93232b",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0310/revisions/review_points_cpu_v2/mask.png",
+      "reference_mask_sha256": "0657c65fe4aa09a73eb17574c1a07b52ff72db7de2d33cde4fe555b81889b71b",
+      "roi_xyxy": [
+        614,
+        451,
+        870,
+        707
+      ],
+      "reference_pixel_height": 232,
+      "visual_note": "Backpack holes restored without including road.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch07.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/points_cpu_v2_review/visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0311",
+      "identity_key": "nuscenes:a822144338604c31b258579e46208e4f",
+      "timestamp_us": 1533112757904844,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0311/camera.json",
+      "camera_contract_sha256": "6b4ebeff14b9866536f47e9c9e7b3f42a9e25380ae8554ef720ac25bb3a76095",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n015-2018-08-01-16-32-59+0800__CAM_FRONT_LEFT__1533112757904844.jpg",
+      "reference_rgb_sha256": "b0dc6762d79ba75087fc1039cacd0db2ba2d77ee575e327273df67446291d563",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0311/revisions/review_points_cpu_v2/mask.png",
+      "reference_mask_sha256": "2b80631901d00ea0495baefad7e1afcb4199d6e36463dfdd01f262ecc2386466",
+      "roi_xyxy": [
+        1136,
+        406,
+        1408,
+        678
+      ],
+      "reference_pixel_height": 247,
+      "visual_note": "Hanging material at knee recovered; shoulder bag retained.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch07.json",
+          "status": "detail_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/points_cpu_v2_review/visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0312",
+      "identity_key": "nuscenes:3c7b73fbfa00460a95c7bf9c2f98a276",
+      "timestamp_us": 1535573851947412,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0312/camera.json",
+      "camera_contract_sha256": "12d9598eb0c476ac8ef4f1baa7f9b54c3078b0d7958a057bb535d0c05880151c",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_LEFT/n008-2018-08-29-16-04-13-0400__CAM_BACK_LEFT__1535573851947412.jpg",
+      "reference_rgb_sha256": "377a57ad9576576c0c5a03eb7a14ddc4ff80f1bf32aef89585d97fa698d20cf5",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0312/revisions/components_v1/mask.png",
+      "reference_mask_sha256": "881c5544c2df4d4dd4505f52757263b674c0b5679febfd2ca85d92fd0db5f734",
+      "roi_xyxy": [
+        946,
+        460,
+        1203,
+        717
+      ],
+      "reference_pixel_height": 233,
+      "visual_note": "Raw context and corrected silhouette reviewed; listed background fragments removed without changing main target or carried objects.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch07.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/component_corrections_v1/visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0317",
+      "identity_key": "nuscenes:cbdd66666dd14a41baf740342ea7bc25",
+      "timestamp_us": 1538986135870339,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0317/camera.json",
+      "camera_contract_sha256": "3c9d14dfd3837ff66c6825ea3ce3f7f898f1ed68eb4add68bff4e552cea56257",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n015-2018-10-08-16-03-24+0800__CAM_FRONT_RIGHT__1538986135870339.jpg",
+      "reference_rgb_sha256": "b4d53bf988638b6f16a64a2bbfcfbcba852f5b11c55e61d8e5e5745c0f16f550",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0317/mask.png",
+      "reference_mask_sha256": "94443cc161d59bfbcd2b5ecfa8320a4536fd0db172eec6421edf27da5e696c6e",
+      "roi_xyxy": [
+        894,
+        451,
+        1133,
+        690
+      ],
+      "reference_pixel_height": 217,
+      "visual_note": "Whole standing target with shoulder bag; no visible obstruction.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch07.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0321",
+      "identity_key": "nuscenes:e4c95ab2fd914cae9e1ba07337c967cb",
+      "timestamp_us": 1535659118947405,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": false,
+      "reference_eligible": false,
+      "na_reasons": [
+        "external_occlusion_of_carried_item"
+      ],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0321/camera.json",
+      "camera_contract_sha256": "7ab5f8516412f9e5b3677b2f37430cfdf700af8d70ff27196265290f5696442a",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_LEFT/n008-2018-08-30-15-52-26-0400__CAM_BACK_LEFT__1535659118947405.jpg",
+      "reference_rgb_sha256": "4b8a351067e82fbcf2e337450dd8b63aae4d7a1ad2455af1599373f75cf07b00",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0321/revisions/visible_leash_manual_v1/mask.png",
+      "reference_mask_sha256": "ab781941b52e7a2f652ebccd13a0769e1d272bca7ee33c88291b207ee1a98a68",
+      "roi_xyxy": [
+        621,
+        451,
+        881,
+        711
+      ],
+      "reference_pixel_height": 227,
+      "visual_note": "Retain visible held leash using source-pixel tracing. Dog remains excluded. Leash segments hidden behind dog legs are omitted from the visible mask and recorded as accessory-only external occlusion; final metric eligibility must account for this.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch07.json",
+          "status": "detail_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/remaining_four_visual_review_v1.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0325",
+      "identity_key": "nuscenes:83a46ef48f4b40cf92fd829a4a9d1dda",
+      "timestamp_us": 1535487857412404,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0325/camera.json",
+      "camera_contract_sha256": "9431f6a35651375704e7b5766badd4a6651993310d3c4346479409047e20a42a",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n008-2018-08-28-16-16-48-0400__CAM_FRONT__1535487857412404.jpg",
+      "reference_rgb_sha256": "7567028f1dfd11f6c5e28a981d4b7e8c40bcc910eadc3845a16a28d253cd50a0",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0325/mask.png",
+      "reference_mask_sha256": "c76bbb6dc4ff476d859ceaa5980c0b75618cb90659ebc10acd82c9a7864679ae",
+      "roi_xyxy": [
+        1106,
+        398,
+        1346,
+        638
+      ],
+      "reference_pixel_height": 218,
+      "visual_note": "Full walking target with backpack and carried bag retained; no visible external obstruction.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch07.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0345",
+      "identity_key": "nuscenes:6f3bd76df14a44b6a98976193a86e446",
+      "timestamp_us": 1535573571862404,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0345/camera.json",
+      "camera_contract_sha256": "ead07e211a1c92257f454e9808694047998e981ba61e7df639208980db3a524e",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n008-2018-08-29-16-04-13-0400__CAM_FRONT__1535573571862404.jpg",
+      "reference_rgb_sha256": "e569b06b935d9ea4fb5b395289326528398e19f3530a63b6d4afba542b2c40e2",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0345/mask.png",
+      "reference_mask_sha256": "ccf63c6ffc020fe7d5d8628a30c2971c6f1c6dae4953a4fd08335fe38bec2a1a",
+      "roi_xyxy": [
+        372,
+        420,
+        613,
+        661
+      ],
+      "reference_pixel_height": 219,
+      "visual_note": "Whole crossing target with backpack; car behind.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch09.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0382",
+      "identity_key": "nuscenes:47495448ebca42c6af341a8868fd5461",
+      "timestamp_us": 1531886173162460,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0382/camera.json",
+      "camera_contract_sha256": "2e09a604bb7d51f7b149c010453e88ab8c2759434999d1bd37b78a18d5d5a415",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886173162460.jpg",
+      "reference_rgb_sha256": "dbef699bab5793778ad8139f15e1d32b8603224bd53b67a65e12feb69c017d4b",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0382/mask.png",
+      "reference_mask_sha256": "96ab1ddecae4b2f98eb52d30d1504e037d2bdcef9298088cf80344165dba17ba",
+      "roi_xyxy": [
+        41,
+        415,
+        258,
+        632
+      ],
+      "reference_pixel_height": 197,
+      "visual_note": "Whole front-facing walking target; neighboring person and pole remain separate.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch09.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0387",
+      "identity_key": "nuscenes:f2930be939b145e786d907e33869c362",
+      "timestamp_us": 1535573550854799,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0387/camera.json",
+      "camera_contract_sha256": "ce5efe55f74e57a1af661d2a052053d966d026f2e0cdf0034ee7fedb4113ac7f",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n008-2018-08-29-16-04-13-0400__CAM_FRONT_LEFT__1535573550854799.jpg",
+      "reference_rgb_sha256": "e540c5861b55805d54fe6009c9a261afafb819aaf0bd8835f70a25441026a9ed",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0387/mask.png",
+      "reference_mask_sha256": "f9373429d5f2b1a84ec858f8e5038c213b5c420c61f3e292cfd664ace4bff468",
+      "roi_xyxy": [
+        961,
+        420,
+        1195,
+        654
+      ],
+      "reference_pixel_height": 212,
+      "visual_note": "Whole standing target with backpack; car behind.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch09.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0397",
+      "identity_key": "nuscenes:c26fd3effcc8476ca686528b83265c76",
+      "timestamp_us": 1532708687028113,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0397/camera.json",
+      "camera_contract_sha256": "9ce89658e825d7477b006271a9ca76c26727984c9bcbf66330394444532d249a",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n008-2018-07-27-12-07-38-0400__CAM_BACK_RIGHT__1532708687028113.jpg",
+      "reference_rgb_sha256": "458784d47052ec9790edf192eb4219c7ceec580eb094cc4d002d2133ee74648c",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0397/revisions/review_points_cpu_v2/mask.png",
+      "reference_mask_sha256": "90f9624620b38c5dcd88bccca910749d754b7f3a82c63f38de78e7e76ea9cf32",
+      "roi_xyxy": [
+        794,
+        456,
+        1010,
+        672
+      ],
+      "reference_pixel_height": 196,
+      "visual_note": "Door fixture removed from elbow boundary; seated target preserved.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch09.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/points_cpu_v2_review/visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0497",
+      "identity_key": "nuscenes:69a518b013b8484e901cfb3fe650afc5",
+      "timestamp_us": 1535573843947405,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0497/camera.json",
+      "camera_contract_sha256": "eabb496f97c81793a638703453d9d737cb778760cae1099ec5f5136a938dac08",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_LEFT/n008-2018-08-29-16-04-13-0400__CAM_BACK_LEFT__1535573843947405.jpg",
+      "reference_rgb_sha256": "86505c4915dfa8f4c1a4831881e56aa839cc4eec2fae679855fa6fe27e5fb7b4",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0497/mask.png",
+      "reference_mask_sha256": "a389048da09643c9ab868839dae782e667de7260567698ab898e0b10128f06fa",
+      "roi_xyxy": [
+        212,
+        468,
+        406,
+        662
+      ],
+      "reference_pixel_height": 176,
+      "visual_note": "Whole walking target with shoulder bag; low-light source retained.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch09.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0517",
+      "identity_key": "nuscenes:10c8817ef80e493985e827904e728c9d",
+      "timestamp_us": 1533115182037525,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0517/camera.json",
+      "camera_contract_sha256": "3fb75be22bb4c8c7c3ad972ce596940bbc6cf07516f90de8847cdb8d08b9e6b7",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK/n015-2018-08-01-17-13-57+0800__CAM_BACK__1533115182037525.jpg",
+      "reference_rgb_sha256": "710b65126fd609e458b318fcc934bba65b40c79f8d99a62403ba8500737598b3",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0517/revisions/components_v1/mask.png",
+      "reference_mask_sha256": "478abcc1008dfa4b72c235bb638f62ff38055c02cfeb89dfae6efb7a945c0d12",
+      "roi_xyxy": [
+        386,
+        468,
+        607,
+        689
+      ],
+      "reference_pixel_height": 200,
+      "visual_note": "Raw context and corrected silhouette reviewed; listed background fragments removed without changing main target or carried objects.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch09.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/component_corrections_v1/visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0581",
+      "identity_key": "nuscenes:fffa0283a8c74760a7a2cf2e01dcc9f1",
+      "timestamp_us": 1537845539162460,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": false,
+      "reference_eligible": false,
+      "na_reasons": [
+        "ineligible_external_occlusion"
+      ],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0581/camera.json",
+      "camera_contract_sha256": "66889194a9eda0cdedd20c6f1a4065e4acfa0aec8cc7931a28efcbe73cc6613a",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845539162460.jpg",
+      "reference_rgb_sha256": "275db0a5936912bc16b813121f87b1b27df09f17dc3fbf7d8bd50f8673285324",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0581/mask.png",
+      "reference_mask_sha256": "cf5704c4c428e3ba2ef1aaf66d46dd43016cfdc63dd21044e5c4099a2efd9c8c",
+      "roi_xyxy": [
+        270,
+        468,
+        444,
+        642
+      ],
+      "reference_pixel_height": 158,
+      "visual_note": "Frozen navy-shirt target ascending steps has left forearm/hand partly overlapped by the gray-clothed companion. Real temporal frames confirm the overlap; not an isolated whole-person visible silhouette.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch09.json",
+          "status": "detail_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "detail_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/remaining_four_visual_review_v1.json",
+          "status": "ineligible_external_occlusion"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0592",
+      "identity_key": "nuscenes:2240376fa15d41e5a1dad15b7018d21b",
+      "timestamp_us": 1532402009154844,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0592/camera.json",
+      "camera_contract_sha256": "4865bcec29bfbfa9d4c7961c029cf6c72e19349a426291d454d99cc2fb1f5e6c",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n015-2018-07-24-11-13-19+0800__CAM_FRONT_LEFT__1532402009154844.jpg",
+      "reference_rgb_sha256": "a82a75192dd27d83987c1aa3cea252e7bf81de2c15ecde079586b121c576a430",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0592/mask.png",
+      "reference_mask_sha256": "615dc8353656f7a9bca61ed5e73fe96bbd01e4cc4db2eb1602abd6e1bd4375a5",
+      "roi_xyxy": [
+        788,
+        409,
+        961,
+        582
+      ],
+      "reference_pixel_height": 157,
+      "visual_note": "Whole walking target with shoulder bag; self-overlapping legs, no visible external obstruction.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch09.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0632",
+      "identity_key": "nuscenes:43842cd8c8bd451d94ef1e8c97f38f07",
+      "timestamp_us": 1537845447877893,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0632/camera.json",
+      "camera_contract_sha256": "7601e09deb4e0fdaf9d6640d17af7a8ff463e2002daf6868c859dcd659913d19",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n015-2018-09-25-11-10-38+0800__CAM_BACK_RIGHT__1537845447877893.jpg",
+      "reference_rgb_sha256": "c13b7b0b617d19d505c36ae77552e4416ebea500e6ee02627e41507fc0f0522f",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0632/revisions/temporal_context_component_v1/mask.png",
+      "reference_mask_sha256": "3f234884c30decc4806c5d2666cd377168e2aa3e3b1de80eda79e7d6e478ebb8",
+      "roi_xyxy": [
+        895,
+        468,
+        1058,
+        631
+      ],
+      "reference_pixel_height": 148,
+      "visual_note": "Real same-track frames identify the thin structure beside calf as roadside sign support/background, not a carried object. Frozen-frame target is visible; remove only the isolated background pixel, retain the4166-pixel main target exactly.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch08.json",
+          "status": "detail_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "detail_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/temporal_context_visual_review_v1.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0651",
+      "identity_key": "nuscenes:188bde264e024d1a80274f39542a55c6",
+      "timestamp_us": 1532707969412404,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0651/camera.json",
+      "camera_contract_sha256": "24ddff357e0664f3c7213c03c2557d250319826b726f9890cc817f8eac03abaf",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532707969412404.jpg",
+      "reference_rgb_sha256": "272e7e7fae6e2341476988d55d8dc36ba9537c6e28a519f9f33f740197b7c3e5",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0651/mask.png",
+      "reference_mask_sha256": "e3d03a43b749b42974c4404984a6b55cda2d6c8da0ee24a579aea88b0f1056a4",
+      "roi_xyxy": [
+        1253,
+        447,
+        1409,
+        603
+      ],
+      "reference_pixel_height": 141,
+      "visual_note": "Full walking target, dark exposure and low resolution retained as source limitations.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch08.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0668",
+      "identity_key": "nuscenes:f12d635edc9b4062897f56432583cc54",
+      "timestamp_us": 1542800849427893,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": false,
+      "reference_eligible": false,
+      "na_reasons": [
+        "ineligible_external_occlusion"
+      ],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0668/camera.json",
+      "camera_contract_sha256": "8e7a0067f1d62146f9aabb1bdbbcaced6306e8c887a93a3ca1d08e99975e9b79",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n015-2018-11-21-19-38-26+0800__CAM_BACK_RIGHT__1542800849427893.jpg",
+      "reference_rgb_sha256": "01170c0b01527bc655409f37f1f648368a43c50da7e96feedebb22e57173479d",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0668/mask.png",
+      "reference_mask_sha256": "47d86e2adedbdcaeccb8ba18c7c8ddea1a081c11aeaa5b5bcca48ccc272e07c1",
+      "roi_xyxy": [
+        798,
+        405,
+        927,
+        534
+      ],
+      "reference_pixel_height": 117,
+      "visual_note": "Foreground hedge hides feet/lower legs; visible silhouette cannot stand for complete isolated person.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch08.json",
+          "status": "ineligible_external_occlusion"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0685",
+      "identity_key": "nuscenes:e5d5e07287724eacb4103b9e94d3b828",
+      "timestamp_us": 1531885876862460,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0685/camera.json",
+      "camera_contract_sha256": "b4e207507d4d77446df28ddc5d8686ae9b874099d778964c7132a9b7044afce7",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531885876862460.jpg",
+      "reference_rgb_sha256": "78b994865b7ee08a499d2f0d2b7fa13427a311aaae467eed49564b58faed57fe",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0685/revisions/identity_local_v2/mask.png",
+      "reference_mask_sha256": "ee0ef910051d3d666ba0beca3699e639db591fad71e49212cb4b45f2629facb1",
+      "roi_xyxy": [
+        1003,
+        393,
+        1176,
+        566
+      ],
+      "reference_pixel_height": 157,
+      "visual_note": "Real temporal context and official instance projection identify the nearer gray sleeveless-top/dark-skirt pedestrian. Accepted mask fills the visible upper-arm hole and excludes rear-person shoe leakage. Body is visibly in front; low source resolution limits boundary precision.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch09.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "detail_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/remaining_four_visual_review_v1.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0690",
+      "identity_key": "nuscenes:53a315671ed346f7aeb47fef0bbcbb42",
+      "timestamp_us": 1531885917604844,
+      "cohort": "original75",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0690/camera.json",
+      "camera_contract_sha256": "6c83fb1df4ad322efc0a885bb9338b029f1d093dcc3062827eafc5fe81876f24",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n015-2018-07-18-11-50-34+0800__CAM_FRONT_LEFT__1531885917604844.jpg",
+      "reference_rgb_sha256": "82c826b75288a33c0488d77f9f73e25992c9419837ce5e39fcb8fa548215cfbb",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0690/mask.png",
+      "reference_mask_sha256": "16af649ce2293c4f65e99d875ec2446672cac1b14aa4d5cc45e113502cd3f6a3",
+      "roi_xyxy": [
+        1068,
+        489,
+        1228,
+        649
+      ],
+      "reference_pixel_height": 145,
+      "visual_note": "Whole target with objects in hands; bollards behind person.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch08.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0728",
+      "identity_key": "nuscenes:f69448592eb04b498c87ad273999fa81",
+      "timestamp_us": 1533153434112404,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0728/camera.json",
+      "camera_contract_sha256": "b7d974df6b35fe6cfe3317c666ffc39aa6cbec5b08e8a7a2f9dd0a7e4fbb8ccb",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n008-2018-08-01-15-52-19-0400__CAM_FRONT__1533153434112404.jpg",
+      "reference_rgb_sha256": "2c0c5cbbb060e4cfd290b1f584486dfc6623633cfe76157654e905b44f1ca96b",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0728/revisions/review_points_cpu_v2/mask.png",
+      "reference_mask_sha256": "ec82face72ea0385fbdc670584dfaa2432db26928e6f2ac1d4ccd081b03bd2d0",
+      "roi_xyxy": [
+        1115,
+        442,
+        1289,
+        616
+      ],
+      "reference_pixel_height": 158,
+      "visual_note": "Source-visible gap between shoes/lower legs recovered.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch10.json",
+          "status": "detail_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/points_cpu_v2_review/visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0810",
+      "identity_key": "nuscenes:c3314ce2d56b44baa1e97bd38f94c714",
+      "timestamp_us": 1535488247178113,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0810/camera.json",
+      "camera_contract_sha256": "1820d2d146d78f74654e4efea355e7c5235f1c8d46bdf70cec64fd411b5e455c",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n008-2018-08-28-16-16-48-0400__CAM_BACK_RIGHT__1535488247178113.jpg",
+      "reference_rgb_sha256": "d281078faa25a782ab04c9b6ae639a1092598c6042a83480cf2f85f156c01146",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0810/mask.png",
+      "reference_mask_sha256": "efeebbf9c4d3c7300c20f5648fd7a9a4417c476357ea36ba9a9491820ac80432",
+      "roi_xyxy": [
+        666,
+        427,
+        911,
+        672
+      ],
+      "reference_pixel_height": 222,
+      "visual_note": "Whole walking target with backpack; railing behind.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch10.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0812",
+      "identity_key": "nuscenes:b4a57f8ec2f84526b6aa32a2056528fb",
+      "timestamp_us": 1535488237628113,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0812/camera.json",
+      "camera_contract_sha256": "67efb317b3bc4a6242c226672542bcd3280c8c258376f65b53a7bbee2ef9bfb2",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_RIGHT/n008-2018-08-28-16-16-48-0400__CAM_BACK_RIGHT__1535488237628113.jpg",
+      "reference_rgb_sha256": "e42f51fca6ee530a562334c2e66cb354711877fe9bbbc515cd657708c5465495",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0812/mask.png",
+      "reference_mask_sha256": "95dea5bbc2f2c32195f8ed5cc9a430fe535aa16e51b17734c25152102fdba3e4",
+      "roi_xyxy": [
+        1290,
+        416,
+        1504,
+        630
+      ],
+      "reference_pixel_height": 194,
+      "visual_note": "Whole target with phone; neighboring person separate.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch10.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0821",
+      "identity_key": "nuscenes:32f969e3b12d42a882743cd7c18d0509",
+      "timestamp_us": 1535573570854799,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0821/camera.json",
+      "camera_contract_sha256": "87c0759c79f24cb28ff625c194cf840da149c7c145934446e754eaf000f727d3",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_LEFT/n008-2018-08-29-16-04-13-0400__CAM_FRONT_LEFT__1535573570854799.jpg",
+      "reference_rgb_sha256": "275fb9998b44d28b6d724fb2516f354d029046a0df6041e7948eff39dbd378b2",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0821/mask.png",
+      "reference_mask_sha256": "40a15d2a296272be2de087c35ecd1aef7e86ee2f3aa4e6124fae68c21f53690c",
+      "roi_xyxy": [
+        966,
+        424,
+        1189,
+        647
+      ],
+      "reference_pixel_height": 202,
+      "visual_note": "Whole standing target with backpack and phone; self-overlapping legs.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch10.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0825",
+      "identity_key": "nuscenes:d965cace06fd45fa82d651c83f6145e8",
+      "timestamp_us": 1538985212270339,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0825/camera.json",
+      "camera_contract_sha256": "835ce1ed206f21454dbf60e15f4e4aec1230c1223de513c8ab1e6601c932937b",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-52-24+0800__CAM_FRONT_RIGHT__1538985212270339.jpg",
+      "reference_rgb_sha256": "7a65c90f849b6ee6c672a0e8589e87d42881cadfb6c4c8a7ae0071e174611588",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0825/mask.png",
+      "reference_mask_sha256": "d0b38c839531122999950126a7b4270e9944fa448876fb45f8e6367631cf4087",
+      "roi_xyxy": [
+        969,
+        475,
+        1185,
+        691
+      ],
+      "reference_pixel_height": 196,
+      "visual_note": "Whole walking target with backpack; other people separate from silhouette.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch10.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0834",
+      "identity_key": "nuscenes:19dd00e2d6b34474a401fb8da8a4325e",
+      "timestamp_us": 1535488233620482,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0834/camera.json",
+      "camera_contract_sha256": "1721f4939f4f0e462a54631bcb00d6d4160412db61450dc7183a4e1ff0ec8eca",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n008-2018-08-28-16-16-48-0400__CAM_FRONT_RIGHT__1535488233620482.jpg",
+      "reference_rgb_sha256": "7a4792e5864a9ec02603f044040999d5eb1097b1fa38c8fe4cc3060c2d9424a2",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0834/mask.png",
+      "reference_mask_sha256": "1c21262df55e981ea7c4a66e9ce8eea2e68b339d8880874929aade0993d14a32",
+      "roi_xyxy": [
+        898,
+        416,
+        1092,
+        610
+      ],
+      "reference_pixel_height": 176,
+      "visual_note": "Whole standing target and small shoulder bag; pole and foreground pedestrian separate.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch10.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0838",
+      "identity_key": "nuscenes:f4533e3f07204ed09d2fa9cc46ce447b",
+      "timestamp_us": 1532708682912404,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0838/camera.json",
+      "camera_contract_sha256": "4a0447db2b3320880893aaa7d1f7be30356a12b9c0b26a63b160d34c2a3afc0a",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532708682912404.jpg",
+      "reference_rgb_sha256": "1dc64f1a9fa4f0cfff19f2426d0e2692edd6060a0843bf6519827c742258bd32",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0838/revisions/manual_accessory_v1/mask.png",
+      "reference_mask_sha256": "6629a10c626d6d13dca32cac24a54b58b4d0f02baa85a9b2bb94ebb77c781275",
+      "roi_xyxy": [
+        1091,
+        403,
+        1290,
+        602
+      ],
+      "reference_pixel_height": 180,
+      "visual_note": "Visible thin held shaft traced at native pixels. Rejected SAM part had merged background bollard; original body mask preserved.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch10.json",
+          "status": "detail_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/accessory_final_v3_visual_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0850",
+      "identity_key": "nuscenes:94f05e2b34bc4e43a8083c025ade318e",
+      "timestamp_us": 1532708699147405,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0850/camera.json",
+      "camera_contract_sha256": "dd1e517d523a3ed46acae7c459450fe6365dabc1fd49485f2cd454be82d7aa18",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK_LEFT/n008-2018-07-27-12-07-38-0400__CAM_BACK_LEFT__1532708699147405.jpg",
+      "reference_rgb_sha256": "d35f0713ef4b4485dd4e69d2ca87e6ddb95a66ef8131b946ee02bbdd738bdd7d",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0850/mask.png",
+      "reference_mask_sha256": "3b9174b9e9f09db89adb0cc965519bc998cad62a79d7311c09eb68c06e7efe5f",
+      "roi_xyxy": [
+        1285,
+        575,
+        1474,
+        764
+      ],
+      "reference_pixel_height": 171,
+      "visual_note": "Whole crossing target, both feet visible, car behind.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch10.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0861",
+      "identity_key": "nuscenes:a7edcbc3ea044b44a33de0e1d2c4b4f3",
+      "timestamp_us": 1535488230620485,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0861/camera.json",
+      "camera_contract_sha256": "ffee3b45866d62c2970bae3cdfa01be4d7ffda28de2fa777999efce3635a8d8b",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_FRONT_RIGHT/n008-2018-08-28-16-16-48-0400__CAM_FRONT_RIGHT__1535488230620485.jpg",
+      "reference_rgb_sha256": "1c29ccc3fc2164f3a032c92be18f2206d7235a1b98c5b897ebed455aa61d1fc8",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0861/revisions/accessory_union_v2/mask.png",
+      "reference_mask_sha256": "6b048b5e8c743a4e06b9d70a512f60f1c634e6f8c566cae634cc050876eaa331",
+      "roi_xyxy": [
+        699,
+        421,
+        874,
+        596
+      ],
+      "reference_pixel_height": 159,
+      "visual_note": "Tight accessory mask restores the worn blue backpack; adjacent pedestrian/background excluded on raw-image review.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch10.json",
+          "status": "detail_review_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/detail_review_v1/review.json",
+          "status": "mask_repair_pending"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/points_cpu_v2_review/visual_review.json",
+          "status": "further_correction_required"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/local_edits_v1_review/visual_review.json",
+          "status": "further_correction_required"
+        },
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/HN0861_accessory_union_v2_review.json",
+          "status": "correction_visual_passed_pending_reference_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": true,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    },
+    {
+      "id": "HN0866",
+      "identity_key": "nuscenes:a3a78667dcda47218e41c1e137d70e67",
+      "timestamp_us": 1535573567937558,
+      "cohort": "new25",
+      "selected": true,
+      "reference_ready": true,
+      "reference_eligible": true,
+      "na_reasons": [],
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0866/camera.json",
+      "camera_contract_sha256": "334ca288d997fb122dfacf78a967db8b45f8c98a39ec4652147b2d9f54a42072",
+      "reference_rgb": "${NUSCENES_ROOT}/samples/CAM_BACK/n008-2018-08-29-16-04-13-0400__CAM_BACK__1535573567937558.jpg",
+      "reference_rgb_sha256": "cc69c7d6dcc799c2f7e2480e9e304aec25ac7af009ebd3d8fe589fa0412bf447",
+      "reference_mask": "${HMC_WORKSPACE}/human_model_comparison/references/exact_exposure_v2/HN0866/mask.png",
+      "reference_mask_sha256": "5023d75bacdd047299c78ec95be106171bcd28748fad3553dd9abeea6264b893",
+      "roi_xyxy": [
+        233,
+        427,
+        412,
+        606
+      ],
+      "reference_pixel_height": 162,
+      "visual_note": "Whole walking target; background railing behind body and low foreground rail appears below feet.",
+      "review_history": [
+        {
+          "record": "${HMC_WORKSPACE}/human_model_comparison/reports/reference_qualification_v1/visual_review_batch10.json",
+          "status": "visual_pass_pending_protocol_freeze"
+        }
+      ],
+      "mask_corrected_from_historical_input": false,
+      "method_metric_eligibility": "requires_independent_method_registration",
+      "scored": false
+    }
+  ],
+  "script_sha256": "6b5857f96e8ee915cd0ac295f775f72b27d5a52a552f9e4ad8df3ec70895b433",
+  "core_protocol_sha256": "dd436ca9fb62d87a9f198ef73a05c101c09bf447245498ed3c1306b160eaf97d"
+}

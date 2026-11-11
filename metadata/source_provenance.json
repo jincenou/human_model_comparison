@@ -987,6 +987,76 @@
       "source_sha256": "bbcdcfc0ebbdced52466bfc3d76bfafdbc69aa6ecc86b0910d103d9f6d5fcaa1",
       "release_sha256": "ace3eeb57181ec4c7b4be33e199f579294951b26cd2f42728f5de18bf0a7436e",
       "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/freeze_reference_qualification_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/freeze_reference_qualification_v1.py",
+      "source_sha256": "6b5857f96e8ee915cd0ac295f775f72b27d5a52a552f9e4ad8df3ec70895b433",
+      "release_sha256": "fc1463236bb17a86cab074cfc16258eb1fe6c1761fb1eed3e73e3c5607e025fb",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/audit_scene_source_registration_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/audit_scene_source_registration_v1.py",
+      "source_sha256": "e9adec8df2df573321372c9ddafdb1841e6df4699173a1860a2404324066a468",
+      "release_sha256": "e9adec8df2df573321372c9ddafdb1841e6df4699173a1860a2404324066a468",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/human_metric_batch_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/human_metric_batch_v1.py",
+      "source_sha256": "879dde24d94c6e7672cf6379087bb1d239c78dd21dfbea90050077d2551d56a6",
+      "release_sha256": "879dde24d94c6e7672cf6379087bb1d239c78dd21dfbea90050077d2551d56a6",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/test_human_metric_batch_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/test_human_metric_batch_v1.py",
+      "source_sha256": "be9fe2bb2a8a6253dfab3d913d3865ac2fc636154ce026c511c6b245de429c8d",
+      "release_sha256": "be9fe2bb2a8a6253dfab3d913d3865ac2fc636154ce026c511c6b245de429c8d",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/prepare_scene_registration_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/prepare_scene_registration_v2.py",
+      "source_sha256": "515977f96a2f61a18a6bf93cc893b0c7f5d0745b8facd94ad4874699f083b8c3",
+      "release_sha256": "515977f96a2f61a18a6bf93cc893b0c7f5d0745b8facd94ad4874699f083b8c3",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/run_human_metric_pipeline_v1.py",
+      "destination": "workspace/human_model_comparison/scripts/run_human_metric_pipeline_v1.py",
+      "source_sha256": "7b6d5fcaa44517b21ef2148af7d3d23d4a1761db7808264042a2c946ffd97fce",
+      "release_sha256": "7b6d5fcaa44517b21ef2148af7d3d23d4a1761db7808264042a2c946ffd97fce",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/launch_ours_source_pilot_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/launch_ours_source_pilot_v2.py",
+      "source_sha256": "08330d5a05a82bcc64e1a824a5e980ea9b3643ee69639afa12e9f34a410e3933",
+      "release_sha256": "08330d5a05a82bcc64e1a824a5e980ea9b3643ee69639afa12e9f34a410e3933",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/test_ours_source_pilot_scheduler_v2.py",
+      "destination": "workspace/human_model_comparison/scripts/test_ours_source_pilot_scheduler_v2.py",
+      "source_sha256": "539bab611aa0551aca933ece6307bdc93a1c75e5b3be4cb3d7fdb8a821b70cbd",
+      "release_sha256": "539bab611aa0551aca933ece6307bdc93a1c75e5b3be4cb3d7fdb8a821b70cbd",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/configs/human_source_common_v1/reference_qualification_frozen_v1.json",
+      "destination": "metadata/templates/human_model_comparison/configs/human_source_common_v1/reference_qualification_frozen_v1.json",
+      "source_sha256": "1967e5c270a8bcb2a3355b2971639aa2b3546057f3bba6de6bcb77b14c3a9a95",
+      "release_sha256": "a81763a33b659440a5cdc23eeadd993197356c5aab282106396ddf65744ee109",
+      "changes": "metadata path placeholders; regenerate hashes after materialization"
+    },
+    {
+      "source": "human_model_comparison/configs/human_source_common_v1/core_metric_protocol_frozen_v1.json",
+      "destination": "metadata/templates/human_model_comparison/configs/human_source_common_v1/core_metric_protocol_frozen_v1.json",
+      "source_sha256": "dd436ca9fb62d87a9f198ef73a05c101c09bf447245498ed3c1306b160eaf97d",
+      "release_sha256": "327dc6b9915967f163b8e911f62e39a2520be5f90bd48920d07c00f26ea4c6e8",
+      "changes": "metadata path placeholders; regenerate hashes after materialization"
     }
   ]
 }

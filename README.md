@@ -2,9 +2,9 @@
 
 **A traceable experimental framework for reconstructing and evaluating human assets from nuScenes.**
 
-[中文说明](README_zh-CN.md) · [Reproduction](docs/REPRODUCING.md) · [Evaluation protocol](docs/EVALUATION.md) · [Methods and dependencies](docs/METHODS.md) · [Release status](docs/STATUS.md)
+[中文说明](README_zh-CN.md) · [Reproduction](docs/REPRODUCING.md) · [Evaluation protocol](docs/EVALUATION.md) · [Methods and dependencies](docs/METHODS.md) · [Release status](docs/STATUS.md) · [Incremental batch workflow (中文)](docs/METRIC_BATCH_WORKFLOW_zh-CN.md)
 
-> **Research preview — November 2026.** This repository releases the current experiment code, metadata templates, and independently runnable core metrics. It is not a completed five-method benchmark or a fully self-contained training distribution. Cross-method source-camera registration, ED-P, some method integrations, and the backend ablation are still in progress. Native preview images are not used as interchangeable metric inputs.
+> **Research preview — November 2026.** This repository releases the current experiment code, metadata templates, and independently runnable core metrics. It is not a completed five-method benchmark or a fully self-contained training distribution. Cross-method source-camera registration, ED-P, some method integrations, and the backend ablation are still in progress. The source-only reference cohort and core image metric definitions are frozen; a partial scene-method batch is available in the experiment workspace. Native preview images are not used as interchangeable metric inputs.
 
 ## Overview
 
@@ -93,11 +93,11 @@ The reference mask includes clothes, worn backpacks, and carried items. The ROI 
 
 | Component | Evidence available | Remaining work |
 | --- | --- | --- |
-| Frozen cohort | 100 identities and exposure times | Final reference eligibility/protocol freeze |
+| Frozen cohort | 100 identities/exposures; 91 reference-eligible, nine reference NA | Preserve the cohort and report coverage |
 | AH / original TRELLIS | Native generation and reload batches | Shared source-camera registration |
 | Ours | Fixed-time runtime and full-SH reload; source mapping pilot | Source-camera rendering/registration acceptance |
 | OmniRe / SplatAD | Existing-scene extraction, physical-time and projection checks | Final common-camera certification and full scoring |
-| Core metric arithmetic | Numerical tests and three-person scene-method diagnostic | Complete five-method paired evaluation |
+| Core metric arithmetic | Numerical tests, 149 scene-method scores, verified incremental reuse | Complete five-method paired evaluation and ED-P |
 | ExAvatar / JacobianAvatar | Isolated environments and partial official component validation | Missing assets and complete fitting/training pilots |
 | Additional methods / ablation | Integration code and experiment plan | Method-specific acceptance and fixed-frontend backend ablation |
 

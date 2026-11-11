@@ -1,0 +1,65 @@
+{
+  "status": "core_metrics_frozen_EDP_pending",
+  "protocol": "human_source_common_v1",
+  "reference_mask": "byte>127; binary visible foreground",
+  "prediction_alpha": "own alpha only; explicit straight/premultiplied/already-white encoding",
+  "alpha_quantization": "floor(clip01(alpha)*255+0.5), then byte>127",
+  "roi": "half-open reference bbox; ceil(1.10*long_side) square, floor left/top; out-of-canvas white RGB/zero alpha; 512 bicubic RGB and nearest mask",
+  "psnr": "float64 MSE in sRGB [0,1]; positive_infinity status distinct from NA",
+  "ssim": {
+    "window": 11,
+    "sigma": 1.5,
+    "K1": 0.01,
+    "K2": 0.03,
+    "data_range": 1,
+    "population_covariance": true,
+    "spatial_average": "valid centers excluding 5-pixel boundary",
+    "channels": "mean RGB"
+  },
+  "lpips": {
+    "backbone": "${HMC_MODEL_CACHE}/torch_cache/hub/checkpoints/alexnet-owt-7be5be79.pth",
+    "backbone_sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+    "linear": "${CONDA_ROOT}/envs/ab_eval/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth",
+    "linear_sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0",
+    "net": "alex",
+    "version": "0.1",
+    "dtype": "float32",
+    "mode": "eval"
+  },
+  "edp": {
+    "status": "pending_feature_and_visibility_protocol",
+    "parts": [
+      "head",
+      "torso",
+      "left_arm",
+      "right_arm",
+      "left_leg",
+      "right_leg"
+    ],
+    "empty": "NA",
+    "note": "Only part-score aggregation implemented; no ED-P feature extractor or scores claimed"
+  },
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "Pillow": "12.3.0",
+    "torch": "2.10.0+cu128",
+    "torchvision": "0.25.0+cu128",
+    "lpips": "0.1.4",
+    "scikit-image": "0.25.2"
+  },
+  "production_scoring_enabled": "only core metrics for independently certified method/reference pairs",
+  "frozen_at_utc": "2026-11-11T08:24:26.279502+00:00",
+  "frozen_metrics": [
+    "PSNR",
+    "SSIM",
+    "LPIPS",
+    "IoU",
+    "IoU_raw"
+  ],
+  "full_protocol_complete": false,
+  "code_sha256": "1650c142d165c4e97c1f24ef5ded6a1452e9d661ddae5846000518c6f3a74f91",
+  "numerical_validation": "${HMC_WORKSPACE}/human_model_comparison/reports/metric_numerical_validation_v1/validation.json",
+  "numerical_validation_sha256": "171a2a90004d94d0a781342ceaf6e7b320603932a8b780b0d79734164a4b0c25",
+  "candidate_protocol_sha256": "a0ef8912ee58cb7cb8c4144b330bb59d059fd252e284eb4907b6c7f22dd71d69"
+}

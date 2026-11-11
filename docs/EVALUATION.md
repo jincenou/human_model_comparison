@@ -43,6 +43,6 @@ Run from the repository root. The example uses absolute paths derived at creatio
 
 Keep every frozen identity in the denominator, even if a method cannot produce an independent object. Report each method's coverage and all NA reasons. For any cross-method mean, choose the common valid identity set for that specific metric first. Include its IDs and `n/100`; do not average different sets and call it paired comparison.
 
-Current scene-method pilot scores are diagnostic. Passing camera projection algebra does not prove final registration, source-reference eligibility, or complete evaluation validity. Generated/native preview cameras must never be mixed with real-camera scores.
+The original three-person pilot is diagnostic. The subsequent scene-method batch separately verifies frozen reference eligibility, native identity/state provenance, physical time, camera projection, source code hashes and alpha encoding. It has 149 scored method/person rows and 60 shared scene-method identities; this remains a partial source-reconstruction comparison. Projection algebra alone is insufficient evidence. Generated/native preview cameras must never be mixed with real-camera scores.
 
 Source reconstruction evaluates an observed state. Disclose all real frames, video duration, interpolated frames, generated auxiliaries, poses, cameras and other priors consumed by a method. A true held-out experiment needs a separate input audit. Backside PSNR/LPIPS requires real backside reference. Fixed-pose orbits without such observations are qualitative.
