@@ -1,16 +1,16 @@
 # Method integration and dependency boundaries
 
-The primary comparison requested for the current stage is Ours, AH, original TRELLIS, OmniRe and SplatAD. Other methods remain part of the broader experiment plan. Method preparation does not establish a valid human benchmark result.
+The current comparison includes Ours, AH, original TRELLIS, TRELLIS.2, OmniRe and SplatAD. New integrations are deferred; StreetGS was stopped after the bounded extraction investigation. Method preparation does not establish a valid human benchmark result.
 
 | Method | Integration | Inputs and important constraints |
 | --- | --- | --- |
 | Ours | 4DAnyone Turbo conditioning + full-budget Grid4D; first-party orchestration in `workspace/human` | Real sequence plus generated auxiliary views; preserve full frame/resolution/budget and SH3; non-looping source-clock query |
 | Asset Harvester | Official image-directory AHC pipeline | One real source image; inferred camera, native multiview generation/lifting; registration still required |
 | TRELLIS original | Native image-to-Gaussian adapter | One frozen real RGBA; original model and serializer; native preview camera is not the real source camera |
-| TRELLIS.2 | Native static/PBR adapter | Method-specific representation and renderer; pilot-gated batch execution |
+| TRELLIS.2 | Native static/PBR adapter | Method-specific representation and renderer; 97 native assets and 52 valid source-view results; failures retained |
 | OmniRe | Existing DriveStudio scene/checkpoint extraction | Non-SMPL DeformableNodes variant explicitly retained; time query with native deform/root interpolation |
 | SplatAD | Existing native scene/checkpoint extraction | Keep decoder and native actor/quaternion semantics; stationary-filtered objects remain unavailable |
-| StreetGS | Bounded DriveStudio integration pilot | Stop if reliable identity extraction/reload cannot be established; poor quality alone is not exclusion |
+| StreetGS | Bounded DriveStudio integration pilot | Stopped: no reliable independent person node in the inspected scenes; no full-scene retraining |
 | ExAvatar | Official fitting tools and isolated environment | SMPL-X, FLAME versions/mappings and complete fitting dependencies; base-layer validation is not complete fitting |
 | JacobianAvatar | Official multi-component workflow | Separate training/MHR environments, PromptHMR, WAFT, Sapiens, SAM and body-model transfer resources |
 | FlexiAvatar | Subsequent integration | Full workflow and real-only variant must be recorded separately |

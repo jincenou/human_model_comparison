@@ -44,4 +44,4 @@ hmc-score artifacts/example/pair.json --output artifacts/example/scores.json
 项目级开源许可和论文引用信息尚待确认；第三方代码、模型、数据分别受原许可约束。当前不虚构论文标题、作者列表、会议或正式排行榜。
 
 
-增量评测准备、后续方法接入与一键批处理见[批处理流程](docs/METRIC_BATCH_WORKFLOW_zh-CN.md)。最新状态见[实验快照](docs/STATUS.md)、[数值结果](results/20261112/README.md)及[当前执行入口](docs/CURRENT_WORKFLOW.md)。
+当前执行顺序见[执行入口](docs/CURRENT_WORKFLOW.md)；[早期批处理流程](docs/METRIC_BATCH_WORKFLOW_zh-CN.md)仅保留为历史实现记录。最新状态见[实验快照](docs/STATUS.md)、[数值结果](results/20261112/README.md)及[当前执行入口](docs/CURRENT_WORKFLOW.md)。

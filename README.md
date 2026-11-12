@@ -2,7 +2,7 @@
 
 **A traceable experimental framework for reconstructing and evaluating human assets from nuScenes.**
 
-[中文说明](README_zh-CN.md) · [Reproduction](docs/REPRODUCING.md) · [Evaluation protocol](docs/EVALUATION.md) · [Methods and dependencies](docs/METHODS.md) · [Release status](docs/STATUS.md) · [Incremental batch workflow (中文)](docs/METRIC_BATCH_WORKFLOW_zh-CN.md)
+[中文说明](README_zh-CN.md) · [Reproduction](docs/REPRODUCING.md) · [Evaluation protocol](docs/EVALUATION.md) · [Methods and dependencies](docs/METHODS.md) · [Release status](docs/STATUS.md) · [Historical batch workflow (中文)](docs/METRIC_BATCH_WORKFLOW_zh-CN.md)
 
 > **Research preview — November 2026.** Six methods have 526 valid source-view results on a frozen 100-person cohort. The current snapshot incorporates three reference-mask corrections, 509 valid ED-P pairs, and dynamic evaluation of 82 common identities. Two additional dynamic references remain unavailable after bounded repair; 16 identities lack a common independent scene object. Input budgets are documented; fixed-cache backend ablation still covers one identity. This is an integration source release, not a self-contained end-to-end training distribution.
 
@@ -88,7 +88,7 @@ Configure installation paths using [`.env.example`](.env.example), then follow [
 | LPIPS | AlexNet v0.1, fixed local weight hashes, eval/float32, RGB normalized to `[-1,1]` |
 | IoU | Byte mask threshold `>127`; shared ROI and raw full-canvas variants |
 | ED-P_common | Frozen six-part DINOv3 ViT-L/16 and DWPose variant; common identities and common parts, with coverage |
-| tOF / tLP100 | Matched actual-exposure optical-flow and adjacent perceptual-change differences; three-person pilot |
+| tOF / tLP100 | Matched actual-exposure optical-flow and adjacent perceptual-change differences; 82 common identities, 2,339 adjacent pairs per method |
 
 The reference mask includes clothes, worn backpacks, and carried items. The ROI is a square centered on the reference mask bounding box with side length `ceil(1.10 × longest side)`, padded white outside the canvas, then resized to 512×512. RGB uses bicubic interpolation; masks use nearest neighbor. See the [full protocol and limitations](docs/EVALUATION.md).
 
@@ -97,10 +97,10 @@ The reference mask includes clothes, worn backpacks, and carried items. The ROI 
 | Component | Available evidence | Remaining work |
 |---|---|---|
 | Cohort/reference | v3 fixed100, all100 eligible under reference policy v5 | Preserve identity and missingness |
-| Source metrics | 526 pairs; five-method common77, six-method common46 | Input-budget disclosure |
+| Source metrics | 526 pairs; five-method common77, six-method common46 | Preserve documented input-budget differences |
 | ED-P auxiliary | 509 valid pairs; common-part comparisons | Additional visibility review |
 | Common orbits | 526×16 views, full100 local gallery | Broader visual inspection |
-| Dynamic comparison | Three common identities, 86 actual frame pairs | Expand audited clips |
+| Dynamic comparison | 82 common identities, 2,339 actual frame pairs per method | Closed with 2 reference and 16 scene-object NA cases |
 | Backend ablation | One identity, three variants including matched budget | Expand fixed-cache cohort |
 
 See [recorded results](results/20261112/README.md) and [current workflow](docs/CURRENT_WORKFLOW.md).
