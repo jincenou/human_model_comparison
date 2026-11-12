@@ -31,7 +31,7 @@ OmniRe lacks one independently extractable person; SplatAD lacks 16 (ten station
 
 ## Remaining work
 
-The current dynamic batch is closed with explicit missingness. Expand fixed-cache ablations and additional orbit review separately. [Input budgets](INPUT_BUDGETS.md) now cover 600 person/method rows, with exact scene-time mapping limitations disclosed. No reliable 3D human surface/joint truth or real backside reference has been established, so surface, joint/acceleration and backside image-reference metrics are not reported.
+The current dynamic batch is closed with explicit missingness. Expand fixed-cache ablations and additional orbit review separately. [Input budgets](INPUT_BUDGETS.md) now cover 600 person/method rows, including verified OmniRe native sample-chain and actual camera-exposure mappings. No reliable 3D human surface/joint truth or real backside reference has been established, so surface, joint/acceleration and backside image-reference metrics are not reported.
 
 ExAvatar, JacobianAvatar, FlexiAvatar, Hunyuan3D and ReconViaGen integration is deferred while the current six methods are completed. StreetGS was stopped after the bounded existing-scene audit found no reliable independent human node. GPU 0/1 remain reserved; human jobs use shared resources on 2–7 with a 10 GiB data-disk floor.
 

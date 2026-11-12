@@ -19,3 +19,7 @@ The opening section records earlier checks and remains historical evidence.
 ## Fractional-time backend expansion
 
 Five focused tests passed in both the existing training and metric environments, covering exact endpoints, non-rounded exposures, invalid/stale brackets, eigenframe sign ambiguity and physical anisotropic covariance mixtures. All eight selected production runtimes were compared with their existing accepted source-time snapshots: maximum position discrepancy was below 1.2e-7, maximum covariance-entry discrepancy below 4.7e-10, and full SH coefficients were identical. These checks validate sampling compatibility; they do not claim that pending retrained assets have already passed visual review or scoring.
+
+## Scene input exposure mapping
+
+Across 67 retained OmniRe scene directories, all 9,954 processed JPEGs matched native source-image SHA256 values along the first/next/last scene sample chain. All 99 extractable person records now have verified camera-exposure spans. The other five methods’ 500 input-budget rows are unchanged. The local advisor v3 bundle includes the updated budgets; its combined metric table and eight-person overview are byte-identical to v2. Workbook cell roundtrip and ZIP CRC checks passed. This updates input provenance only, not scores or scene training.

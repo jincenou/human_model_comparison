@@ -60,8 +60,8 @@
     {
       "source": "human_model_comparison/inputs/active_results.json",
       "destination": "metadata/templates/human_model_comparison/inputs/active_results.json",
-      "source_sha256": "ece75f0225d74d4bf88c09887f86897696d19a20c2b19390160bfac83e35d1c6",
-      "release_sha256": "ece75f0225d74d4bf88c09887f86897696d19a20c2b19390160bfac83e35d1c6",
+      "source_sha256": "817bcda23dbc338d2b544c7f54efa000394d56affdf5179c8f0cdd4f0cf3c41e",
+      "release_sha256": "817bcda23dbc338d2b544c7f54efa000394d56affdf5179c8f0cdd4f0cf3c41e",
       "changes": "metadata path placeholders"
     },
     {
@@ -128,7 +128,7 @@
       "changes": "metadata path placeholders; regenerate dependent hashes after materialization"
     },
     {
-      "source": "human_model_comparison/reports/advisor_report_20261112_v2/总表.md",
+      "source": "human_model_comparison/reports/advisor_report_20261112_v3/总表.md",
       "destination": "results/20261112/ALL_METRICS.md",
       "source_sha256": "3f6a8a4651e5d5751df1e0c4751f4ad9d12c37695363f0c2d000ab3fe290eb0b",
       "release_sha256": "3f6a8a4651e5d5751df1e0c4751f4ad9d12c37695363f0c2d000ab3fe290eb0b",
@@ -226,24 +226,31 @@
       "changes": "metadata path placeholders"
     },
     {
-      "source": "human_model_comparison/reports/input_budget_audit_v1/audit.json",
+      "source": "human_model_comparison/reports/input_budget_audit_v2/audit.json",
       "destination": "results/20261112/input_budget/audit.json",
-      "source_sha256": "072c2d5e19e164f3e5fb4f2dc7225d37db37af4842a3b2f6f1c149d4d2d12383",
-      "release_sha256": "df3eb9f917bc544b329a987f3483365b898dd30bad46158718c538458b67b749",
+      "source_sha256": "a422909cebc9a731b44c7137db004bbb16851719488b2148e1245c5e6eb8f4fa",
+      "release_sha256": "6b9da0920a83fa6a7a5306c6a4dced2918885acea43345dfda7b1ae5dea18a30",
       "changes": "metadata path placeholders"
     },
     {
-      "source": "human_model_comparison/reports/input_budget_audit_v1/per_identity_method.csv",
+      "source": "human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json",
+      "destination": "results/20261112/input_budget/omnire_exposure_manifest.json",
+      "source_sha256": "e0534ca8b9161910617d40bf5a227f5ebeb22ff5dcd652c7a3548c09cdba3c50",
+      "release_sha256": "4ac15cfa5a4796c6c1de76f438c4ebf021f7806759d800d7fc3bd73967cafd0b",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human_model_comparison/reports/input_budget_audit_v2/per_identity_method.csv",
       "destination": "results/20261112/input_budget/per_identity_method.csv",
-      "source_sha256": "a52a70f2e6a4e204811146e58734c6b0a9dc5af504af12b68098169cacae1eaf",
-      "release_sha256": "0329df384c9bef702dd5589eb206e80302fb09bfb35c85a2e1415f00b0814d76",
+      "source_sha256": "cc6d2409f4feb26216fa778b82b6cb0506d90b5fca16340c63663f101c1fc369",
+      "release_sha256": "c57f6acde7d5dea05eb7ce35ababa7e1f46dfa32d9a6aeafe578739c2025b724",
       "changes": "metadata path placeholders"
     },
     {
-      "source": "human_model_comparison/reports/input_budget_audit_v1/输入预算说明.txt",
+      "source": "human_model_comparison/reports/input_budget_audit_v2/输入预算说明.txt",
       "destination": "results/20261112/input_budget/输入预算说明.txt",
-      "source_sha256": "499b856e1ece65e1394e6e645b18f5a66f867d6a37ff2612e9302e476e29ffc3",
-      "release_sha256": "499b856e1ece65e1394e6e645b18f5a66f867d6a37ff2612e9302e476e29ffc3",
+      "source_sha256": "9bd671bacdcb5577006f402309e38d8a761a24291bb4242c059f9b4bf1fc55c6",
+      "release_sha256": "9bd671bacdcb5577006f402309e38d8a761a24291bb4242c059f9b4bf1fc55c6",
       "changes": "metadata path placeholders"
     },
     {
@@ -704,8 +711,8 @@
     {
       "source": "human_model_comparison/scripts/active_human_results.py",
       "destination": "workspace/human_model_comparison/scripts/active_human_results.py",
-      "source_sha256": "718285e0d5a2f2e6362831dfed09613ebbfeec280a3865d267cbf56d3d622849",
-      "release_sha256": "718285e0d5a2f2e6362831dfed09613ebbfeec280a3865d267cbf56d3d622849",
+      "source_sha256": "71f77378d65ac31132a09ead8fb5470205ff10454921b3d741618f4a6d5821a4",
+      "release_sha256": "71f77378d65ac31132a09ead8fb5470205ff10454921b3d741618f4a6d5821a4",
       "changes": "configurable path substitutions"
     },
     {
@@ -753,8 +760,8 @@
     {
       "source": "human_model_comparison/scripts/audit_human_input_budgets.py",
       "destination": "workspace/human_model_comparison/scripts/audit_human_input_budgets.py",
-      "source_sha256": "91e86b72b14193f11077a5f333fe948ece7a7c75a71e823326a961936e62ecd9",
-      "release_sha256": "91e86b72b14193f11077a5f333fe948ece7a7c75a71e823326a961936e62ecd9",
+      "source_sha256": "03a1619d1d8f9c08753943a3e33a5607249ead7f7e3255a3d9df0ee2fd1dfca3",
+      "release_sha256": "03a1619d1d8f9c08753943a3e33a5607249ead7f7e3255a3d9df0ee2fd1dfca3",
       "changes": "configurable path substitutions"
     },
     {
@@ -776,6 +783,13 @@
       "destination": "workspace/human_model_comparison/scripts/audit_omnire_human_time_v1.py",
       "source_sha256": "034eefa952c2e3890386413c3bb905008e46f78c378caeccab8e496a6c8b35ea",
       "release_sha256": "034eefa952c2e3890386413c3bb905008e46f78c378caeccab8e496a6c8b35ea",
+      "changes": "configurable path substitutions"
+    },
+    {
+      "source": "human_model_comparison/scripts/audit_omnire_input_exposures.py",
+      "destination": "workspace/human_model_comparison/scripts/audit_omnire_input_exposures.py",
+      "source_sha256": "b701251bb940e0a2fda9b0e49339a3ddac62bb3ba7b0b8cb88b9a8c20ca70433",
+      "release_sha256": "b701251bb940e0a2fda9b0e49339a3ddac62bb3ba7b0b8cb88b9a8c20ca70433",
       "changes": "configurable path substitutions"
     },
     {
@@ -1005,8 +1019,8 @@
     {
       "source": "human_model_comparison/scripts/export_advisor_tables.py",
       "destination": "workspace/human_model_comparison/scripts/export_advisor_tables.py",
-      "source_sha256": "33d25699f381dfc05357884f69f0f8d1a6d9f856202bb6d733328de5b9e69e1c",
-      "release_sha256": "33d25699f381dfc05357884f69f0f8d1a6d9f856202bb6d733328de5b9e69e1c",
+      "source_sha256": "21f0a4dc5a8871a2f5fee8e13ec8a7d280a2ba01616812b595899d58c6b56a66",
+      "release_sha256": "21f0a4dc5a8871a2f5fee8e13ec8a7d280a2ba01616812b595899d58c6b56a66",
       "changes": "configurable path substitutions"
     },
     {

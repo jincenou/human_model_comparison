@@ -14,8 +14,8 @@ def yaml_field(node, *keys):
     return node
 
 
-def main():
-    h = b.H; out = h/'reports/input_budget_audit_v1'; out.mkdir(exist_ok=True)
+def main(output='reports/input_budget_audit_v1', omnire_exposures=None):
+    h = b.H; out = h/output; out.mkdir(exist_ok=True)
     summary = b.read(resolve('core_summary'))
     b.verified(summary['selection'], summary['selection_sha256'])
     selected = b.read(summary['selection'])['objects']
@@ -26,6 +26,18 @@ def main():
     def tracked(path):
         path=Path(path);evidence.append(dict(path=str(path),sha256=b.m.sha(path)))
         return b.read(path)
+    exposure_by_directory = {}
+    if omnire_exposures:
+        exposure_manifest = tracked(h/omnire_exposures)
+        assert exposure_manifest['status'] == 'complete'
+        b.verified(exposure_manifest['source_inventory'], exposure_manifest['source_inventory_sha256'])
+        for entry in exposure_manifest['records']:
+            b.verified(entry['record'], entry['record_sha256'])
+            record = tracked(entry['record'])
+            assert record['status'] == 'all_processed_images_matched_native_chain'
+            for path, digest in record['metadata_hashes'].items():
+                b.verified(path, digest)
+            exposure_by_directory[record['processed_data']] = record
     for person in sorted(selected,key=lambda r:r['id']):
         sid=person['id']; paths=person['paths']
         native=tracked(paths['native_metadata']); time=tracked(paths['frame_mapping'])
@@ -97,6 +109,18 @@ def main():
                                     item['real_duration_seconds']=(max(ts)-min(ts))/1e6
                                     item['real_images']=len(files)
                                     item['evidence_scope']='Configured six-camera processed inventory matched retained nuScenes sample timestamps; scene-level observations, not target-visible count'
+                            if exposure_by_directory:
+                                record=exposure_by_directory[processed]
+                                assert record['scene']==person['scene'] and sid in record['ids']
+                                assert record['real_images']==len(files)
+                                assert record['sample_chain_count']==item['retained_scene_time_indices']
+                                item.update(real_duration_seconds=record['real_duration_seconds'],
+                                    first_image_timestamp_us=record['first_image_timestamp_us'],
+                                    last_image_timestamp_us=record['last_image_timestamp_us'],
+                                    sample_chain_duration_seconds=record['sample_chain_duration_seconds'],
+                                    duration_definition=record['duration_definition'],
+                                    exposure_mapping_manifest=str(h/omnire_exposures),
+                                    evidence_scope='All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility')
                     else:
                         cfg=yaml.compose(Path(config).read_text())
                         parser=yaml_field(cfg,'pipeline','datamanager','dataparser')
@@ -136,4 +160,10 @@ def main():
         ah_retained_views=sorted({str(r['generated_views'])for r in ah})),ensure_ascii=False))
 
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    import argparse
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--output', default='reports/input_budget_audit_v1')
+    parser.add_argument('--omnire-exposures')
+    args=parser.parse_args()
+    main(args.output,args.omnire_exposures)

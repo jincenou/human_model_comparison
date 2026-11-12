@@ -1,0 +1,1920 @@
+{
+  "status": "complete",
+  "scenes": 67,
+  "identities": 99,
+  "source_inventory": "${HMC_WORKSPACE}/human_model_comparison/reports/input_budget_audit_v1/audit.json",
+  "source_inventory_sha256": "072c2d5e19e164f3e5fb4f2dc7225d37db37af4842a3b2f6f1c149d4d2d12383",
+  "records": [
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0017",
+      "ids": [
+        "HN0046"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/drivestudio_nuscenes100_expansion/scene-0017/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/benchmark_nuscenes100_v1/data/scene-0017",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 240,
+      "sample_chain_count": 40,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.292579,
+      "first_image_timestamp_us": 1531885765104844,
+      "last_image_timestamp_us": 1531885784397423,
+      "sample_chain_duration_seconds": 19.249639,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0017.json",
+      "record_sha256": "27d15a6f6c1d8810f61e92974537a10b724cef85927257b46d19a37b33d703b2"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0018",
+      "ids": [
+        "HN0099"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/drivestudio_nuscenes100_expansion/scene-0018/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/benchmark_nuscenes100_v1/data/scene-0018",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 240,
+      "sample_chain_count": 40,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.442579,
+      "first_image_timestamp_us": 1531885792004844,
+      "last_image_timestamp_us": 1531885811447423,
+      "sample_chain_duration_seconds": 19.398964,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0018.json",
+      "record_sha256": "a7de6d8f48dd8e2e83c702b6011aaa54c4ca25a4ab5494e8166e52a35409d2d8"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0019",
+      "ids": [
+        "HN0685"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/drivestudio_nuscenes100_expansion/scene-0019/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/benchmark_nuscenes100_v1/data/scene-0019",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 240,
+      "sample_chain_count": 40,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.292579,
+      "first_image_timestamp_us": 1531885862504844,
+      "last_image_timestamp_us": 1531885881797423,
+      "sample_chain_duration_seconds": 19.248543,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0019.json",
+      "record_sha256": "d804dcd41f943194e5b377bd1c4bec95d2b2274a116110598de48b42665dfb56"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0045",
+      "ids": [
+        "HN0592"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/drivestudio_nuscenes100_expansion/scene-0045/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/benchmark_nuscenes100_v1/data/scene-0045",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 234,
+      "sample_chain_count": 39,
+      "retained_metadata_samples": 39,
+      "real_duration_seconds": 19.092579,
+      "first_image_timestamp_us": 1532402002104844,
+      "last_image_timestamp_us": 1532402021197423,
+      "sample_chain_duration_seconds": 19.050546,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0045.json",
+      "record_sha256": "e409513d93d45aa2c87a43fb7d218eb084493327e7df3da01f3e63941f6bac43"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0061",
+      "ids": [
+        "HN0646"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/drivestudio_nuscenes100_expansion/scene-0061/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/benchmark_nuscenes100_v1/data/scene-0061",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 234,
+      "sample_chain_count": 39,
+      "retained_metadata_samples": 39,
+      "real_duration_seconds": 19.192579,
+      "first_image_timestamp_us": 1532402927604844,
+      "last_image_timestamp_us": 1532402946797423,
+      "sample_chain_duration_seconds": 19.149566,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0061.json",
+      "record_sha256": "e068f7831adabfa8535959e8a730710380ee94cbf51da4b2226df071682d6e7e"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0007",
+      "ids": [
+        "HN0172",
+        "HN0211"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0007/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0007/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 144,
+      "sample_chain_count": 24,
+      "retained_metadata_samples": 39,
+      "real_duration_seconds": 19.142579,
+      "first_image_timestamp_us": 1531884258004844,
+      "last_image_timestamp_us": 1531884277147423,
+      "sample_chain_duration_seconds": 19.099796,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0007.json",
+      "record_sha256": "811d04516a1f58e6489669e4167f142396619127392cc296ab407f98874d5136"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0020",
+      "ids": [
+        "HN0690"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0020/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0020/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 39,
+      "real_duration_seconds": 19.092579,
+      "first_image_timestamp_us": 1531885907604844,
+      "last_image_timestamp_us": 1531885926697423,
+      "sample_chain_duration_seconds": 19.050054,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0020.json",
+      "record_sha256": "74e932fb0e6361e3be480ed538e169e1cda0c87419b937bfca9dbcbd7b6133ca"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0029",
+      "ids": [
+        "HN0163",
+        "HN0221",
+        "HN0382"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0029/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0029/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 150,
+      "sample_chain_count": 25,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 18.692579,
+      "first_image_timestamp_us": 1531886158504844,
+      "last_image_timestamp_us": 1531886177197423,
+      "sample_chain_duration_seconds": 18.650794,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0029.json",
+      "record_sha256": "6ceb49ee6ba4a50fbdb8136bf570103f3d8dc768863d5b22b32553293a7c9deb"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0125",
+      "ids": [
+        "HN0311"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0125/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0125/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 132,
+      "sample_chain_count": 22,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 18.792579,
+      "first_image_timestamp_us": 1533112740154844,
+      "last_image_timestamp_us": 1533112758947423,
+      "sample_chain_duration_seconds": 18.749229,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0125.json",
+      "record_sha256": "d6fcc67201a8e93248ce1f87f1665551534ed0032185e9d831ef40a6bfe4ffc0"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0126",
+      "ids": [
+        "HN0127"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0126/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0126/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 18.892579,
+      "first_image_timestamp_us": 1533112762154844,
+      "last_image_timestamp_us": 1533112781047423,
+      "sample_chain_duration_seconds": 18.850999,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0126.json",
+      "record_sha256": "dfefe621a7d06d294c675e9661d8dbaef69075222ee65a01b3a0425335ef1d00"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0159",
+      "ids": [
+        "HN0231",
+        "HN0517"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0159/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0159/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 39,
+      "real_duration_seconds": 19.192579,
+      "first_image_timestamp_us": 1533115180004844,
+      "last_image_timestamp_us": 1533115199197423,
+      "sample_chain_duration_seconds": 19.150103,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0159.json",
+      "record_sha256": "2ff7f4b120369169d0ae83f8df78df40d1a28f58b2d50532039e6e8f1c9efdcd"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0185",
+      "ids": [
+        "HN0249"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0185/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0185/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 132,
+      "sample_chain_count": 22,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.042579,
+      "first_image_timestamp_us": 1532663010904844,
+      "last_image_timestamp_us": 1532663029947423,
+      "sample_chain_duration_seconds": 18.99803,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0185.json",
+      "record_sha256": "ef7e23dac4c1b76297854865da6bb060849093b5ac575b0345d097bf97858e83"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0194",
+      "ids": [
+        "HN0165"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0194/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0194/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 18.942579,
+      "first_image_timestamp_us": 1533107748504844,
+      "last_image_timestamp_us": 1533107767447423,
+      "sample_chain_duration_seconds": 18.900721,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0194.json",
+      "record_sha256": "aaa5e740ea7e4af3e96c1465d9ab1fd1a957ff9bd77318e4a369f456af9d37eb"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0203",
+      "ids": [
+        "HN0216"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0203/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0203/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 18.842623,
+      "first_image_timestamp_us": 1532621808604799,
+      "last_image_timestamp_us": 1532621827447422,
+      "sample_chain_duration_seconds": 18.79955,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0203.json",
+      "record_sha256": "fd0f0c30eb046c1b616ece830791b4fc04618f70fc59b5a4968912b9d496f5af"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0208",
+      "ids": [
+        "HN0108"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0208/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0208/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.042606,
+      "first_image_timestamp_us": 1532621934604799,
+      "last_image_timestamp_us": 1532621953647405,
+      "sample_chain_duration_seconds": 19.000235,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0208.json",
+      "record_sha256": "c37d1cff2df0f9107a4119462eec079e7affd84b276707946d57df4d62f39c06"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0218",
+      "ids": [
+        "HN0217"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0218/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0218/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 18.842606,
+      "first_image_timestamp_us": 1532707721104799,
+      "last_image_timestamp_us": 1532707739947405,
+      "sample_chain_duration_seconds": 18.800665,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0218.json",
+      "record_sha256": "4175ed6d8565f591638c10ba80bb250b066a2c0de3c8cd6163cfbc36bcbb2a62"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0224",
+      "ids": [
+        "HN0267"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0224/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0224/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 132,
+      "sample_chain_count": 22,
+      "retained_metadata_samples": 39,
+      "real_duration_seconds": 19.192606,
+      "first_image_timestamp_us": 1532707917104799,
+      "last_image_timestamp_us": 1532707936297405,
+      "sample_chain_duration_seconds": 19.150689,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0224.json",
+      "record_sha256": "323e50ab1ca32259a6e3fc00a5ae41ca6d5790edc40f2242fdeac3b58923757e"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0225",
+      "ids": [
+        "HN0651"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0225/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0225/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 18.892606,
+      "first_image_timestamp_us": 1532707960004799,
+      "last_image_timestamp_us": 1532707978897405,
+      "sample_chain_duration_seconds": 18.849856,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0225.json",
+      "record_sha256": "a185b2cd81b05c63f9f1291d85f6f0f84198a52ec06057058a43ee87404b8e74"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0239",
+      "ids": [
+        "HN0137",
+        "HN0223",
+        "HN0838"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0239/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0239/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 156,
+      "sample_chain_count": 26,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 18.942606,
+      "first_image_timestamp_us": 1532708666004799,
+      "last_image_timestamp_us": 1532708684947405,
+      "sample_chain_duration_seconds": 18.896865,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0239.json",
+      "record_sha256": "bc429c03eed6afa15885cb8de9419b05e0ebc97e982e79e19ec67a349d882a95"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0240",
+      "ids": [
+        "HN0189",
+        "HN0850"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0240/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0240/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 39,
+      "real_duration_seconds": 19.292126,
+      "first_image_timestamp_us": 1532708686005279,
+      "last_image_timestamp_us": 1532708705297405,
+      "sample_chain_duration_seconds": 19.250011,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0240.json",
+      "record_sha256": "281166ee75c9f4a60dd81eaeb4eb49f18efe9f97082778d1a58783fee5692b2e"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0250",
+      "ids": [
+        "HN0136"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0250/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0250/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.042606,
+      "first_image_timestamp_us": 1534867367904799,
+      "last_image_timestamp_us": 1534867386947405,
+      "sample_chain_duration_seconds": 19.000289,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0250.json",
+      "record_sha256": "9d7882f3a96d38648d7ca9e332c977f136faa40fbb4f19e73ae4e38144178f9c"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0297",
+      "ids": [
+        "HN0181",
+        "HN0281"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0297/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0297/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 144,
+      "sample_chain_count": 24,
+      "retained_metadata_samples": 39,
+      "real_duration_seconds": 19.142606,
+      "first_image_timestamp_us": 1535729238504799,
+      "last_image_timestamp_us": 1535729257647405,
+      "sample_chain_duration_seconds": 19.100916,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0297.json",
+      "record_sha256": "a138851a54f22837cef46714cbc2fa035a4b69333b1077263d0bff658ffd763b"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0321",
+      "ids": [
+        "HN0116"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0321/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0321/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 18.892606,
+      "first_image_timestamp_us": 1535487885154799,
+      "last_image_timestamp_us": 1535487904047405,
+      "sample_chain_duration_seconds": 18.850466,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0321.json",
+      "record_sha256": "adfc511f97226a806e1b92578c5ea23cb88d9e9b6b235f78fa85b95359fdae78"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0323",
+      "ids": [
+        "HN0161",
+        "HN0252",
+        "HN0810"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0323/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0323/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 144,
+      "sample_chain_count": 24,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 18.792606,
+      "first_image_timestamp_us": 1535488243154799,
+      "last_image_timestamp_us": 1535488261947405,
+      "sample_chain_duration_seconds": 18.750329,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0323.json",
+      "record_sha256": "7c5b9fa127226ddaa4edea6eeaeed45ebea74b8185e68fb32252164b4651543a"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0345",
+      "ids": [
+        "HN0057",
+        "HN0090"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0345/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0345/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 39,
+      "real_duration_seconds": 19.242579,
+      "first_image_timestamp_us": 1533201582404844,
+      "last_image_timestamp_us": 1533201601647423,
+      "sample_chain_duration_seconds": 19.19983,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0345.json",
+      "record_sha256": "fb481489121d2def67513804be2adf964f08063c002743a947f58dfdf9794f63"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0347",
+      "ids": [
+        "HN0131"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0347/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0347/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 39,
+      "real_duration_seconds": 19.092579,
+      "first_image_timestamp_us": 1533202201104844,
+      "last_image_timestamp_us": 1533202220197423,
+      "sample_chain_duration_seconds": 19.05002,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0347.json",
+      "record_sha256": "8feb7a92edd3c0681f2d4d32aeb6096cac109a222c3634245190d33086fd1a39"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0372",
+      "ids": [
+        "HN0199"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0372/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0372/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 18.942579,
+      "first_image_timestamp_us": 1533280188854844,
+      "last_image_timestamp_us": 1533280207797423,
+      "sample_chain_duration_seconds": 18.899078,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0372.json",
+      "record_sha256": "fa0da7177e64658f0ffcb5e4fc0e035f9b915eac4ff361e2c9cad00fd2c1f8c5"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0393",
+      "ids": [
+        "HN0309"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0393/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0393/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 132,
+      "sample_chain_count": 22,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.092606,
+      "first_image_timestamp_us": 1535731258604799,
+      "last_image_timestamp_us": 1535731277697405,
+      "sample_chain_duration_seconds": 19.048441,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0393.json",
+      "record_sha256": "444a9677ed11bbd517146593a3c2736d39c2b03d324bab7466a3a6f1ea536a10"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0395",
+      "ids": [
+        "HN0229"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0395/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0395/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 132,
+      "sample_chain_count": 22,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.092606,
+      "first_image_timestamp_us": 1535731298604799,
+      "last_image_timestamp_us": 1535731317697405,
+      "sample_chain_duration_seconds": 19.05172,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0395.json",
+      "record_sha256": "55428815e9c47a82f85a78c644e390bae02c6eb2c6b1bd5a2dd31bf344df14ad"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0423",
+      "ids": [
+        "HN0228",
+        "HN0266",
+        "HN0825"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0423/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0423/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 144,
+      "sample_chain_count": 24,
+      "retained_metadata_samples": 41,
+      "real_duration_seconds": 19.942579,
+      "first_image_timestamp_us": 1538985210254844,
+      "last_image_timestamp_us": 1538985230197423,
+      "sample_chain_duration_seconds": 19.900497,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0423.json",
+      "record_sha256": "83b409bd0dead2fa2e38ab3f6c133c5aae6bec882bed171ba327ac16d369d224"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0425",
+      "ids": [
+        "HN0293"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0425/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0425/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 41,
+      "real_duration_seconds": 19.942579,
+      "first_image_timestamp_us": 1538985250254844,
+      "last_image_timestamp_us": 1538985270197423,
+      "sample_chain_duration_seconds": 19.900524,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0425.json",
+      "record_sha256": "9434fce26ad9fced1473f4f765c2d2f1d2e8cbf622083a9649b7441915da9b13"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0458",
+      "ids": [
+        "HN0291"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0458/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0458/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 144,
+      "sample_chain_count": 24,
+      "retained_metadata_samples": 41,
+      "real_duration_seconds": 19.942606,
+      "first_image_timestamp_us": 1537289751504799,
+      "last_image_timestamp_us": 1537289771447405,
+      "sample_chain_duration_seconds": 19.90049,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0458.json",
+      "record_sha256": "b0f1274a2232446861fcfab7a176bcb27ce3b2f32c5e6e55f42757af3ac36506"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0464",
+      "ids": [
+        "HN0156"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0464/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0464/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 41,
+      "real_duration_seconds": 19.942606,
+      "first_image_timestamp_us": 1537289881504799,
+      "last_image_timestamp_us": 1537289901447405,
+      "sample_chain_duration_seconds": 19.899927,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0464.json",
+      "record_sha256": "2dabb31ec6fcf22c80c742492f7c40fa62351a3a91c84608f61b78e75e1ca5e5"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0507",
+      "ids": [
+        "HN0219"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0507/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0507/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 144,
+      "sample_chain_count": 24,
+      "retained_metadata_samples": 41,
+      "real_duration_seconds": 19.842606,
+      "first_image_timestamp_us": 1535478716104799,
+      "last_image_timestamp_us": 1535478735947405,
+      "sample_chain_duration_seconds": 19.799312,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0507.json",
+      "record_sha256": "abf1e3c12daeba779a72d1a748c922d9512c8ec06f8a36f3ca80c607012eb236"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0510",
+      "ids": [
+        "HN0273"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0510/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0510/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 144,
+      "sample_chain_count": 24,
+      "retained_metadata_samples": 41,
+      "real_duration_seconds": 19.592606,
+      "first_image_timestamp_us": 1535478827104799,
+      "last_image_timestamp_us": 1535478846697405,
+      "sample_chain_duration_seconds": 19.551592,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0510.json",
+      "record_sha256": "63adab174d67a870dd08a221a3bd9cbe1bc3f5f19ce1148a3bde8d3007ad06d1"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0533",
+      "ids": [
+        "HN0321"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0533/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0533/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 132,
+      "sample_chain_count": 22,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.142606,
+      "first_image_timestamp_us": 1535659108004799,
+      "last_image_timestamp_us": 1535659127147405,
+      "sample_chain_duration_seconds": 19.102017,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0533.json",
+      "record_sha256": "51227e6e4a7ee16b2bb9ea88ba58312fa09d12c568ba2eb0eb5cb85006740c42"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0553",
+      "ids": [
+        "HN0039"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0553/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0553/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 144,
+      "sample_chain_count": 24,
+      "retained_metadata_samples": 41,
+      "real_duration_seconds": 19.942606,
+      "first_image_timestamp_us": 1535489296004799,
+      "last_image_timestamp_us": 1535489315947405,
+      "sample_chain_duration_seconds": 19.900489,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0553.json",
+      "record_sha256": "f162c03cd3fdc69b62d07d43922b90ffd6cdfff293e65bbeaca29d720f7c2891"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0554",
+      "ids": [
+        "HN0040",
+        "HN0051"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0554/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0554/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 144,
+      "sample_chain_count": 24,
+      "retained_metadata_samples": 41,
+      "real_duration_seconds": 19.942606,
+      "first_image_timestamp_us": 1535489316004799,
+      "last_image_timestamp_us": 1535489335947405,
+      "sample_chain_duration_seconds": 19.898268,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0554.json",
+      "record_sha256": "bff21fcf4803773c3d996fc4207f592182e0f2f53c0f24e0b5556836c39db838"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0576",
+      "ids": [
+        "HN0144"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0576/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0576/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.042606,
+      "first_image_timestamp_us": 1537290901354799,
+      "last_image_timestamp_us": 1537290920397405,
+      "sample_chain_duration_seconds": 18.999182,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0576.json",
+      "record_sha256": "3d986fab68e294cee6def3f09a65a70b2f0286bdfbd95e484a6d2f400fa7afbb"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0595",
+      "ids": [
+        "HN0126"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0595/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0595/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 144,
+      "sample_chain_count": 24,
+      "retained_metadata_samples": 41,
+      "real_duration_seconds": 19.942606,
+      "first_image_timestamp_us": 1537292983254799,
+      "last_image_timestamp_us": 1537293003197405,
+      "sample_chain_duration_seconds": 19.900487,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0595.json",
+      "record_sha256": "1dfa77c9418459f9676399ed4965db1e476660fa2b32f3f0dd0bfd56dfedce4f"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0673",
+      "ids": [
+        "HN0325"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0673/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0673/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.092606,
+      "first_image_timestamp_us": 1535487842854799,
+      "last_image_timestamp_us": 1535487861947405,
+      "sample_chain_duration_seconds": 19.048385,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0673.json",
+      "record_sha256": "56face0fcfb8ae0245c28ddcb5b5c25e0ed36d3bb2ffd940299dd13d4a10d40b"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0686",
+      "ids": [
+        "HN0141",
+        "HN0175",
+        "HN0272",
+        "HN0812",
+        "HN0834",
+        "HN0861"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0686/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0686/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 168,
+      "sample_chain_count": 28,
+      "retained_metadata_samples": 41,
+      "real_duration_seconds": 19.892606,
+      "first_image_timestamp_us": 1535488219754799,
+      "last_image_timestamp_us": 1535488239647405,
+      "sample_chain_duration_seconds": 19.849604,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0686.json",
+      "record_sha256": "8a14c65233febd0856c06cc04c66c0931d7d26d99522350e98812d40fbfab4f5"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0705",
+      "ids": [
+        "HN0262"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0705/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0705/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 132,
+      "sample_chain_count": 22,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.092606,
+      "first_image_timestamp_us": 1535573288854799,
+      "last_image_timestamp_us": 1535573307947405,
+      "sample_chain_duration_seconds": 19.050559,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0705.json",
+      "record_sha256": "fafc083d67378ea912267a4e544b82ec9fc9b0dee587804985daf031f2cb5361"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0714",
+      "ids": [
+        "HN0145"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0714/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0714/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 144,
+      "sample_chain_count": 24,
+      "retained_metadata_samples": 41,
+      "real_duration_seconds": 19.942606,
+      "first_image_timestamp_us": 1535573529854799,
+      "last_image_timestamp_us": 1535573549797405,
+      "sample_chain_duration_seconds": 19.898835,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0714.json",
+      "record_sha256": "4b1840f5d7aab0d9445a8bc9070f8369c9681f127d53f6957fc189e5378cb611"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0715",
+      "ids": [
+        "HN0166",
+        "HN0387",
+        "HN0866"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0715/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0715/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 132,
+      "sample_chain_count": 22,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.092606,
+      "first_image_timestamp_us": 1535573549854799,
+      "last_image_timestamp_us": 1535573568947405,
+      "sample_chain_duration_seconds": 19.048959,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0715.json",
+      "record_sha256": "7aee24177df3e57fbc317d16fd3a9c29c3065df69f24bc27062bb6f43a0c1080"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0716",
+      "ids": [
+        "HN0114",
+        "HN0115",
+        "HN0164",
+        "HN0345",
+        "HN0821"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0716/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0716/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 156,
+      "sample_chain_count": 26,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.092608,
+      "first_image_timestamp_us": 1535573569854799,
+      "last_image_timestamp_us": 1535573588947407,
+      "sample_chain_duration_seconds": 19.049463,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0716.json",
+      "record_sha256": "0ea1a5dc8daaec69f681d369e02d04728c3f74d737f09b7799a44723f1fe985b"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0727",
+      "ids": [
+        "HN0158",
+        "HN0207",
+        "HN0312",
+        "HN0497"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0727/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0727/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 156,
+      "sample_chain_count": 26,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.042606,
+      "first_image_timestamp_us": 1535573842854799,
+      "last_image_timestamp_us": 1535573861897405,
+      "sample_chain_duration_seconds": 18.998612,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0727.json",
+      "record_sha256": "6a97049d650e1de62d633b436afbbdd7e6e927dcd5fc0480261eed5ac05e28fa"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0731",
+      "ids": [
+        "HN0140"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0731/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0731/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 41,
+      "real_duration_seconds": 19.642606,
+      "first_image_timestamp_us": 1535573959904799,
+      "last_image_timestamp_us": 1535573979547405,
+      "sample_chain_duration_seconds": 19.603372,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0731.json",
+      "record_sha256": "81c73474f56577a2996b223d084460c62ec721d4b37eafbb5da31c317464395d"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0741",
+      "ids": [
+        "HN0274"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0741/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0741/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 144,
+      "sample_chain_count": 24,
+      "retained_metadata_samples": 41,
+      "real_duration_seconds": 19.792606,
+      "first_image_timestamp_us": 1535656655254799,
+      "last_image_timestamp_us": 1535656675047405,
+      "sample_chain_duration_seconds": 19.750095,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0741.json",
+      "record_sha256": "acf69ffdafff1c170626a0914d60073537fb8ea97e10b82d2782a87098fe01c3"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0746",
+      "ids": [
+        "HN0233",
+        "HN0292"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0746/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0746/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 144,
+      "sample_chain_count": 24,
+      "retained_metadata_samples": 41,
+      "real_duration_seconds": 19.942606,
+      "first_image_timestamp_us": 1535656795254799,
+      "last_image_timestamp_us": 1535656815197405,
+      "sample_chain_duration_seconds": 19.899911,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0746.json",
+      "record_sha256": "504728d3b24b4d64400774cfe51f2fcea1673b6cebbd317701086f8f9f5fb59c"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0747",
+      "ids": [
+        "HN0179"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0747/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0747/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 144,
+      "sample_chain_count": 24,
+      "retained_metadata_samples": 41,
+      "real_duration_seconds": 19.942606,
+      "first_image_timestamp_us": 1535656815254799,
+      "last_image_timestamp_us": 1535656835197405,
+      "sample_chain_duration_seconds": 19.899912,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0747.json",
+      "record_sha256": "4dfaec5589667018022e56ca305b99cd07cfe8b5402f82854e34ee0176aef432"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0810",
+      "ids": [
+        "HN0263"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0810/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0810/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.042606,
+      "first_image_timestamp_us": 1537299001604799,
+      "last_image_timestamp_us": 1537299020647405,
+      "sample_chain_duration_seconds": 18.999152,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0810.json",
+      "record_sha256": "fa916915f179826fee2816eca8684dda06f0aa69fc640cfb057f5602da2f5aa5"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0811",
+      "ids": [
+        "HN0290"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0811/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0811/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.042606,
+      "first_image_timestamp_us": 1537299081354799,
+      "last_image_timestamp_us": 1537299100397405,
+      "sample_chain_duration_seconds": 18.999157,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0811.json",
+      "record_sha256": "824fad1e6c6ae3f328d60cec0cd8c592a591d30bfd629aca642491002a95af69"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0858",
+      "ids": [
+        "HN0142",
+        "HN0317"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0858/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0858/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 132,
+      "sample_chain_count": 22,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.142579,
+      "first_image_timestamp_us": 1538986117754844,
+      "last_image_timestamp_us": 1538986136897423,
+      "sample_chain_duration_seconds": 19.099824,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0858.json",
+      "record_sha256": "3414a32c476765b7c1977b2b3a6a33e5940c613abdb3a7c053f20130da8a3497"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0862",
+      "ids": [
+        "HN0215"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0862/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0862/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 132,
+      "sample_chain_count": 22,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 18.942579,
+      "first_image_timestamp_us": 1538986197854844,
+      "last_image_timestamp_us": 1538986216797423,
+      "sample_chain_duration_seconds": 18.900182,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0862.json",
+      "record_sha256": "43dc3cb1060352105bd10e3adb9ec556bef62af2041de85d8453d67bf20d2abe"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0894",
+      "ids": [
+        "HN0268"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0894/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0894/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 132,
+      "sample_chain_count": 22,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.092606,
+      "first_image_timestamp_us": 1537297613854799,
+      "last_image_timestamp_us": 1537297632947405,
+      "sample_chain_duration_seconds": 19.050014,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0894.json",
+      "record_sha256": "982c245ac29cd023d38d431ce1238c40ad3a9781c25a476cdf0c702941ac664f"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0898",
+      "ids": [
+        "HN0190"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0898/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0898/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 132,
+      "sample_chain_count": 22,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.092606,
+      "first_image_timestamp_us": 1537297714854799,
+      "last_image_timestamp_us": 1537297733947405,
+      "sample_chain_duration_seconds": 19.050044,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0898.json",
+      "record_sha256": "97588fc6139c4c78ea7b1a3a95c1ba322ca16e6de1ab0bec0d0983286eb0233f"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0917",
+      "ids": [
+        "HN0004"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0917/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0917/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 41,
+      "real_duration_seconds": 19.942579,
+      "first_image_timestamp_us": 1538984293504844,
+      "last_image_timestamp_us": 1538984313447423,
+      "sample_chain_duration_seconds": 19.899389,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0917.json",
+      "record_sha256": "154d1eee1ab188d37ff3c8ae2eebfbc53f9de65069f083230e016c6cb9ddf2cf"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0921",
+      "ids": [
+        "HN0038"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0921/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0921/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 144,
+      "sample_chain_count": 24,
+      "retained_metadata_samples": 41,
+      "real_duration_seconds": 19.942579,
+      "first_image_timestamp_us": 1538984488504844,
+      "last_image_timestamp_us": 1538984508447423,
+      "sample_chain_duration_seconds": 19.90162,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0921.json",
+      "record_sha256": "e33acf6e25642337408787bced356f4fd971db8327a9695d7011667958c3b077"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0949",
+      "ids": [
+        "HN0214"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0949/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0949/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.042579,
+      "first_image_timestamp_us": 1537932010354844,
+      "last_image_timestamp_us": 1537932029397423,
+      "sample_chain_duration_seconds": 18.999689,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0949.json",
+      "record_sha256": "39641bd0cc52258b76b7f6824993334013e5f78d180df58a16ce28ad07ab65e1"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0976",
+      "ids": [
+        "HN0258"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0976/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0976/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.142579,
+      "first_image_timestamp_us": 1537845243254844,
+      "last_image_timestamp_us": 1537845262397423,
+      "sample_chain_duration_seconds": 19.099254,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0976.json",
+      "record_sha256": "ff1768a8f7d1e5a35dcd664a52299a6999e2c07082c0330a57ac6a5cc2c7bab1"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0984",
+      "ids": [
+        "HN0632"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0984/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0984/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.092579,
+      "first_image_timestamp_us": 1537845432354844,
+      "last_image_timestamp_us": 1537845451447423,
+      "sample_chain_duration_seconds": 19.049458,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0984.json",
+      "record_sha256": "f3ccdc633050f5865953befd0f4cfb06ae284be2db316e0e16c118ef9f6c2b04"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0989",
+      "ids": [
+        "HN0150",
+        "HN0581"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0989/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0989/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 132,
+      "sample_chain_count": 22,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.042579,
+      "first_image_timestamp_us": 1537845532254844,
+      "last_image_timestamp_us": 1537845551297423,
+      "sample_chain_duration_seconds": 19.000314,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0989.json",
+      "record_sha256": "7e7c5a4173fcd012f55f6b41c9266be171a8c5de8ea28e3c2058c4ef067edd1a"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0991",
+      "ids": [
+        "HN0212"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0991/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-0991/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 144,
+      "sample_chain_count": 24,
+      "retained_metadata_samples": 41,
+      "real_duration_seconds": 19.942579,
+      "first_image_timestamp_us": 1537845612254844,
+      "last_image_timestamp_us": 1537845632197423,
+      "sample_chain_duration_seconds": 19.901028,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0991.json",
+      "record_sha256": "ef760e065c0263ef03c482fd59f44931210ce8f65301288423f7eff5bef3c210"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-1094",
+      "ids": [
+        "HN0668"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-1094/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-1094/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 138,
+      "sample_chain_count": 23,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.042579,
+      "first_image_timestamp_us": 1542800847904844,
+      "last_image_timestamp_us": 1542800866947423,
+      "sample_chain_duration_seconds": 19.000242,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-1094.json",
+      "record_sha256": "214e5e48241720894ef7ac678a21c038b2d2eea23852b6e83e57006e1c316252"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-1099",
+      "ids": [
+        "HN0280"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-1099/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_human_reviewed95/scene-1099/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 132,
+      "sample_chain_count": 22,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.042579,
+      "first_image_timestamp_us": 1542800967904844,
+      "last_image_timestamp_us": 1542800986947423,
+      "sample_chain_duration_seconds": 18.999162,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-1099.json",
+      "record_sha256": "7a93fab8662c4cb3dd54c9ceed9d08dcace674996d9e6eabd55e6b370cee9132"
+    },
+    {
+      "status": "all_processed_images_matched_native_chain",
+      "scene": "scene-0067",
+      "ids": [
+        "HN0310",
+        "HN0728"
+      ],
+      "processed_data": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_reconstruction_only/scene-0067/processed/trainval/000",
+      "metadata_root": "${HMC_WORKSPACE}/vehicle_model_comparison/inputs/omnire_reconstruction_only/scene-0067/train_only_nuscenes",
+      "cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT_RIGHT",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT",
+        "CAM_BACK"
+      ],
+      "real_images": 240,
+      "sample_chain_count": 40,
+      "retained_metadata_samples": 40,
+      "real_duration_seconds": 19.44187,
+      "first_image_timestamp_us": 1533153430255535,
+      "last_image_timestamp_us": 1533153449697405,
+      "sample_chain_duration_seconds": 19.398824,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "mapping_validation": "Every processed JPEG SHA256 equals the corresponding native keyframe JPEG from the traversed first/next/last sample chain",
+      "record": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0067.json",
+      "record_sha256": "846e79f69582f3b13bb356858c916e61a4df85869f68f29f462a52a77dc5a987"
+    }
+  ],
+  "script_sha256": "b701251bb940e0a2fda9b0e49339a3ddac62bb3ba7b0b8cb88b9a8c20ca70433",
+  "additional_scene_training": false,
+  "target_visibility_count": false
+}

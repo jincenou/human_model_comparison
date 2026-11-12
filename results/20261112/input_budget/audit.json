@@ -69,7 +69,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0917_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0917_legacy_no_smpl/config.yaml",
@@ -80,7 +80,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.942579,
+      "first_image_timestamp_us": 1538984293504844,
+      "last_image_timestamp_us": 1538984313447423,
+      "sample_chain_duration_seconds": 19.899389,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0004",
@@ -171,7 +177,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0921_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0921_legacy_no_smpl/config.yaml",
@@ -182,7 +188,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.942579,
+      "first_image_timestamp_us": 1538984488504844,
+      "last_image_timestamp_us": 1538984508447423,
+      "sample_chain_duration_seconds": 19.90162,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0038",
@@ -263,7 +275,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0553_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0553_legacy_no_smpl/config.yaml",
@@ -274,7 +286,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.942606,
+      "first_image_timestamp_us": 1535489296004799,
+      "last_image_timestamp_us": 1535489315947405,
+      "sample_chain_duration_seconds": 19.900489,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0039",
@@ -365,7 +383,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0554_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0554_legacy_no_smpl/config.yaml",
@@ -376,7 +394,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.942606,
+      "first_image_timestamp_us": 1535489316004799,
+      "last_image_timestamp_us": 1535489335947405,
+      "sample_chain_duration_seconds": 19.898268,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0040",
@@ -467,7 +491,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_nuscenes100_expansion/formal/nuScenes/scene-0017/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_nuscenes100_expansion/formal/nuScenes/scene-0017/config.yaml",
@@ -478,7 +502,13 @@
       "retained_scene_image_files": 240,
       "retained_scene_time_indices": 40,
       "real_images": 240,
-      "lidar_scans": 40
+      "lidar_scans": 40,
+      "real_duration_seconds": 19.292579,
+      "first_image_timestamp_us": 1531885765104844,
+      "last_image_timestamp_us": 1531885784397423,
+      "sample_chain_duration_seconds": 19.249639,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0046",
@@ -569,7 +599,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0554_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0554_legacy_no_smpl/config.yaml",
@@ -580,7 +610,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.942606,
+      "first_image_timestamp_us": 1535489316004799,
+      "last_image_timestamp_us": 1535489335947405,
+      "sample_chain_duration_seconds": 19.898268,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0051",
@@ -671,7 +707,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0345_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0345_legacy_no_smpl/config.yaml",
@@ -682,7 +718,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.242579,
+      "first_image_timestamp_us": 1533201582404844,
+      "last_image_timestamp_us": 1533201601647423,
+      "sample_chain_duration_seconds": 19.19983,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0057",
@@ -763,7 +805,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0345_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0345_legacy_no_smpl/config.yaml",
@@ -774,7 +816,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.242579,
+      "first_image_timestamp_us": 1533201582404844,
+      "last_image_timestamp_us": 1533201601647423,
+      "sample_chain_duration_seconds": 19.19983,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0090",
@@ -865,7 +913,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_nuscenes100_expansion/formal/nuScenes/scene-0018/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_nuscenes100_expansion/formal/nuScenes/scene-0018/config.yaml",
@@ -876,7 +924,13 @@
       "retained_scene_image_files": 240,
       "retained_scene_time_indices": 40,
       "real_images": 240,
-      "lidar_scans": 40
+      "lidar_scans": 40,
+      "real_duration_seconds": 19.442579,
+      "first_image_timestamp_us": 1531885792004844,
+      "last_image_timestamp_us": 1531885811447423,
+      "sample_chain_duration_seconds": 19.398964,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0099",
@@ -957,7 +1011,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0208_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0208_legacy_no_smpl/config.yaml",
@@ -968,7 +1022,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.042606,
+      "first_image_timestamp_us": 1532621934604799,
+      "last_image_timestamp_us": 1532621953647405,
+      "sample_chain_duration_seconds": 19.000235,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0108",
@@ -1059,7 +1119,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0716_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0716_legacy_no_smpl/config.yaml",
@@ -1070,7 +1130,13 @@
       "retained_scene_image_files": 156,
       "retained_scene_time_indices": 26,
       "real_images": 156,
-      "lidar_scans": 26
+      "lidar_scans": 26,
+      "real_duration_seconds": 19.092608,
+      "first_image_timestamp_us": 1535573569854799,
+      "last_image_timestamp_us": 1535573588947407,
+      "sample_chain_duration_seconds": 19.049463,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0114",
@@ -1161,7 +1227,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0716_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0716_legacy_no_smpl/config.yaml",
@@ -1172,7 +1238,13 @@
       "retained_scene_image_files": 156,
       "retained_scene_time_indices": 26,
       "real_images": 156,
-      "lidar_scans": 26
+      "lidar_scans": 26,
+      "real_duration_seconds": 19.092608,
+      "first_image_timestamp_us": 1535573569854799,
+      "last_image_timestamp_us": 1535573588947407,
+      "sample_chain_duration_seconds": 19.049463,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0115",
@@ -1263,7 +1335,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0321_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0321_legacy_no_smpl/config.yaml",
@@ -1274,7 +1346,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 18.892606,
+      "first_image_timestamp_us": 1535487885154799,
+      "last_image_timestamp_us": 1535487904047405,
+      "sample_chain_duration_seconds": 18.850466,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0116",
@@ -1365,7 +1443,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0595_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0595_legacy_no_smpl/config.yaml",
@@ -1376,7 +1454,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.942606,
+      "first_image_timestamp_us": 1537292983254799,
+      "last_image_timestamp_us": 1537293003197405,
+      "sample_chain_duration_seconds": 19.900487,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0126",
@@ -1467,7 +1551,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0126_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0126_legacy_no_smpl/config.yaml",
@@ -1478,7 +1562,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 18.892579,
+      "first_image_timestamp_us": 1533112762154844,
+      "last_image_timestamp_us": 1533112781047423,
+      "sample_chain_duration_seconds": 18.850999,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0127",
@@ -1569,7 +1659,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0347_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0347_legacy_no_smpl/config.yaml",
@@ -1580,7 +1670,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.092579,
+      "first_image_timestamp_us": 1533202201104844,
+      "last_image_timestamp_us": 1533202220197423,
+      "sample_chain_duration_seconds": 19.05002,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0131",
@@ -1661,7 +1757,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0250_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0250_legacy_no_smpl/config.yaml",
@@ -1672,7 +1768,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.042606,
+      "first_image_timestamp_us": 1534867367904799,
+      "last_image_timestamp_us": 1534867386947405,
+      "sample_chain_duration_seconds": 19.000289,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0136",
@@ -1753,7 +1855,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0239_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0239_legacy_no_smpl/config.yaml",
@@ -1764,7 +1866,13 @@
       "retained_scene_image_files": 156,
       "retained_scene_time_indices": 26,
       "real_images": 156,
-      "lidar_scans": 26
+      "lidar_scans": 26,
+      "real_duration_seconds": 18.942606,
+      "first_image_timestamp_us": 1532708666004799,
+      "last_image_timestamp_us": 1532708684947405,
+      "sample_chain_duration_seconds": 18.896865,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0137",
@@ -1855,7 +1963,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0731_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0731_legacy_no_smpl/config.yaml",
@@ -1866,7 +1974,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.642606,
+      "first_image_timestamp_us": 1535573959904799,
+      "last_image_timestamp_us": 1535573979547405,
+      "sample_chain_duration_seconds": 19.603372,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0140",
@@ -1957,7 +2071,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0686_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0686_legacy_no_smpl/config.yaml",
@@ -1968,7 +2082,13 @@
       "retained_scene_image_files": 168,
       "retained_scene_time_indices": 28,
       "real_images": 168,
-      "lidar_scans": 28
+      "lidar_scans": 28,
+      "real_duration_seconds": 19.892606,
+      "first_image_timestamp_us": 1535488219754799,
+      "last_image_timestamp_us": 1535488239647405,
+      "sample_chain_duration_seconds": 19.849604,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0141",
@@ -2059,7 +2179,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0858_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0858_legacy_no_smpl/config.yaml",
@@ -2070,7 +2190,13 @@
       "retained_scene_image_files": 132,
       "retained_scene_time_indices": 22,
       "real_images": 132,
-      "lidar_scans": 22
+      "lidar_scans": 22,
+      "real_duration_seconds": 19.142579,
+      "first_image_timestamp_us": 1538986117754844,
+      "last_image_timestamp_us": 1538986136897423,
+      "sample_chain_duration_seconds": 19.099824,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0142",
@@ -2161,7 +2287,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0576_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0576_legacy_no_smpl/config.yaml",
@@ -2172,7 +2298,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.042606,
+      "first_image_timestamp_us": 1537290901354799,
+      "last_image_timestamp_us": 1537290920397405,
+      "sample_chain_duration_seconds": 18.999182,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0144",
@@ -2263,7 +2395,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0714_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0714_legacy_no_smpl/config.yaml",
@@ -2274,7 +2406,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.942606,
+      "first_image_timestamp_us": 1535573529854799,
+      "last_image_timestamp_us": 1535573549797405,
+      "sample_chain_duration_seconds": 19.898835,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0145",
@@ -2365,7 +2503,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0989_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0989_legacy_no_smpl/config.yaml",
@@ -2376,7 +2514,13 @@
       "retained_scene_image_files": 132,
       "retained_scene_time_indices": 22,
       "real_images": 132,
-      "lidar_scans": 22
+      "lidar_scans": 22,
+      "real_duration_seconds": 19.042579,
+      "first_image_timestamp_us": 1537845532254844,
+      "last_image_timestamp_us": 1537845551297423,
+      "sample_chain_duration_seconds": 19.000314,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0150",
@@ -2467,7 +2611,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0464_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0464_legacy_no_smpl/config.yaml",
@@ -2478,7 +2622,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.942606,
+      "first_image_timestamp_us": 1537289881504799,
+      "last_image_timestamp_us": 1537289901447405,
+      "sample_chain_duration_seconds": 19.899927,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0156",
@@ -2569,7 +2719,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0727_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0727_legacy_no_smpl/config.yaml",
@@ -2580,7 +2730,13 @@
       "retained_scene_image_files": 156,
       "retained_scene_time_indices": 26,
       "real_images": 156,
-      "lidar_scans": 26
+      "lidar_scans": 26,
+      "real_duration_seconds": 19.042606,
+      "first_image_timestamp_us": 1535573842854799,
+      "last_image_timestamp_us": 1535573861897405,
+      "sample_chain_duration_seconds": 18.998612,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0158",
@@ -2671,7 +2827,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0323_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0323_legacy_no_smpl/config.yaml",
@@ -2682,7 +2838,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 18.792606,
+      "first_image_timestamp_us": 1535488243154799,
+      "last_image_timestamp_us": 1535488261947405,
+      "sample_chain_duration_seconds": 18.750329,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0161",
@@ -2773,7 +2935,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0029_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0029_legacy_no_smpl/config.yaml",
@@ -2784,7 +2946,13 @@
       "retained_scene_image_files": 150,
       "retained_scene_time_indices": 25,
       "real_images": 150,
-      "lidar_scans": 25
+      "lidar_scans": 25,
+      "real_duration_seconds": 18.692579,
+      "first_image_timestamp_us": 1531886158504844,
+      "last_image_timestamp_us": 1531886177197423,
+      "sample_chain_duration_seconds": 18.650794,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0163",
@@ -2875,7 +3043,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0716_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0716_legacy_no_smpl/config.yaml",
@@ -2886,7 +3054,13 @@
       "retained_scene_image_files": 156,
       "retained_scene_time_indices": 26,
       "real_images": 156,
-      "lidar_scans": 26
+      "lidar_scans": 26,
+      "real_duration_seconds": 19.092608,
+      "first_image_timestamp_us": 1535573569854799,
+      "last_image_timestamp_us": 1535573588947407,
+      "sample_chain_duration_seconds": 19.049463,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0164",
@@ -2977,7 +3151,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0194_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0194_legacy_no_smpl/config.yaml",
@@ -2988,7 +3162,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 18.942579,
+      "first_image_timestamp_us": 1533107748504844,
+      "last_image_timestamp_us": 1533107767447423,
+      "sample_chain_duration_seconds": 18.900721,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0165",
@@ -3079,7 +3259,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0715_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0715_legacy_no_smpl/config.yaml",
@@ -3090,7 +3270,13 @@
       "retained_scene_image_files": 132,
       "retained_scene_time_indices": 22,
       "real_images": 132,
-      "lidar_scans": 22
+      "lidar_scans": 22,
+      "real_duration_seconds": 19.092606,
+      "first_image_timestamp_us": 1535573549854799,
+      "last_image_timestamp_us": 1535573568947405,
+      "sample_chain_duration_seconds": 19.048959,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0166",
@@ -3181,7 +3367,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0007_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0007_legacy_no_smpl/config.yaml",
@@ -3192,7 +3378,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.142579,
+      "first_image_timestamp_us": 1531884258004844,
+      "last_image_timestamp_us": 1531884277147423,
+      "sample_chain_duration_seconds": 19.099796,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0172",
@@ -3283,7 +3475,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0686_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0686_legacy_no_smpl/config.yaml",
@@ -3294,7 +3486,13 @@
       "retained_scene_image_files": 168,
       "retained_scene_time_indices": 28,
       "real_images": 168,
-      "lidar_scans": 28
+      "lidar_scans": 28,
+      "real_duration_seconds": 19.892606,
+      "first_image_timestamp_us": 1535488219754799,
+      "last_image_timestamp_us": 1535488239647405,
+      "sample_chain_duration_seconds": 19.849604,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0175",
@@ -3385,7 +3583,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0747_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0747_legacy_no_smpl/config.yaml",
@@ -3396,7 +3594,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.942606,
+      "first_image_timestamp_us": 1535656815254799,
+      "last_image_timestamp_us": 1535656835197405,
+      "sample_chain_duration_seconds": 19.899912,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0179",
@@ -3487,7 +3691,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0297_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0297_legacy_no_smpl/config.yaml",
@@ -3498,7 +3702,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.142606,
+      "first_image_timestamp_us": 1535729238504799,
+      "last_image_timestamp_us": 1535729257647405,
+      "sample_chain_duration_seconds": 19.100916,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0181",
@@ -3589,7 +3799,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0240_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0240_legacy_no_smpl/config.yaml",
@@ -3600,7 +3810,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.292126,
+      "first_image_timestamp_us": 1532708686005279,
+      "last_image_timestamp_us": 1532708705297405,
+      "sample_chain_duration_seconds": 19.250011,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0189",
@@ -3691,7 +3907,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0898_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0898_legacy_no_smpl/config.yaml",
@@ -3702,7 +3918,13 @@
       "retained_scene_image_files": 132,
       "retained_scene_time_indices": 22,
       "real_images": 132,
-      "lidar_scans": 22
+      "lidar_scans": 22,
+      "real_duration_seconds": 19.092606,
+      "first_image_timestamp_us": 1537297714854799,
+      "last_image_timestamp_us": 1537297733947405,
+      "sample_chain_duration_seconds": 19.050044,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0190",
@@ -3793,7 +4015,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0372_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0372_legacy_no_smpl/config.yaml",
@@ -3804,7 +4026,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 18.942579,
+      "first_image_timestamp_us": 1533280188854844,
+      "last_image_timestamp_us": 1533280207797423,
+      "sample_chain_duration_seconds": 18.899078,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0199",
@@ -3885,7 +4113,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0727_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0727_legacy_no_smpl/config.yaml",
@@ -3896,7 +4124,13 @@
       "retained_scene_image_files": 156,
       "retained_scene_time_indices": 26,
       "real_images": 156,
-      "lidar_scans": 26
+      "lidar_scans": 26,
+      "real_duration_seconds": 19.042606,
+      "first_image_timestamp_us": 1535573842854799,
+      "last_image_timestamp_us": 1535573861897405,
+      "sample_chain_duration_seconds": 18.998612,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0207",
@@ -3987,7 +4221,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0007_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0007_legacy_no_smpl/config.yaml",
@@ -3998,7 +4232,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.142579,
+      "first_image_timestamp_us": 1531884258004844,
+      "last_image_timestamp_us": 1531884277147423,
+      "sample_chain_duration_seconds": 19.099796,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0211",
@@ -4089,7 +4329,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0991_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0991_legacy_no_smpl/config.yaml",
@@ -4100,7 +4340,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.942579,
+      "first_image_timestamp_us": 1537845612254844,
+      "last_image_timestamp_us": 1537845632197423,
+      "sample_chain_duration_seconds": 19.901028,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0212",
@@ -4191,7 +4437,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0949_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0949_legacy_no_smpl/config.yaml",
@@ -4202,7 +4448,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.042579,
+      "first_image_timestamp_us": 1537932010354844,
+      "last_image_timestamp_us": 1537932029397423,
+      "sample_chain_duration_seconds": 18.999689,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0214",
@@ -4293,7 +4545,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0862_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0862_legacy_no_smpl/config.yaml",
@@ -4304,7 +4556,13 @@
       "retained_scene_image_files": 132,
       "retained_scene_time_indices": 22,
       "real_images": 132,
-      "lidar_scans": 22
+      "lidar_scans": 22,
+      "real_duration_seconds": 18.942579,
+      "first_image_timestamp_us": 1538986197854844,
+      "last_image_timestamp_us": 1538986216797423,
+      "sample_chain_duration_seconds": 18.900182,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0215",
@@ -4395,7 +4653,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0203_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0203_legacy_no_smpl/config.yaml",
@@ -4406,7 +4664,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 18.842623,
+      "first_image_timestamp_us": 1532621808604799,
+      "last_image_timestamp_us": 1532621827447422,
+      "sample_chain_duration_seconds": 18.79955,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0216",
@@ -4497,7 +4761,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0218_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0218_legacy_no_smpl/config.yaml",
@@ -4508,7 +4772,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 18.842606,
+      "first_image_timestamp_us": 1532707721104799,
+      "last_image_timestamp_us": 1532707739947405,
+      "sample_chain_duration_seconds": 18.800665,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0217",
@@ -4599,7 +4869,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0507_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0507_legacy_no_smpl/config.yaml",
@@ -4610,7 +4880,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.842606,
+      "first_image_timestamp_us": 1535478716104799,
+      "last_image_timestamp_us": 1535478735947405,
+      "sample_chain_duration_seconds": 19.799312,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0219",
@@ -4701,7 +4977,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0029_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0029_legacy_no_smpl/config.yaml",
@@ -4712,7 +4988,13 @@
       "retained_scene_image_files": 150,
       "retained_scene_time_indices": 25,
       "real_images": 150,
-      "lidar_scans": 25
+      "lidar_scans": 25,
+      "real_duration_seconds": 18.692579,
+      "first_image_timestamp_us": 1531886158504844,
+      "last_image_timestamp_us": 1531886177197423,
+      "sample_chain_duration_seconds": 18.650794,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0221",
@@ -4803,7 +5085,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0239_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0239_legacy_no_smpl/config.yaml",
@@ -4814,7 +5096,13 @@
       "retained_scene_image_files": 156,
       "retained_scene_time_indices": 26,
       "real_images": 156,
-      "lidar_scans": 26
+      "lidar_scans": 26,
+      "real_duration_seconds": 18.942606,
+      "first_image_timestamp_us": 1532708666004799,
+      "last_image_timestamp_us": 1532708684947405,
+      "sample_chain_duration_seconds": 18.896865,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0223",
@@ -4905,7 +5193,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0423_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0423_legacy_no_smpl/config.yaml",
@@ -4916,7 +5204,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.942579,
+      "first_image_timestamp_us": 1538985210254844,
+      "last_image_timestamp_us": 1538985230197423,
+      "sample_chain_duration_seconds": 19.900497,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0228",
@@ -5007,7 +5301,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0395_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0395_legacy_no_smpl/config.yaml",
@@ -5018,7 +5312,13 @@
       "retained_scene_image_files": 132,
       "retained_scene_time_indices": 22,
       "real_images": 132,
-      "lidar_scans": 22
+      "lidar_scans": 22,
+      "real_duration_seconds": 19.092606,
+      "first_image_timestamp_us": 1535731298604799,
+      "last_image_timestamp_us": 1535731317697405,
+      "sample_chain_duration_seconds": 19.05172,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0229",
@@ -5109,7 +5409,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0159_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0159_legacy_no_smpl/config.yaml",
@@ -5120,7 +5420,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.192579,
+      "first_image_timestamp_us": 1533115180004844,
+      "last_image_timestamp_us": 1533115199197423,
+      "sample_chain_duration_seconds": 19.150103,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0231",
@@ -5211,7 +5517,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0746_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0746_legacy_no_smpl/config.yaml",
@@ -5222,7 +5528,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.942606,
+      "first_image_timestamp_us": 1535656795254799,
+      "last_image_timestamp_us": 1535656815197405,
+      "sample_chain_duration_seconds": 19.899911,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0233",
@@ -5313,7 +5625,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0185_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0185_legacy_no_smpl/config.yaml",
@@ -5324,7 +5636,13 @@
       "retained_scene_image_files": 132,
       "retained_scene_time_indices": 22,
       "real_images": 132,
-      "lidar_scans": 22
+      "lidar_scans": 22,
+      "real_duration_seconds": 19.042579,
+      "first_image_timestamp_us": 1532663010904844,
+      "last_image_timestamp_us": 1532663029947423,
+      "sample_chain_duration_seconds": 18.99803,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0249",
@@ -5415,7 +5733,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0323_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0323_legacy_no_smpl/config.yaml",
@@ -5426,7 +5744,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 18.792606,
+      "first_image_timestamp_us": 1535488243154799,
+      "last_image_timestamp_us": 1535488261947405,
+      "sample_chain_duration_seconds": 18.750329,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0252",
@@ -5517,7 +5841,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0976_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0976_legacy_no_smpl/config.yaml",
@@ -5528,7 +5852,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.142579,
+      "first_image_timestamp_us": 1537845243254844,
+      "last_image_timestamp_us": 1537845262397423,
+      "sample_chain_duration_seconds": 19.099254,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0258",
@@ -5619,7 +5949,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0705_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0705_legacy_no_smpl/config.yaml",
@@ -5630,7 +5960,13 @@
       "retained_scene_image_files": 132,
       "retained_scene_time_indices": 22,
       "real_images": 132,
-      "lidar_scans": 22
+      "lidar_scans": 22,
+      "real_duration_seconds": 19.092606,
+      "first_image_timestamp_us": 1535573288854799,
+      "last_image_timestamp_us": 1535573307947405,
+      "sample_chain_duration_seconds": 19.050559,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0262",
@@ -5721,7 +6057,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0810_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0810_legacy_no_smpl/config.yaml",
@@ -5732,7 +6068,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.042606,
+      "first_image_timestamp_us": 1537299001604799,
+      "last_image_timestamp_us": 1537299020647405,
+      "sample_chain_duration_seconds": 18.999152,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0263",
@@ -5813,7 +6155,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0423_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0423_legacy_no_smpl/config.yaml",
@@ -5824,7 +6166,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.942579,
+      "first_image_timestamp_us": 1538985210254844,
+      "last_image_timestamp_us": 1538985230197423,
+      "sample_chain_duration_seconds": 19.900497,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0266",
@@ -5915,7 +6263,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0224_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0224_legacy_no_smpl/config.yaml",
@@ -5926,7 +6274,13 @@
       "retained_scene_image_files": 132,
       "retained_scene_time_indices": 22,
       "real_images": 132,
-      "lidar_scans": 22
+      "lidar_scans": 22,
+      "real_duration_seconds": 19.192606,
+      "first_image_timestamp_us": 1532707917104799,
+      "last_image_timestamp_us": 1532707936297405,
+      "sample_chain_duration_seconds": 19.150689,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0267",
@@ -6017,7 +6371,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0894_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0894_legacy_no_smpl/config.yaml",
@@ -6028,7 +6382,13 @@
       "retained_scene_image_files": 132,
       "retained_scene_time_indices": 22,
       "real_images": 132,
-      "lidar_scans": 22
+      "lidar_scans": 22,
+      "real_duration_seconds": 19.092606,
+      "first_image_timestamp_us": 1537297613854799,
+      "last_image_timestamp_us": 1537297632947405,
+      "sample_chain_duration_seconds": 19.050014,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0268",
@@ -6119,7 +6479,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0686_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0686_legacy_no_smpl/config.yaml",
@@ -6130,7 +6490,13 @@
       "retained_scene_image_files": 168,
       "retained_scene_time_indices": 28,
       "real_images": 168,
-      "lidar_scans": 28
+      "lidar_scans": 28,
+      "real_duration_seconds": 19.892606,
+      "first_image_timestamp_us": 1535488219754799,
+      "last_image_timestamp_us": 1535488239647405,
+      "sample_chain_duration_seconds": 19.849604,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0272",
@@ -6221,7 +6587,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0510_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0510_legacy_no_smpl/config.yaml",
@@ -6232,7 +6598,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.592606,
+      "first_image_timestamp_us": 1535478827104799,
+      "last_image_timestamp_us": 1535478846697405,
+      "sample_chain_duration_seconds": 19.551592,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0273",
@@ -6323,7 +6695,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0741_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0741_legacy_no_smpl/config.yaml",
@@ -6334,7 +6706,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.792606,
+      "first_image_timestamp_us": 1535656655254799,
+      "last_image_timestamp_us": 1535656675047405,
+      "sample_chain_duration_seconds": 19.750095,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0274",
@@ -6425,7 +6803,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-1099_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-1099_legacy_no_smpl/config.yaml",
@@ -6436,7 +6814,13 @@
       "retained_scene_image_files": 132,
       "retained_scene_time_indices": 22,
       "real_images": 132,
-      "lidar_scans": 22
+      "lidar_scans": 22,
+      "real_duration_seconds": 19.042579,
+      "first_image_timestamp_us": 1542800967904844,
+      "last_image_timestamp_us": 1542800986947423,
+      "sample_chain_duration_seconds": 18.999162,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0280",
@@ -6527,7 +6911,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0297_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0297_legacy_no_smpl/config.yaml",
@@ -6538,7 +6922,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.142606,
+      "first_image_timestamp_us": 1535729238504799,
+      "last_image_timestamp_us": 1535729257647405,
+      "sample_chain_duration_seconds": 19.100916,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0281",
@@ -6629,7 +7019,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0811_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0811_legacy_no_smpl/config.yaml",
@@ -6640,7 +7030,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.042606,
+      "first_image_timestamp_us": 1537299081354799,
+      "last_image_timestamp_us": 1537299100397405,
+      "sample_chain_duration_seconds": 18.999157,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0290",
@@ -6721,7 +7117,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0458_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0458_legacy_no_smpl/config.yaml",
@@ -6732,7 +7128,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.942606,
+      "first_image_timestamp_us": 1537289751504799,
+      "last_image_timestamp_us": 1537289771447405,
+      "sample_chain_duration_seconds": 19.90049,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0291",
@@ -6823,7 +7225,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0746_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0746_legacy_no_smpl/config.yaml",
@@ -6834,7 +7236,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.942606,
+      "first_image_timestamp_us": 1535656795254799,
+      "last_image_timestamp_us": 1535656815197405,
+      "sample_chain_duration_seconds": 19.899911,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0292",
@@ -6925,7 +7333,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0425_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0425_legacy_no_smpl/config.yaml",
@@ -6936,7 +7344,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.942579,
+      "first_image_timestamp_us": 1538985250254844,
+      "last_image_timestamp_us": 1538985270197423,
+      "sample_chain_duration_seconds": 19.900524,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0293",
@@ -7027,7 +7441,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0393_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0393_legacy_no_smpl/config.yaml",
@@ -7038,7 +7452,13 @@
       "retained_scene_image_files": 132,
       "retained_scene_time_indices": 22,
       "real_images": 132,
-      "lidar_scans": 22
+      "lidar_scans": 22,
+      "real_duration_seconds": 19.092606,
+      "first_image_timestamp_us": 1535731258604799,
+      "last_image_timestamp_us": 1535731277697405,
+      "sample_chain_duration_seconds": 19.048441,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0309",
@@ -7129,7 +7549,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Configured six-camera processed inventory matched retained nuScenes sample timestamps; scene-level observations, not target-visible count",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_reconstruction_only/formal/nuScenes/scene-0067_legacy_no_smpl_reconstruction_only/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_reconstruction_only/formal/nuScenes/scene-0067_legacy_no_smpl_reconstruction_only/config.yaml",
@@ -7141,7 +7561,12 @@
       "retained_scene_time_indices": 40,
       "real_images": 240,
       "lidar_scans": 40,
-      "real_duration_seconds": 19.398824
+      "real_duration_seconds": 19.44187,
+      "first_image_timestamp_us": 1533153430255535,
+      "last_image_timestamp_us": 1533153449697405,
+      "sample_chain_duration_seconds": 19.398824,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0310",
@@ -7232,7 +7657,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0125_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0125_legacy_no_smpl/config.yaml",
@@ -7243,7 +7668,13 @@
       "retained_scene_image_files": 132,
       "retained_scene_time_indices": 22,
       "real_images": 132,
-      "lidar_scans": 22
+      "lidar_scans": 22,
+      "real_duration_seconds": 18.792579,
+      "first_image_timestamp_us": 1533112740154844,
+      "last_image_timestamp_us": 1533112758947423,
+      "sample_chain_duration_seconds": 18.749229,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0311",
@@ -7324,7 +7755,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0727_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0727_legacy_no_smpl/config.yaml",
@@ -7335,7 +7766,13 @@
       "retained_scene_image_files": 156,
       "retained_scene_time_indices": 26,
       "real_images": 156,
-      "lidar_scans": 26
+      "lidar_scans": 26,
+      "real_duration_seconds": 19.042606,
+      "first_image_timestamp_us": 1535573842854799,
+      "last_image_timestamp_us": 1535573861897405,
+      "sample_chain_duration_seconds": 18.998612,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0312",
@@ -7426,7 +7863,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0858_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0858_legacy_no_smpl/config.yaml",
@@ -7437,7 +7874,13 @@
       "retained_scene_image_files": 132,
       "retained_scene_time_indices": 22,
       "real_images": 132,
-      "lidar_scans": 22
+      "lidar_scans": 22,
+      "real_duration_seconds": 19.142579,
+      "first_image_timestamp_us": 1538986117754844,
+      "last_image_timestamp_us": 1538986136897423,
+      "sample_chain_duration_seconds": 19.099824,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0317",
@@ -7518,7 +7961,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0533_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0533_legacy_no_smpl/config.yaml",
@@ -7529,7 +7972,13 @@
       "retained_scene_image_files": 132,
       "retained_scene_time_indices": 22,
       "real_images": 132,
-      "lidar_scans": 22
+      "lidar_scans": 22,
+      "real_duration_seconds": 19.142606,
+      "first_image_timestamp_us": 1535659108004799,
+      "last_image_timestamp_us": 1535659127147405,
+      "sample_chain_duration_seconds": 19.102017,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0321",
@@ -7620,7 +8069,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0673_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0673_legacy_no_smpl/config.yaml",
@@ -7631,7 +8080,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.092606,
+      "first_image_timestamp_us": 1535487842854799,
+      "last_image_timestamp_us": 1535487861947405,
+      "sample_chain_duration_seconds": 19.048385,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0325",
@@ -7722,7 +8177,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0716_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0716_legacy_no_smpl/config.yaml",
@@ -7733,7 +8188,13 @@
       "retained_scene_image_files": 156,
       "retained_scene_time_indices": 26,
       "real_images": 156,
-      "lidar_scans": 26
+      "lidar_scans": 26,
+      "real_duration_seconds": 19.092608,
+      "first_image_timestamp_us": 1535573569854799,
+      "last_image_timestamp_us": 1535573588947407,
+      "sample_chain_duration_seconds": 19.049463,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0345",
@@ -7824,7 +8285,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0029_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0029_legacy_no_smpl/config.yaml",
@@ -7835,7 +8296,13 @@
       "retained_scene_image_files": 150,
       "retained_scene_time_indices": 25,
       "real_images": 150,
-      "lidar_scans": 25
+      "lidar_scans": 25,
+      "real_duration_seconds": 18.692579,
+      "first_image_timestamp_us": 1531886158504844,
+      "last_image_timestamp_us": 1531886177197423,
+      "sample_chain_duration_seconds": 18.650794,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0382",
@@ -7926,7 +8393,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0715_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0715_legacy_no_smpl/config.yaml",
@@ -7937,7 +8404,13 @@
       "retained_scene_image_files": 132,
       "retained_scene_time_indices": 22,
       "real_images": 132,
-      "lidar_scans": 22
+      "lidar_scans": 22,
+      "real_duration_seconds": 19.092606,
+      "first_image_timestamp_us": 1535573549854799,
+      "last_image_timestamp_us": 1535573568947405,
+      "sample_chain_duration_seconds": 19.048959,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0387",
@@ -8100,7 +8573,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0727_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0727_legacy_no_smpl/config.yaml",
@@ -8111,7 +8584,13 @@
       "retained_scene_image_files": 156,
       "retained_scene_time_indices": 26,
       "real_images": 156,
-      "lidar_scans": 26
+      "lidar_scans": 26,
+      "real_duration_seconds": 19.042606,
+      "first_image_timestamp_us": 1535573842854799,
+      "last_image_timestamp_us": 1535573861897405,
+      "sample_chain_duration_seconds": 18.998612,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0497",
@@ -8202,7 +8681,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0159_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0159_legacy_no_smpl/config.yaml",
@@ -8213,7 +8692,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.192579,
+      "first_image_timestamp_us": 1533115180004844,
+      "last_image_timestamp_us": 1533115199197423,
+      "sample_chain_duration_seconds": 19.150103,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0517",
@@ -8304,7 +8789,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0989_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0989_legacy_no_smpl/config.yaml",
@@ -8315,7 +8800,13 @@
       "retained_scene_image_files": 132,
       "retained_scene_time_indices": 22,
       "real_images": 132,
-      "lidar_scans": 22
+      "lidar_scans": 22,
+      "real_duration_seconds": 19.042579,
+      "first_image_timestamp_us": 1537845532254844,
+      "last_image_timestamp_us": 1537845551297423,
+      "sample_chain_duration_seconds": 19.000314,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0581",
@@ -8406,7 +8897,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_nuscenes100_expansion/formal/nuScenes/scene-0045/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_nuscenes100_expansion/formal/nuScenes/scene-0045/config.yaml",
@@ -8417,7 +8908,13 @@
       "retained_scene_image_files": 234,
       "retained_scene_time_indices": 39,
       "real_images": 234,
-      "lidar_scans": 39
+      "lidar_scans": 39,
+      "real_duration_seconds": 19.092579,
+      "first_image_timestamp_us": 1532402002104844,
+      "last_image_timestamp_us": 1532402021197423,
+      "sample_chain_duration_seconds": 19.050546,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0592",
@@ -8508,7 +9005,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0984_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0984_legacy_no_smpl/config.yaml",
@@ -8519,7 +9016,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.092579,
+      "first_image_timestamp_us": 1537845432354844,
+      "last_image_timestamp_us": 1537845451447423,
+      "sample_chain_duration_seconds": 19.049458,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0632",
@@ -8610,7 +9113,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_replacement_v3/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_nuscenes100_expansion/formal/nuScenes/scene-0061/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_nuscenes100_expansion/formal/nuScenes/scene-0061/config.yaml",
@@ -8621,7 +9124,13 @@
       "retained_scene_image_files": 234,
       "retained_scene_time_indices": 39,
       "real_images": 234,
-      "lidar_scans": 39
+      "lidar_scans": 39,
+      "real_duration_seconds": 19.192579,
+      "first_image_timestamp_us": 1532402927604844,
+      "last_image_timestamp_us": 1532402946797423,
+      "sample_chain_duration_seconds": 19.149566,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0646",
@@ -8702,7 +9211,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0225_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0225_legacy_no_smpl/config.yaml",
@@ -8713,7 +9222,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 18.892606,
+      "first_image_timestamp_us": 1532707960004799,
+      "last_image_timestamp_us": 1532707978897405,
+      "sample_chain_duration_seconds": 18.849856,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0651",
@@ -8804,7 +9319,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-1094_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-1094_legacy_no_smpl/config.yaml",
@@ -8815,7 +9330,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.042579,
+      "first_image_timestamp_us": 1542800847904844,
+      "last_image_timestamp_us": 1542800866947423,
+      "sample_chain_duration_seconds": 19.000242,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0668",
@@ -8896,7 +9417,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_nuscenes100_expansion/formal/nuScenes/scene-0019/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_nuscenes100_expansion/formal/nuScenes/scene-0019/config.yaml",
@@ -8907,7 +9428,13 @@
       "retained_scene_image_files": 240,
       "retained_scene_time_indices": 40,
       "real_images": 240,
-      "lidar_scans": 40
+      "lidar_scans": 40,
+      "real_duration_seconds": 19.292579,
+      "first_image_timestamp_us": 1531885862504844,
+      "last_image_timestamp_us": 1531885881797423,
+      "sample_chain_duration_seconds": 19.248543,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0685",
@@ -8998,7 +9525,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_original75_v1/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0020_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0020_legacy_no_smpl/config.yaml",
@@ -9009,7 +9536,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.092579,
+      "first_image_timestamp_us": 1531885907604844,
+      "last_image_timestamp_us": 1531885926697423,
+      "sample_chain_duration_seconds": 19.050054,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0690",
@@ -9100,7 +9633,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Configured six-camera processed inventory matched retained nuScenes sample timestamps; scene-level observations, not target-visible count",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_reconstruction_only/formal/nuScenes/scene-0067_legacy_no_smpl_reconstruction_only/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_reconstruction_only/formal/nuScenes/scene-0067_legacy_no_smpl_reconstruction_only/config.yaml",
@@ -9112,7 +9645,12 @@
       "retained_scene_time_indices": 40,
       "real_images": 240,
       "lidar_scans": 40,
-      "real_duration_seconds": 19.398824
+      "real_duration_seconds": 19.44187,
+      "first_image_timestamp_us": 1533153430255535,
+      "last_image_timestamp_us": 1533153449697405,
+      "sample_chain_duration_seconds": 19.398824,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0728",
@@ -9203,7 +9741,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0323_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0323_legacy_no_smpl/config.yaml",
@@ -9214,7 +9752,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 18.792606,
+      "first_image_timestamp_us": 1535488243154799,
+      "last_image_timestamp_us": 1535488261947405,
+      "sample_chain_duration_seconds": 18.750329,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0810",
@@ -9305,7 +9849,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0686_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0686_legacy_no_smpl/config.yaml",
@@ -9316,7 +9860,13 @@
       "retained_scene_image_files": 168,
       "retained_scene_time_indices": 28,
       "real_images": 168,
-      "lidar_scans": 28
+      "lidar_scans": 28,
+      "real_duration_seconds": 19.892606,
+      "first_image_timestamp_us": 1535488219754799,
+      "last_image_timestamp_us": 1535488239647405,
+      "sample_chain_duration_seconds": 19.849604,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0812",
@@ -9407,7 +9957,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0716_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0716_legacy_no_smpl/config.yaml",
@@ -9418,7 +9968,13 @@
       "retained_scene_image_files": 156,
       "retained_scene_time_indices": 26,
       "real_images": 156,
-      "lidar_scans": 26
+      "lidar_scans": 26,
+      "real_duration_seconds": 19.092608,
+      "first_image_timestamp_us": 1535573569854799,
+      "last_image_timestamp_us": 1535573588947407,
+      "sample_chain_duration_seconds": 19.049463,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0821",
@@ -9509,7 +10065,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0423_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0423_legacy_no_smpl/config.yaml",
@@ -9520,7 +10076,13 @@
       "retained_scene_image_files": 144,
       "retained_scene_time_indices": 24,
       "real_images": 144,
-      "lidar_scans": 24
+      "lidar_scans": 24,
+      "real_duration_seconds": 19.942579,
+      "first_image_timestamp_us": 1538985210254844,
+      "last_image_timestamp_us": 1538985230197423,
+      "sample_chain_duration_seconds": 19.900497,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0825",
@@ -9611,7 +10173,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0686_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0686_legacy_no_smpl/config.yaml",
@@ -9622,7 +10184,13 @@
       "retained_scene_image_files": 168,
       "retained_scene_time_indices": 28,
       "real_images": 168,
-      "lidar_scans": 28
+      "lidar_scans": 28,
+      "real_duration_seconds": 19.892606,
+      "first_image_timestamp_us": 1535488219754799,
+      "last_image_timestamp_us": 1535488239647405,
+      "sample_chain_duration_seconds": 19.849604,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0834",
@@ -9703,7 +10271,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0239_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0239_legacy_no_smpl/config.yaml",
@@ -9714,7 +10282,13 @@
       "retained_scene_image_files": 156,
       "retained_scene_time_indices": 26,
       "real_images": 156,
-      "lidar_scans": 26
+      "lidar_scans": 26,
+      "real_duration_seconds": 18.942606,
+      "first_image_timestamp_us": 1532708666004799,
+      "last_image_timestamp_us": 1532708684947405,
+      "sample_chain_duration_seconds": 18.896865,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0838",
@@ -9805,7 +10379,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0240_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0240_legacy_no_smpl/config.yaml",
@@ -9816,7 +10390,13 @@
       "retained_scene_image_files": 138,
       "retained_scene_time_indices": 23,
       "real_images": 138,
-      "lidar_scans": 23
+      "lidar_scans": 23,
+      "real_duration_seconds": 19.292126,
+      "first_image_timestamp_us": 1532708686005279,
+      "last_image_timestamp_us": 1532708705297405,
+      "sample_chain_duration_seconds": 19.250011,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0850",
@@ -9907,7 +10487,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0686_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0686_legacy_no_smpl/config.yaml",
@@ -9918,7 +10498,13 @@
       "retained_scene_image_files": 168,
       "retained_scene_time_indices": 28,
       "real_images": 168,
-      "lidar_scans": 28
+      "lidar_scans": 28,
+      "real_duration_seconds": 19.892606,
+      "first_image_timestamp_us": 1535488219754799,
+      "last_image_timestamp_us": 1535488239647405,
+      "sample_chain_duration_seconds": 19.849604,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0861",
@@ -9999,7 +10585,7 @@
       "input_kind": "existing_multi_camera_scene_checkpoint",
       "core_status": "scored",
       "additional_scene_training": false,
-      "evidence_scope": "Scene input inventory/configuration; not a per-person visibility count or equal-input comparison",
+      "evidence_scope": "All processed camera JPEG hashes matched native keyframe exposures along the configured scene sample chain; scene-level counts, not target visibility",
       "plan": "${HMC_WORKSPACE}/human_model_comparison/inputs/scene_extract_v2/omnire_plan.json",
       "checkpoint": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0715_legacy_no_smpl/checkpoint_final.pth",
       "config": "${HMC_WORKSPACE}/vehicle_model_comparison/runs/omnire_human_reviewed95/formal/nuScenes/scene-0715_legacy_no_smpl/config.yaml",
@@ -10010,7 +10596,13 @@
       "retained_scene_image_files": 132,
       "retained_scene_time_indices": 22,
       "real_images": 132,
-      "lidar_scans": 22
+      "lidar_scans": 22,
+      "real_duration_seconds": 19.092606,
+      "first_image_timestamp_us": 1535573549854799,
+      "last_image_timestamp_us": 1535573568947405,
+      "sample_chain_duration_seconds": 19.048959,
+      "duration_definition": "Last minus first actual camera exposure; gaps are retained, not summed continuous observation time",
+      "exposure_mapping_manifest": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json"
     },
     {
       "id": "HN0866",
@@ -10035,6 +10627,278 @@
     }
   ],
   "evidence": [
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/manifest.json",
+      "sha256": "e0534ca8b9161910617d40bf5a227f5ebeb22ff5dcd652c7a3548c09cdba3c50"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0017.json",
+      "sha256": "27d15a6f6c1d8810f61e92974537a10b724cef85927257b46d19a37b33d703b2"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0018.json",
+      "sha256": "a7de6d8f48dd8e2e83c702b6011aaa54c4ca25a4ab5494e8166e52a35409d2d8"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0019.json",
+      "sha256": "d804dcd41f943194e5b377bd1c4bec95d2b2274a116110598de48b42665dfb56"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0045.json",
+      "sha256": "e409513d93d45aa2c87a43fb7d218eb084493327e7df3da01f3e63941f6bac43"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0061.json",
+      "sha256": "e068f7831adabfa8535959e8a730710380ee94cbf51da4b2226df071682d6e7e"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0007.json",
+      "sha256": "811d04516a1f58e6489669e4167f142396619127392cc296ab407f98874d5136"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0020.json",
+      "sha256": "74e932fb0e6361e3be480ed538e169e1cda0c87419b937bfca9dbcbd7b6133ca"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0029.json",
+      "sha256": "6ceb49ee6ba4a50fbdb8136bf570103f3d8dc768863d5b22b32553293a7c9deb"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0125.json",
+      "sha256": "d6fcc67201a8e93248ce1f87f1665551534ed0032185e9d831ef40a6bfe4ffc0"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0126.json",
+      "sha256": "dfefe621a7d06d294c675e9661d8dbaef69075222ee65a01b3a0425335ef1d00"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0159.json",
+      "sha256": "2ff7f4b120369169d0ae83f8df78df40d1a28f58b2d50532039e6e8f1c9efdcd"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0185.json",
+      "sha256": "ef7e23dac4c1b76297854865da6bb060849093b5ac575b0345d097bf97858e83"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0194.json",
+      "sha256": "aaa5e740ea7e4af3e96c1465d9ab1fd1a957ff9bd77318e4a369f456af9d37eb"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0203.json",
+      "sha256": "fd0f0c30eb046c1b616ece830791b4fc04618f70fc59b5a4968912b9d496f5af"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0208.json",
+      "sha256": "c37d1cff2df0f9107a4119462eec079e7affd84b276707946d57df4d62f39c06"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0218.json",
+      "sha256": "4175ed6d8565f591638c10ba80bb250b066a2c0de3c8cd6163cfbc36bcbb2a62"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0224.json",
+      "sha256": "323e50ab1ca32259a6e3fc00a5ae41ca6d5790edc40f2242fdeac3b58923757e"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0225.json",
+      "sha256": "a185b2cd81b05c63f9f1291d85f6f0f84198a52ec06057058a43ee87404b8e74"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0239.json",
+      "sha256": "bc429c03eed6afa15885cb8de9419b05e0ebc97e982e79e19ec67a349d882a95"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0240.json",
+      "sha256": "281166ee75c9f4a60dd81eaeb4eb49f18efe9f97082778d1a58783fee5692b2e"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0250.json",
+      "sha256": "9d7882f3a96d38648d7ca9e332c977f136faa40fbb4f19e73ae4e38144178f9c"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0297.json",
+      "sha256": "a138851a54f22837cef46714cbc2fa035a4b69333b1077263d0bff658ffd763b"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0321.json",
+      "sha256": "adfc511f97226a806e1b92578c5ea23cb88d9e9b6b235f78fa85b95359fdae78"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0323.json",
+      "sha256": "7c5b9fa127226ddaa4edea6eeaeed45ebea74b8185e68fb32252164b4651543a"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0345.json",
+      "sha256": "fb481489121d2def67513804be2adf964f08063c002743a947f58dfdf9794f63"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0347.json",
+      "sha256": "8feb7a92edd3c0681f2d4d32aeb6096cac109a222c3634245190d33086fd1a39"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0372.json",
+      "sha256": "fa0da7177e64658f0ffcb5e4fc0e035f9b915eac4ff361e2c9cad00fd2c1f8c5"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0393.json",
+      "sha256": "444a9677ed11bbd517146593a3c2736d39c2b03d324bab7466a3a6f1ea536a10"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0395.json",
+      "sha256": "55428815e9c47a82f85a78c644e390bae02c6eb2c6b1bd5a2dd31bf344df14ad"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0423.json",
+      "sha256": "83b409bd0dead2fa2e38ab3f6c133c5aae6bec882bed171ba327ac16d369d224"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0425.json",
+      "sha256": "9434fce26ad9fced1473f4f765c2d2f1d2e8cbf622083a9649b7441915da9b13"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0458.json",
+      "sha256": "b0f1274a2232446861fcfab7a176bcb27ce3b2f32c5e6e55f42757af3ac36506"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0464.json",
+      "sha256": "2dabb31ec6fcf22c80c742492f7c40fa62351a3a91c84608f61b78e75e1ca5e5"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0507.json",
+      "sha256": "abf1e3c12daeba779a72d1a748c922d9512c8ec06f8a36f3ca80c607012eb236"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0510.json",
+      "sha256": "63adab174d67a870dd08a221a3bd9cbe1bc3f5f19ce1148a3bde8d3007ad06d1"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0533.json",
+      "sha256": "51227e6e4a7ee16b2bb9ea88ba58312fa09d12c568ba2eb0eb5cb85006740c42"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0553.json",
+      "sha256": "f162c03cd3fdc69b62d07d43922b90ffd6cdfff293e65bbeaca29d720f7c2891"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0554.json",
+      "sha256": "bff21fcf4803773c3d996fc4207f592182e0f2f53c0f24e0b5556836c39db838"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0576.json",
+      "sha256": "3d986fab68e294cee6def3f09a65a70b2f0286bdfbd95e484a6d2f400fa7afbb"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0595.json",
+      "sha256": "1dfa77c9418459f9676399ed4965db1e476660fa2b32f3f0dd0bfd56dfedce4f"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0673.json",
+      "sha256": "56face0fcfb8ae0245c28ddcb5b5c25e0ed36d3bb2ffd940299dd13d4a10d40b"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0686.json",
+      "sha256": "8a14c65233febd0856c06cc04c66c0931d7d26d99522350e98812d40fbfab4f5"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0705.json",
+      "sha256": "fafc083d67378ea912267a4e544b82ec9fc9b0dee587804985daf031f2cb5361"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0714.json",
+      "sha256": "4b1840f5d7aab0d9445a8bc9070f8369c9681f127d53f6957fc189e5378cb611"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0715.json",
+      "sha256": "7aee24177df3e57fbc317d16fd3a9c29c3065df69f24bc27062bb6f43a0c1080"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0716.json",
+      "sha256": "0ea1a5dc8daaec69f681d369e02d04728c3f74d737f09b7799a44723f1fe985b"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0727.json",
+      "sha256": "6a97049d650e1de62d633b436afbbdd7e6e927dcd5fc0480261eed5ac05e28fa"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0731.json",
+      "sha256": "81c73474f56577a2996b223d084460c62ec721d4b37eafbb5da31c317464395d"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0741.json",
+      "sha256": "acf69ffdafff1c170626a0914d60073537fb8ea97e10b82d2782a87098fe01c3"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0746.json",
+      "sha256": "504728d3b24b4d64400774cfe51f2fcea1673b6cebbd317701086f8f9f5fb59c"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0747.json",
+      "sha256": "4dfaec5589667018022e56ca305b99cd07cfe8b5402f82854e34ee0176aef432"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0810.json",
+      "sha256": "fa916915f179826fee2816eca8684dda06f0aa69fc640cfb057f5602da2f5aa5"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0811.json",
+      "sha256": "824fad1e6c6ae3f328d60cec0cd8c592a591d30bfd629aca642491002a95af69"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0858.json",
+      "sha256": "3414a32c476765b7c1977b2b3a6a33e5940c613abdb3a7c053f20130da8a3497"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0862.json",
+      "sha256": "43dc3cb1060352105bd10e3adb9ec556bef62af2041de85d8453d67bf20d2abe"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0894.json",
+      "sha256": "982c245ac29cd023d38d431ce1238c40ad3a9781c25a476cdf0c702941ac664f"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0898.json",
+      "sha256": "97588fc6139c4c78ea7b1a3a95c1ba322ca16e6de1ab0bec0d0983286eb0233f"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0917.json",
+      "sha256": "154d1eee1ab188d37ff3c8ae2eebfbc53f9de65069f083230e016c6cb9ddf2cf"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0921.json",
+      "sha256": "e33acf6e25642337408787bced356f4fd971db8327a9695d7011667958c3b077"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0949.json",
+      "sha256": "39641bd0cc52258b76b7f6824993334013e5f78d180df58a16ce28ad07ab65e1"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0976.json",
+      "sha256": "ff1768a8f7d1e5a35dcd664a52299a6999e2c07082c0330a57ac6a5cc2c7bab1"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0984.json",
+      "sha256": "f3ccdc633050f5865953befd0f4cfb06ae284be2db316e0e16c118ef9f6c2b04"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0989.json",
+      "sha256": "7e7c5a4173fcd012f55f6b41c9266be171a8c5de8ea28e3c2058c4ef067edd1a"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0991.json",
+      "sha256": "ef760e065c0263ef03c482fd59f44931210ce8f65301288423f7eff5bef3c210"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-1094.json",
+      "sha256": "214e5e48241720894ef7ac678a21c038b2d2eea23852b6e83e57006e1c316252"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-1099.json",
+      "sha256": "7a93fab8662c4cb3dd54c9ceed9d08dcace674996d9e6eabd55e6b370cee9132"
+    },
+    {
+      "path": "${HMC_WORKSPACE}/human_model_comparison/reports/omnire_input_exposure_audit_v1/scene-0067.json",
+      "sha256": "846e79f69582f3b13bb356858c916e61a4df85869f68f29f462a52a77dc5a987"
+    },
     {
       "path": "${HMC_WORKSPACE}/asset_work/human_nuscenes100_20261026/inputs/HN0004/clip0/native.json",
       "sha256": "1ccb003f965fe2c21fba0fc2938b5ca0f016dd7ed71420539eba232c50960d0b"
