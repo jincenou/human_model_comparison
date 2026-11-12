@@ -1,0 +1,183 @@
+{
+  "status": "current_dynamic_batch_closed_with_explicit_missingness",
+  "scored_ids": [
+    "HN0004",
+    "HN0039",
+    "HN0040",
+    "HN0046",
+    "HN0051",
+    "HN0090",
+    "HN0108",
+    "HN0114",
+    "HN0115",
+    "HN0116",
+    "HN0126",
+    "HN0127",
+    "HN0137",
+    "HN0140",
+    "HN0141",
+    "HN0142",
+    "HN0144",
+    "HN0145",
+    "HN0150",
+    "HN0156",
+    "HN0158",
+    "HN0161",
+    "HN0163",
+    "HN0164",
+    "HN0165",
+    "HN0166",
+    "HN0172",
+    "HN0175",
+    "HN0179",
+    "HN0181",
+    "HN0189",
+    "HN0190",
+    "HN0207",
+    "HN0211",
+    "HN0212",
+    "HN0214",
+    "HN0215",
+    "HN0216",
+    "HN0217",
+    "HN0219",
+    "HN0221",
+    "HN0223",
+    "HN0228",
+    "HN0229",
+    "HN0231",
+    "HN0233",
+    "HN0249",
+    "HN0258",
+    "HN0262",
+    "HN0266",
+    "HN0267",
+    "HN0268",
+    "HN0272",
+    "HN0273",
+    "HN0274",
+    "HN0280",
+    "HN0281",
+    "HN0291",
+    "HN0292",
+    "HN0293",
+    "HN0309",
+    "HN0310",
+    "HN0312",
+    "HN0325",
+    "HN0345",
+    "HN0382",
+    "HN0497",
+    "HN0517",
+    "HN0581",
+    "HN0592",
+    "HN0632",
+    "HN0651",
+    "HN0685",
+    "HN0690",
+    "HN0728",
+    "HN0810",
+    "HN0812",
+    "HN0821",
+    "HN0825",
+    "HN0838",
+    "HN0850",
+    "HN0866"
+  ],
+  "missing": [
+    {
+      "id": "HN0038",
+      "status": "no_common_independent_scene_object",
+      "reason": "splatad: native_stationary_filter"
+    },
+    {
+      "id": "HN0057",
+      "status": "no_common_independent_scene_object",
+      "reason": "splatad: no_matching_actor_in_audited_existing_exports"
+    },
+    {
+      "id": "HN0099",
+      "status": "no_common_independent_scene_object",
+      "reason": "splatad: no_matching_actor_in_audited_existing_exports"
+    },
+    {
+      "id": "HN0131",
+      "status": "no_common_independent_scene_object",
+      "reason": "splatad: native_stationary_filter"
+    },
+    {
+      "id": "HN0136",
+      "status": "no_common_independent_scene_object",
+      "reason": "splatad: native_stationary_filter"
+    },
+    {
+      "id": "HN0199",
+      "status": "no_common_independent_scene_object",
+      "reason": "splatad: native_stationary_filter"
+    },
+    {
+      "id": "HN0252",
+      "status": "reference_unavailable_repair_stopped",
+      "reason": "Carried paper and visible forearm masks remain unreliable after bounded corrections; stop further repair per user instruction."
+    },
+    {
+      "id": "HN0263",
+      "status": "no_common_independent_scene_object",
+      "reason": "splatad: native_stationary_filter"
+    },
+    {
+      "id": "HN0290",
+      "status": "no_common_independent_scene_object",
+      "reason": "splatad: native_stationary_filter"
+    },
+    {
+      "id": "HN0311",
+      "status": "no_common_independent_scene_object",
+      "reason": "splatad: native_stationary_filter"
+    },
+    {
+      "id": "HN0317",
+      "status": "no_common_independent_scene_object",
+      "reason": "splatad: native_stationary_filter"
+    },
+    {
+      "id": "HN0321",
+      "status": "reference_unavailable_repair_stopped",
+      "reason": "Visible carried leash is inconsistently segmented across exposures; stop further repair per user instruction."
+    },
+    {
+      "id": "HN0387",
+      "status": "no_common_independent_scene_object",
+      "reason": "splatad: no_matching_actor_in_audited_existing_exports"
+    },
+    {
+      "id": "HN0397",
+      "status": "no_common_independent_scene_object",
+      "reason": "omnire: native_actor_filtered_by_original_init; splatad: no_matching_actor_in_audited_existing_exports"
+    },
+    {
+      "id": "HN0646",
+      "status": "no_common_independent_scene_object",
+      "reason": "splatad: native_stationary_filter_previously_verified_and_deferred_by_user"
+    },
+    {
+      "id": "HN0668",
+      "status": "no_common_independent_scene_object",
+      "reason": "splatad: native_stationary_filter"
+    },
+    {
+      "id": "HN0834",
+      "status": "no_common_independent_scene_object",
+      "reason": "splatad: no_matching_actor_in_audited_existing_exports"
+    },
+    {
+      "id": "HN0861",
+      "status": "no_common_independent_scene_object",
+      "reason": "splatad: no_matching_actor_in_audited_existing_exports"
+    }
+  ],
+  "denominator": 100,
+  "source_summary": "${HMC_WORKSPACE}/human_model_comparison/reports/static_reference_revision_v2/core/summary.json",
+  "source_summary_sha256": "4d4dc071fbfcba51c8ec1241ca6e77fd556a3f203a59552a2b471b89a916f0c9",
+  "updated_at_utc": "2026-11-12T14:44:31.730027+00:00"
+}

@@ -30,10 +30,13 @@ def prepare(sid,out):
  omni_path=H/'exports/dynamic_human_feasibility_v1'/f'omnire_{sid}_native_dynamic.pt'
  splat_path=H/'exports/dynamic_human_feasibility_v1'/f'splatad_{sid}_native_dynamic.pt'
  omni=torch.load(omni_path,weights_only=True,map_location='cpu');splat=torch.load(splat_path,weights_only=True,map_location='cpu')
- splat_val=read(H/'exports/common_camera_human_v1/splatad'/sid/'validation.json');offset=splat_val['common_camera_audit']['native_time_offset_seconds']
+ splat_path_validation=H/'exports/common_camera_human_v1/splatad'/sid/'validation.json'
+ if not splat_path_validation.exists():splat_path_validation=H/'exports/common_camera_human_original75_time_v1/splatad'/sid/'validation.json'
+ splat_val=read(splat_path_validation);offset=splat_val['common_camera_audit']['native_time_offset_seconds']
  splat_times=splat['dynamic']['timestamps'].numpy()
  cp=base/'native_cameras.npz';assert sha(cp)==native['camera_npz_sha256'];cams=np.load(cp)
- out.mkdir(parents=True,exist_ok=False);frames=[];anchor=read(H/'configs/human_source_common_v1/reviewed_source_v2'/sid/'camera.json')
+ if out.exists():assert not any(out.iterdir()),'Only an empty failed preparation folder can be reused'
+ out.mkdir(parents=True,exist_ok=True);frames=[];excluded=[];anchor=read(H/'configs/human_source_common_v1/reviewed_source_v2'/sid/'camera.json')
  for i,f in enumerate(native['frames']):
   r=records['sample_data'][f['sample_data_token']];t=f['frame_timestamp_micros'];assert r['timestamp']==t and not f['interpolated'] and not f['enhanced']
   raw=Path(_hmc_expand('${NUSCENES_ROOT}'))/r['filename'];assert raw==Path(f['raw_source_path']) and sha(raw)==f['raw_source_sha256']
@@ -45,22 +48,47 @@ def prepare(sid,out):
    np.testing.assert_allclose(T,anchor['T_world_from_camera_opencv'],atol=1e-8,rtol=0);np.testing.assert_allclose(K,anchor['K_raw'],atol=1e-8,rtol=0)
   elapsed=(t-native['frames'][0]['frame_timestamp_micros'])/1e6
   exact=[x['slot'] for x in mapping['frames'] if not x['interpolated'] and abs(x['source_relative_exposure_seconds']-elapsed)<1e-8]
+  sq=t/1e6-offset
+  missing=[]
+  if not model_times[0]<=t<=model_times[-1]:missing.append('omnire')
+  if not float(splat_times[0])<=sq<=float(splat_times[-1]):missing.append('splatad')
+  if missing:
+   excluded.append(dict(index=i,timestamp_us=t,time_seconds=elapsed,missing_methods=missing,
+    reason='outside_native_scene_time_support',source_rgb=str(raw),source_rgb_sha256=sha(raw)))
+   continue
+  assert not excluded,'Only an unsupported tail is allowed; never rebase or bridge a missing interval'
   hi=bisect.bisect_left(model_times,t);assert 0<hi<len(model_times)
   lo=hi if model_times[hi]==t else hi-1;fraction=0 if lo==hi else (t-model_times[lo])/(model_times[hi]-model_times[lo])
-  sq=t/1e6-offset;shi=int(np.searchsorted(splat_times,sq));slo=shi-1
+  shi=int(np.searchsorted(splat_times,sq));slo=shi-1
   assert 0<shi<len(splat_times) and omni['visibility'][lo] and omni['visibility'][hi] and splat['dynamic']['visibility'][slo] and splat['dynamic']['visibility'][shi]
   crop=f['crop_xyxy'];bbox=np.array(f['bbox_input_xyxy'])+np.array([crop[0],crop[1],crop[0],crop[1]])
   frames.append(dict(index=i,timestamp_us=t,time_seconds=elapsed,sample_data_token=r['token'],source_rgb=str(raw),source_rgb_sha256=sha(raw),
    K_raw=K.tolist(),T_world_from_camera_opencv=T.tolist(),render_wh=[r['width'],r['height']],prompt_bbox_xyxy=bbox.tolist(),
    native_crop_xyxy=crop,exact_legacy_mask_slots=exact,omnire=dict(lo=lo,hi=hi,fraction=fraction,normalized_query=(lo+fraction*(hi-lo))/(len(chain)-1)),
    splatad=dict(query_seconds=sq,lo=slo,hi=shi,fraction=float((sq-splat_times[slo])/(splat_times[shi]-splat_times[slo])))))
+ assert len(frames)>=2 and frames[0]['time_seconds']==0
+ extra={}
+ if excluded:
+  assert any(f['timestamp_us']==row['t_ref_us'] for f in frames),'Frozen reference must remain supported'
+  record=dict(id=sid,status='shared_native_scene_time_interval_selected_before_scores',
+   full_capture=str(row['paths']['native_metadata']),full_capture_sha256=sha(row['paths']['native_metadata']),
+   source_real_frame_count=len(native['frames']),common_real_frame_count=len(frames),
+   source_pair_count=len(native['frames'])-1,common_pair_count=len(frames)-1,
+   excluded_real_exposures=excluded,omnire_supported_interval_us=[model_times[0],model_times[-1]],
+   splatad_supported_interval_seconds=[float(splat_times[0]),float(splat_times[-1])],
+   rule='All real exposures within native time support; no quality or metric selection',
+   time_rebased=False,loop_hold_or_interpolated_reference_used=False,full_capture_preserved=True,
+   script_sha256=sha(__file__))
+  save(out/'scene_temporal_support.json',record)
+  extra=dict(source_real_frame_count=len(native['frames']),temporal_support=str(out/'scene_temporal_support.json'),
+   temporal_support_sha256=sha(out/'scene_temporal_support.json'))
  save(out/'clip.json',dict(id=sid,identity_key=row['identity_key'],selection_sha256=active['selection_sha256'],status='real_exposure_cameras_and_model_time_intersection_ready',
   frames=frames,real_frame_count=len(frames),duration_seconds=frames[-1]['time_seconds'],reference_frame_index=row['reference_frame']['native_index'],
   model_input_slots=len(mapping['frames']),legacy_mask_exact_real_frames=sum(bool(f['exact_legacy_mask_slots']) for f in frames),
   metadata_table_sha256={k:sha(p) for k,p in tables.items()},native_metadata_sha256=sha(row['paths']['native_metadata']),native_cameras_sha256=sha(cp),
   metadata_source=str(metadata),camera_npz_global_pose_matches_metadata=True,anchor_matches_accepted_static_camera=True,
   dynamic_bundles={m:dict(path=str(p),sha256=sha(p)) for m,p in [('omnire',omni_path),('splatad',splat_path)]},
-  reference_masks_ready=False,temporal_metric_eligible=False,source_reconstruction_only=True,script_sha256=sha(__file__)))
+  reference_masks_ready=False,temporal_metric_eligible=False,source_reconstruction_only=True,script_sha256=sha(__file__),**extra))
  print(json.dumps(dict(frames=len(frames),real_duration=frames[-1]['time_seconds'],legacy_exact_masks=sum(bool(f['exact_legacy_mask_slots']) for f in frames))),flush=True)
 
 def masks(sid,out):
@@ -104,17 +132,21 @@ def support(sid,out):
  for name in ['clip.json','mask_candidates.json']:
   if (out/name).exists():(prior/name).write_bytes((out/name).read_bytes())
  if (out/'ours').exists():(out/'ours').rename(prior/'ours')
+ scene_support=read(clip['temporal_support']) if clip.get('temporal_support') else None
+ if scene_support:assert sha(clip['temporal_support'])==clip['temporal_support_sha256']
+ source_count=scene_support['source_real_frame_count'] if scene_support else len(clip['frames'])
  record=dict(id=sid,status='shared_native_time_interval_selected_before_scores',
   full_capture=str(prior/'clip.json'),full_capture_sha256=sha(prior/'clip.json'),
-  source_real_frame_count=len(clip['frames']),common_real_frame_count=len(kept),
-  source_pair_count=len(clip['frames'])-1,common_pair_count=len(kept)-1,
+  source_real_frame_count=source_count,common_real_frame_count=len(kept),
+  source_pair_count=source_count-1,common_pair_count=len(kept)-1,
   common_supported_interval_seconds=[max(0,lo),hi],
   excluded_real_exposures=[dict(index=f['index'],timestamp_us=f['timestamp_us'],time_seconds=f['time_seconds'],
-   missing_method='ours',reason='outside_native_runtime_or_root_time_support') for f in clip['frames'][len(kept):]],
+   missing_method='ours',reason='outside_native_runtime_or_root_time_support') for f in clip['frames'][len(kept):]]+(scene_support['excluded_real_exposures'] if scene_support else []),
   runtime=str(row['paths']['runtime']),runtime_sha256=sha(row['paths']['runtime']),
   root_motion=str(root),root_motion_sha256=sha(root),
   rule='All source exposures in common native time support; no quality, mask area or score selection',
-  scene_native_time_support='OmniRe and SplatAD visibility/time brackets verified for full capture by prepare',
+  scene_native_time_support='OmniRe and SplatAD visibility/time brackets verified for kept exposures by prepare',
+  scene_temporal_support=clip.get('temporal_support'),
   time_rebased=False,loop_hold_or_interpolated_reference_used=False,full_capture_preserved=True,
   script_sha256=sha(__file__))
  save(out/'temporal_support.json',record)

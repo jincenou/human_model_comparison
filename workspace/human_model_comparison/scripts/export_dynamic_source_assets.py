@@ -19,7 +19,10 @@ REPORT=H/'reports/dynamic_source_clip_v1/native_exports'
 def plan(method,sid):
     active,selected=selection();assert sid in selected
     p=H/'inputs/scene_extract_v2'/(method+'_plan.json')
-    item=next(r for r in read(p)['objects'] if r['id']==sid)
+    item=next((r for r in read(p)['objects'] if r['id']==sid),None)
+    if item is None:
+        p=H/'inputs/scene_extract_original75_v1'/(method+'_plan.json')
+        item=next(r for r in read(p)['objects'] if r['id']==sid)
     assert item['native_id']==selected[sid]['identity_key'] and item['raw_timestamp_us']==selected[sid]['t_ref_us']
     checked(item['source_image'],item['source_sha256']);checked(item['config'],item['config_sha256'])
     return active,item
@@ -35,7 +38,9 @@ def save_bundle(method,sid,payload):
 
 def omnire(sid):
     active,item=plan('omnire',sid)
-    vp=H/'exports/omnire_human100_v2/objects'/sid/'validation.json';v=read(vp)
+    vp=H/'exports/omnire_human100_v2/objects'/sid/'validation.json'
+    if not vp.exists():vp=H/'exports/common_camera_human_original75_time_v1/omnire'/sid/'validation.json'
+    v=read(vp)
     checkpoint=Path(v['checkpoint']);assert checkpoint==Path(item['checkpoint']);checked(checkpoint,v['checkpoint_sha256'])
     assert v['actor_uuid']==item['native_id'].split(':')[-1]
     source=torch.load(checkpoint,map_location='cpu',weights_only=False)

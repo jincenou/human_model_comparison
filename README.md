@@ -4,7 +4,7 @@
 
 [中文说明](README_zh-CN.md) · [Reproduction](docs/REPRODUCING.md) · [Evaluation protocol](docs/EVALUATION.md) · [Methods and dependencies](docs/METHODS.md) · [Release status](docs/STATUS.md) · [Incremental batch workflow (中文)](docs/METRIC_BATCH_WORKFLOW_zh-CN.md)
 
-> **Research preview — November 2026.** Six methods have 526 valid source-view results on a frozen 100-person cohort, with coverage-aware paired tables. ED-P, common orbits, three dynamic pilots and one fixed-cache backend ablation are available. Full dynamic/ablation batches and input-budget disclosure remain incomplete. This is an integration source release, not a self-contained end-to-end training distribution.
+> **Research preview — November 2026.** Six methods have 526 valid source-view results on a frozen 100-person cohort. The current snapshot incorporates three reference-mask corrections, 509 valid ED-P pairs, and dynamic evaluation of 82 common identities. Two additional dynamic references remain unavailable after bounded repair; 16 identities lack a common independent scene object. Input budgets are documented; fixed-cache backend ablation still covers one identity. This is an integration source release, not a self-contained end-to-end training distribution.
 
 ## Overview
 
@@ -13,7 +13,9 @@ We study human assets at the **same identity, real exposure time, and observed p
 1. **Source-view reconstruction:** compare rendered assets with the real input using a common calibrated camera, white background, and reference-defined region of interest.
 2. **Fixed-pose orbit inspection:** expose side/back missing surfaces, blur, floaters, and appearance errors using shared camera settings. Without real backside observations, these views do not receive image-reference scores.
 
-The frozen cohort contains **100 nuScenes identities**: 75 retained cases and 25 additions selected through real-reference review. Method failures never trigger replacement of an identity. The comparison covers Ours (4DAnyone Turbo + Grid4D), Asset Harvester, original TRELLIS, TRELLIS.2, OmniRe, and SplatAD. Additional integrations are currently deferred.
+The frozen cohort contains **100 nuScenes identities**. After the original 75-plus-25 selection, HN0035 was replaced by HN0646 at the user's direction following inspection of Ours; this post-output curation is disclosed, not described as outcome-independent sampling. No further automatic replacement is performed for method failures. The comparison covers Ours (4DAnyone Turbo + Grid4D), Asset Harvester, original TRELLIS, TRELLIS.2, OmniRe, and SplatAD. Additional integrations are currently deferred.
+
+[Combined metric table](results/20261112/ALL_METRICS.md) · [Input budgets](docs/INPUT_BUDGETS.md) · [Dynamic missingness](results/20261112/dynamic/missing.csv)
 
 ```mermaid
 flowchart LR

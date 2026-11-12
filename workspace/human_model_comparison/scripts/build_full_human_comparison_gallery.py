@@ -15,8 +15,9 @@ from PIL import Image
 from common_human_orbit import H, OUT, METHODS, read, save, sha, checked
 import human_source_metrics_v1 as metric
 from export_active_metric_tables import NAMES
+from active_human_results import resolve
 
-DEST=H/'reports/human_comparison_full_v1'
+DEST=resolve('gallery')
 STYLE='''body{font:16px/1.6 system-ui;margin:24px auto;padding:0 20px;max-width:1900px;color:#243042;background:#f3f5f7}a{color:#195da8}h1{font-size:27px}p{max-width:1300px}.controls{position:sticky;top:0;background:#f3f5f7f2;padding:12px 0;display:flex;gap:12px;align-items:center;flex-wrap:wrap;z-index:2}button,select,input{font:inherit;padding:7px}button{cursor:pointer}input[type=range]{width:270px}.scroll{overflow-x:auto}.grid{display:grid;grid-template-columns:repeat(7,minmax(180px,1fr));gap:10px;min-width:1320px}.card{background:white;padding:8px;text-align:center;margin:0}.card img{width:100%;display:block}.placeholder{min-height:240px;display:flex;align-items:center;justify-content:center;background:#eef1f4;padding:12px;overflow-wrap:anywhere}.metrics{font-size:13px}.reason{font-size:12px;overflow-wrap:anywhere}.catalog{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}.catalog a{background:white;padding:10px;text-decoration:none}.catalog img{width:100%;display:block}.badge{font-size:13px;color:#555}small{color:#596575}[hidden]{display:none!important}'''
 JS='''const data=JSON.parse(document.getElementById("gallery-data").textContent);
 const slider=document.getElementById("angle");let mode="source";
@@ -52,7 +53,7 @@ def preview(path,array,sid,name):
 
 def build(archive=False):
     DEST.mkdir(exist_ok=True)
-    summary_path=H/'reports/source_camera_metric_cohort_v3/summary.json';summary=read(summary_path)
+    summary_path=resolve('core_summary');summary=read(summary_path)
     checked(summary['selection'],summary['selection_sha256'])
     selected=read(summary['selection'])['objects'];assert len(selected)==100
     rows={(r['id'],r['method']):r for r in summary['rows']}
@@ -64,8 +65,12 @@ def build(archive=False):
         assert ref['timestamp_us']==human['t_ref_us'] and ref['identity_key']==human['identity_key']
         gt=metric.prepare_reference(np.asarray(Image.open(ref['reference_rgb']).convert('RGB')),
                                     np.asarray(Image.open(ref['reference_mask']).convert('L')))
-        assert list(gt['roi'])==ref['roi_xyxy']==camera['roi_xyxy']
-        media=H/'reports/source_camera_metric_cohort_v3/media'/sid
+        assert list(gt['roi'])==ref['roi_xyxy']
+        if ref.get('reference_revision'):
+            checked(ref['reference_revision'],ref['reference_revision_sha256'])
+            assert ref['evaluation_roi_authority']=='reviewed mask revision; camera contract retains historical ROI'
+        else:assert ref['roi_xyxy']==camera['roi_xyxy']
+        media=DEST/'source'/sid
         reference=preview(media/'reference.png',gt['rgb'],sid,'reference')
         files.add(reference);panels=[];records=[];source_count=orbit_count=0
         protocol_path=OUT/sid/'protocol.json';protocol=read(protocol_path)
@@ -123,7 +128,7 @@ def build(archive=False):
         print('built',sid,source_count,orbit_count,flush=True)
     doc=[header('固定100人人体资产完整对比'),'<h1>固定100人 · 人体资产完整对比</h1>',
          '<p>6种模型 · 源视角指标 · 16方位环绕</p>',
-         '<p><a href="../source_camera_metric_cohort_v3/tables/RESULTS.md">核心指标与覆盖率</a> · <a href="../source_edp_common_v1/cohort_v1/tables/RESULTS.md">ED-P与部位覆盖</a> · <a href="../dynamic_source_clip_v1/tables/RESULTS.md">动态样例指标</a></p>',
+         '<p><a href="'+relative(summary_path.parent/'tables/RESULTS.md')+'">核心指标与覆盖率</a> · <a href="'+relative(resolve('edp_root')/'tables/RESULTS.md')+'">ED-P与部位覆盖</a> · <a href="../dynamic_source_clip_v1/tables/RESULTS.md">动态指标</a></p>',
          '<label>查找人物 <input id="search" placeholder="例如 HN0004"></label><p id="count">100人</p><div class="catalog">',''.join(catalog),
          '</div><script>document.getElementById("search").oninput=function(){const q=this.value.trim().toUpperCase();let n=0;for(const a of document.querySelectorAll(".person")){a.hidden=!a.dataset.id.includes(q);if(!a.hidden)n++;}document.getElementById("count").textContent=n+"人";};</script></body></html>']
     (DEST/'index.html').write_text(''.join(doc))
@@ -133,9 +138,9 @@ def build(archive=False):
          image_files={str(p):sha(p)for p in sorted(files)},generated_scores=False,generated_renders=False))
     if archive:
         files.update(DEST.glob('*'))
-        for folder in [H/'reports/source_camera_metric_cohort_v3/tables',H/'reports/source_edp_common_v1/cohort_v1/tables',H/'reports/dynamic_source_clip_v1/tables']:
+        for folder in [summary_path.parent/'tables',resolve('edp_root')/'tables',H/'reports/dynamic_source_clip_v1/tables']:
             files.update(folder.glob('*'))
-        target=H/'reports/human_comparison_full_v1.zip'
+        target=DEST.with_suffix('.zip')
         with zipfile.ZipFile(target.with_suffix('.zip.tmp'),'w',compression=zipfile.ZIP_STORED)as z:
             for p in sorted(files):
                 if p.is_file():z.write(p,p.relative_to(H/'reports'))

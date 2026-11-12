@@ -6,3 +6,12 @@
 - The local gallery has100 identity pages,526 source panels and526×16 orbit images;74 missing method/person entries remain visible. Local links and a JavaScript DOM-stub interaction test passed. This is not a real-browser layout test or a full human review of every image.
 
 These checks validate arithmetic, contracts and source packaging. They do not prove end-to-end reproduction on a clean machine, anatomical correctness, metric physical scale, or independent held-out performance. Upstream repositories, weights and permitted input data remain external dependencies.
+# Reference-revision and dynamic closeout update
+
+The updated public tree passed the release checker (312 text files before this documentation update), with no oversized binaries, personal server paths or credential-pattern matches. All 281 recorded published source/metadata hashes matched. Portable tests passed 18 checks with one optional LPIPS test skipped in that environment; dynamic and ED-P auxiliary tests passed 11 checks.
+
+On the experiment server, the original core scores were reproduced before rescoring all 15 available pairs affected by three source-reference corrections. The frozen metric and ED-P protocols were retained. The merged cohort has 526 valid core pairs and 509 valid ED-P pairs; the original common-person populations are unchanged. Dynamic export verified 82 identities, 2,421 real exposures and 2,339 adjacent pairs per method.
+
+The updated 100-person gallery contains 526 source pairs, 526 sets of 16 orbit views and 9,042 image files. Image hashes and 1,230 literal HTML links were checked. The revised part overlays and eight-person overview were inspected; this is not a claim that all 8,416 orbit frames received manual review or that browser layout was tested. The advisor workbook was checked by XML/cell roundtrip and its 49-file ZIP passed CRC validation. Dataset images and this local ZIP are not part of the Git release.
+
+The sections below record earlier checks and remain historical evidence.

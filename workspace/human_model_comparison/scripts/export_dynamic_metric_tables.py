@@ -52,10 +52,10 @@ def main():
                 mean=math.fsum(r['value'] for r in selected)/len(selected),
                 aggregation='equal_identity_means_not_pooled_frame_pairs'))
     write_csv(out/'paired_means.csv', list(means[0]), means)
-    doc = ['# 动态源视角指标：当前小样例结果', '',
+    doc = ['# 动态源视角指标：当前批次结果', '',
         f'共同人物 {len(records)}/100；共{sum(r["frames"] for r in records)}个真实曝光、'
         f'{sum(r["pairs"] for r in records)}个相邻帧对。每种方法使用相同人物和逐人相同曝光。', '',
-        '每人先对实际相邻帧对取均值，再对人物等权平均。下表仅描述当前小样例，不能据此得出100人整体排名。', '',
+        '每人先对实际相邻帧对取均值，再对人物等权平均。下表描述当前已完成批次，不能据此得出100人整体排名。', '',
         '| 方法 | tOF ↓ | tLP100 ↓ | n/100 |', '|---|---:|---:|---:|']
     for method in methods:
         values = {r['metric']: r['mean'] for r in means if r['method'] == method}
@@ -79,11 +79,24 @@ def main():
     doc += ['', '[逐人时序成绩](per_identity.csv) · [配对均值](paired_means.csv)', '',
         '动态逐帧ED-P尚未计算；固定参考时刻的[ED-P辅助表](../../source_edp_common_v1/cohort_v1/tables/RESULTS.md)已经独立提供。关节/加速度及完整表面几何指标未计算，当前没有相应可靠三维真值。'
         '没有真实侧背面参考，不计算侧背面PSNR/LPIPS。', '']
+    closeout = root/'reference_closeout.json'
+    extra_files = []
+    if closeout.exists():
+        audit = read(closeout)
+        assert sorted(r['id'] for r in records) == audit['scored_ids']
+        assert len(records)+len(audit['missing']) == 100
+        write_csv(out/'missing.csv', ['id','status','reason'], audit['missing'])
+        extra_files.append('missing.csv')
+        doc += ['## 本轮缺测记录', '',
+            'HN0252的纸张/前臂与HN0321的牵引绳参考分割仍不可靠，按用户指示停止追加修复，记参考缺测；不是模型生成失败。另16人没有三方法共同可提取对象。', '',
+            '全部100人仍保留在覆盖率分母中；本轮82人评分完成，未按模型效果或分数筛选。', '',
+            '[逐人缺测原因](missing.csv)', '']
     (out/'RESULTS.md').write_text('\n'.join(doc))
     save(out/'manifest.json', dict(created_at_utc=datetime.now(timezone.utc).isoformat(),
         n=len(records), denominator=100, sources=records, means=means,
         generated_scores=False, script_sha256=sha(__file__),
-        files={name:sha(out/name) for name in ['per_identity.csv','paired_means.csv','RESULTS.md']}))
+        reference_closeout_sha256=sha(closeout) if closeout.exists() else None,
+        files={name:sha(out/name) for name in ['per_identity.csv','paired_means.csv','RESULTS.md']+extra_files}))
     print(json.dumps(dict(report=str(out/'RESULTS.md'), n=len(records), means=means), ensure_ascii=False))
 
 

@@ -24,12 +24,13 @@ OmniRe lacks one independently extractable person; SplatAD lacks 16 (ten station
 ## Additional evidence
 
 - 526 sets of 16 common orbit views and a concise all-100-person gallery were generated locally. All images/links are checked; sample inspection and JavaScript interaction checks do not establish full visual review or browser-layout testing.
-- Three paired dynamic identities have 89 actual exposures and 86 adjacent pairs per method (Ours, OmniRe, SplatAD). tOF/tLP100 are pilot results, not full-cohort dynamic rankings.
+- 82 paired dynamic identities have 2,421 actual exposures and 2,339 adjacent pairs per method (Ours, OmniRe, SplatAD). HN0252 (paper/forearm) and HN0321 (leash) remain reference-unavailable after bounded repair, stopped at the user's request; these are not model-generation failures. Sixteen other identities lack a common independent scene object. The denominator remains 100.
+- HN0116's backpack, HN0632's foreground signage and HN0838's background chain were corrected using real source pixels. All 15 available method/person pairs affected by these three revisions were rescored for core metrics and ED-P. Camera K/T, assets and registration remain unchanged; the revised reference determines one common ROI for every method. Historical snapshots are retained locally.
 - HN0004 has a fixed-cache backend ablation: 32,999 native updates, 52,999 optimized updates, and a 52,999-update matched continuation with alpha-loss weight zero. All 1,464 frontend RGBA files match historical hashes. The matched runs share their native checkpoint and sampling/LR schedules. Only one identity has completed this ablation.
 - [Numeric tables](../results/20261112/README.md) include paired means, membership and coverage. Dataset pixels and large assets are not bundled.
 
 ## Remaining work
 
-Expand audited real-time dynamic clips and fixed-cache ablations; complete input-budget/provenance disclosure and additional orbit review. No reliable 3D human surface/joint truth or real backside reference has been established, so surface, joint/acceleration and backside image-reference metrics are not reported.
+The current dynamic batch is closed with explicit missingness. Expand fixed-cache ablations and additional orbit review separately. [Input budgets](INPUT_BUDGETS.md) now cover 600 person/method rows, with exact scene-time mapping limitations disclosed. No reliable 3D human surface/joint truth or real backside reference has been established, so surface, joint/acceleration and backside image-reference metrics are not reported.
 
 ExAvatar, JacobianAvatar, FlexiAvatar, Hunyuan3D and ReconViaGen integration is deferred while the current six methods are completed. StreetGS was stopped after the bounded existing-scene audit found no reliable independent human node. GPU 0/1 remain reserved; human jobs use shared resources on 2–7 with a 10 GiB data-disk floor.

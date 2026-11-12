@@ -3,6 +3,8 @@ import csv
 import hashlib
 import json
 import math
+import os
+from active_human_results import resolve
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
@@ -28,7 +30,7 @@ def write_csv(path, fields, rows):
 
 
 def main(quiet=False):
-    source = H/'reports/source_camera_metric_cohort_v3/summary.json'
+    source = resolve('core_summary')
     raw = source.read_bytes()  # One snapshot even if the scorer publishes meanwhile.
     summary = json.loads(raw)
     digest = hashlib.sha256(raw).hexdigest()
@@ -58,7 +60,8 @@ def main(quiet=False):
                for r in summary['rows'] if r['status'] != 'scored']
     write_csv(out/'missing.csv', ['id', 'method', 'status', 'reason'], missing)
     now = datetime.now(timezone.utc).isoformat()
-    doc = ['# 当前人体源视角配对结果', '', f'快照时间：{now}。固定名单100人，参考资格v5。', '',
+    revision = '；已合并明确记录的参考mask修正' if summary.get('reference_revision_plan') else ''
+    doc = ['# 当前人体源视角配对结果', '', f'快照时间：{now}。固定名单100人，参考资格v5{revision}。', '',
            '本表是源观测重建实验。各方法保留自身姿态与外观误差；TRELLIS与TRELLIS.2使用已声明的身体关键点刚体配准，不能称为真实留出评测。', '',
            '同一张表只比较共同有效人物。不同表的人物集合可能不同，不能跨表直接比较均值。', '',
            '## 覆盖率', '', '| 方法 | 已计分 / 固定人数 |', '|---|---:|']
@@ -121,7 +124,14 @@ def main(quiet=False):
             '- [ED-P辅助指标与部位覆盖率](../../source_edp_common_v1/cohort_v1/tables/RESULTS.md)：使用共同人物及共同有效部位；该独立结果表为ED-P的当前入口，历史核心指标JSON中的ED-P占位NA不代表辅助计算仍未完成。',
             '- [动态指标进度与小样例结果](../../dynamic_source_clip_v1/tables/RESULTS.md)：tOF、tLP100与静态表分开报告；目前不是100人动态评测。',
             '- PSNR/SSIM/LPIPS使用同一真实相机、参考确定的公共ROI及白底；预测使用自身alpha。无真实背面参考时不计算背面参考指标。', '']
-    (out/'RESULTS.md').write_text('\n'.join(doc))
+    report = '\n'.join(doc)
+    for old, target in {
+        '../../trellis2_failure_root_cause_v1/failure_cases/index.html': H/'reports/trellis2_failure_root_cause_v1/failure_cases/index.html',
+        '../../source_edp_common_v1/cohort_v1/tables/RESULTS.md': resolve('edp_root')/'tables/RESULTS.md',
+        '../../dynamic_source_clip_v1/tables/RESULTS.md': H/'reports/dynamic_source_clip_v1/tables/RESULTS.md',
+    }.items():
+        report = report.replace(old, os.path.relpath(target, out))
+    (out/'RESULTS.md').write_text(report)
     history = source.parent/'history'; history.mkdir(exist_ok=True)
     snapshot = history/(digest+'.json')
     if not snapshot.exists():

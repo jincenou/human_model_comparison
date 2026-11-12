@@ -6,6 +6,7 @@ from collections import Counter
 from datetime import datetime,timezone
 from common_human_orbit import H,read,save,sha,checked,METHODS
 from human_source_metrics_v1 import PARTS
+from active_human_results import resolve
 from export_active_metric_tables import write_csv,NAMES
 
 
@@ -16,7 +17,7 @@ def main(root):
     checked(root/'inputs.json',results['inputs_sha256']);checked(root/'source_summary.json',inputs['summary_sha256'])
     assert results['protocol_sha256']==frozen['specification_sha256']
     summary=read(root/'source_summary.json');selected=set(inputs['ids'])
-    latest_path=H/'reports/source_camera_metric_cohort_v3/summary.json'
+    latest_path=resolve('core_summary')
     latest=read(latest_path)
     assert latest['selection_sha256']==summary['selection_sha256']
     old_scores={(r['id'],r['method']):r['result_sha256'] for r in summary['rows'] if r['status']=='scored'}
@@ -113,5 +114,6 @@ def main(root):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--run-name',default='cohort_v1');a=p.parse_args()
-    assert a.run_name.replace('_','').isalnum();main(H/'reports/source_edp_common_v1'/a.run_name)
+    p=argparse.ArgumentParser();p.add_argument('--run-name');a=p.parse_args()
+    if a.run_name:assert a.run_name.replace('_','').isalnum()
+    main(H/'reports/source_edp_common_v1'/a.run_name if a.run_name else resolve('edp_root'))

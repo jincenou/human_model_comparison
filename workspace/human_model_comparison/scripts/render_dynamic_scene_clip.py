@@ -6,6 +6,7 @@ import numpy as np
 import torch
 from PIL import Image
 from prepare_dynamic_source_clip import H,read,save,sha,selected
+from export_dynamic_source_assets import plan
 R=H.parent/'vehicle_model_comparison'
 sys.path.insert(0,str(R/'scripts'));sys.path.insert(0,str(R/'adapters'))
 
@@ -24,7 +25,7 @@ def splatad(sid,clip,folder):
  # YAML stores these names in __main__.
  globals()['MonitoredTrainer']=MonitoredTrainer;globals()['TrainOnlyMonitoredTrainer']=TrainOnlyMonitoredTrainer
  from nerfstudio.utils.eval_utils import eval_setup
- item=next(r for r in read(H/'inputs/scene_extract_v2/splatad_plan.json')['objects'] if r['id']==sid)
+ _,item=plan('splatad',sid)
  assert sha(item['config'])==item['config_sha256'] and sha(item['bundle'])==item['bundle_sha256']
  config,pipeline,checkpoint,step=eval_setup(Path(item['config']),test_mode='val');assert step==30000
  model=pipeline.model;manager=pipeline.datamanager;pipeline.eval();parsed=manager.train_dataparser_outputs
@@ -53,11 +54,13 @@ def omnire(sid,clip,folder):
  from utils.misc import import_str
  from models.gaussians.basics import dataclass_gs
  from omnire_time_query_v1 import at_physical_exposure
- item=next(r for r in read(H/'inputs/scene_extract_v2/omnire_plan.json')['objects'] if r['id']==sid);assert sha(item['config'])==item['config_sha256']
+ _,item=plan('omnire',sid);assert sha(item['config'])==item['config_sha256']
  cfg=OmegaConf.load(item['config']);data=Path(item['processed_data']);dataset=DrivingDataset(data_cfg=cfg.data)
  trainer=import_str(cfg.trainer.type)(**cfg.trainer,num_timesteps=dataset.num_img_timesteps,model_config=cfg.model,num_train_images=len(dataset.train_image_set),num_full_images=len(dataset.full_image_set),test_set_indices=dataset.test_timesteps,scene_aabb=dataset.get_aabb().reshape(2,3),device=torch.device('cuda'))
  trainer.resume_from_checkpoint(ckpt_path=item['checkpoint'],load_only_model=True);trainer.set_eval();model=trainer.models['DeformableNodes']
- prior=read(H/'exports/common_camera_human_time_v2/omnire'/sid/'validation.json');instance=prior['actor_index'];mask=model.point_ids.reshape(-1)==instance
+ prior_path=H/'exports/common_camera_human_time_v2/omnire'/sid/'validation.json'
+ if not prior_path.exists():prior_path=H/'exports/common_camera_human_original75_time_v1/omnire'/sid/'validation.json'
+ prior=read(prior_path);instance=prior['actor_index'];mask=model.point_ids.reshape(-1)==instance
  native=torch.load(H/'exports/dynamic_human_feasibility_v1'/f'omnire_{sid}_native_dynamic.pt',weights_only=True,map_location='cpu')
  for k,v in native['canonical'].items():assert torch.equal(model.state_dict()[k][mask].detach().cpu(),v)
  time_audit=next(r for r in read(H/'reports/model_time_audit_v1/omnire.json')['records'] if r['id']==sid);cam_id=time_audit['camera_index'];cam_unique=dataset.pixel_source.camera_data[cam_id].unique_cam_idx
