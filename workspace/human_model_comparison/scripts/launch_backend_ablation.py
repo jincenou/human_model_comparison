@@ -51,7 +51,7 @@ def main():
     with (H/'state'/f'gpu_auxiliary_slot_{a.gpu}.lock').open('a')as lease:
         fcntl.flock(lease,fcntl.LOCK_EX|fcntl.LOCK_NB)
         info=subprocess.check_output(['nvidia-smi',f'--id={a.gpu}','--query-gpu=uuid,memory.free','--format=csv,noheader,nounits'],text=True).strip().split(',');uuid=info[0].strip();assert int(info[1])>=32768
-        assert shutil.disk_usage(H).free>=15*1024**3
+        assert shutil.disk_usage(H).free>=10*1024**3
         sys.path.insert(0,str(CODE));os.environ['HUMAN_RUN_ROOT']=str(root);import common
         env=common.environment(a.gpu,'grid4d');env['HUMAN_RUN_ROOT']=str(root)
         state=dict(status='running',id=a.human_id,pid=os.getpid(),gpu=a.gpu,gpu_uuid=uuid,stages=[],started_at=time.time(),protocol_sha256=sha(root/'protocol.json'),script_sha256=sha(__file__))

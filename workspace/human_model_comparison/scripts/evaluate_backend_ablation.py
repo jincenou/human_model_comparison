@@ -16,6 +16,7 @@ import time
 
 from common_human_orbit import H, read, save, sha, checked
 from launch_backend_ablation import CODE, check_inputs
+from backend_ablation_sampling import source_bracket, blend_exported_frames, SRC
 
 EVAL_PYTHON = Path(_hmc_expand('${CONDA_ROOT}/envs/ab_eval/bin/python'))
 PRODUCTION = H.parent/'asset_work/human_nuscenes100_20261026'
@@ -41,17 +42,14 @@ def context(sid):
     assert reg['active_selection_sha256'] == protocol['selection_sha256']
     checked(reg['camera_contract'], reg['camera_contract_sha256'])
     assert reg['camera_contract_sha256'] == protocol['reference']['camera_contract_sha256']
-    # This pilot's exact real exposure falls on one native frame. Fractional
-    # exposures need the established SPD interpolation, not a new approximation.
-    frame = round(reg['source_time_seconds']*25)
-    assert abs(frame/25-reg['source_time_seconds']) < 1e-9
-    assert reg['fraction'] == 0 and frame == reg['bracket'][0]
-    return root, out, variants, protocol, reg_path, reg, frame
+    bracket = source_bracket(reg, protocol['frames'])
+    return root, out, variants, protocol, reg_path, reg, bracket
 
 
 def export(sid):
     import numpy as np
-    root, out, variants, protocol, reg_path, reg, frame = context(sid)
+    root, out, variants, protocol, reg_path, reg, bracket = context(sid)
+    lo, hi, fraction = bracket
     sys.path.insert(0, str(CODE))
     import torch
     from assets import load_asset, transform_gaussians, rotate_sh
@@ -76,13 +74,19 @@ def export(sid):
             view0 = next(c for c in data['cameras'] if c['view'] == 0)
             transform = np.linalg.inv(np.asarray(view0['camtoworld'], np.float64))
             count = len(model.get_xyz)
-            t = model.get_xyz.new_tensor([[frame/(data['frame_count']-1)]]).expand(count, -1)
-            warp = deform.step(model.get_xyz.detach(), t)
-            xyz = (quaternion_to_matrix(warp['d_xyz'][:, :4]) @ model.get_xyz[..., None]).squeeze(-1) + warp['d_xyz'][:, 4:]
-            raw_q = model.get_rotation + warp['d_rotation']
-            raw_s = model.get_scaling + warp['d_scaling']
-            means, quats, scales, covariance_check = transform_gaussians(
-                xyz.cpu().numpy(), raw_q.cpu().numpy(), raw_s.cpu().numpy(), transform)
+            endpoints = {}; covariance_checks = {}
+            for frame in sorted({lo, hi} if fraction else {lo}):
+                t = model.get_xyz.new_tensor([[frame/(data['frame_count']-1)]]).expand(count, -1)
+                warp = deform.step(model.get_xyz.detach(), t)
+                xyz = (quaternion_to_matrix(warp['d_xyz'][:, :4]) @ model.get_xyz[..., None]).squeeze(-1) + warp['d_xyz'][:, 4:]
+                raw_q = model.get_rotation + warp['d_rotation']
+                raw_s = model.get_scaling + warp['d_scaling']
+                converted = transform_gaussians(
+                    xyz.cpu().numpy(), raw_q.cpu().numpy(), raw_s.cpu().numpy(), transform)
+                endpoints[frame] = converted[:3]
+                covariance_checks[str(frame)] = converted[3]
+            means, quats, scales = blend_exported_frames(
+                endpoints[lo], endpoints[hi] if fraction else endpoints[lo], fraction)
             sh, sh_error = rotate_sh(model.get_features.cpu().numpy(), transform[:3, :3], 3)
             arrays = dict(means=means, quaternions_wxyz=quats, scales=scales,
                           opacities=model.get_opacity.cpu().numpy().reshape(-1), sh=sh,
@@ -91,13 +95,16 @@ def export(sid):
             np.savez_compressed(folder/'frozen.npz', **arrays)
         save(folder/'export.json', dict(id=sid, variant=name, checkpoint=str(run),
             actual_updates=actual, nominal_checkpoint_iteration=nominal,
-            source_hashes=source_hashes, frame=frame, source_time_seconds=reg['source_time_seconds'],
-            timestamp_us=reg['timestamp_us'], normalized_model_time=frame/(data['frame_count']-1),
+            source_hashes=source_hashes, frame=lo+fraction*(hi-lo), source_time_seconds=reg['source_time_seconds'],
+            frame_bracket=[lo, hi], interpolation_fraction=fraction,
+            sampling='Original baked-frame positions and SPD covariance interpolation; no time rounding or fractional network evaluation',
+            timestamp_us=reg['timestamp_us'], normalized_model_time=(lo+fraction*(hi-lo))/(data['frame_count']-1),
             gaussian_count=count, sh_degree=3, asset_from_native=transform.tolist(),
-            covariance_diagnostic=covariance_check, sh_rotation_absolute_error=sh_error,
+            covariance_diagnostic=covariance_checks, sh_rotation_absolute_error=sh_error,
             snapshot_sha256=sha(folder/'frozen.npz'), registration=str(reg_path),
             registration_sha256=sha(reg_path), protocol_sha256=sha(root/'protocol.json'),
-            export_code={str(CODE/'assets.py'): sha(CODE/'assets.py'), str(Path(__file__)): sha(__file__)},
+            export_code={str(p): sha(p) for p in [CODE/'assets.py', Path(__file__),
+                Path(__file__).with_name('backend_ablation_sampling.py'), SRC/'shared/assets/library_cloud.py']},
             regenerated_frontend=False, per_variant_alignment=False))
         print('exported', name, count, flush=True)
         del model, deform, warp, xyz, raw_q, raw_s, arrays
@@ -110,7 +117,7 @@ def render_score(sid):
     from PIL import Image, ImageDraw
     import human_source_metrics_v1 as metric
     from render_ours_source_batch_v3 import render, GaussianAssetFrame
-    root, out, variants, protocol, reg_path, reg, frame = context(sid)
+    root, out, variants, protocol, reg_path, reg, bracket = context(sid)
     core_path = H/'configs/human_source_common_v1/core_metric_protocol_frozen_v1.json'
     core = read(core_path)
     checked(metric.__file__, core['code_sha256'])
@@ -198,7 +205,7 @@ def render_score(sid):
         metric_protocol=str(core_path), metric_protocol_sha256=sha(core_path),
         registration=str(reg_path), registration_sha256=sha(reg_path),
         reference=ref, common_roi=reference['roi'], same_source_camera_and_time=True,
-        independent_holdout=False, scope='One-person fixed-frontend backend ablation pilot',
+        independent_holdout=False, scope='Per-identity fixed-frontend backend ablation; aggregate only paired successful variants',
         code_sha256=sha(__file__), numerical_metric_code_modified=False))
 
 

@@ -34,3 +34,7 @@ OmniRe lacks one independently extractable person; SplatAD lacks 16 (ten station
 The current dynamic batch is closed with explicit missingness. Expand fixed-cache ablations and additional orbit review separately. [Input budgets](INPUT_BUDGETS.md) now cover 600 person/method rows, with exact scene-time mapping limitations disclosed. No reliable 3D human surface/joint truth or real backside reference has been established, so surface, joint/acceleration and backside image-reference metrics are not reported.
 
 ExAvatar, JacobianAvatar, FlexiAvatar, Hunyuan3D and ReconViaGen integration is deferred while the current six methods are completed. StreetGS was stopped after the bounded existing-scene audit found no reliable independent human node. GPU 0/1 remain reserved; human jobs use shared resources on 2–7 with a 10 GiB data-disk floor.
+
+## Backend expansion queued after the reporting closeout
+
+An eight-person cohort is now fixed by taking the first four IDs from each original/new stratum. HN0004 remains the only completed three-variant result at this update; the seven additional identities are queued on GPUs 2–7. Original RGBA caches must match every historical file hash before training; generated videos are not regenerated. Fractional source-time sampling has passed five focused numerical checks in both training and evaluation environments, plus comparisons with eight existing production snapshots. Pending training does not add numbers to the published table.

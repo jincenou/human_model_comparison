@@ -101,7 +101,7 @@ The reference mask includes clothes, worn backpacks, and carried items. The ROI 
 | ED-P auxiliary | 509 valid pairs; common-part comparisons | Additional visibility review |
 | Common orbits | 526×16 views, full100 local gallery | Broader visual inspection |
 | Dynamic comparison | 82 common identities, 2,339 actual frame pairs per method | Closed with 2 reference and 16 scene-object NA cases |
-| Backend ablation | One identity, three variants including matched budget | Expand fixed-cache cohort |
+| Backend ablation | One identity, three variants including matched budget | Fixed eight-person expansion queued; no additional scores claimed |
 
 See [recorded results](results/20261112/README.md) and [current workflow](docs/CURRENT_WORKFLOW.md).
 

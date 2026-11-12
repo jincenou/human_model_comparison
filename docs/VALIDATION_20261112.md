@@ -15,3 +15,7 @@ On the experiment server, the original core scores were reproduced before rescor
 The updated 100-person gallery contains 526 source pairs, 526 sets of 16 orbit views and 9,042 image files. Image hashes and 1,230 literal HTML links were checked. The revised part overlays and eight-person overview were inspected; this is not a claim that all 8,416 orbit frames received manual review or that browser layout was tested. The advisor workbook was checked by XML/cell roundtrip and its 49-file ZIP passed CRC validation. Dataset images and this local ZIP are not part of the Git release.
 
 The opening section records earlier checks and remains historical evidence.
+
+## Fractional-time backend expansion
+
+Five focused tests passed in both the existing training and metric environments, covering exact endpoints, non-rounded exposures, invalid/stale brackets, eigenframe sign ambiguity and physical anisotropic covariance mixtures. All eight selected production runtimes were compared with their existing accepted source-time snapshots: maximum position discrepancy was below 1.2e-7, maximum covariance-entry discrepancy below 4.7e-10, and full SH coefficients were identical. These checks validate sampling compatibility; they do not claim that pending retrained assets have already passed visual review or scoring.

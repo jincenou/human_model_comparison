@@ -1,0 +1,67 @@
+{
+  "status": "cohort_fixed_before_additional_training",
+  "created_at_utc": "2026-11-12T15:07:48.907957+00:00",
+  "selection": "${HMC_WORKSPACE}/human_model_comparison/inputs/benchmark_human100_v3/selection.json",
+  "selection_sha256": "03110e1d403248ff84d4f108a23602aad153781c76530fbc572bd5bc22324d55",
+  "ids": [
+    "HN0004",
+    "HN0038",
+    "HN0039",
+    "HN0040",
+    "HN0046",
+    "HN0051",
+    "HN0057",
+    "HN0090"
+  ],
+  "groups": {
+    "original75": [
+      "HN0038",
+      "HN0039",
+      "HN0040",
+      "HN0090"
+    ],
+    "new25": [
+      "HN0004",
+      "HN0046",
+      "HN0051",
+      "HN0057"
+    ]
+  },
+  "selection_rule": "First four lexicographic IDs in each original75 and new25 cohort; does not use method success or metric values. HN0004 is an already completed pilot, included by this rule. Replacement_v3 is a separate one-person stratum excluded from this bounded ablation.",
+  "variants": [
+    "native_33k",
+    "complete_A_53k",
+    "rgb_continuation_53k"
+  ],
+  "actual_updates": [
+    32999,
+    52999,
+    52999
+  ],
+  "fixed_frontend": true,
+  "diffusion_regeneration": false,
+  "source_frame_sampling": "Original 25Hz exported frames with linear positions and existing runtime SPD covariance interpolation; no time rounding",
+  "allowed_gpus": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "disk_floor_gib": 10,
+  "existing_completed_ids": [
+    "HN0004"
+  ],
+  "pending_ids": [
+    "HN0038",
+    "HN0039",
+    "HN0040",
+    "HN0046",
+    "HN0051",
+    "HN0057",
+    "HN0090"
+  ],
+  "failure_policy": "Retain failed identity with cause; no score-based replacement or unbounded retry",
+  "reporting": "Paired variants on common successful identities; report n/8, strata and per-person values; do not label this a 100-person ablation"
+}

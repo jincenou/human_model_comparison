@@ -1,0 +1,115 @@
+{
+  "status": "passed",
+  "scope": "Eight real production runtimes sampled at their registered source times; physical covariance and full SH compared to existing accepted snapshots",
+  "synthetic_tests": 5,
+  "rows": [
+    {
+      "id": "HN0004",
+      "bracket": [
+        35,
+        36
+      ],
+      "fraction": 0.0,
+      "position_max_error": 1.1920928955078125e-07,
+      "covariance_max_error": 3.48062289060036e-10,
+      "sh_exact": true,
+      "runtime_sha256": "8703f256e368a52fa235cf5480182329366e5c26fdaf416e4e5b611baf7b80e4",
+      "snapshot_sha256": "1d6ab782be721860c8cfd0e315d9c066531012d711840ec9f9b2aad61eda8fe3"
+    },
+    {
+      "id": "HN0038",
+      "bracket": [
+        33,
+        34
+      ],
+      "fraction": 0.7502249999999981,
+      "position_max_error": 5.960464477539063e-08,
+      "covariance_max_error": 4.4381907957774525e-10,
+      "sh_exact": true,
+      "runtime_sha256": "f9b6435f51be6b4dde899356add7a6fdd13a852ac7e9bbb1415a887dd8ad41e5",
+      "snapshot_sha256": "0f7c3d4c95ddd5641793bff4b8319bdd64b752aa8900882efeb96a6cb28233b8"
+    },
+    {
+      "id": "HN0039",
+      "bracket": [
+        32,
+        33
+      ],
+      "fraction": 0.5,
+      "position_max_error": 1.1920928955078125e-07,
+      "covariance_max_error": 4.1939560765230643e-10,
+      "sh_exact": true,
+      "runtime_sha256": "9806ca1fbde9972659cc898e790d1b3a63435a7b6fcef1d2aeaab4acd34f0dba",
+      "snapshot_sha256": "7685b78f499b6d1bf53ede4b9726b117bf931b57e2742b6d942cac6b6800ee5e"
+    },
+    {
+      "id": "HN0040",
+      "bracket": [
+        32,
+        33
+      ],
+      "fraction": 0.5,
+      "position_max_error": 1.1920928955078125e-07,
+      "covariance_max_error": 4.3401787025443284e-10,
+      "sh_exact": true,
+      "runtime_sha256": "1486f74a18b4710afaea58861f9012fc0aecf5873d057bc495ff7a7f3bc46c53",
+      "snapshot_sha256": "d5e2c3e5c8fff754be043aa2982c98fcfc868e2f4d3096b924ff776f92e98a20"
+    },
+    {
+      "id": "HN0046",
+      "bracket": [
+        36,
+        37
+      ],
+      "fraction": 0.25,
+      "position_max_error": 5.960464477539063e-08,
+      "covariance_max_error": 1.1720074531099828e-10,
+      "sh_exact": true,
+      "runtime_sha256": "1490e89f393365e1f367ee1d950f457d79146aa43cfda2ee9d5b77f96060959e",
+      "snapshot_sha256": "c1e76db587924305b9d132389f59f00e924fbfb511f331605978081849eecbcc"
+    },
+    {
+      "id": "HN0051",
+      "bracket": [
+        32,
+        33
+      ],
+      "fraction": 0.5,
+      "position_max_error": 5.960464477539063e-08,
+      "covariance_max_error": 2.1272874932941332e-10,
+      "sh_exact": true,
+      "runtime_sha256": "37e810149f08fa0d0b8c80232cabd0c7479be48a4926a5ade7d70e72a26a737a",
+      "snapshot_sha256": "c1207d53ee018d91468d0c84609fb3e4aa0d97552d41eb5dde52ff2e21ddf796"
+    },
+    {
+      "id": "HN0057",
+      "bracket": [
+        35,
+        36
+      ],
+      "fraction": 0.0,
+      "position_max_error": 2.9802322387695312e-08,
+      "covariance_max_error": 4.409381288913994e-10,
+      "sh_exact": true,
+      "runtime_sha256": "0d64d4109c73b4a07fda1ef49a35865ad0b08d5a3479602d05088d0a7d527d9b",
+      "snapshot_sha256": "65e6dec0bcde272d5ec0b67598067975c470a8666ff114a5d10fd518ea132255"
+    },
+    {
+      "id": "HN0090",
+      "bracket": [
+        35,
+        36
+      ],
+      "fraction": 0.0,
+      "position_max_error": 4.470348358154297e-08,
+      "covariance_max_error": 4.616482508768005e-10,
+      "sh_exact": true,
+      "runtime_sha256": "1b0a2e052596e413cd66f0e79a49eb039d72ff93c93186380aabc71ff1887f8c",
+      "snapshot_sha256": "b8a20754f5a00d1599767f13917030f3af6f185169a7cfa4ad8ce7e366feba45"
+    }
+  ],
+  "code_hashes": {
+    "${HMC_WORKSPACE}/human_model_comparison/scripts/backend_ablation_sampling.py": "09266ebfa0d629f756d1d1c91ed348726476f775b17f291ab2881e44b8487e42",
+    "${HMC_WORKSPACE}/human_model_comparison/scripts/test_backend_ablation_sampling.py": "05d88fa17981dec1b06e86e233537eb7d5ab0ea979e0dae545088d2703a0426a"
+  }
+}
