@@ -1,0 +1,54 @@
+{
+  "protocol": "human_dynamic_source_common_v1",
+  "status": "frozen_for_real_exposure_pilot",
+  "created_at_utc": "2026-11-12T02:07:29.973536+00:00",
+  "scope": "Paired source-observed dynamic appearance; learned/estimated source poses retained, no held-out or independent 3D motion truth",
+  "implementation": "${HMC_WORKSPACE}/human_model_comparison/scripts/score_dynamic_source_clip.py",
+  "implementation_sha256": "0bca5a656517caff06481f0277e9304b42156ebd2b4c48c4d6242bd786845d25",
+  "static_protocol": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/core_metric_protocol_frozen_v1.json",
+  "static_protocol_sha256": "dd436ca9fb62d87a9f198ef73a05c101c09bf447245498ed3c1306b160eaf97d",
+  "canvas": "same full-resolution source camera at each actual exposure",
+  "roi": "union of all reviewed real reference masks; same 1.10 square expansion and 512px crop as static core; fixed for every frame/method",
+  "compositing": "reference uses its visible mask; prediction uses own alpha and white compositing only; no reference mask applied to predictions",
+  "time": "all strictly increasing real exposure timestamps; adjacent displacement at actual shared intervals, no interpolation/looping/retiming",
+  "aggregation": "equal real frames for appearance; equal actual adjacent frame pairs for temporal metrics; each identity then equally weighted on a common identity/pair set",
+  "farneback": {
+    "args": [
+      0.5,
+      3,
+      15,
+      3,
+      5,
+      1.2,
+      0
+    ],
+    "input": "uint8 RGB converted by cv2.COLOR_RGB2GRAY",
+    "threads": 4,
+    "opencl": false
+  },
+  "opencv_version": "5.0.0",
+  "tOF": "mean adjacent pairs mean all ROI pixels sqrt((Fx_ref-Fx_pred)^2+(Fy_ref-Fy_pred)^2)",
+  "tOF_unit": "pixels per observed frame interval on fixed 512x512 ROI",
+  "tLP100": "100 * mean adjacent pairs abs(LPIPS(ref_previous,ref_current)-LPIPS(pred_previous,pred_current)); frozen AlexNet v0.1",
+  "source_reference": "https://github.com/thunil/TecoGAN/blob/master/metrics.py",
+  "deviations_from_tecogan": "Full common ROI and all real exposure pairs, no original crop_8x8 or two-frame boundary removal; pinned current AlexNet v0.1, not original bundled LPIPS. Do not compare numbers directly to TecoGAN tables.",
+  "missing": "technical failure is NA with reason, no synthetic white image; report real frame/pair counts and n/100",
+  "limitations": [
+    "Image-estimated flow includes mask boundaries and camera motion; not ground-truth 3D motion.",
+    "Temporal similarity alone does not imply correct actions or appearance; always report per-frame quality.",
+    "Reference segmentation and small carried objects are blurred pixel annotations, not subpixel truth.",
+    "One-person pilot cannot establish dataset-level ranking."
+  ],
+  "tests": {
+    "path": "${HMC_WORKSPACE}/human_model_comparison/logs/dynamic_source_metric_tests.log",
+    "sha256": "edb478df1dc7646e62a388b22dd66bee3adac796eb5d3ad7d8c039373cd96c98",
+    "passed": 5
+  },
+  "controls": [
+    "identical",
+    "hold_first_frame",
+    "reverse_time",
+    "alternating_foreground_darkening",
+    "gaussian_blur"
+  ]
+}

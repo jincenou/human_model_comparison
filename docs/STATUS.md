@@ -1,33 +1,35 @@
-# Status of this research snapshot
+# Research snapshot — 2026-11-12
 
-This document describes the source snapshot prepared on **2026-11-11 (Asia/Shanghai)**. It is not a live job monitor.
+This is a recorded experiment snapshot, not a live job monitor or a completed paper release.
 
-## Evidence available
+## Current coverage
 
-- The frozen cohort contains 100 identities: retained original75 plus approved additions. The source selection SHA256 is recorded in `metadata/cohort.json`.
-- AH and original TRELLIS completed native generation/reload for 100 people in the experiment workspace. Their previews still use native/estimated cameras.
-- Ours has 99 accepted native reloads; HN0233 remains a coordinate-render diagnostic failure. This is not a count of registered/scored source views.
-- Existing OmniRe extraction produced 99 accepted native objects; one was filtered at native initialization. SplatAD has 85 accepted objects, with missing objects audited separately.
-- Source-only reference eligibility is frozen: 91 eligible, eight body-occlusion cases and HN0321 carried-item occlusion recorded as NA. All 100 remain in the denominator.
-- The incremental source-view batch computed 149 core-metric rows: OmniRe 89/100 and SplatAD 60/100, with 60 shared identities. All six prior pilot rows reproduced. A real repeat run reused all 149 results without recomputation. The full five-method benchmark and ED-P remain incomplete; no final leaderboard is released.
-- Ours source-pose mapping was traced for HN0004, HN0035, HN0039 and HN0040. Endpoint keypoint projection agreement is below 0.003 pixels. This proves consistency with existing source-pose records, not accuracy of the estimated pose or final rendering registration.
+The active v3 cohort contains 100 nuScenes identities. HN0035 was replaced with HN0646 at the user's explicit direction before the current comparison; methods do not replace failed identities. Reference policy v5 retains all 100, including occlusion and umbrellas. Clothing, worn backpacks and carried items remain included.
 
-## Work still required
+| Method | Native assets | Source core metrics | Valid ED-P |
+|---|---:|---:|---:|
+| Ours | 100 | 100 | 99 |
+| Asset Harvester | 100 | 100 | 100 |
+| TRELLIS | 100 | 91 | 88 |
+| TRELLIS.2 | 97 | 52 | 47 |
+| OmniRe (existing non-SMPL variant) | 99 | 99 | 91 |
+| SplatAD | 84 | 84 | 84 |
 
-1. Finish Ours/AH/TRELLIS source-camera registration and independent render validation. Certify shared camera/scale handling before expanding metric batches.
-2. Complete and validate the ED-P extractor/visibility protocol; apply the same accepted image/alpha contract when integrating further renderers.
-3. Validate/freeze shared fixed-pose orbit settings and generate the full image/coverage tables.
-4. Finish ExAvatar/Jacobian fitting pilots, then FlexiAvatar and other method-specific human pilots in the planned order.
-5. Complete the fixed-frontend-cache backend ablation, keeping actual optimization budgets explicit.
-6. Release final paired per-person scores, input budgets, coverage/NA reasons and reproducibility manifests after acceptance.
+There are 526 scored method/person pairs. The five-method core comparison uses 77 common identities; adding TRELLIS.2 gives 46. The auxiliary ED-P comparison additionally intersects valid body parts per person: 70 people/329 shared parts for five methods, 40 people/199 shared parts for six. Coverage counts are not interchangeable across metrics.
 
-Historical controllers and preparation state are not published as live facts. Do not interpret retained `metric_eligible=false` flags as a mistake to toggle; each requires its corresponding acceptance evidence.
+TRELLIS.2 has three native generation failures and 45 outputs unavailable under the fixed source-registration protocol. These remain NA. The 52 scored outputs are retained regardless of appearance or score. Method-only means describe that successful subset; cross-method means use the same people. Limited official replays found both native thin-sheet failures and an input-mask problem; they do not establish one cause for all failures. Diagnostic mask corrections did not replace formal outputs.
 
+OmniRe lacks one independently extractable person; SplatAD lacks 16 (ten stationary filtering cases and six unmatched independent objects). Complete scenes are not retrained to recover them.
 
-## Preparation update
+## Additional evidence
 
-- TRELLIS.2 native generation/reload: 42/100 passed, 58 queued at the observed snapshot.
-- The human resume controller now uses a 10 GiB data-disk reserve and respects existing vehicle GPU reservations; no human child was active during takeover.
-- Jacobian SMPL neutral passed CPU forward/backward and exact conversion-equivalence checks. MHR runtime, transfer mapping and full fitting/training remain incomplete.
+- 526 sets of 16 common orbit views and a concise all-100-person gallery were generated locally. All images/links are checked; sample inspection and JavaScript interaction checks do not establish full visual review or browser-layout testing.
+- Three paired dynamic identities have 89 actual exposures and 86 adjacent pairs per method (Ours, OmniRe, SplatAD). tOF/tLP100 are pilot results, not full-cohort dynamic rankings.
+- HN0004 has a fixed-cache backend ablation: 32,999 native updates, 52,999 optimized updates, and a 52,999-update matched continuation with alpha-loss weight zero. All 1,464 frontend RGBA files match historical hashes. The matched runs share their native checkpoint and sampling/LR schedules. Only one identity has completed this ablation.
+- [Numeric tables](../results/20261112/README.md) include paired means, membership and coverage. Dataset pixels and large assets are not bundled.
 
-Incremental preparation, immutable result keys, failure reporting and CSV/HTML exports are documented in the [batch workflow](METRIC_BATCH_WORKFLOW_zh-CN.md). The user-facing combined comparison is deferred until Ours/AH/TRELLIS source registration also passes.
+## Remaining work
+
+Expand audited real-time dynamic clips and fixed-cache ablations; complete input-budget/provenance disclosure and additional orbit review. No reliable 3D human surface/joint truth or real backside reference has been established, so surface, joint/acceleration and backside image-reference metrics are not reported.
+
+ExAvatar, JacobianAvatar, FlexiAvatar, Hunyuan3D and ReconViaGen integration is deferred while the current six methods are completed. StreetGS was stopped after the bounded existing-scene audit found no reliable independent human node. GPU 0/1 remain reserved; human jobs use shared resources on 2–7 with a 10 GiB data-disk floor.

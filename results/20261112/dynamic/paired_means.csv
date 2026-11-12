@@ -1,0 +1,7 @@
+method,metric,n,denominator,mean,aggregation
+ours,tOF,3,100,1.040545755664601,equal_identity_means_not_pooled_frame_pairs
+ours,tLP100,3,100,0.6962585948065095,equal_identity_means_not_pooled_frame_pairs
+omnire,tOF,3,100,1.3843330198350825,equal_identity_means_not_pooled_frame_pairs
+omnire,tLP100,3,100,1.3483332160000854,equal_identity_means_not_pooled_frame_pairs
+splatad,tOF,3,100,1.0172029193736765,equal_identity_means_not_pooled_frame_pairs
+splatad,tLP100,3,100,2.0805803490787356,equal_identity_means_not_pooled_frame_pairs

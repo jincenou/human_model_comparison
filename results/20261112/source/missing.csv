@@ -1,0 +1,75 @@
+id,method,status,reason
+HN0038,splatad,native_unavailable_in_existing_scene,native_stationary_filter
+HN0057,splatad,native_unavailable_in_existing_scene,no_matching_actor_in_audited_existing_exports
+HN0099,splatad,native_unavailable_in_existing_scene,no_matching_actor_in_audited_existing_exports
+HN0131,splatad,native_unavailable_in_existing_scene,native_stationary_filter
+HN0136,splatad,native_unavailable_in_existing_scene,native_stationary_filter
+HN0190,trellis_original,source_registration_unavailable,fewer_than_six_available_body_correspondences
+HN0199,splatad,native_unavailable_in_existing_scene,native_stationary_filter
+HN0263,splatad,native_unavailable_in_existing_scene,native_stationary_filter
+HN0290,splatad,native_unavailable_in_existing_scene,native_stationary_filter
+HN0311,splatad,native_unavailable_in_existing_scene,native_stationary_filter
+HN0317,trellis_original,source_registration_unavailable,fewer_than_six_available_body_correspondences
+HN0317,splatad,native_unavailable_in_existing_scene,native_stationary_filter
+HN0382,trellis_original,source_registration_unavailable,fewer_than_six_available_body_correspondences
+HN0387,splatad,native_unavailable_in_existing_scene,no_matching_actor_in_audited_existing_exports
+HN0397,omnire,native_unavailable_in_existing_scene,native_actor_filtered_by_original_init
+HN0397,splatad,native_unavailable_in_existing_scene,no_matching_actor_in_audited_existing_exports
+HN0517,trellis_original,source_registration_unavailable,source_pnp_nonpositive_depth_at_joints_15_16
+HN0592,trellis_original,source_registration_unavailable,fewer_than_six_available_body_correspondences
+HN0651,trellis_original,source_registration_unavailable,fewer_than_six_available_body_correspondences
+HN0668,trellis_original,source_registration_unavailable,fewer_than_six_available_body_correspondences
+HN0668,splatad,native_unavailable_in_existing_scene,native_stationary_filter
+HN0834,splatad,native_unavailable_in_existing_scene,no_matching_actor_in_audited_existing_exports
+HN0838,trellis_original,source_registration_unavailable,fewer_than_six_available_body_correspondences
+HN0861,splatad,native_unavailable_in_existing_scene,no_matching_actor_in_audited_existing_exports
+HN0866,trellis_original,source_registration_unavailable,fewer_than_six_available_body_correspondences
+HN0646,splatad,native_unavailable_in_existing_scene,native_stationary_filter_previously_verified_and_deferred_by_user
+HN0039,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0131,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0165,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0172,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0175,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0190,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0199,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0212,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0214,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0215,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0221,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0223,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0231,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0249,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0252,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0263,trellis2,source_registration_unavailable,AssertionError()
+HN0268,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0272,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0274,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0280,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0292,trellis2,native_generation_failed,AssertionError('generate failed: exit 1')
+HN0311,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0317,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0325,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0090,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0632,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0651,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0690,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0046,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0057,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0099,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0345,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0382,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0397,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0517,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0581,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0592,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0685,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0728,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0810,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0812,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0821,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0825,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0834,trellis2,native_generation_failed,AssertionError('generate failed: exit 1')
+HN0838,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0850,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')
+HN0861,trellis2,native_generation_failed,AssertionError('generate failed: exit 1')
+HN0866,trellis2,source_registration_unavailable,AssertionError('fewer than six body correspondences')

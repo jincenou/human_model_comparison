@@ -1,0 +1,6 @@
+method,metric,n,denominator,mean,positive_infinity_count,scope
+trellis2,PSNR,52,100,16.72806203135941,0,method_valid_set_only_not_cross_method_ranking
+trellis2,SSIM,52,100,0.8444047228431137,0,method_valid_set_only_not_cross_method_ranking
+trellis2,LPIPS,52,100,0.17680938857106063,0,method_valid_set_only_not_cross_method_ranking
+trellis2,IoU,52,100,0.7515245280531345,0,method_valid_set_only_not_cross_method_ranking
+trellis2,IoU_raw,52,100,0.7368075534036103,0,method_valid_set_only_not_cross_method_ranking

@@ -24,7 +24,9 @@ LPIPS uses AlexNet v0.1, float32/eval, NCHW RGB in `[-1,1]`. Both backbone and l
 
 IoU uses byte threshold `>127`; report both common-ROI IoU and raw full-canvas IoU. An empty eligible prediction has IoU zero. An empty reference is NA. A technical render failure is not replaced by an all-white image.
 
-ED-P reserves head, torso, left/right arm, and left/right leg. Only the empty/visible-part aggregation is implemented. Keypoint selection, DINOv3 feature layer/preprocessing, and per-part visibility still require a validated frozen extractor. Current outputs explicitly report ED-P as NA, not zero.
+ED-P_common uses six parts (head, torso, left/right arms and legs), DINOv3 ViT-L/16 final patch features, fixed DWPose keypoints, own foreground patch centers and the shared 512 ROI. The frozen specification records weights, normalization, confidence and segment-distance thresholds. No common valid part means NA. Paired comparisons intersect both people and parts, average shared parts per person, then average people equally. Head parts for the two frozen umbrella-occluded references are excluded consistently, while the people remain eligible. Estimated part support is not anatomical ground truth or proof of complete limbs. This variant differs from the AH paper's released encoder/keypoint/cropping setup; its numbers are not directly comparable.
+
+Temporal metrics use the same actual exposure timestamps and a clip-fixed ROI from the union of reviewed reference masks. tOF is the mean per-pixel L2 difference between reference and predicted Farneback flow, then the mean over adjacent pairs and identities. It is in pixels per actual interval, without division by elapsed seconds. tLP100 is 100 times the absolute difference between reference and predicted adjacent-frame AlexNet LPIPS, aggregated the same way. Whole-ROI white background and camera motion affect these image estimates; low temporal error does not prove correct limb actions.
 
 ## Pair manifest
 
@@ -43,6 +45,6 @@ Run from the repository root. The example uses absolute paths derived at creatio
 
 Keep every frozen identity in the denominator, even if a method cannot produce an independent object. Report each method's coverage and all NA reasons. For any cross-method mean, choose the common valid identity set for that specific metric first. Include its IDs and `n/100`; do not average different sets and call it paired comparison.
 
-The original three-person pilot is diagnostic. The subsequent scene-method batch separately verifies frozen reference eligibility, native identity/state provenance, physical time, camera projection, source code hashes and alpha encoding. It has 149 scored method/person rows and 60 shared scene-method identities; this remains a partial source-reconstruction comparison. Projection algebra alone is insufficient evidence. Generated/native preview cameras must never be mixed with real-camera scores.
+The current source-core snapshot has 526 scored method/person pairs, with 77 common identities for five methods and 46 for six. ED-P has its own smaller paired sets. Dynamic results remain a three-person pilot. See [status](STATUS.md) for exact coverage. Projection algebra alone is insufficient evidence; native preview cameras are not substituted for real-camera scores.
 
 Source reconstruction evaluates an observed state. Disclose all real frames, video duration, interpolated frames, generated auxiliaries, poses, cameras and other priors consumed by a method. A true held-out experiment needs a separate input audit. Backside PSNR/LPIPS requires real backside reference. Fixed-pose orbits without such observations are qualitative.

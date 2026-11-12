@@ -1,0 +1,7 @@
+method,valid_people,denominator,paired_valid_part_slots,possible_part_slots,source_scored
+ours,99,100,586,600,100
+ah,100,100,594,600,100
+trellis_original,88,100,502,600,91
+omnire,91,100,443,600,99
+splatad,84,100,477,600,84
+trellis2,47,100,277,600,52

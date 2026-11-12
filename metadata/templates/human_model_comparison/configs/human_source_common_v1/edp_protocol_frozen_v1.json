@@ -1,0 +1,10 @@
+{
+  "protocol": "human_edp_common_v1",
+  "status": "frozen_after_pilot",
+  "specification": "${HMC_WORKSPACE}/human_model_comparison/reports/source_edp_common_v1/pilot_visibility_v2/protocol.json",
+  "specification_sha256": "f599c7b33b97bb8a6ccfe2366de00cde3a25d74007d9e5c0b02369575b6eab3f",
+  "acceptance": "${HMC_WORKSPACE}/human_model_comparison/reports/source_edp_common_v1/pilot_visibility_v2/acceptance.json",
+  "acceptance_sha256": "7f46fc72533023e5817d4b1e77682896fbd38ae5a33113fe2e7d6c4e9587710d",
+  "scope": "Auxiliary common-ROI variant; not identical to AH published benchmark",
+  "core_metric_protocol_changed": false
+}

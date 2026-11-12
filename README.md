@@ -4,7 +4,7 @@
 
 [中文说明](README_zh-CN.md) · [Reproduction](docs/REPRODUCING.md) · [Evaluation protocol](docs/EVALUATION.md) · [Methods and dependencies](docs/METHODS.md) · [Release status](docs/STATUS.md) · [Incremental batch workflow (中文)](docs/METRIC_BATCH_WORKFLOW_zh-CN.md)
 
-> **Research preview — November 2026.** This repository releases the current experiment code, metadata templates, and independently runnable core metrics. It is not a completed five-method benchmark or a fully self-contained training distribution. Cross-method source-camera registration, ED-P, some method integrations, and the backend ablation are still in progress. The source-only reference cohort and core image metric definitions are frozen; a partial scene-method batch is available in the experiment workspace. Native preview images are not used as interchangeable metric inputs.
+> **Research preview — November 2026.** Six methods have 526 valid source-view results on a frozen 100-person cohort, with coverage-aware paired tables. ED-P, common orbits, three dynamic pilots and one fixed-cache backend ablation are available. Full dynamic/ablation batches and input-budget disclosure remain incomplete. This is an integration source release, not a self-contained end-to-end training distribution.
 
 ## Overview
 
@@ -13,7 +13,7 @@ We study human assets at the **same identity, real exposure time, and observed p
 1. **Source-view reconstruction:** compare rendered assets with the real input using a common calibrated camera, white background, and reference-defined region of interest.
 2. **Fixed-pose orbit inspection:** expose side/back missing surfaces, blur, floaters, and appearance errors using shared camera settings. Without real backside observations, these views do not receive image-reference scores.
 
-The frozen cohort contains **100 nuScenes identities**: 75 retained cases and 25 additions selected through real-reference review. Method failures never trigger replacement of an identity. The comparison covers Ours (4DAnyone Turbo + Grid4D), Asset Harvester, original TRELLIS, OmniRe, and SplatAD, with additional methods under integration.
+The frozen cohort contains **100 nuScenes identities**: 75 retained cases and 25 additions selected through real-reference review. Method failures never trigger replacement of an identity. The comparison covers Ours (4DAnyone Turbo + Grid4D), Asset Harvester, original TRELLIS, TRELLIS.2, OmniRe, and SplatAD. Additional integrations are currently deferred.
 
 ```mermaid
 flowchart LR
@@ -85,21 +85,23 @@ Configure installation paths using [`.env.example`](.env.example), then follow [
 | SSIM | Gaussian 11×11 window, σ=1.5, population covariance, K1=0.01, K2=0.03, RGB mean |
 | LPIPS | AlexNet v0.1, fixed local weight hashes, eval/float32, RGB normalized to `[-1,1]` |
 | IoU | Byte mask threshold `>127`; shared ROI and raw full-canvas variants |
-| ED-P | Six-part aggregation implemented; feature extraction and visibility protocol still pending |
+| ED-P_common | Frozen six-part DINOv3 ViT-L/16 and DWPose variant; common identities and common parts, with coverage |
+| tOF / tLP100 | Matched actual-exposure optical-flow and adjacent perceptual-change differences; three-person pilot |
 
 The reference mask includes clothes, worn backpacks, and carried items. The ROI is a square centered on the reference mask bounding box with side length `ceil(1.10 × longest side)`, padded white outside the canvas, then resized to 512×512. RGB uses bicubic interpolation; masks use nearest neighbor. See the [full protocol and limitations](docs/EVALUATION.md).
 
 ## Current release scope
 
-| Component | Evidence available | Remaining work |
-| --- | --- | --- |
-| Frozen cohort | 100 identities/exposures; 91 reference-eligible, nine reference NA | Preserve the cohort and report coverage |
-| AH / original TRELLIS | Native generation and reload batches | Shared source-camera registration |
-| Ours | Fixed-time runtime and full-SH reload; source mapping pilot | Source-camera rendering/registration acceptance |
-| OmniRe / SplatAD | Existing-scene extraction, physical-time and projection checks | Final common-camera certification and full scoring |
-| Core metric arithmetic | Numerical tests, 149 scene-method scores, verified incremental reuse | Complete five-method paired evaluation and ED-P |
-| ExAvatar / JacobianAvatar | Isolated environments and partial official component validation | Missing assets and complete fitting/training pilots |
-| Additional methods / ablation | Integration code and experiment plan | Method-specific acceptance and fixed-frontend backend ablation |
+| Component | Available evidence | Remaining work |
+|---|---|---|
+| Cohort/reference | v3 fixed100, all100 eligible under reference policy v5 | Preserve identity and missingness |
+| Source metrics | 526 pairs; five-method common77, six-method common46 | Input-budget disclosure |
+| ED-P auxiliary | 509 valid pairs; common-part comparisons | Additional visibility review |
+| Common orbits | 526×16 views, full100 local gallery | Broader visual inspection |
+| Dynamic comparison | Three common identities, 86 actual frame pairs | Expand audited clips |
+| Backend ablation | One identity, three variants including matched budget | Expand fixed-cache cohort |
+
+See [recorded results](results/20261112/README.md) and [current workflow](docs/CURRENT_WORKFLOW.md).
 
 No final leaderboard, paper acceptance, or state-of-the-art claim is made by this release. The detailed [status](docs/STATUS.md) distinguishes observed results from planned work.
 

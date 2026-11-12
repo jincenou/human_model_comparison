@@ -1,0 +1,13 @@
+{
+  "user_instruction": "失败案例保留；按能够正常生成并可统一评测的实际数量计分，正文披露失败情况",
+  "scope": "Existing fixed100 TRELLIS.2 run",
+  "retry_failed_generation": false,
+  "retry_failed_registration": false,
+  "finish_existing_running_jobs": true,
+  "replace_failed_identities": false,
+  "quality_based_exclusion": false,
+  "corrected_mask_replay_replaces_production": false,
+  "denominator": 100,
+  "comparison": "same common valid identities across compared methods; method-only means labeled separately",
+  "disclosure": "Separate native generation failures, registration-unavailable outputs, pending jobs, and input-mask limitations"
+}

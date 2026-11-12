@@ -1,0 +1,12 @@
+group,method,n,denominator,mean,shared_part_slots,possible_part_slots
+ours+ah+trellis_original+omnire+splatad,ours,70,100,0.08048660343925762,329,600
+ours+ah+trellis_original+omnire+splatad,ah,70,100,0.10140183025454631,329,600
+ours+ah+trellis_original+omnire+splatad,trellis_original,70,100,0.14494785858485223,329,600
+ours+ah+trellis_original+omnire+splatad,omnire,70,100,0.38940728338564384,329,600
+ours+ah+trellis_original+omnire+splatad,splatad,70,100,0.17074912710516355,329,600
+ours+ah+trellis_original+omnire+splatad+trellis2,ours,40,100,0.07154231347613055,199,600
+ours+ah+trellis_original+omnire+splatad+trellis2,ah,40,100,0.0946627496068851,199,600
+ours+ah+trellis_original+omnire+splatad+trellis2,trellis_original,40,100,0.12641224580046445,199,600
+ours+ah+trellis_original+omnire+splatad+trellis2,omnire,40,100,0.34280879898755373,199,600
+ours+ah+trellis_original+omnire+splatad+trellis2,splatad,40,100,0.16427276781767347,199,600
+ours+ah+trellis_original+omnire+splatad+trellis2,trellis2,40,100,0.09060927085356398,199,600

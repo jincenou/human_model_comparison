@@ -1,0 +1,12 @@
+method,status,n,denominator
+ours,scored,100,100
+ah,scored,100,100
+trellis_original,scored,91,100
+trellis_original,source_registration_unavailable,9,100
+omnire,native_unavailable_in_existing_scene,1,100
+omnire,scored,99,100
+splatad,native_unavailable_in_existing_scene,16,100
+splatad,scored,84,100
+trellis2,native_generation_failed,3,100
+trellis2,scored,52,100
+trellis2,source_registration_unavailable,45,100

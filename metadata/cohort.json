@@ -1,13 +1,13 @@
 {
   "count": 100,
-  "source_selection_sha256": "f6917e99f3e82d57b7ac2d141c50d8377aa953ec4ddb3e27192720d53af49f79",
+  "source_selection_sha256": "03110e1d403248ff84d4f108a23602aad153781c76530fbc572bd5bc22324d55",
   "objects": [
     {
-      "id": "HN0035",
-      "identity_key": "nuscenes:24666ac5c59b47e899cb34c50cc9bfdb",
-      "scene": "scene-0917",
-      "cohort": "original75",
-      "t_ref_us": 1538984305404844
+      "id": "HN0646",
+      "identity_key": "nuscenes:1e775890010e4d97b74ca1d06441d023",
+      "scene": "scene-0061",
+      "cohort": "replacement_v3",
+      "t_ref_us": 1532402941254844
     },
     {
       "id": "HN0038",

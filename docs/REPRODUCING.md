@@ -26,8 +26,8 @@ Set `DRIVESTUDIO_ROOT`, `SPLATAD_ROOT`, and `HMC_THIRD_PARTY` for the correspond
 Templates use `${HMC_WORKSPACE}` and related placeholders. Expand a template into a local, ignored workspace file with:
 
 ```bash
-hmc-materialize metadata/templates/human_model_comparison/inputs/benchmark_human100_v2/selection.json \
-  workspace/human_model_comparison/inputs/benchmark_human100_v2/selection.json
+hmc-materialize metadata/templates/human_model_comparison/inputs/benchmark_human100_v3/selection.json \
+  workspace/human_model_comparison/inputs/benchmark_human100_v3/selection.json
 ```
 
 **Hash boundary:** path substitution changes the bytes of JSON manifests. Original hashes are provenance evidence, not valid hashes of newly materialized files. After reconstructing inputs, regenerate dependent plans and their hashes using the preparation scripts. Do not disable hash assertions to make a new installation pass. Historical worker state, PID files, GPU leases, and cached pass/fail gates must not be copied to a new machine.
@@ -53,7 +53,7 @@ Relevant scripts under `workspace/human_model_comparison/scripts/`:
 
 ## 5. Produce or reuse assets
 
-- **Ours:** reuse the existing 4DAnyone Turbo frontend and full-budget Grid4D asset; `export_ours_frozen_time_v1.py` samples the original non-looping timeline and preserves root transforms and SH3. `render_ours_frozen_time_v3.py` checks independent reload. `prepare_ours_source_registration_pilot_v1.py` and `render_ours_source_pilot_v1.py` are source-registration pilots, not completed batch acceptance.
+- **Ours:** reuse the existing 4DAnyone Turbo frontend and full-budget Grid4D asset; `export_ours_frozen_time_v1.py` samples the original non-looping timeline and preserves root transforms and SH3. `render_ours_frozen_time_v3.py` checks independent reload. `prepare_ours_source_registration_pilot_v1.py` and `render_ours_source_pilot_v1.py` are historical pilots. The current batch uses the v3 registration/rendering adapters and the active metric pipeline described in CURRENT_WORKFLOW.md.
 - **AH:** `prepare_ah_human_pilot_v1.py`, `run_ah_human_pilot_v1.py`, and `reload_ah_human_pilot_v1.py` use the native AHC flow. A predicted AHC source view still requires reconciliation with the calibrated real camera before comparison.
 - **Original TRELLIS / TRELLIS.2:** use the corresponding `run_*_human_native_v1.py` adapters and independent reload. Their native camera previews are not registered source-camera outputs.
 - **OmniRe / SplatAD:** use `extract_*_human100_v2.py`; reuse existing scene checkpoints. Original75 time-aware adapters are `render_omnire_original75_time_v1.py` and `render_splatad_original75_time_v1.py`. Keep the actual native variant and unavailable-object reason.
@@ -76,5 +76,5 @@ The requested deployment policy is **10 GiB remaining data-disk space** as a sch
 
 ## 8. Backend ablation
 
-The required ablation fixes the same input, frontend generation cache, cameras, skeleton, masks, initialization, seed and evaluation exposure. Compare native and optimized backends; report actual optimization updates, time and memory. Do not regenerate the frontend cache or silently reduce SH degree, frame count, resolution or training budget. This release does not contain completed ablation results.
+The required ablation fixes the same input, frontend generation cache, cameras, skeleton, masks, initialization, seed and evaluation exposure. Compare native and optimized backends; report actual optimization updates, time and memory. Do not regenerate the frontend cache or silently reduce SH degree, frame count, resolution or training budget. The current release includes one completed three-variant pilot and measured budgets; it does not claim a completed cohort ablation. See [current workflow](CURRENT_WORKFLOW.md) for the accepted entry points.
 
