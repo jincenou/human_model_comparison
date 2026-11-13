@@ -60,8 +60,8 @@
     {
       "source": "human_model_comparison/inputs/active_results.json",
       "destination": "metadata/templates/human_model_comparison/inputs/active_results.json",
-      "source_sha256": "817bcda23dbc338d2b544c7f54efa000394d56affdf5179c8f0cdd4f0cf3c41e",
-      "release_sha256": "817bcda23dbc338d2b544c7f54efa000394d56affdf5179c8f0cdd4f0cf3c41e",
+      "source_sha256": "210afbf67e8136cf62632b69624ad49138c06a5683ebaa2f12b8a0231c4ea82e",
+      "release_sha256": "210afbf67e8136cf62632b69624ad49138c06a5683ebaa2f12b8a0231c4ea82e",
       "changes": "metadata path placeholders"
     },
     {
@@ -128,7 +128,7 @@
       "changes": "metadata path placeholders; regenerate dependent hashes after materialization"
     },
     {
-      "source": "human_model_comparison/reports/advisor_report_20261112_v3/总表.md",
+      "source": "human_model_comparison/reports/advisor_report_20261113_v1/总表.md",
       "destination": "results/20261112/ALL_METRICS.md",
       "source_sha256": "3f6a8a4651e5d5751df1e0c4751f4ad9d12c37695363f0c2d000ab3fe290eb0b",
       "release_sha256": "3f6a8a4651e5d5751df1e0c4751f4ad9d12c37695363f0c2d000ab3fe290eb0b",
@@ -286,6 +286,41 @@
       "destination": "results/20261112/source/trellis2_valid_means.csv",
       "source_sha256": "e8b36ec59b61184dac6efee568a358fc5fa53d2a0ddaeee439d9ea8ffe055edf",
       "release_sha256": "daf9370e0ce95e2d16ac256e0c85ba291644f498eba5d65413208f5f5a8c445e",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human_model_comparison/reports/backend_ablation_batch_v2/RESULTS.md",
+      "destination": "results/20261113/ablation/RESULTS.md",
+      "source_sha256": "bda5de525971938bb99a5691e106215fbf148b285476d030bdc3500bf4d5e4de",
+      "release_sha256": "bda5de525971938bb99a5691e106215fbf148b285476d030bdc3500bf4d5e4de",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human_model_comparison/reports/backend_ablation_batch_v2/acceptance.json",
+      "destination": "results/20261113/ablation/acceptance.json",
+      "source_sha256": "87baf8ec3cdfe318b304a9984d9e526d6b796ad225396e442f9384a52107340d",
+      "release_sha256": "87baf8ec3cdfe318b304a9984d9e526d6b796ad225396e442f9384a52107340d",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human_model_comparison/reports/backend_ablation_batch_v2/manifest.json",
+      "destination": "results/20261113/ablation/manifest.json",
+      "source_sha256": "21e50595f58e894569ed687c03ee0ae6dda1a8e23d2ef65671ce093c10ec24e1",
+      "release_sha256": "8896f38d0538c468eb2b3531677a8adcdfe207fa911dd70252c23620ebec00d7",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human_model_comparison/reports/backend_ablation_batch_v2/paired_means.csv",
+      "destination": "results/20261113/ablation/paired_means.csv",
+      "source_sha256": "1ed5c29f0ab19091e1c279f974c22558988aef06f93f4894cc68333fd069a601",
+      "release_sha256": "4cf84f6a06c3dc0a47d651bba7b6bba1955dc5dde1f7149e9821653ef62e4dd6",
+      "changes": "metadata path placeholders"
+    },
+    {
+      "source": "human_model_comparison/reports/backend_ablation_batch_v2/per_identity.csv",
+      "destination": "results/20261113/ablation/per_identity.csv",
+      "source_sha256": "97959235e4b91abb23529f586b18f8730dada65f2ee27071f9469066eabaf629",
+      "release_sha256": "dcbc3791fd03eadbb678d5e15b9a513a0184f8bb81238c43a800eb52fa477357",
       "changes": "metadata path placeholders"
     },
     {
@@ -1019,15 +1054,15 @@
     {
       "source": "human_model_comparison/scripts/export_advisor_tables.py",
       "destination": "workspace/human_model_comparison/scripts/export_advisor_tables.py",
-      "source_sha256": "21f0a4dc5a8871a2f5fee8e13ec8a7d280a2ba01616812b595899d58c6b56a66",
-      "release_sha256": "21f0a4dc5a8871a2f5fee8e13ec8a7d280a2ba01616812b595899d58c6b56a66",
+      "source_sha256": "dbdcfe4896ddbe061b895d65d171e16fe3dedea550f04b81f58695da8a314d14",
+      "release_sha256": "dbdcfe4896ddbe061b895d65d171e16fe3dedea550f04b81f58695da8a314d14",
       "changes": "configurable path substitutions"
     },
     {
       "source": "human_model_comparison/scripts/export_backend_ablation_batch_v2.py",
       "destination": "workspace/human_model_comparison/scripts/export_backend_ablation_batch_v2.py",
-      "source_sha256": "b20ae6386e5b5918ce603be519f867c7d4742dc8cea319bcdf4443a097d0c186",
-      "release_sha256": "b20ae6386e5b5918ce603be519f867c7d4742dc8cea319bcdf4443a097d0c186",
+      "source_sha256": "fe222ddde14651c961c03e80a39511fe749b2fa0ebc2a62c4244c4ca685fb67e",
+      "release_sha256": "fe222ddde14651c961c03e80a39511fe749b2fa0ebc2a62c4244c4ca685fb67e",
       "changes": "configurable path substitutions"
     },
     {

@@ -31,10 +31,12 @@ OmniRe lacks one independently extractable person; SplatAD lacks 16 (ten station
 
 ## Remaining work
 
-The current dynamic batch is closed with explicit missingness. Expand fixed-cache ablations and additional orbit review separately. [Input budgets](INPUT_BUDGETS.md) now cover 600 person/method rows, including verified OmniRe native sample-chain and actual camera-exposure mappings. No reliable 3D human surface/joint truth or real backside reference has been established, so surface, joint/acceleration and backside image-reference metrics are not reported.
+The current dynamic batch is closed with explicit missingness. The fixed-cache eight-person ablation is complete; broader orbit inspection remains optional. [Input budgets](INPUT_BUDGETS.md) now cover 600 person/method rows, including verified OmniRe native sample-chain and actual camera-exposure mappings. No reliable 3D human surface/joint truth or real backside reference has been established, so surface, joint/acceleration and backside image-reference metrics are not reported.
 
 ExAvatar, JacobianAvatar, FlexiAvatar, Hunyuan3D and ReconViaGen integration is deferred while the current six methods are completed. StreetGS was stopped after the bounded existing-scene audit found no reliable independent human node. GPU 0/1 remain reserved; human jobs use shared resources on 2–7 with a 10 GiB data-disk floor.
 
-## Backend expansion queued after the reporting closeout
+## Backend ablation completed on November 13
 
-An eight-person cohort is now fixed by taking the first four IDs from each original/new stratum. HN0004 remains the only completed three-variant result at this update; the seven additional identities are queued on GPUs 2–7. Original RGBA caches must match every historical file hash before training; generated videos are not regenerated. Fractional source-time sampling has passed five focused numerical checks in both training and evaluation environments, plus comparisons with eight existing production snapshots. Pending training does not add numbers to the published table.
+The predeclared eight-person cohort (first four IDs from each original/new stratum) has completed all three variants and individual visual review. Every restored frontend RGBA matches its original hash; all variants share input, initialization, seed and source camera. Native uses 32,999 updates; optimized and the alpha-weight-zero control each use 52,999. Their continuation sampling and learning-rate files match exactly. All eight frozen production-asset render replays exactly match the earlier RGB and alpha outputs.
+
+The optimized variant has better average PSNR, SSIM, LPIPS, IoU and raw IoU on these eight people. This does not establish improvement on every person, all 100 people, or an independent held-out set. Pose, scale, texture errors and residual floaters remain visible and were not excluded. See the [paired results](../results/20261113/ablation/RESULTS.md) and per-person budgets. All six batch controllers terminated normally; no human ablation job remains queued.

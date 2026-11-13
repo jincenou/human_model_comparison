@@ -1,0 +1,160 @@
+{
+  "status": "all_eight_visually_reviewed",
+  "reviewed_at_utc": "2026-11-13T01:12:34.713067+00:00",
+  "plan_sha256": "0aca167841154d7322bcb5bff29f5a6908098366a553a6ce563edec2c59575e9",
+  "rows": [
+    {
+      "id": "HN0004",
+      "status": "reviewed_for_paired_reporting",
+      "reviewer": "assistant_visual_inspection",
+      "results_sha256": "124e415cc6ef64fcee5f1952c97253f5908779266f56adef724d89e6675e6d5d",
+      "comparison_sha256": "924eb414386e4d97a6e9bc0e69d4b1f1925f7139946a227d130ff5b0b864bbd6",
+      "reviewed_images": [
+        "reference",
+        "native_33k",
+        "complete_A_53k",
+        "rgb_continuation_53k",
+        "production_replay"
+      ],
+      "observation": "Backpack and source-pose appearance retained; scale/limb mismatch remains across variants.",
+      "per_variant_alignment": false,
+      "manual_pose_edits": false,
+      "quality_based_exclusion": false,
+      "production_replay_rgb_alpha_exact": true
+    },
+    {
+      "id": "HN0038",
+      "status": "reviewed_for_paired_reporting",
+      "reviewer": "assistant_visual_inspection",
+      "results_sha256": "e1e3412fa2dbb05f7a38153e4ce1a222f86d3c8a46b69c8602c99684f3cb35a1",
+      "comparison_sha256": "3c817e680deaa7430992efd5b2286d4dd8d7098104e6093ff076b1c90d4bab0b",
+      "reviewed_images": [
+        "reference",
+        "native_33k",
+        "complete_A_53k",
+        "rgb_continuation_53k",
+        "production_replay"
+      ],
+      "observation": "Native/control show a floating patch above the head; optimized reduces it. Body scale and pose remain imperfect.",
+      "per_variant_alignment": false,
+      "manual_pose_edits": false,
+      "quality_based_exclusion": false,
+      "production_replay_rgb_alpha_exact": true
+    },
+    {
+      "id": "HN0039",
+      "status": "reviewed_for_paired_reporting",
+      "reviewer": "assistant_visual_inspection",
+      "results_sha256": "843db3603c8eeab08c10e8906b19c2e748d7da681ee60086b0c538ad2fe05b31",
+      "comparison_sha256": "9d7404007f1b65aa12aed84382b97df2f6424ee85c6a036676f59018f5bbe82f",
+      "reviewed_images": [
+        "reference",
+        "native_33k",
+        "complete_A_53k",
+        "rgb_continuation_53k",
+        "production_replay"
+      ],
+      "observation": "Head-top floaters are reduced in optimized output; source appearance and limb mismatch remain.",
+      "per_variant_alignment": false,
+      "manual_pose_edits": false,
+      "quality_based_exclusion": false,
+      "production_replay_rgb_alpha_exact": true
+    },
+    {
+      "id": "HN0040",
+      "status": "reviewed_for_paired_reporting",
+      "reviewer": "assistant_visual_inspection",
+      "results_sha256": "82f93fac437aceafde4a48893de887a627c28dca6503da68ee45ec843d5b5c0f",
+      "comparison_sha256": "429d0053a81ce1c30f5179764dd010e91a37e98db8904169a1446671c31db9da",
+      "reviewed_images": [
+        "reference",
+        "native_33k",
+        "complete_A_53k",
+        "rgb_continuation_53k",
+        "production_replay"
+      ],
+      "observation": "Top and trailing-leg fragments are reduced; all variants retain pose and silhouette errors.",
+      "per_variant_alignment": false,
+      "manual_pose_edits": false,
+      "quality_based_exclusion": false,
+      "production_replay_rgb_alpha_exact": true
+    },
+    {
+      "id": "HN0046",
+      "status": "reviewed_for_paired_reporting",
+      "reviewer": "assistant_visual_inspection",
+      "results_sha256": "848b336798c1bd2ff91100ff0ea46bfb63fb4b2ec5fc00a55634de3b683b52c3",
+      "comparison_sha256": "be12927330a1580be2423b5291284516a383909cd69a19ea75b07db97971afef",
+      "reviewed_images": [
+        "reference",
+        "native_33k",
+        "complete_A_53k",
+        "rgb_continuation_53k",
+        "production_replay"
+      ],
+      "observation": "Broad overhead fragments shrink in optimized output; residual fragments remain. Skin/clothing and leg pose differ from reference.",
+      "per_variant_alignment": false,
+      "manual_pose_edits": false,
+      "quality_based_exclusion": false,
+      "production_replay_rgb_alpha_exact": true
+    },
+    {
+      "id": "HN0051",
+      "status": "reviewed_for_paired_reporting",
+      "reviewer": "assistant_visual_inspection",
+      "results_sha256": "bd076af9da7ca6e700d9680063cfb2632b6a27fb4efff365547be0271d907bb2",
+      "comparison_sha256": "0467d1409ce269e02da6b12a01e802759576fe4505a2435f9365407be970da87",
+      "reviewed_images": [
+        "reference",
+        "native_33k",
+        "complete_A_53k",
+        "rgb_continuation_53k",
+        "production_replay"
+      ],
+      "observation": "Similar silhouette across variants; hands, face and leg texture differ from the real source. No uniform visual improvement claimed.",
+      "per_variant_alignment": false,
+      "manual_pose_edits": false,
+      "quality_based_exclusion": false,
+      "production_replay_rgb_alpha_exact": true
+    },
+    {
+      "id": "HN0057",
+      "status": "reviewed_for_paired_reporting",
+      "reviewer": "assistant_visual_inspection",
+      "results_sha256": "1b35db02a07e7b30559a1aaac3f50ed5dd2023970f0af5ad108a7d67691d4bb6",
+      "comparison_sha256": "3c66700a213f52a7ab05287f21f429106832b718277e89b66d6654ce20b1427a",
+      "reviewed_images": [
+        "reference",
+        "native_33k",
+        "complete_A_53k",
+        "rgb_continuation_53k",
+        "production_replay"
+      ],
+      "observation": "Large side/ground floaters in native/control are reduced in optimized output; residual fragments and anatomical errors remain.",
+      "per_variant_alignment": false,
+      "manual_pose_edits": false,
+      "quality_based_exclusion": false,
+      "production_replay_rgb_alpha_exact": true
+    },
+    {
+      "id": "HN0090",
+      "status": "reviewed_for_paired_reporting",
+      "reviewer": "assistant_visual_inspection",
+      "results_sha256": "e78c0707e96695495bd9f72e88e51ab2591daef4cd877c7748f8a8bd973cb062",
+      "comparison_sha256": "a9b1a759e0ab20bf12d718edc851cdf2644647f91faa6d42b726b2871ec4791f",
+      "reviewed_images": [
+        "reference",
+        "native_33k",
+        "complete_A_53k",
+        "rgb_continuation_53k",
+        "production_replay"
+      ],
+      "observation": "Overhead fragments decrease in optimized output; clothing/leg and source-proportion errors remain.",
+      "per_variant_alignment": false,
+      "manual_pose_edits": false,
+      "quality_based_exclusion": false,
+      "production_replay_rgb_alpha_exact": true
+    }
+  ],
+  "scope": "Same-camera technical comparison with model errors retained; not anatomical correctness or 100-person evidence"
+}

@@ -4,7 +4,7 @@
 
 [中文说明](README_zh-CN.md) · [Reproduction](docs/REPRODUCING.md) · [Evaluation protocol](docs/EVALUATION.md) · [Methods and dependencies](docs/METHODS.md) · [Release status](docs/STATUS.md) · [Historical batch workflow (中文)](docs/METRIC_BATCH_WORKFLOW_zh-CN.md)
 
-> **Research preview — November 2026.** Six methods have 526 valid source-view results on a frozen 100-person cohort. The current snapshot incorporates three reference-mask corrections, 509 valid ED-P pairs, and dynamic evaluation of 82 common identities. Two additional dynamic references remain unavailable after bounded repair; 16 identities lack a common independent scene object. Input budgets are documented; fixed-cache backend ablation still covers one identity. This is an integration source release, not a self-contained end-to-end training distribution.
+> **Research preview — November 2026.** Six methods have 526 valid source-view results on a frozen 100-person cohort. The current snapshot incorporates three reference-mask corrections, 509 valid ED-P pairs, and dynamic evaluation of 82 common identities. Two additional dynamic references remain unavailable after bounded repair; 16 identities lack a common independent scene object. Input budgets are documented; fixed-cache backend ablation covers eight predeclared identities with three variants. This is an integration source release, not a self-contained end-to-end training distribution.
 
 ## Overview
 
@@ -15,7 +15,7 @@ We study human assets at the **same identity, real exposure time, and observed p
 
 The frozen cohort contains **100 nuScenes identities**. After the original 75-plus-25 selection, HN0035 was replaced by HN0646 at the user's direction following inspection of Ours; this post-output curation is disclosed, not described as outcome-independent sampling. No further automatic replacement is performed for method failures. The comparison covers Ours (4DAnyone Turbo + Grid4D), Asset Harvester, original TRELLIS, TRELLIS.2, OmniRe, and SplatAD. Additional integrations are currently deferred.
 
-[Combined metric table](results/20261112/ALL_METRICS.md) · [Input budgets](docs/INPUT_BUDGETS.md) · [Dynamic missingness](results/20261112/dynamic/missing.csv)
+[Eight-person backend ablation](results/20261113/ablation/RESULTS.md) · [Combined metric table](results/20261112/ALL_METRICS.md) · [Input budgets](docs/INPUT_BUDGETS.md) · [Dynamic missingness](results/20261112/dynamic/missing.csv)
 
 ```mermaid
 flowchart LR
@@ -101,7 +101,7 @@ The reference mask includes clothes, worn backpacks, and carried items. The ROI 
 | ED-P auxiliary | 509 valid pairs; common-part comparisons | Additional visibility review |
 | Common orbits | 526×16 views, full100 local gallery | Broader visual inspection |
 | Dynamic comparison | 82 common identities, 2,339 actual frame pairs per method | Closed with 2 reference and 16 scene-object NA cases |
-| Backend ablation | One identity, three variants including matched budget | Fixed eight-person expansion queued; no additional scores claimed |
+| Backend ablation | Eight identities, three variants, matched-budget control and visual review complete | Bounded eight-person evidence; no 100-person claim |
 
 See [recorded results](results/20261112/README.md) and [current workflow](docs/CURRENT_WORKFLOW.md).
 

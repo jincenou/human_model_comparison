@@ -1,0 +1,46 @@
+{
+  "status": "complete_reviewed",
+  "plan": "${HMC_WORKSPACE}/human_model_comparison/configs/backend_ablation_batch_v2.json",
+  "plan_sha256": "0aca167841154d7322bcb5bff29f5a6908098366a553a6ce563edec2c59575e9",
+  "ids": [
+    "HN0004",
+    "HN0038",
+    "HN0039",
+    "HN0040",
+    "HN0046",
+    "HN0051",
+    "HN0057",
+    "HN0090"
+  ],
+  "completed_ids": [
+    "HN0004",
+    "HN0038",
+    "HN0039",
+    "HN0040",
+    "HN0046",
+    "HN0051",
+    "HN0057",
+    "HN0090"
+  ],
+  "pending_ids": [],
+  "source_hashes": {
+    "${HMC_WORKSPACE}/human_model_comparison/reports/backend_ablation_v1/HN0004/results.json": "124e415cc6ef64fcee5f1952c97253f5908779266f56adef724d89e6675e6d5d",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/backend_ablation_v1/HN0038/results.json": "e1e3412fa2dbb05f7a38153e4ce1a222f86d3c8a46b69c8602c99684f3cb35a1",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/backend_ablation_v1/HN0039/results.json": "843db3603c8eeab08c10e8906b19c2e748d7da681ee60086b0c538ad2fe05b31",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/backend_ablation_v1/HN0040/results.json": "82f93fac437aceafde4a48893de887a627c28dca6503da68ee45ec843d5b5c0f",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/backend_ablation_v1/HN0046/results.json": "848b336798c1bd2ff91100ff0ea46bfb63fb4b2ec5fc00a55634de3b683b52c3",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/backend_ablation_v1/HN0051/results.json": "bd076af9da7ca6e700d9680063cfb2632b6a27fb4efff365547be0271d907bb2",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/backend_ablation_v1/HN0057/results.json": "1b35db02a07e7b30559a1aaac3f50ed5dd2023970f0af5ad108a7d67691d4bb6",
+    "${HMC_WORKSPACE}/human_model_comparison/reports/backend_ablation_v1/HN0090/results.json": "e78c0707e96695495bd9f72e88e51ab2591daef4cd877c7748f8a8bd973cb062"
+  },
+  "script_sha256": "fe222ddde14651c961c03e80a39511fe749b2fa0ebc2a62c4244c4ca685fb67e",
+  "denominator": 8,
+  "paired_n": 8,
+  "acceptance_sha256": "87baf8ec3cdfe318b304a9984d9e526d6b796ad225396e442f9384a52107340d",
+  "files": {
+    "per_identity.csv": "97959235e4b91abb23529f586b18f8730dada65f2ee27071f9469066eabaf629",
+    "paired_means.csv": "1ed5c29f0ab19091e1c279f974c22558988aef06f93f4894cc68333fd069a601",
+    "RESULTS.md": "bda5de525971938bb99a5691e106215fbf148b285476d030bdc3500bf4d5e4de",
+    "acceptance.json": "87baf8ec3cdfe318b304a9984d9e526d6b796ad225396e442f9384a52107340d"
+  }
+}

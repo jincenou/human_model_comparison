@@ -23,3 +23,9 @@ Five focused tests passed in both the existing training and metric environments,
 ## Scene input exposure mapping
 
 Across 67 retained OmniRe scene directories, all 9,954 processed JPEGs matched native source-image SHA256 values along the first/next/last scene sample chain. All 99 extractable person records now have verified camera-exposure spans. The other five methods’ 500 input-budget rows are unchanged. The local advisor v3 bundle includes the updated budgets; its combined metric table and eight-person overview are byte-identical to v2. Workbook cell roundtrip and ZIP CRC checks passed. This updates input provenance only, not scores or scene training.
+
+## November 13 ablation closeout
+
+All eight predeclared identities completed native, optimized and matched-budget control training and source scoring. The 24 scored outputs were checked through their input/result/image hashes, shared continuation sampling and learning-rate traces, and eight per-person visual comparisons. All eight production snapshot replays match the existing source RGB and alpha exactly. No person was removed for poor quality. The new advisor bundle contains 12 verified workbook sheets and retains the unchanged six-model metric table and eight-person overview; the one-person ablation snapshot is replaced by paired eight-person, stratified and individual tables.
+
+Final November 13 delivery checks verified all 100 reference RGB/mask/camera records, 526 source-result files, 509 valid ED-P entries, 9,042 gallery image hashes and all 54 advisor bundle files. Nineteen public numerical/pair-contract tests passed using the actual pinned LPIPS weights; 16 dynamic, ED-P and source-time sampling tests also passed (35 total, no skips). The public source release checker passed 325 text files and all 294 source-provenance entries matched.

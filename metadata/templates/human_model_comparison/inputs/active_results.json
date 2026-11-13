@@ -2,7 +2,7 @@
   "core_summary": "reports/static_reference_revision_v2/core/summary.json",
   "edp_root": "reports/source_edp_common_v1/cohort_reference_revision_v2",
   "gallery": "reports/human_comparison_full_v2",
-  "advisor": "reports/advisor_report_20261112_v3",
+  "advisor": "reports/advisor_report_20261113_v1",
   "policy": "Approved reference revisions only; historical cohort v3 and advisor v1 remain immutable. Raw camera K/T, registration and model assets are unchanged.",
   "corrected_reference_ids": [
     "HN0116",

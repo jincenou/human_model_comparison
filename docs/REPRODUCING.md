@@ -76,5 +76,5 @@ The requested deployment policy is **10 GiB remaining data-disk space** as a sch
 
 ## 8. Backend ablation
 
-The required ablation fixes the same input, frontend generation cache, cameras, skeleton, masks, initialization, seed and evaluation exposure. Compare native and optimized backends; report actual optimization updates, time and memory. Do not regenerate the frontend cache or silently reduce SH degree, frame count, resolution or training budget. The current release includes one completed three-variant pilot and measured budgets; it does not claim a completed cohort ablation. See [current workflow](CURRENT_WORKFLOW.md) for the accepted entry points.
+The required ablation fixes the same input, frontend generation cache, cameras, skeleton, masks, initialization, seed and evaluation exposure. Compare native and optimized backends; report actual optimization updates, time and memory. Do not regenerate the frontend cache or silently reduce SH degree, frame count, resolution or training budget. The current release includes a completed eight-person, three-variant ablation and per-person measured budgets; this is not a 100-person ablation. See [current workflow](CURRENT_WORKFLOW.md) for the accepted entry points.
 

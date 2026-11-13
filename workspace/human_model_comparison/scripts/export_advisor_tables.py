@@ -133,10 +133,14 @@ def main():
                 assert abs(avg-old)<1e-10
         dtable.append([NAMES[method],n]+averages)
     sheets[f'动态{n}人快照']=dtable
-    ab=H/'reports/backend_ablation_v1/HN0004/metrics.csv';shutil.copyfile(ab,OUT/'sources/backend_ablation_HN0004.csv')
-    ar=csvread(ab);variants={'native_33k':'原生后端','complete_A_53k':'优化后端','rgb_continuation_53k':'同预算alpha权重0'}
-    sheets['消融_仅HN0004']=[['变体','实际更新次数']+METRICS+['总训练分钟','峰值allocated_GiB','峰值reserved_GiB']]
-    for r in ar:sheets['消融_仅HN0004'].append([variants[r['variant']],int(r['actual_updates'])]+[float(r[k]) for k in METRICS]+[float(r['training_seconds_including_shared_native'])/60,float(r['peak_allocated_gib']),float(r['peak_reserved_gib'])])
+    ablation,adir=snapshot('ablation',H/'reports/backend_ablation_batch_v2')
+    assert ablation['status']=='complete_reviewed' and ablation['paired_n']==ablation['denominator']==8
+    variants={'native_33k':'原生后端','complete_A_53k':'优化后端','rgb_continuation_53k':'同预算alpha权重0'}
+    am=csvread(adir/'paired_means.csv'); ar=csvread(adir/'per_identity.csv')
+    sheets['消融8人共同']=[['变体','共同人数']+METRICS]+[[variants[r['variant']],int(r['n'])]+[float(r[k]) for k in METRICS] for r in am if r['cohort']=='all']
+    sheets['消融8人分层']=[['人物组','变体','共同人数']+METRICS]+[[r['cohort'],variants[r['variant']],int(r['n'])]+[float(r[k]) for k in METRICS] for r in am if r['cohort']!='all']
+    sheets['消融逐人']=[['人物','人物组','变体','实际更新次数']+METRICS+['总训练分钟','峰值allocated_GiB','峰值reserved_GiB']]
+    for r in ar:sheets['消融逐人'].append([r['id'],r['cohort'],variants[r['variant']],int(r['actual_updates'])]+[float(r[k]) for k in METRICS]+[float(r[k]) for k in ['training_minutes','peak_allocated_gib','peak_reserved_gib']])
     notes=[
       ['项目','说明'],
       ['评测范围','nuScenes固定100人v3；同真实人物/参考曝光/相机的源观测重建，不能称真实留出泛化测试。'],
@@ -147,9 +151,9 @@ def main():
       ['图示','8人从六模型共同46人按ID排序等距抽取；原始渲染直接排版。部分资产仍有朝向、姿态、形状和伪影错误；统一相机不代表资产正确。'],
       ['动态快照',f'{n}人；{sum(r["frames"] for r in dynamic["sources"])}个真实曝光；{sum(r["pairs"] for r in dynamic["sources"])}个相邻帧对。'],
       ['动态进度','84人完成三方法渲染，82人评分完成；HN0252纸张/前臂、HN0321牵引绳参考仍不可靠，按用户指示停止追加修复，保留参考缺测；16人无共同可提取对象。'],
-      ['后端消融','仅1人完成三组，固定8人扩批已在GPU2–7推进；待完成者不填分。优化比原生多20000次更新；需同预算对照，不能声称普遍优于原生。'],
+      ['后端消融','预先固定8人全部完成三组并逐人目视核查，原有/新增各按编号取前4人，未按分数筛选。优化比原生多20000次更新；同预算对照只把alpha损失权重改为0。8人平均改善，不代表100人普遍改善。'],
       ['参考修正','HN0116背包、HN0632标牌混入、HN0838背景链条已修正，并对受影响的全部可用模型统一重算核心指标与ED-P；原资产、相机和姿态配准保持不变。'],
-      ['尚未完成','后端消融固定8人中1人完成、6人训练、1人排队（本次快照）；动态困难参考按用户要求停止补测。新模型按用户要求暂缓。'],
+      ['任务边界','本轮固定8人后端消融完成；动态困难参考按用户要求停止补测。新模型按用户要求暂缓，不将技术失败补成成功结果。'],
       ['未计算','动态逐帧ED-P、关节/加速度/完整3D表面误差；无对应可靠三维真值。侧背面无真实参考，只展示，不报参考型指标。'],
       ['GitHub','公开代码独立提交并验证远端；本汇报包保留自己的结果快照，数据图像、模型资产与权重不随Git发布。']]
     sheets['汇报说明']=notes
