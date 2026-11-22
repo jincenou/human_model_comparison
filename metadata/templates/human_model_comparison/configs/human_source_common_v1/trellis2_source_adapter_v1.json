@@ -1,0 +1,30 @@
+{
+  "status": "frozen_before_scores",
+  "method": "trellis2",
+  "appearance_variant": "native_sRGB_basecolor_unlit_own_alpha_depthpeel8_ssaa2",
+  "selection": "active v3 retained identity and exact frozen exposure",
+  "real_input_count": 1,
+  "geometry": "Original native_voxel_mesh.pt; no new simplification, retexture or joint changes",
+  "color": "Native voxel base_color sampled by original flex_gemm trilinear sampler; no BRDF/HDR/tonemap or exposure fit",
+  "alpha": "Original voxel alpha; native nvdiffrast depth peeling, eight layers, front-to-back own-alpha composition on white, SSAA2",
+  "retained_materials": "All original attributes retained and checked, including metallic and roughness; BRDF shading is not used in this base-color variant",
+  "camera": "Native OpenCV raw K and declared proper SE3; integer-centre projection verified by actual rasterized probes",
+  "keypoints": "Same fixed16 cameras, RTMDet/DWPose weights, body5..16 confidence>0.5, at least6 correspondences; same single SQPnP+LM(30,1e-8)",
+  "registration_protocol_sha256": "2abaebaec9c87cd56903812fee937876bd632c818aafd567e25525b3cbd0f50e",
+  "reference_metric_values_used": false,
+  "prediction_bbox_scaling": false,
+  "metric_world_scale_certified": false,
+  "source_reconstruction_only": true,
+  "static_core_protocol_sha256": "dd436ca9fb62d87a9f198ef73a05c101c09bf447245498ed3c1306b160eaf97d",
+  "script_sha256": "9241021ab546363d33bf9ca44ab44353bf7af05fb41bc110a6491d8b3a7b9936",
+  "created_at_utc": "2026-11-12T02:30:14.541496+00:00",
+  "accepted_render_script_sha256": [
+    "9241021ab546363d33bf9ca44ab44353bf7af05fb41bc110a6491d8b3a7b9936",
+    "52faa790bcf98357164c456a18f68997f390379e70e500c849e42977457a1c0c"
+  ],
+  "batch_adapter_sha256": "52faa790bcf98357164c456a18f68997f390379e70e500c849e42977457a1c0c",
+  "camera_implementation_check": "${HMC_WORKSPACE}/human_model_comparison/reports/trellis2_source_registration/camera_implementation_check.json",
+  "camera_implementation_check_sha256": "e6169045a8163dafe836618d4e9997268f987752e8c51b4e488051d87f0df931",
+  "frozen_at_utc": "2026-11-12T03:07:00.095190+00:00",
+  "camera_probe_explanation": "Binary triangle edge coverage shifted its centroid by 0.5px; interpolated XYZ reprojection verifies pixel rays to <=0.000123px. Camera mapping and pilot images unchanged."
+}

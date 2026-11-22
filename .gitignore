@@ -37,3 +37,13 @@ workspace/**/state/
 id_rsa*
 id_ed25519*
 
+
+# Selected first-party diagnostic source; generated report artifacts stay ignored.
+!workspace/human_model_comparison/reports/
+workspace/human_model_comparison/reports/**
+!workspace/human_model_comparison/reports/**/
+!workspace/human_model_comparison/reports/**/*.py
+!workspace/human_model_comparison/model_preparation/20261110/reports/
+workspace/human_model_comparison/model_preparation/20261110/reports/**
+!workspace/human_model_comparison/model_preparation/20261110/reports/**/
+!workspace/human_model_comparison/model_preparation/20261110/reports/**/*.py

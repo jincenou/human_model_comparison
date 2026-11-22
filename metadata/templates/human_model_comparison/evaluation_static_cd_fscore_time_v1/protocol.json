@@ -1,0 +1,190 @@
+{
+  "version": "human_static_geometry_v1",
+  "frozen_at": 1794664791.208181,
+  "selection_sha256": "03110e1d403248ff84d4f108a23602aad153781c76530fbc572bd5bc22324d55",
+  "reference_manifest_sha256": "2f9bcf7f404d5ecee2c19328a89a6ff4925080b4f14a1d2d287b90032bc9d42a",
+  "reference": "same-sample labeled single LiDAR keyframe; category + unique same-category OBB; first real raw index per 5cm voxel",
+  "reference_qualification": "Codex direct visual review; nominal scan rays; 84 main >=20 voxels,16 low support separately; no instantaneous full-surface GT claim",
+  "main_panel": "annotation_vertical_extent_conditioned",
+  "scale_rule": "s=annotation_world_vertical_extent/full_native_alpha_world_gravity_height; A=T_world_camera @ diag(s,s,s,1) @ rigid_source_T; translation scales too",
+  "scene_native_metric": "separate panel with original physical-time world mapping, no annotation extent",
+  "annotation_information": [
+    "identity OBB and category for reference filtering",
+    "gravity and OBB vertical extent for global scale only"
+  ],
+  "prohibited": [
+    "ICP",
+    "LiDAR endpoint fitting",
+    "joint pose correction",
+    "nonuniform scaling",
+    "per-example alpha pruning",
+    "score-selected registration"
+  ],
+  "native_extent": {
+    "views": "six orthographic cardinal views aligned to world gravity; all attempted",
+    "alpha_uint8_threshold": ">127 after round(255*alpha)",
+    "support": "union of nonempty side-view vertical endpoints; at least one opposing side pair; edge-on empty views retained as evidence; clipping/technical failures do not pass",
+    "resolutions": [
+      512,
+      1024,
+      2048,
+      4096
+    ],
+    "boundary_tolerance_fraction": 0.01,
+    "pixel_pitch_fraction": 0.005,
+    "framing": "complete native primitive conservative alpha framing; no primitive removed"
+  },
+  "depth": {
+    "sectors": 6,
+    "fov_degrees": 90,
+    "resolution": 1024,
+    "alpha_threshold": 0.5,
+    "range_m": [
+      0.1,
+      200.0
+    ],
+    "gaussian": "native alpha weights; ED=sum(w*z)/sum(w); interpolate Dz and A before dividing; range=z/u_cam_z",
+    "trellis_metrology": "validated gsplat antialiased eps=.1 only for orthographic extent; original kernel for perspective queries",
+    "splatad_metrology": "native-radius/AA validated shared alpha only for orthographic extent; original kernel for perspective queries",
+    "trellis2": "native MeshWithVoxel trilinear alpha, SSAA2, accumulate A/Dz; start 8 layers, uniformly double to16/32/64 if next-hit remaining transmission >1e-4; fail if unresolved; retains native8 when converged",
+    "trellis2_glb_transform_used": false
+  },
+  "metrics": {
+    "cd": "0.5*(mean nearest P-to-G + mean nearest G-to-P), unsquared L2 metres",
+    "thresholds_m": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "comparison": "strict <",
+    "fixed_reference": "all G retained regardless of missed queries",
+    "empty_pred": "F1 and RayHit/RayAcc=0; CD null; extended mean infinity when any empty",
+    "aggregation": "person equal weight; own/common-admission/common-finite/Ours-paired sets; low-support separate"
+  },
+  "registration_recovery": {
+    "scope": "all54 existing direct assets with missing source relation",
+    "score_blind": true,
+    "min_body_correspondences": 6,
+    "confidence_threshold": 0.5,
+    "one_round": "fixed photometric-content zoom for pose detection at512; original camera mapping retained; pair-consensus triangulation >=3 views <=8px, >=10degree; single positive-depth SQPnP and LM only if remains positive",
+    "visual_review": "Codex semantic correspondence review, not independent human blind review; no score-based acceptance"
+  },
+  "pilots": [
+    {
+      "method": "ours",
+      "id": "HN0004",
+      "measurement": "${HMC_WORKSPACE}/human_model_comparison/evaluation_static_cd_fscore_time_v1/pilot/ours/HN0004/measurement.json",
+      "sha256": "71e21d6c692335ee3a67dd4914ec0c2980a882dcdf153391474450c52a5bfcd4",
+      "vertical_reassessment": {
+        "passed": true,
+        "boundary_fraction_limit": 0.01,
+        "fine_pixel_fraction_limit": 0.005,
+        "coarse_resolution": 512,
+        "fine_resolution": 1024,
+        "vertical_extent": 0.5572603186210432,
+        "boundary_max_difference": 0.0006602610410202381,
+        "fine_pixel_pitch": 0.0006602610410201933,
+        "boundary_fraction_of_height": 0.0011848341232228291,
+        "fine_pixel_fraction_of_height": 0.0011848341232227487
+      }
+    },
+    {
+      "method": "ah",
+      "id": "HN0004",
+      "measurement": "${HMC_WORKSPACE}/human_model_comparison/evaluation_static_cd_fscore_time_v1/pilot/ah/HN0004/measurement.json",
+      "sha256": "3341d6fc3a4a0ef228edba0a56219f4fefcfdbfec48d2696c57954de5af128ca",
+      "vertical_reassessment": {
+        "passed": true,
+        "boundary_fraction_limit": 0.01,
+        "fine_pixel_fraction_limit": 0.005,
+        "coarse_resolution": 512,
+        "fine_resolution": 1024,
+        "vertical_extent": 1.0741537864659032,
+        "boundary_max_difference": 0.0025423758259548457,
+        "fine_pixel_pitch": 0.0012711879129774003,
+        "boundary_fraction_of_height": 0.002366863905325486,
+        "fine_pixel_fraction_of_height": 0.001183431952662722
+      }
+    },
+    {
+      "method": "trellis_original",
+      "id": "HN0038",
+      "measurement": "${HMC_WORKSPACE}/human_model_comparison/evaluation_static_cd_fscore_time_v1/pilot/trellis_original/HN0038/measurement.json",
+      "sha256": "907830a4a6ca6bbaaca962df617181ad9bd884e792378b84d1dd7677ece8eaca",
+      "vertical_reassessment": {
+        "passed": true,
+        "boundary_fraction_limit": 0.01,
+        "fine_pixel_fraction_limit": 0.005,
+        "coarse_resolution": 512,
+        "fine_resolution": 1024,
+        "vertical_extent": 0.6761329045939954,
+        "boundary_max_difference": 0.0,
+        "fine_pixel_pitch": 0.0007954504759929358,
+        "boundary_fraction_of_height": 0.0,
+        "fine_pixel_fraction_of_height": 0.001176470588235294
+      }
+    },
+    {
+      "method": "trellis2",
+      "id": "HN0646",
+      "measurement": "${HMC_WORKSPACE}/human_model_comparison/evaluation_static_cd_fscore_time_v1/pilot/trellis2/HN0646/measurement.json",
+      "sha256": "b2622d47f571b39ac5ae55db5a5462bc290f9273a57b7e97a13001588869994b",
+      "vertical_reassessment": {
+        "passed": true,
+        "boundary_fraction_limit": 0.01,
+        "fine_pixel_fraction_limit": 0.005,
+        "coarse_resolution": 512,
+        "fine_resolution": 1024,
+        "vertical_extent": 0.21801354680314486,
+        "boundary_max_difference": 0.0,
+        "fine_pixel_pitch": 0.0004954853336435111,
+        "boundary_fraction_of_height": 0.0,
+        "fine_pixel_fraction_of_height": 0.002272727272727273
+      }
+    },
+    {
+      "method": "omnire",
+      "id": "HN0038",
+      "measurement": "${HMC_WORKSPACE}/human_model_comparison/evaluation_static_cd_fscore_time_v1/pilot/omnire/HN0038/measurement.json",
+      "sha256": "24a99a983ee57bd80f5a09932796b3320eec05ae7a8bc78dcf9d58d2cf299ed1",
+      "vertical_reassessment": {
+        "passed": true,
+        "boundary_fraction_limit": 0.01,
+        "fine_pixel_fraction_limit": 0.005,
+        "coarse_resolution": 512,
+        "fine_resolution": 1024,
+        "vertical_extent": 1.7003322927754785,
+        "boundary_max_difference": 0.0020510642856159667,
+        "fine_pixel_pitch": 0.0020510642856157767,
+        "boundary_fraction_of_height": 0.0012062726176116922,
+        "fine_pixel_fraction_of_height": 0.0012062726176115806
+      }
+    },
+    {
+      "method": "splatad",
+      "id": "HN0172",
+      "measurement": "${HMC_WORKSPACE}/human_model_comparison/evaluation_static_cd_fscore_time_v1/pilot/splatad/HN0172/measurement.json",
+      "sha256": "215c2c81296e881557251dfc9182b2ffd4a00cf822745f5ed054aadaebace8ff",
+      "vertical_reassessment": {
+        "passed": true,
+        "boundary_fraction_limit": 0.01,
+        "fine_pixel_fraction_limit": 0.005,
+        "coarse_resolution": 512,
+        "fine_resolution": 1024,
+        "vertical_extent": 2.4167599655778007,
+        "boundary_max_difference": 0.004254859094327212,
+        "fine_pixel_pitch": 0.0042548590943271136,
+        "boundary_fraction_of_height": 0.001760563380281731,
+        "fine_pixel_fraction_of_height": 0.00176056338028169
+      }
+    }
+  ],
+  "time_plan_sha256": "1c16249174eecd115b48b09eb72885e6a7a4472cdd1d52fc72f93a887e5623fe",
+  "code": {
+    "${HMC_WORKSPACE}/human_model_comparison/evaluation_static_cd_fscore_time_v1/scripts/depth.py": "d21956405b78051cd2e94d7b0094646ac909befd2f5b9212da216ceaa73ae353",
+    "${HMC_WORKSPACE}/human_model_comparison/evaluation_static_cd_fscore_time_v1/scripts/scene_depth.py": "63071f760cb80c47d826180f6ac6cfd5ac66669d9a587c2c7de6f7a11006ac14",
+    "${HMC_WORKSPACE}/human_model_comparison/evaluation_static_cd_fscore_time_v1/scripts/pilot.py": "82b6515b4a3c548147ce68ef18f3649d289d50b6b3385c67f3f1e7a40f2170df",
+    "${HMC_WORKSPACE}/human_model_comparison/evaluation_static_cd_fscore_time_v1/scripts/recover_registration.py": "7b8e82f57961de533bc287eb150e22e331acd77d4979f5de5b25287c1a94bc1f",
+    "${HMC_WORKSPACE}/vehicle_model_comparison/evaluation_geometry_expanded_20261114_v2/scripts/geometry_core.py": "55538c3a49d12536199e3b85e1ed22669f7fcab0c96b14f7734b7a3c13b12fcf"
+  }
+}

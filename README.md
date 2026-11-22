@@ -1,119 +1,70 @@
 # Human Asset Comparison
 
-**A traceable experimental framework for reconstructing and evaluating human assets from nuScenes.**
+Source code for human-asset preparation, method integration, source-camera registration, static and temporal metrics, observed geometry, timing, backend ablations, and qualitative inspection.
 
-[中文说明](README_zh-CN.md) · [Reproduction](docs/REPRODUCING.md) · [Evaluation protocol](docs/EVALUATION.md) · [Methods and dependencies](docs/METHODS.md) · [Release status](docs/STATUS.md) · [Historical batch workflow (中文)](docs/METRIC_BATCH_WORKFLOW_zh-CN.md)
+**The 2026-11-22 update organizes the experiment code. It does not rerun models or replace previously published results.**
 
-> **Research preview — November 2026.** Six methods have 526 valid source-view results on a frozen 100-person cohort. The current snapshot incorporates three reference-mask corrections, 509 valid ED-P pairs, and dynamic evaluation of 82 common identities. Two additional dynamic references remain unavailable after bounded repair; 16 identities lack a common independent scene object. Input budgets are documented; fixed-cache backend ablation covers eight predeclared identities with three variants. This is an integration source release, not a self-contained end-to-end training distribution.
+[中文说明](README_zh-CN.md) · [Experiment index](docs/EXPERIMENT_INDEX_zh-CN.md) · [Complete code inventory](docs/CODE_INVENTORY_20261122.md) · [Reproduction](docs/REPRODUCING.md) · [Evaluation](docs/EVALUATION.md)
 
-## Overview
+## Repository roles
 
-We study human assets at the **same identity, real exposure time, and observed pose**, with two complementary outputs:
+- [OmniSim_Asset](https://github.com/jincenou/OmniSim_Asset): rigid/human production pipelines, normalization, export and reuse.
+- This repository: human comparison experiments and metric/ablation implementations.
+- [vehicle_model_comparison](https://github.com/jincenou/vehicle_model_comparison): rigid experiments and shared camera/rendering/geometry helpers.
 
-1. **Source-view reconstruction:** compare rendered assets with the real input using a common calibrated camera, white background, and reference-defined region of interest.
-2. **Fixed-pose orbit inspection:** expose side/back missing surfaces, blur, floaters, and appearance errors using shared camera settings. Without real backside observations, these views do not receive image-reference scores.
+## Layout
 
-The frozen cohort contains **100 nuScenes identities**. After the original 75-plus-25 selection, HN0035 was replaced by HN0646 at the user's direction following inspection of Ours; this post-output curation is disclosed, not described as outcome-independent sampling. No further automatic replacement is performed for method failures. The comparison covers Ours (4DAnyone Turbo + Grid4D), Asset Harvester, original TRELLIS, TRELLIS.2, OmniRe, and SplatAD. Additional integrations are currently deferred.
-
-[Eight-person backend ablation](results/20261113/ablation/RESULTS.md) · [Combined metric table](results/20261112/ALL_METRICS.md) · [Input budgets](docs/INPUT_BUDGETS.md) · [Dynamic missingness](results/20261112/dynamic/missing.csv)
-
-```mermaid
-flowchart LR
-    A[nuScenes identity and exact exposure] --> B[Reviewed visible mask and calibrated camera]
-    A --> C[Method-specific reconstruction or existing scene extraction]
-    C --> D[Fixed-time asset and independent reload]
-    B --> E[Registration and shared camera validation]
-    D --> E
-    E --> F[Source metrics and coverage]
-    E --> G[Fixed-pose shared orbit]
+```text
+src/human_asset_benchmark/       Portable metrics, explicit pair scorer, path resolver
+tests/                          Numerical and provenance-contract checks
+tools/                          Synthetic example and source-release validation
+metadata/templates/             Parameterized protocol and cohort templates
+metadata/source_snapshot_20261122.json
+                                Original and released hashes for this code update
+workspace/human_model_comparison/
+  scripts/                      Reference, method, registration, rendering, scoring and ablation code
+  evaluation_static_cd_fscore_time_v1/scripts/
+                                Observed-geometry and timing experiment
+  model_preparation/.../scripts/ Environment integration and feasibility history
+  reports/                      Selected source-only diagnostic adapters
+results/                        Existing dated public results, retained unchanged
 ```
 
-## Design principles
+The workspace preserves relative imports and historical entry points. A script's presence is not evidence that its required data, checkpoints, calibration, or reviewed inputs are available. Use the [experiment index](docs/EXPERIMENT_INDEX_zh-CN.md), not filename ordering, to select a workflow.
 
-- **Preserve identity and time.** Use the frozen raw exposure; do not substitute a neighboring frame or a more favorable pose.
-- **Share the viewing conditions.** Register assets in 3D, render with the same camera, and apply one reference-defined ROI. Do not independently center/scale predicted silhouettes.
-- **Keep native errors visible.** Preserve predicted pose, full Gaussian covariance, spherical harmonics, and required native decoders. The reference mask is never used to erase prediction errors.
-- **Report missingness.** Technical failures are NA with reasons; a valid empty prediction is scored. Main comparisons use the same valid people across methods and report `n/100`.
-- **Separate reconstruction from generalization.** Source images may have been used in generation, fitting, or training. Source-view scores are not automatically held-out scores.
-
-## Quick start: core metrics
-
-The core metric package runs without downloading model checkpoints or loading nuScenes:
+## Quick start: portable metric core
 
 ```bash
-git clone https://github.com/jincenou/human_model_comparison.git
-cd human_model_comparison
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e '.[test]'
 python -m pytest -q
-
-# Synthetic contract check: demonstrates I/O and arithmetic, not benchmark performance.
+python tools/check_release.py
 python tools/make_synthetic_example.py artifacts/example
 hmc-score artifacts/example/pair.json --output artifacts/example/scores.json
 ```
 
-For LPIPS, install `.[metrics]` and supply both local AlexNet and LPIPS linear-weight files with their expected SHA256 hashes in the pair manifest. No checkpoint is downloaded implicitly by the scorer. See [evaluation instructions](docs/EVALUATION.md).
+This synthetic example verifies the interface and arithmetic, not reconstruction performance. LPIPS requires explicit local weight files and hashes; it does not download checkpoints implicitly. The model adapters additionally require isolated upstream environments, data, prepared references and native assets.
 
-## Experiment code
+## Experiment families
 
-```text
-src/human_asset_benchmark/       Portable metric implementation, pair scorer, path resolver
-tests/                           Numerical and provenance-contract checks
-tools/                           Synthetic example and release validation
-metadata/cohort.json             Frozen identity/time cohort; no dataset pixels
-metadata/templates/              Path-parameterized experiment metadata
-metadata/source_provenance.json  Original and published source hashes
-environments/                    Observed core package versions
-workspace/human_model_comparison/
-  scripts/                       Reference, extraction, reload, rendering and metric adapters
-  model_preparation/.../scripts/  Method-specific environment/weight preparation history
-workspace/human/                 First-party producer and playback orchestration
-workspace/Hasim_trajectory_assets/src/
-                                 Minimal first-party Gaussian runtime modules
-workspace/vehicle_model_comparison/
-                                 Shared camera/resource helpers used by human adapters
-```
+| Family | Entry points under `workspace/human_model_comparison` |
+|---|---|
+| Source-view RGB and silhouette | `scripts/run_human_metric_pipeline_v1.py`, `scripts/human_source_metrics_v1.py` |
+| Six-part ED-P | `scripts/run_human_edp_common.py`, `scripts/human_edp_common.py` |
+| Actual-exposure tOF / tLP | `scripts/prepare_dynamic_source_clip.py`, `scripts/score_dynamic_source_clip.py` |
+| Hunyuan3D-2.1 / ReconViaGen | `scripts/run_human_static_two_models_20261115.py`, `scripts/run_human_static_two_models_staged.py` |
+| Geometry and timing | `evaluation_static_cd_fscore_time_v1/scripts/` |
+| Native scene re-extraction | `scripts/native_reaudit_*`, `scripts/score_native_reaudit_*` |
+| Fixed-cache backend ablation | `scripts/prepare_backend_ablation.py`, `scripts/run_backend_ablation_batch_v2.py` |
+| Common orbit inspection | `scripts/common_human_orbit_batch.py`, `scripts/render_common_human_orbit.py` |
 
-The `workspace/` layout preserves relative imports between the experimental adapters. The included producer orchestration supports historical routes beyond this benchmark; the released benchmark cohort and protocol use **nuScenes only**. Upstream model implementations, licensed body models, generated images, checkpoints, and private run directories are not bundled.
+Historical result bundles retain their original dates and protocols: [2026-11-12](results/20261112/README.md) and [backend ablation](results/20261113/ablation/RESULTS.md). Later alignment, added-method and native-extraction branches have distinct contracts. Combining their source code does not justify merging scores or changing metric denominators. See [current workflow](docs/CURRENT_WORKFLOW.md).
 
-Configure installation paths using [`.env.example`](.env.example), then follow [REPRODUCING.md](docs/REPRODUCING.md). The workspace scripts are a research integration snapshot: they require method repositories, input preparation, and runtime manifests described there. Running all scripts in filename order is not a supported workflow.
+## Paths, dependencies and provenance
 
-## Evaluation
+Use [`.env.example`](.env.example) and [REPRODUCING.md](docs/REPRODUCING.md). Source path literals are resolved through the existing `human_asset_benchmark.paths` mechanism. Materializing a template changes its bytes: regenerate local input and plan hashes rather than treating historical hashes as newly verified evidence.
 
-| Metric | Definition in this release |
-| --- | --- |
-| PSNR | Float64 MSE over the entire shared ROI in sRGB `[0,1]`; exact equality is positive infinity |
-| SSIM | Gaussian 11×11 window, σ=1.5, population covariance, K1=0.01, K2=0.03, RGB mean |
-| LPIPS | AlexNet v0.1, fixed local weight hashes, eval/float32, RGB normalized to `[-1,1]` |
-| IoU | Byte mask threshold `>127`; shared ROI and raw full-canvas variants |
-| ED-P_common | Frozen six-part DINOv3 ViT-L/16 and DWPose variant; common identities and common parts, with coverage |
-| tOF / tLP100 | Matched actual-exposure optical-flow and adjacent perceptual-change differences; 82 common identities, 2,339 adjacent pairs per method |
+Dataset pixels, generated assets, weights, licensed body models, process state and GPU leases are not distributed. First-party producer code and historical shared helpers already present in `workspace/` remain available; use OmniSim_Asset for the organized production pipeline and the vehicle repository for newer shared experiment helpers. Dependencies and ownership boundaries are described in [THIRD_PARTY.md](THIRD_PARTY.md).
 
-The reference mask includes clothes, worn backpacks, and carried items. The ROI is a square centered on the reference mask bounding box with side length `ceil(1.10 × longest side)`, padded white outside the canvas, then resized to 512×512. RGB uses bicubic interpolation; masks use nearest neighbor. See the [full protocol and limitations](docs/EVALUATION.md).
-
-## Current release scope
-
-| Component | Available evidence | Remaining work |
-|---|---|---|
-| Cohort/reference | v3 fixed100, all100 eligible under reference policy v5 | Preserve identity and missingness |
-| Source metrics | 526 pairs; five-method common77, six-method common46 | Preserve documented input-budget differences |
-| ED-P auxiliary | 509 valid pairs; common-part comparisons | Additional visibility review |
-| Common orbits | 526×16 views, full100 local gallery | Broader visual inspection |
-| Dynamic comparison | 82 common identities, 2,339 actual frame pairs per method | Closed with 2 reference and 16 scene-object NA cases |
-| Backend ablation | Eight identities, three variants, matched-budget control and visual review complete | Bounded eight-person evidence; no 100-person claim |
-
-See [recorded results](results/20261112/README.md) and [current workflow](docs/CURRENT_WORKFLOW.md).
-
-No final leaderboard, paper acceptance, or state-of-the-art claim is made by this release. The detailed [status](docs/STATUS.md) distinguishes observed results from planned work.
-
-## Data, weights, and licensing
-
-Obtain nuScenes and method weights through their respective providers. A community mirror's repository license does not supersede the original SMPL/SMPL-X/FLAME or checkpoint terms. No model credentials, personal server paths, dataset photos, or weights are intentionally distributed here.
-
-See [THIRD_PARTY.md](THIRD_PARTY.md) for provenance and ownership boundaries. This preview does **not** choose a blanket open-source license on behalf of all contributors. A project-wide license and paper citation will be added when confirmed; no BibTeX entry is fabricated.
-
-## Reproducibility and contributions
-
-Please include the repository commit, environment versions, input/camera/weight hashes, and affected identity when reporting a problem. Do not attach restricted dataset images or credentials to public issues. Changes to camera geometry, alpha handling, or missing-data aggregation should include a focused numerical test. See [CONTRIBUTING.md](CONTRIBUTING.md). An optional [GitHub Actions template](docs/ci/README.md) is included; hosted CI is not enabled by this release.
-
+The source release is checked with CPU numerical/contract tests and syntax/configuration validation. This update does not claim that every GPU workflow was rerun on a fresh installation.

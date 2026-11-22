@@ -1,5 +1,7 @@
 # Reproduction guide
 
+> The original sections below describe the earlier public snapshot. For the expanded 2026-11-22 workflows, use [the experiment index](EXPERIMENT_INDEX_zh-CN.md) and section 9. Earlier completion/status statements remain historical.
+
 ## 1. Choose the reproduction scope
 
 There are two supported levels of access:
@@ -78,3 +80,27 @@ The requested deployment policy is **10 GiB remaining data-disk space** as a sch
 
 The required ablation fixes the same input, frontend generation cache, cameras, skeleton, masks, initialization, seed and evaluation exposure. Compare native and optimized backends; report actual optimization updates, time and memory. Do not regenerate the frontend cache or silently reduce SH degree, frame count, resolution or training budget. The current release includes a completed eight-person, three-variant ablation and per-person measured budgets; this is not a 100-person ablation. See [current workflow](CURRENT_WORKFLOW.md) for the accepted entry points.
 
+
+
+## 9. Expanded code snapshot and shared workspace (2026-11-22)
+
+The release adds the later Hunyuan3D-2.1 / ReconViaGen static-human adapters, the complete `evaluation_static_cd_fscore_time_v1/scripts/` experiment, native-scene re-extraction and directly referenced diagnostic sources. The portable metric package and previous result directories retain their existing roles.
+
+The original scripts derive sibling project paths from their own location. Use the repository's `workspace/` as the shared root:
+
+```bash
+export HMC_WORKSPACE="$PWD/workspace"
+# With vehicle_model_comparison cloned separately, inspect its materialization plan:
+python /path/to/vehicle_model_comparison/scripts/materialize_workspace.py \
+  --workspace "$HMC_WORKSPACE" --dry-run
+```
+
+Follow that repository's materializer instructions to populate the corresponding sibling project. Do not replace an existing shared helper without checking the source version. New human scripts refer in particular to:
+
+- `vehicle_model_comparison/reports/source_appearance_alignment_20261115_v1/run_comparison.py`;
+- `vehicle_model_comparison/scripts/render_registered_orbit16.py`;
+- `vehicle_model_comparison/evaluation_geometry_expanded_20261114_v2/scripts/`.
+
+When combining all three repositories, use a single project parent, for example `<deployment>/workplace1`. OmniSim_Asset materializes its owner root at `<deployment>`, while the vehicle materializer receives `--workspace <deployment>/workplace1`. Copy this release’s `workspace/human_model_comparison` source tree to `<deployment>/workplace1/human_model_comparison` and set `HMC_WORKSPACE=<deployment>/workplace1`. The human, vehicle, producer and minimal runtime directories must have the expected sibling layout. Install this repository with `pip install --no-deps -e /path/to/human_model_comparison` in each interpreter that executes adapted scripts, so `human_asset_benchmark.paths` remains importable. Install numerical/model dependencies separately in the appropriate environment.
+
+`metadata/templates/` contains parameterized input/protocol metadata rather than ready-to-run server state. Regenerate local camera/registration records and content hashes. The geometry branch's hard-coded cohort hash documents the historical frozen selection; reproducing a new locally materialized selection requires an explicit new protocol revision, not disabling validation. GPU jobs were not launched as part of this source-only update.

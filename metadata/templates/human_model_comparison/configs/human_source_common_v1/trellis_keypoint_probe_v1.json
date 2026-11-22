@@ -1,0 +1,1037 @@
+{
+  "schema": "trellis_semantic_probe_v1",
+  "scope": "diagnostic only; two nearby views cannot establish accepted 3D anchors",
+  "ids": [
+    "HN0004",
+    "HN0035",
+    "HN0039",
+    "HN0040"
+  ],
+  "cases": [
+    {
+      "case_id": "HN0004_reference",
+      "id": "HN0004",
+      "role": "reference",
+      "image": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0004/reference_rgb.png",
+      "image_sha256": "4641148713b526484e023ed517cdfa1850463c2081735df192a975da90a72f3b",
+      "identity_key": "nuscenes:33c5b1d0f97d4da7a603a570033bb0fb",
+      "timestamp_us": 1538984309404844,
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0004/camera.json",
+      "camera_contract_sha256": "75979770f09d0077cb6f68ece44aa7e0952763a25a3dc8aebe7920597136f2fb",
+      "roi_to_raw_integer_center_affine": [
+        [
+          0.705078125,
+          0.0,
+          468.8525390625
+        ],
+        [
+          0.0,
+          0.705078125,
+          397.85253906249994
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "raw_K": [
+        [
+          1272.5979470598488,
+          0.0,
+          826.6154927353808
+        ],
+        [
+          0.0,
+          1272.5979470598488,
+          479.75165386361925
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "case_id": "HN0004_native_0",
+      "id": "HN0004",
+      "role": "native_asset_view",
+      "image": "${HMC_WORKSPACE}/human_model_comparison/runs/trellis_original_human_native_v1/HN0004/reload_0.png",
+      "image_sha256": "76cb2edd9259d89d27780695a47e792b54420d3eff9920d80dd01a947c86a504",
+      "identity_key": "nuscenes:33c5b1d0f97d4da7a603a570033bb0fb",
+      "timestamp_us": 1538984309404844,
+      "native_payload": "${HMC_WORKSPACE}/human_model_comparison/runs/trellis_original_human_native_v1/HN0004/native_gaussians.pt",
+      "native_payload_sha256": "af39a4030d9c72ab99ceb3dc40e9e317deb5320e0061071939237473ccceb59c",
+      "camera": {
+        "yaw_radians": 0.0,
+        "pitch_radians": 0.2,
+        "radius": 2.0,
+        "fov_degrees": 40.0,
+        "normalized_intrinsics": [
+          [
+            1.3737387097273113,
+            0.0,
+            0.5
+          ],
+          [
+            0.0,
+            1.3737387097273113,
+            0.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world_to_camera": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.19866933079506122,
+            -0.9800665778412416,
+            2.4615858523155454e-17
+          ],
+          [
+            -0.0,
+            -0.9800665778412416,
+            -0.19866933079506122,
+            2.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "effective_pixel_K": [
+          [
+            703.3542193803834,
+            0.0,
+            255.5
+          ],
+          [
+            0.0,
+            703.3542193803834,
+            255.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "projection_matrix": [
+          [
+            -703.3542193803834,
+            -250.40701063843724,
+            -50.76001401813814,
+            511.0
+          ],
+          [
+            0.0,
+            -110.67209856225381,
+            -740.0939768164684,
+            511.0
+          ],
+          [
+            0.0,
+            -0.9800665778412416,
+            -0.19866933079506122,
+            2.0
+          ]
+        ],
+        "image_wh": [
+          512,
+          512
+        ],
+        "pixel_convention": "native C++ ndc2Pix; integer pixel sampling; centered intrinsics only",
+        "source_orientation_known": false
+      },
+      "view_index": 0
+    },
+    {
+      "case_id": "HN0004_native_1",
+      "id": "HN0004",
+      "role": "native_asset_view",
+      "image": "${HMC_WORKSPACE}/human_model_comparison/runs/trellis_original_human_native_v1/HN0004/reload_1.png",
+      "image_sha256": "9c681271967f69162b0ef988925bb85e87d206162e62c25d031507dd4140a955",
+      "identity_key": "nuscenes:33c5b1d0f97d4da7a603a570033bb0fb",
+      "timestamp_us": 1538984309404844,
+      "native_payload": "${HMC_WORKSPACE}/human_model_comparison/runs/trellis_original_human_native_v1/HN0004/native_gaussians.pt",
+      "native_payload_sha256": "af39a4030d9c72ab99ceb3dc40e9e317deb5320e0061071939237473ccceb59c",
+      "camera": {
+        "yaw_radians": 0.29670597,
+        "pitch_radians": 0.2,
+        "radius": 2.0,
+        "fov_degrees": 40.0,
+        "normalized_intrinsics": [
+          [
+            1.3737387097273113,
+            0.0,
+            0.5
+          ],
+          [
+            0.0,
+            1.3737387097273113,
+            0.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world_to_camera": [
+          [
+            -0.9563047567930893,
+            0.2923717020077531,
+            0.0,
+            4.263585312548554e-17
+          ],
+          [
+            0.05808529038129337,
+            0.18998842606821686,
+            -0.9800665778412417,
+            -4.2292990872250476e-17
+          ],
+          [
+            -0.28654373344435785,
+            -0.9372423303635039,
+            -0.19866933079506124,
+            1.9999999999999998
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "effective_pixel_K": [
+          [
+            703.3542193803834,
+            0.0,
+            255.5
+          ],
+          [
+            0.0,
+            703.3542193803834,
+            255.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "projection_matrix": [
+          [
+            -745.8329095989842,
+            -33.824545173298,
+            -50.76001401813815,
+            511.0
+          ],
+          [
+            -32.35738982141594,
+            -105.83625429935688,
+            -740.0939768164684,
+            510.9999999999999
+          ],
+          [
+            -0.28654373344435785,
+            -0.9372423303635039,
+            -0.19866933079506124,
+            1.9999999999999998
+          ]
+        ],
+        "image_wh": [
+          512,
+          512
+        ],
+        "pixel_convention": "native C++ ndc2Pix; integer pixel sampling; centered intrinsics only",
+        "source_orientation_known": false
+      },
+      "view_index": 1
+    },
+    {
+      "case_id": "HN0035_reference",
+      "id": "HN0035",
+      "role": "reference",
+      "image": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0035/reference_rgb.png",
+      "image_sha256": "9ee6599793aa65f571956d15206a3d10f4db7e9b24123acd10adc1d3fa0becc9",
+      "identity_key": "nuscenes:24666ac5c59b47e899cb34c50cc9bfdb",
+      "timestamp_us": 1538984305404844,
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0035/camera.json",
+      "camera_contract_sha256": "d9fe4edf6dda8dab5ee636f3772b1df5df89a98febdf4b0e176953ff6d9bf998",
+      "roi_to_raw_integer_center_affine": [
+        [
+          0.533203125,
+          0.0,
+          695.7666015625
+        ],
+        [
+          0.0,
+          0.533203125,
+          391.7666015625
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "raw_K": [
+        [
+          1272.5979470598488,
+          0.0,
+          826.6154927353808
+        ],
+        [
+          0.0,
+          1272.5979470598488,
+          479.75165386361925
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "case_id": "HN0035_native_0",
+      "id": "HN0035",
+      "role": "native_asset_view",
+      "image": "${HMC_WORKSPACE}/human_model_comparison/runs/trellis_original_human_native_v1/HN0035/reload_0.png",
+      "image_sha256": "54afcf1413541b8d70526893b628c0963b9127a1c6a98e5d526628f731ee4857",
+      "identity_key": "nuscenes:24666ac5c59b47e899cb34c50cc9bfdb",
+      "timestamp_us": 1538984305404844,
+      "native_payload": "${HMC_WORKSPACE}/human_model_comparison/runs/trellis_original_human_native_v1/HN0035/native_gaussians.pt",
+      "native_payload_sha256": "cee6ae57800462ffb370db6ac9272e177145466180903779f72dceff21bbe773",
+      "camera": {
+        "yaw_radians": 0.0,
+        "pitch_radians": 0.2,
+        "radius": 2.0,
+        "fov_degrees": 40.0,
+        "normalized_intrinsics": [
+          [
+            1.3737387097273113,
+            0.0,
+            0.5
+          ],
+          [
+            0.0,
+            1.3737387097273113,
+            0.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world_to_camera": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.19866933079506122,
+            -0.9800665778412416,
+            2.4615858523155454e-17
+          ],
+          [
+            -0.0,
+            -0.9800665778412416,
+            -0.19866933079506122,
+            2.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "effective_pixel_K": [
+          [
+            703.3542193803834,
+            0.0,
+            255.5
+          ],
+          [
+            0.0,
+            703.3542193803834,
+            255.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "projection_matrix": [
+          [
+            -703.3542193803834,
+            -250.40701063843724,
+            -50.76001401813814,
+            511.0
+          ],
+          [
+            0.0,
+            -110.67209856225381,
+            -740.0939768164684,
+            511.0
+          ],
+          [
+            0.0,
+            -0.9800665778412416,
+            -0.19866933079506122,
+            2.0
+          ]
+        ],
+        "image_wh": [
+          512,
+          512
+        ],
+        "pixel_convention": "native C++ ndc2Pix; integer pixel sampling; centered intrinsics only",
+        "source_orientation_known": false
+      },
+      "view_index": 0
+    },
+    {
+      "case_id": "HN0035_native_1",
+      "id": "HN0035",
+      "role": "native_asset_view",
+      "image": "${HMC_WORKSPACE}/human_model_comparison/runs/trellis_original_human_native_v1/HN0035/reload_1.png",
+      "image_sha256": "e74fea8aa42f16899c0b92cce842339267ca66f09eaec756e16302d7bc2f54c0",
+      "identity_key": "nuscenes:24666ac5c59b47e899cb34c50cc9bfdb",
+      "timestamp_us": 1538984305404844,
+      "native_payload": "${HMC_WORKSPACE}/human_model_comparison/runs/trellis_original_human_native_v1/HN0035/native_gaussians.pt",
+      "native_payload_sha256": "cee6ae57800462ffb370db6ac9272e177145466180903779f72dceff21bbe773",
+      "camera": {
+        "yaw_radians": 0.29670597,
+        "pitch_radians": 0.2,
+        "radius": 2.0,
+        "fov_degrees": 40.0,
+        "normalized_intrinsics": [
+          [
+            1.3737387097273113,
+            0.0,
+            0.5
+          ],
+          [
+            0.0,
+            1.3737387097273113,
+            0.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world_to_camera": [
+          [
+            -0.9563047567930893,
+            0.2923717020077531,
+            0.0,
+            4.263585312548554e-17
+          ],
+          [
+            0.05808529038129337,
+            0.18998842606821686,
+            -0.9800665778412417,
+            -4.2292990872250476e-17
+          ],
+          [
+            -0.28654373344435785,
+            -0.9372423303635039,
+            -0.19866933079506124,
+            1.9999999999999998
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "effective_pixel_K": [
+          [
+            703.3542193803834,
+            0.0,
+            255.5
+          ],
+          [
+            0.0,
+            703.3542193803834,
+            255.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "projection_matrix": [
+          [
+            -745.8329095989842,
+            -33.824545173298,
+            -50.76001401813815,
+            511.0
+          ],
+          [
+            -32.35738982141594,
+            -105.83625429935688,
+            -740.0939768164684,
+            510.9999999999999
+          ],
+          [
+            -0.28654373344435785,
+            -0.9372423303635039,
+            -0.19866933079506124,
+            1.9999999999999998
+          ]
+        ],
+        "image_wh": [
+          512,
+          512
+        ],
+        "pixel_convention": "native C++ ndc2Pix; integer pixel sampling; centered intrinsics only",
+        "source_orientation_known": false
+      },
+      "view_index": 1
+    },
+    {
+      "case_id": "HN0039_reference",
+      "id": "HN0039",
+      "role": "reference",
+      "image": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0039/reference_rgb.png",
+      "image_sha256": "3f5367762f1f43fa3c0f55420062417264ab963d59b1a779c2e601d63204b78b",
+      "identity_key": "nuscenes:2397a588f42e4195bf7fb0148aa7a3d6",
+      "timestamp_us": 1535489304404799,
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0039/camera.json",
+      "camera_contract_sha256": "f6c0c93a897bab8b3dd8b735d9576452f4a1781fca6c6a960b45cfe033b52da4",
+      "roi_to_raw_integer_center_affine": [
+        [
+          0.5234375,
+          0.0,
+          1121.76171875
+        ],
+        [
+          0.0,
+          0.5234375,
+          408.76171875
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "raw_K": [
+        [
+          1257.8625342125129,
+          0.0,
+          827.2410631095686
+        ],
+        [
+          0.0,
+          1257.8625342125129,
+          450.915498205774
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "case_id": "HN0039_native_0",
+      "id": "HN0039",
+      "role": "native_asset_view",
+      "image": "${HMC_WORKSPACE}/human_model_comparison/runs/trellis_original_human_native_v1/HN0039/reload_0.png",
+      "image_sha256": "801f4e2ff41f9108dcc4d71479b29da2eec9516d22f509cb78305219506af2a4",
+      "identity_key": "nuscenes:2397a588f42e4195bf7fb0148aa7a3d6",
+      "timestamp_us": 1535489304404799,
+      "native_payload": "${HMC_WORKSPACE}/human_model_comparison/runs/trellis_original_human_native_v1/HN0039/native_gaussians.pt",
+      "native_payload_sha256": "d6ecf72b53f9d3b7343747396304552fab5b5a259bcb7ac4148fc287a383a3e8",
+      "camera": {
+        "yaw_radians": 0.0,
+        "pitch_radians": 0.2,
+        "radius": 2.0,
+        "fov_degrees": 40.0,
+        "normalized_intrinsics": [
+          [
+            1.3737387097273113,
+            0.0,
+            0.5
+          ],
+          [
+            0.0,
+            1.3737387097273113,
+            0.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world_to_camera": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.19866933079506122,
+            -0.9800665778412416,
+            2.4615858523155454e-17
+          ],
+          [
+            -0.0,
+            -0.9800665778412416,
+            -0.19866933079506122,
+            2.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "effective_pixel_K": [
+          [
+            703.3542193803834,
+            0.0,
+            255.5
+          ],
+          [
+            0.0,
+            703.3542193803834,
+            255.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "projection_matrix": [
+          [
+            -703.3542193803834,
+            -250.40701063843724,
+            -50.76001401813814,
+            511.0
+          ],
+          [
+            0.0,
+            -110.67209856225381,
+            -740.0939768164684,
+            511.0
+          ],
+          [
+            0.0,
+            -0.9800665778412416,
+            -0.19866933079506122,
+            2.0
+          ]
+        ],
+        "image_wh": [
+          512,
+          512
+        ],
+        "pixel_convention": "native C++ ndc2Pix; integer pixel sampling; centered intrinsics only",
+        "source_orientation_known": false
+      },
+      "view_index": 0
+    },
+    {
+      "case_id": "HN0039_native_1",
+      "id": "HN0039",
+      "role": "native_asset_view",
+      "image": "${HMC_WORKSPACE}/human_model_comparison/runs/trellis_original_human_native_v1/HN0039/reload_1.png",
+      "image_sha256": "7d549268daa5fde02b8febf09f4a1618960ec0ed644f5a2be27495fe86a5a983",
+      "identity_key": "nuscenes:2397a588f42e4195bf7fb0148aa7a3d6",
+      "timestamp_us": 1535489304404799,
+      "native_payload": "${HMC_WORKSPACE}/human_model_comparison/runs/trellis_original_human_native_v1/HN0039/native_gaussians.pt",
+      "native_payload_sha256": "d6ecf72b53f9d3b7343747396304552fab5b5a259bcb7ac4148fc287a383a3e8",
+      "camera": {
+        "yaw_radians": 0.29670597,
+        "pitch_radians": 0.2,
+        "radius": 2.0,
+        "fov_degrees": 40.0,
+        "normalized_intrinsics": [
+          [
+            1.3737387097273113,
+            0.0,
+            0.5
+          ],
+          [
+            0.0,
+            1.3737387097273113,
+            0.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world_to_camera": [
+          [
+            -0.9563047567930893,
+            0.2923717020077531,
+            0.0,
+            4.263585312548554e-17
+          ],
+          [
+            0.05808529038129337,
+            0.18998842606821686,
+            -0.9800665778412417,
+            -4.2292990872250476e-17
+          ],
+          [
+            -0.28654373344435785,
+            -0.9372423303635039,
+            -0.19866933079506124,
+            1.9999999999999998
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "effective_pixel_K": [
+          [
+            703.3542193803834,
+            0.0,
+            255.5
+          ],
+          [
+            0.0,
+            703.3542193803834,
+            255.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "projection_matrix": [
+          [
+            -745.8329095989842,
+            -33.824545173298,
+            -50.76001401813815,
+            511.0
+          ],
+          [
+            -32.35738982141594,
+            -105.83625429935688,
+            -740.0939768164684,
+            510.9999999999999
+          ],
+          [
+            -0.28654373344435785,
+            -0.9372423303635039,
+            -0.19866933079506124,
+            1.9999999999999998
+          ]
+        ],
+        "image_wh": [
+          512,
+          512
+        ],
+        "pixel_convention": "native C++ ndc2Pix; integer pixel sampling; centered intrinsics only",
+        "source_orientation_known": false
+      },
+      "view_index": 1
+    },
+    {
+      "case_id": "HN0040_reference",
+      "id": "HN0040",
+      "role": "reference",
+      "image": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0040/reference_rgb.png",
+      "image_sha256": "5140fb169956a1208dc9c803d5e2c7cea34416a0e3485bd90e887072fb2b4756",
+      "identity_key": "nuscenes:37b94a97b8e149a78b99743f5f362ea3",
+      "timestamp_us": 1535489317420482,
+      "camera_contract": "${HMC_WORKSPACE}/human_model_comparison/configs/human_source_common_v1/reviewed_source_v2/HN0040/camera.json",
+      "camera_contract_sha256": "b54593ff8139faaa55378f08f60f0a2fee4f45ac5f04a4be2a64d26f2470dd51",
+      "roi_to_raw_integer_center_affine": [
+        [
+          0.505859375,
+          0.0,
+          564.7529296875
+        ],
+        [
+          0.0,
+          0.505859375,
+          360.7529296875
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "raw_K": [
+        [
+          1256.7485116440405,
+          0.0,
+          817.7887570959712
+        ],
+        [
+          0.0,
+          1256.7485116440403,
+          451.9541780095127
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "case_id": "HN0040_native_0",
+      "id": "HN0040",
+      "role": "native_asset_view",
+      "image": "${HMC_WORKSPACE}/human_model_comparison/runs/trellis_original_human_native_v1/HN0040/reload_0.png",
+      "image_sha256": "049fc0f1bb1d5da85baf07fdf97f32155f3488981d8855b4a6cb9170bb836e2e",
+      "identity_key": "nuscenes:37b94a97b8e149a78b99743f5f362ea3",
+      "timestamp_us": 1535489317420482,
+      "native_payload": "${HMC_WORKSPACE}/human_model_comparison/runs/trellis_original_human_native_v1/HN0040/native_gaussians.pt",
+      "native_payload_sha256": "7da1e29a5f3556591b1a23e09019c1e6dfddefcfc94e10975a9b6e324c877852",
+      "camera": {
+        "yaw_radians": 0.0,
+        "pitch_radians": 0.2,
+        "radius": 2.0,
+        "fov_degrees": 40.0,
+        "normalized_intrinsics": [
+          [
+            1.3737387097273113,
+            0.0,
+            0.5
+          ],
+          [
+            0.0,
+            1.3737387097273113,
+            0.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world_to_camera": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.19866933079506122,
+            -0.9800665778412416,
+            2.4615858523155454e-17
+          ],
+          [
+            -0.0,
+            -0.9800665778412416,
+            -0.19866933079506122,
+            2.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "effective_pixel_K": [
+          [
+            703.3542193803834,
+            0.0,
+            255.5
+          ],
+          [
+            0.0,
+            703.3542193803834,
+            255.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "projection_matrix": [
+          [
+            -703.3542193803834,
+            -250.40701063843724,
+            -50.76001401813814,
+            511.0
+          ],
+          [
+            0.0,
+            -110.67209856225381,
+            -740.0939768164684,
+            511.0
+          ],
+          [
+            0.0,
+            -0.9800665778412416,
+            -0.19866933079506122,
+            2.0
+          ]
+        ],
+        "image_wh": [
+          512,
+          512
+        ],
+        "pixel_convention": "native C++ ndc2Pix; integer pixel sampling; centered intrinsics only",
+        "source_orientation_known": false
+      },
+      "view_index": 0
+    },
+    {
+      "case_id": "HN0040_native_1",
+      "id": "HN0040",
+      "role": "native_asset_view",
+      "image": "${HMC_WORKSPACE}/human_model_comparison/runs/trellis_original_human_native_v1/HN0040/reload_1.png",
+      "image_sha256": "42fce55ec60900e82a240cc49b9a71e9dd05f638cd227bd4b1bdbd30c9ce1832",
+      "identity_key": "nuscenes:37b94a97b8e149a78b99743f5f362ea3",
+      "timestamp_us": 1535489317420482,
+      "native_payload": "${HMC_WORKSPACE}/human_model_comparison/runs/trellis_original_human_native_v1/HN0040/native_gaussians.pt",
+      "native_payload_sha256": "7da1e29a5f3556591b1a23e09019c1e6dfddefcfc94e10975a9b6e324c877852",
+      "camera": {
+        "yaw_radians": 0.29670597,
+        "pitch_radians": 0.2,
+        "radius": 2.0,
+        "fov_degrees": 40.0,
+        "normalized_intrinsics": [
+          [
+            1.3737387097273113,
+            0.0,
+            0.5
+          ],
+          [
+            0.0,
+            1.3737387097273113,
+            0.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world_to_camera": [
+          [
+            -0.9563047567930893,
+            0.2923717020077531,
+            0.0,
+            4.263585312548554e-17
+          ],
+          [
+            0.05808529038129337,
+            0.18998842606821686,
+            -0.9800665778412417,
+            -4.2292990872250476e-17
+          ],
+          [
+            -0.28654373344435785,
+            -0.9372423303635039,
+            -0.19866933079506124,
+            1.9999999999999998
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "effective_pixel_K": [
+          [
+            703.3542193803834,
+            0.0,
+            255.5
+          ],
+          [
+            0.0,
+            703.3542193803834,
+            255.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "projection_matrix": [
+          [
+            -745.8329095989842,
+            -33.824545173298,
+            -50.76001401813815,
+            511.0
+          ],
+          [
+            -32.35738982141594,
+            -105.83625429935688,
+            -740.0939768164684,
+            510.9999999999999
+          ],
+          [
+            -0.28654373344435785,
+            -0.9372423303635039,
+            -0.19866933079506124,
+            1.9999999999999998
+          ]
+        ],
+        "image_wh": [
+          512,
+          512
+        ],
+        "pixel_convention": "native C++ ndc2Pix; integer pixel sampling; centered intrinsics only",
+        "source_orientation_known": false
+      },
+      "view_index": 1
+    }
+  ],
+  "reference_qualification_sha256": "1967e5c270a8bcb2a3355b2971639aa2b3546057f3bba6de6bcb77b14c3a9a95",
+  "source_sha256": {
+    "${HMC_WORKSPACE}/human_model_comparison/scripts/prepare_trellis_keypoint_probe_v1.py": "abd251f7d0d6302f4e6f3e1372b39aa97266f7dfa5f1bb5dcf60b8b25f80a89e",
+    "${HMC_WORKSPACE}/human_model_comparison/scripts/run_trellis_original_human_native_v1.py": "58a6f3f61fc7ea33c5aafdc3341686268c2c9a756ad5e49dda03f40730841265",
+    "${HMC_WORKSPACE}/vehicle_model_comparison/model_preparation/20261109_2100_CST/sources/trellis_original_legacy_20261110/trellis/utils/render_utils.py": "d68dfc20a8aea3596456d4adc6a995438f3338830acdac43e5701b8725ba4457",
+    "${HMC_WORKSPACE}/vehicle_model_comparison/model_preparation/20261109_2100_CST/sources/trellis_original_legacy_20261110/trellis/renderers/gaussian_render.py": "80f2e7ce8ae64a0f9a08207ceed250657ccf943c803054318f5776a6123dbbc3",
+    "${HMC_WORKSPACE}/vehicle_model_comparison/model_preparation/20261109_2100_CST/sources/recon02_diff_gaussian_rasterization_local/cuda_rasterizer/auxiliary.h": "f3a1a046df7e68076ecb15f145aa682e51c7e69b0054d6cd59c3cadc217f918a",
+    "${HMC_WORKSPACE}/vehicle_model_comparison/model_preparation/20261109_2100_CST/sources/recon02_diff_gaussian_rasterization_local/cuda_rasterizer/forward.cu": "fc6eb078115567e9b68a298a73cf0f43ce18ebe609ec3e2cd5236e1939026fc9"
+  },
+  "detector_policy": "fixed entire 512x512 isolated image ROI for all cases; no per-method image recentering/resizing",
+  "score_based_view_selection": false,
+  "metric_eligible": false,
+  "scores_produced": false
+}
